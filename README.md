@@ -1,4 +1,4 @@
-# Pokemon Fire Red / Leaf Green DataBase
+# Pokémon Fire Red / Leaf Green DataBase
 <div align="center">Switch ポケットモンスター ファイアレッド・リーフグリーン DataBase<br>
 Switch 口袋妖怪 火红 叶绿 数据库
 <img height="256" alt="image" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/logo.webp?raw=true" />
