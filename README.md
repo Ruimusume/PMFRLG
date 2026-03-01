@@ -74,7 +74,10 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 <td>2026-02-27</td>
 <td>Game Code:BPGI</td>
 <td>ROM Version:0a</td>
-<td>CRC:73</td></tr></table></div>
+<td>CRC:73</td></tr></table>
+
+[md5 hash](https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/romfs/MD5.txt)
+</div>
 
 ## Restart Game & Claer Save Data
 If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
