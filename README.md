@@ -14,7 +14,7 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 <td>2026-02-27</td>
 <td>Game Code:BPGJ</td>
 <td>ROM Version:0a</td>
-<td>CRC:</td></tr>
+<td>CRC:72</td></tr>
 <tr><td>Fire Red EN</td>
 <td>0100554023408000</td>
 <td>2026-02-27</td>
