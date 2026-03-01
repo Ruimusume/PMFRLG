@@ -28,7 +28,6 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 <td>ROM Version:0a</td>
 <td>CRC:77</td></tr></table></div>
 
-## Claer Save Data
-If you want to delete save.<br>
-Title Page Pressed `↑ + ⊖ + B` .<br>
+## Restart Game & Claer Save Data
+If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
 <img alt="claer" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/claer.png?raw=true" />
