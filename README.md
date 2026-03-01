@@ -1,7 +1,7 @@
 # Pokémon Fire Red / Leaf Green DataBase
 <div align="center">Switch ポケットモンスター ファイアレッド・リーフグリーン DataBase<br>
 Switch 口袋妖怪 火红・叶绿 数据库<br>
-<img height="128" alt="icon" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/icon.png?raw=true"/>
+<img height="128" alt="icon" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/icon_m.png?raw=true"/><img height="128" alt="icon" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/icon_f.png?raw=true"/>
 <img height="256" alt="logo" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/logo.webp?raw=true"/>
 <table><tr><td>Fire Red JP</td>
 <td>01006FA0233F8000</td>
