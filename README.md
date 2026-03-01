@@ -82,3 +82,10 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 ## Restart Game & Claer Save Data
 If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
 <img alt="claer" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/claer.png?raw=true" />
+
+## Cheats tools for Switch NSCE
+0.Requires a hacked Switch console running either [sys-botbase](https://github.com/olliz0r/sys-botbase/releases).<br>
+1.Download [sys-botbasezip](https://github.com/olliz0r/sys-botbase/releases), extract the file and place it in the Atmosphere folder;<br>
+2.Install [.NET Desktop Runtime 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) to run the NSCE client.<br>
+3.You must first run and open the game!<br>
+4.Input the IP address of the Switch link, click on the link to start cheating.<br>
