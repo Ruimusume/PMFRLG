@@ -83,8 +83,14 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
 <img alt="claer" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/claer.png?raw=true" />
 
-## Cheats tools for Switch NSCE
+## Preparation before using the tool for Switch NSCE
 1.Requires a hacked Switch console running either [sys-botbase](https://github.com/olliz0r/sys-botbase/releases).<br>
 2.Download [sys-botbasezip](https://github.com/olliz0r/sys-botbase/releases), extract the file and place it in the Atmosphere folder.<br>
 3.Install [.NET Desktop Runtime 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) to run the NSCE client.<br>
 4.You must first run and open the game!<br>
+
+## Area ID tool
+You can record and view the ID and modifications of each Area here.Only for Japanese version.
+[https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID](https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID)
+
+<div align="center"><img alt="tool" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/RFGL_J_Area_ID_tool.png?raw=true"/></div>
