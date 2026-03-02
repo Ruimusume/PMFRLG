@@ -1,0 +1,4104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switch 口袋妖怪 火红・叶绿 图鉴</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+}
+body {
+    background-color: #f5f7fa;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header h1 {
+    color: #E60A24;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.search-bar input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+.search-bar input:focus {
+    border-color: #E60A24;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+.search-bar button {
+    padding: 12px 20px;
+    background-color: #E60A24;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.search-bar button:hover {
+    background-color: #b71c1c;
+}
+.pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.pokemon-table th {
+    background-color: #E60A24;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.pokemon-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+    color: #555;
+    font-size: 0.95rem;
+    font-weight: normal;
+}
+.pokemon-table td:nth-child(1) {
+    width: 60px;
+}
+.pokemon-table td:nth-child(2) {
+    width: 80px;
+}
+.pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
+    width: 138px;
+    height: 138px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f8f8f8;
+    padding: 5px;
+}
+.pokemon-table td img:hover {
+    transform: none;
+}
+.pokemon-table tr {
+    transition: background-color 0.3s;
+}
+.pokemon-table tr:hover {
+    background-color: #f9f2f2;
+    transform: none;
+}
+.pokemon-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.version-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+.version-rf {
+    background-color: #D64619;
+}
+.version-lg {
+    background-color: #02A31A;
+}
+
+@media (max-width: 992px) {
+.container {
+    padding: 20px;
+}
+.pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
+    width: 100px;
+    height: 100px;
+}
+.pokemon-table th, .pokemon-table td {
+    padding: 8px 5px;
+    font-size: 0.9rem;
+}
+}
+.pokemon-table {
+    font-size: 0.85rem;
+}
+.pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
+    width: 138px;
+    height: 138px;
+}
+.table-wrapper {
+    overflow-x: auto;
+}
+}
+
+@media (max-width: 480px) {
+.search-bar {
+    flex-direction: column;
+}
+.header h1 {
+    font-size: 1.8rem;
+}
+.pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
+    width: 60px;
+    height: 60px;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header"> Switch 口袋妖怪 火红・叶绿 图鉴<br>
+    Switch Pokémon Fire Red / Leaf Green DEX<br>
+    Switch ポケットモンスター ファイアレッド・リーフグリーン 図鑑<br>
+    <img height="128" alt="logo" src="https://github.com/Ruimusume/PMFRLG/raw/main/icon/logo.webp?raw=true" style="max-width: 100%; height: auto; max-height: 256px;"> </div>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="searchPokemon()">Search</button>
+  </div>
+  <div class="table-wrapper">
+    <table class="pokemon-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>HEX</th>
+          <th>JP_name</th>
+          <th>EN_name</th>
+          <th>CN_name</th>
+          <th>Normal</th>
+          <th>Shiny</th>
+          <th>Vers</th>
+        </tr>
+      </thead>
+      <tbody id="pokemonTableBody">
+        <tr>
+          <td>1</td>
+          <td>0001</td>
+          <td>フシギダネ</td>
+          <td>Bulbasaur</td>
+          <td>妙蛙种子</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/001.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/001.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>0002</td>
+          <td>フシギソウ</td>
+          <td>Ivysaur</td>
+          <td>妙蛙草</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/002.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/002.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>0003</td>
+          <td>フシギバナ</td>
+          <td>Venusaur</td>
+          <td>妙蛙花</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/003.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/003.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>0004</td>
+          <td>ヒトカゲ</td>
+          <td>Charmander</td>
+          <td>小火龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/004.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/004.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>0005</td>
+          <td>リザード</td>
+          <td>Charmeleon</td>
+          <td>火恐龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/005.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/005.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>0006</td>
+          <td>リザードン</td>
+          <td>Charizard</td>
+          <td>喷火龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/006.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/006.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>0007</td>
+          <td>ゼニガメ</td>
+          <td>Squirtle</td>
+          <td>杰尼龟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/007.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/007.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>0008</td>
+          <td>カメール</td>
+          <td>Wartortle</td>
+          <td>卡咪龟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/008.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/008.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>0009</td>
+          <td>カメックス</td>
+          <td>Blastoise</td>
+          <td>水箭龟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/009.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/009.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>000A</td>
+          <td>キャタピー</td>
+          <td>Caterpie</td>
+          <td>绿毛虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/010.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/010.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>000B</td>
+          <td>トランセル</td>
+          <td>Metapod</td>
+          <td>铁甲蛹</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/011.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/011.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>000C</td>
+          <td>バタフリー</td>
+          <td>Butterfree</td>
+          <td>巴大蝶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/012.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/012.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>000D</td>
+          <td>ビードル</td>
+          <td>Weedle</td>
+          <td>独角虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/013.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/013.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>000E</td>
+          <td>コクーン</td>
+          <td>Kakuna</td>
+          <td>铁壳蛹</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/014.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/014.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>000F</td>
+          <td>スピアー</td>
+          <td>Beedrill</td>
+          <td>大针蜂</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/015.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/015.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>0010</td>
+          <td>ポッポ</td>
+          <td>Pidgey</td>
+          <td>波波</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/016.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/016.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>0011</td>
+          <td>ピジョン</td>
+          <td>Pidgeotto</td>
+          <td>比比鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/017.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/017.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>0012</td>
+          <td>ピジョット</td>
+          <td>Pidgeot</td>
+          <td>大比鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/018.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/018.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>0013</td>
+          <td>コラッタ</td>
+          <td>Rattata</td>
+          <td>小拉达</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/019.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/019.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>0014</td>
+          <td>ラッタ</td>
+          <td>Raticate</td>
+          <td>拉达</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/020.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/020.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>0015</td>
+          <td>オニスズメ</td>
+          <td>Spearow</td>
+          <td>烈雀</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/021.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/021.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>0016</td>
+          <td>オニドリル</td>
+          <td>Fearow</td>
+          <td>大嘴雀</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/022.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/022.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>0017</td>
+          <td>アーボ</td>
+          <td>Ekans</td>
+          <td>阿柏蛇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/023.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/023.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>0018</td>
+          <td>アーボック</td>
+          <td>Arbok</td>
+          <td>阿柏怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/024.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/024.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>0019</td>
+          <td>ピカチュウ</td>
+          <td>Pikachu</td>
+          <td>皮卡丘</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/025.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/025.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>001A</td>
+          <td>ライチュウ</td>
+          <td>Raichu</td>
+          <td>雷丘</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/026.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/026.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>001B</td>
+          <td>サンド</td>
+          <td>Sandshrew</td>
+          <td>穿山鼠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/027.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/027.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>001C</td>
+          <td>サンドパン</td>
+          <td>Sandslash</td>
+          <td>穿山王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/028.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/028.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td>001D</td>
+          <td>ニドラン♀</td>
+          <td>Nidoran♀</td>
+          <td>尼多兰</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/029.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/029.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>001E</td>
+          <td>ニドリーナ</td>
+          <td>Nidorina</td>
+          <td>尼多娜</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/030.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/030.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>001F</td>
+          <td>ニドクイン</td>
+          <td>Nidoqueen</td>
+          <td>尼多后</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/031.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/031.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>32</td>
+          <td>0020</td>
+          <td>ニドラン♂</td>
+          <td>Nidoran♂</td>
+          <td>尼多朗</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/032.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/032.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>0021</td>
+          <td>ニドリーノ</td>
+          <td>Nidorino</td>
+          <td>尼多力诺</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/033.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/033.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td>0022</td>
+          <td>ニドキング</td>
+          <td>Nidoking</td>
+          <td>尼多王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/034.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/034.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td>0023</td>
+          <td>ピッピ</td>
+          <td>Clefairy</td>
+          <td>皮皮</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/035.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/035.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td>0024</td>
+          <td>ピクシー</td>
+          <td>Clefable</td>
+          <td>皮可西</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/036.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/036.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>37</td>
+          <td>0025</td>
+          <td>ロコン</td>
+          <td>Vulpix</td>
+          <td>六尾</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/037.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/037.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td>0026</td>
+          <td>キュウコン</td>
+          <td>Ninetales</td>
+          <td>九尾</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/038.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/038.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>39</td>
+          <td>0027</td>
+          <td>プリン</td>
+          <td>Jigglypuff</td>
+          <td>胖丁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/039.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/039.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>0028</td>
+          <td>プクリン</td>
+          <td>Wigglytuff</td>
+          <td>胖可丁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/040.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/040.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>0029</td>
+          <td>ズバット</td>
+          <td>Zubat</td>
+          <td>超音蝠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/041.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/041.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>42</td>
+          <td>002A</td>
+          <td>ゴルバット</td>
+          <td>Golbat</td>
+          <td>大嘴蝠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/042.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/042.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>43</td>
+          <td>002B</td>
+          <td>ナゾノクサ</td>
+          <td>Oddish</td>
+          <td>走路草</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/043.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/043.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>44</td>
+          <td>002C</td>
+          <td>クサイハナ</td>
+          <td>Gloom</td>
+          <td>臭臭花</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/044.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/044.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>45</td>
+          <td>002D</td>
+          <td>ラフレシア</td>
+          <td>Vileplume</td>
+          <td>霸王花</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/045.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/045.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>46</td>
+          <td>002E</td>
+          <td>パラス</td>
+          <td>Paras</td>
+          <td>派拉斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/046.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/046.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>47</td>
+          <td>002F</td>
+          <td>パラセクト</td>
+          <td>Parasect</td>
+          <td>派拉斯特</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/047.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/047.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>0030</td>
+          <td>コンパン</td>
+          <td>Venonat</td>
+          <td>毛球</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/048.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/048.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>49</td>
+          <td>0031</td>
+          <td>モルフォン</td>
+          <td>Venomoth</td>
+          <td>摩鲁蛾</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/049.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/049.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>0032</td>
+          <td>ディグダ</td>
+          <td>Diglett</td>
+          <td>地鼠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/050.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/050.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>51</td>
+          <td>0033</td>
+          <td>ダグトリオ</td>
+          <td>Dugtrio</td>
+          <td>三地鼠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/051.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/051.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>52</td>
+          <td>0034</td>
+          <td>ニャース</td>
+          <td>Meowth</td>
+          <td>喵喵</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/052.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/052.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>53</td>
+          <td>0035</td>
+          <td>ペルシアン</td>
+          <td>Persian</td>
+          <td>猫老大</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/053.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/053.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>54</td>
+          <td>0036</td>
+          <td>コダック</td>
+          <td>Psyduck</td>
+          <td>可达鸭</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/054.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/054.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>55</td>
+          <td>0037</td>
+          <td>ゴルダック</td>
+          <td>Golduck</td>
+          <td>哥达鸭</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/055.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/055.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>56</td>
+          <td>0038</td>
+          <td>マンキー</td>
+          <td>Mankey</td>
+          <td>猴怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/056.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/056.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>57</td>
+          <td>0039</td>
+          <td>オコリザル</td>
+          <td>Primeape</td>
+          <td>火暴猴</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/057.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/057.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>58</td>
+          <td>003A</td>
+          <td>ガーディ</td>
+          <td>Growlithe</td>
+          <td>卡蒂狗</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/058.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/058.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>59</td>
+          <td>003B</td>
+          <td>ウインディ</td>
+          <td>Arcanine</td>
+          <td>风速狗</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/059.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/059.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>003C</td>
+          <td>ニョロモ</td>
+          <td>Poliwag</td>
+          <td>蚊香蝌蚪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/060.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/060.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>61</td>
+          <td>003D</td>
+          <td>ニョロゾ</td>
+          <td>Poliwhirl</td>
+          <td>蚊香君</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/061.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/061.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>62</td>
+          <td>003E</td>
+          <td>ニョロボン</td>
+          <td>Poliwrath</td>
+          <td>蚊香泳士</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/062.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/062.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>63</td>
+          <td>003F</td>
+          <td>ケーシィ</td>
+          <td>Abra</td>
+          <td>凯西</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/063.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/063.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>64</td>
+          <td>0040</td>
+          <td>ユンゲラー</td>
+          <td>Kadabra</td>
+          <td>勇基拉</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/064.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/064.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>65</td>
+          <td>0041</td>
+          <td>フーディン</td>
+          <td>Alakazam</td>
+          <td>胡地</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/065.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/065.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>66</td>
+          <td>0042</td>
+          <td>ワンリキー</td>
+          <td>Machop</td>
+          <td>腕力</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/066.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/066.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>67</td>
+          <td>0043</td>
+          <td>ゴーリキー</td>
+          <td>Machoke</td>
+          <td>豪力</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/067.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/067.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>68</td>
+          <td>0044</td>
+          <td>カイリキー</td>
+          <td>Machamp</td>
+          <td>怪力</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/068.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/068.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>69</td>
+          <td>0045</td>
+          <td>マダツボミ</td>
+          <td>Bellsprout</td>
+          <td>喇叭芽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/069.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/069.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>70</td>
+          <td>0046</td>
+          <td>ウツドン</td>
+          <td>Weepinbell</td>
+          <td>口呆花</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/070.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/070.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>71</td>
+          <td>0047</td>
+          <td>ウツボット</td>
+          <td>Victreebel</td>
+          <td>大食花</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/071.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/071.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>72</td>
+          <td>0048</td>
+          <td>メノクラゲ</td>
+          <td>Tentacool</td>
+          <td>玛瑙水母</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/072.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/072.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>73</td>
+          <td>0049</td>
+          <td>ドククラゲ</td>
+          <td>Tentacruel</td>
+          <td>毒刺水母</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/073.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/073.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>74</td>
+          <td>004A</td>
+          <td>イシツブテ</td>
+          <td>Geodude</td>
+          <td>小拳石</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/074.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/074.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>75</td>
+          <td>004B</td>
+          <td>ゴローン</td>
+          <td>Graveler</td>
+          <td>隆隆石</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/075.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/075.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>76</td>
+          <td>004C</td>
+          <td>ゴローニャ</td>
+          <td>Golem</td>
+          <td>隆隆岩</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/076.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/076.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>77</td>
+          <td>004D</td>
+          <td>ポニータ</td>
+          <td>Ponyta</td>
+          <td>小火马</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/077.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/077.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>78</td>
+          <td>004E</td>
+          <td>ギャロップ</td>
+          <td>Rapidash</td>
+          <td>烈焰马</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/078.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/078.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>79</td>
+          <td>004F</td>
+          <td>ヤドン</td>
+          <td>Slowpoke</td>
+          <td>呆呆兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/079.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/079.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>0050</td>
+          <td>ヤドラン</td>
+          <td>Slowbro</td>
+          <td>呆壳兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/080.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/080.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>81</td>
+          <td>0051</td>
+          <td>コイル</td>
+          <td>Magnemite</td>
+          <td>小磁怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/081.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/081.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>82</td>
+          <td>0052</td>
+          <td>レアコイル</td>
+          <td>Magneton</td>
+          <td>三合一磁怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/082.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/082.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>83</td>
+          <td>0053</td>
+          <td>カモネギ</td>
+          <td>Farfetch’d</td>
+          <td>大葱鸭</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/083.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/083.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>84</td>
+          <td>0054</td>
+          <td>ドードー</td>
+          <td>Doduo</td>
+          <td>嘟嘟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/084.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/084.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>85</td>
+          <td>0055</td>
+          <td>ドードリオ</td>
+          <td>Dodrio</td>
+          <td>嘟嘟利</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/085.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/085.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>86</td>
+          <td>0056</td>
+          <td>パウワウ</td>
+          <td>Seel</td>
+          <td>小海狮</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/086.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/086.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>87</td>
+          <td>0057</td>
+          <td>ジュゴン</td>
+          <td>Dewgong</td>
+          <td>白海狮</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/087.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/087.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>88</td>
+          <td>0058</td>
+          <td>ベトベター</td>
+          <td>Grimer</td>
+          <td>臭泥</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/088.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/088.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>89</td>
+          <td>0059</td>
+          <td>ベトベトン</td>
+          <td>Muk</td>
+          <td>臭臭泥</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/089.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/089.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>90</td>
+          <td>005A</td>
+          <td>シェルダー</td>
+          <td>Shellder</td>
+          <td>大舌贝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/090.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/090.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>91</td>
+          <td>005B</td>
+          <td>パルシェン</td>
+          <td>Cloyster</td>
+          <td>刺甲贝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/091.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/091.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>92</td>
+          <td>005C</td>
+          <td>ゴース</td>
+          <td>Gastly</td>
+          <td>鬼斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/092.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/092.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>93</td>
+          <td>005D</td>
+          <td>ゴースト</td>
+          <td>Haunter</td>
+          <td>鬼斯通</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/093.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/093.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>94</td>
+          <td>005E</td>
+          <td>ゲンガー</td>
+          <td>Gengar</td>
+          <td>耿鬼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/094.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/094.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>95</td>
+          <td>005F</td>
+          <td>イワーク</td>
+          <td>Onix</td>
+          <td>大岩蛇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/095.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/095.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>96</td>
+          <td>0060</td>
+          <td>スリープ</td>
+          <td>Drowzee</td>
+          <td>催眠貘</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/096.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/096.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>97</td>
+          <td>0061</td>
+          <td>スリーパー</td>
+          <td>Hypno</td>
+          <td>引梦貘人</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/097.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/097.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>98</td>
+          <td>0062</td>
+          <td>クラブ</td>
+          <td>Krabby</td>
+          <td>大钳蟹</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/098.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/098.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>99</td>
+          <td>0063</td>
+          <td>キングラー</td>
+          <td>Kingler</td>
+          <td>巨钳蟹</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/099.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/099.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>100</td>
+          <td>0064</td>
+          <td>ビリリダマ</td>
+          <td>Voltorb</td>
+          <td>霹雳电球</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/100.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/100.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>101</td>
+          <td>0065</td>
+          <td>マルマイン</td>
+          <td>Electrode</td>
+          <td>顽皮雷弹</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/101.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/101.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>0066</td>
+          <td>タマタマ</td>
+          <td>Exeggcute</td>
+          <td>蛋蛋</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/102.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/102.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>0067</td>
+          <td>ナッシー</td>
+          <td>Exeggutor</td>
+          <td>椰蛋树</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/103.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/103.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td>0068</td>
+          <td>カラカラ</td>
+          <td>Cubone</td>
+          <td>卡拉卡拉</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/104.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/104.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>105</td>
+          <td>0069</td>
+          <td>ガラガラ</td>
+          <td>Marowak</td>
+          <td>嘎啦嘎啦</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/105.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/105.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>106</td>
+          <td>006A</td>
+          <td>サワムラー</td>
+          <td>Hitmonlee</td>
+          <td>飞腿郎</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/106.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/106.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>107</td>
+          <td>006B</td>
+          <td>エビワラー</td>
+          <td>Hitmonchan</td>
+          <td>快拳郎</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/107.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/107.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>108</td>
+          <td>006C</td>
+          <td>ベロリンガ</td>
+          <td>Lickitung</td>
+          <td>大舌头</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/108.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/108.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>109</td>
+          <td>006D</td>
+          <td>ドガース</td>
+          <td>Koffing</td>
+          <td>瓦斯弹</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/109.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/109.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>110</td>
+          <td>006E</td>
+          <td>マタドガス</td>
+          <td>Weezing</td>
+          <td>双弹瓦斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/110.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/110.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>111</td>
+          <td>006F</td>
+          <td>サイホーン</td>
+          <td>Rhyhorn</td>
+          <td>独角犀牛</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/111.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/111.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>112</td>
+          <td>0070</td>
+          <td>サイドン</td>
+          <td>Rhydon</td>
+          <td>钻角犀兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/112.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/112.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>113</td>
+          <td>0071</td>
+          <td>ラッキー</td>
+          <td>Chansey</td>
+          <td>吉利蛋</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/113.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/113.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>114</td>
+          <td>0072</td>
+          <td>モンジャラ</td>
+          <td>Tangela</td>
+          <td>蔓藤怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/114.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/114.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>115</td>
+          <td>0073</td>
+          <td>ガルーラ</td>
+          <td>Kangaskhan</td>
+          <td>袋兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/115.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/115.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>116</td>
+          <td>0074</td>
+          <td>タッツー</td>
+          <td>Horsea</td>
+          <td>墨海马</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/116.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/116.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>117</td>
+          <td>0075</td>
+          <td>シードラ</td>
+          <td>Seadra</td>
+          <td>海刺龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/117.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/117.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>118</td>
+          <td>0076</td>
+          <td>トサキント</td>
+          <td>Goldeen</td>
+          <td>角金鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/118.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/118.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>119</td>
+          <td>0077</td>
+          <td>アズマオウ</td>
+          <td>Seaking</td>
+          <td>金鱼王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/119.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/119.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>120</td>
+          <td>0078</td>
+          <td>ヒトデマン</td>
+          <td>Staryu</td>
+          <td>海星星</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/120.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/120.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>121</td>
+          <td>0079</td>
+          <td>スターミー</td>
+          <td>Starmie</td>
+          <td>宝石海星</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/121.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/121.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>122</td>
+          <td>007A</td>
+          <td>バリヤード</td>
+          <td>Mr. Mime</td>
+          <td>魔墙人偶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/122.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/122.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>007B</td>
+          <td>ストライク</td>
+          <td>Scyther</td>
+          <td>飞天螳螂</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/123.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/123.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>124</td>
+          <td>007C</td>
+          <td>ルージュラ</td>
+          <td>Jynx</td>
+          <td>迷唇姐</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/124.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/124.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>125</td>
+          <td>007D</td>
+          <td>エレブー</td>
+          <td>Electabuzz</td>
+          <td>电击兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/125.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/125.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>126</td>
+          <td>007E</td>
+          <td>ブーバー</td>
+          <td>Magmar</td>
+          <td>鸭嘴火兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/126.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/126.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>127</td>
+          <td>007F</td>
+          <td>カイロス</td>
+          <td>Pinsir</td>
+          <td>凯罗斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/127.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/127.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>128</td>
+          <td>0080</td>
+          <td>ケンタロス</td>
+          <td>Tauros</td>
+          <td>肯泰罗</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/128.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/128.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>129</td>
+          <td>0081</td>
+          <td>コイキング</td>
+          <td>Magikarp</td>
+          <td>鲤鱼王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/129.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/129.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>130</td>
+          <td>0082</td>
+          <td>ギャラドス</td>
+          <td>Gyarados</td>
+          <td>暴鲤龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/130.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/130.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>131</td>
+          <td>0083</td>
+          <td>ラプラス</td>
+          <td>Lapras</td>
+          <td>拉普拉斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/131.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/131.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>132</td>
+          <td>0084</td>
+          <td>メタモン</td>
+          <td>Ditto</td>
+          <td>百变怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/132.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/132.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>133</td>
+          <td>0085</td>
+          <td>イーブイ</td>
+          <td>Eevee</td>
+          <td>伊布</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/133.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/133.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>134</td>
+          <td>0086</td>
+          <td>シャワーズ</td>
+          <td>Vaporeon</td>
+          <td>水伊布</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/134.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/134.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>135</td>
+          <td>0087</td>
+          <td>サンダース</td>
+          <td>Jolteon</td>
+          <td>雷伊布</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/135.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/135.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>136</td>
+          <td>0088</td>
+          <td>ブースター</td>
+          <td>Flareon</td>
+          <td>火伊布</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/136.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/136.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>137</td>
+          <td>0089</td>
+          <td>ポリゴン</td>
+          <td>Porygon</td>
+          <td>多边兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/137.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/137.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>138</td>
+          <td>008A</td>
+          <td>オムナイト</td>
+          <td>Omanyte</td>
+          <td>菊石兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/138.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/138.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>139</td>
+          <td>008B</td>
+          <td>オムスター</td>
+          <td>Omastar</td>
+          <td>多刺菊石兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/139.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/139.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>140</td>
+          <td>008C</td>
+          <td>カブト</td>
+          <td>Kabuto</td>
+          <td>化石盔</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/140.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/140.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>141</td>
+          <td>008D</td>
+          <td>カブトプス</td>
+          <td>Kabutops</td>
+          <td>镰刀盔</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/141.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/141.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>142</td>
+          <td>008E</td>
+          <td>プテラ</td>
+          <td>Aerodactyl</td>
+          <td>化石翼龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/142.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/142.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>143</td>
+          <td>008F</td>
+          <td>カビゴン</td>
+          <td>Snorlax</td>
+          <td>卡比兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/143.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/143.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>144</td>
+          <td>0090</td>
+          <td>フリーザー</td>
+          <td>Articuno</td>
+          <td>急冻鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/144.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/144.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>145</td>
+          <td>0091</td>
+          <td>サンダー</td>
+          <td>Zapdos</td>
+          <td>闪电鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/145.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/145.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>146</td>
+          <td>0092</td>
+          <td>ファイヤー</td>
+          <td>Moltres</td>
+          <td>火焰鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/146.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/146.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>147</td>
+          <td>0093</td>
+          <td>ミニリュウ</td>
+          <td>Dratini</td>
+          <td>迷你龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/147.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/147.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>148</td>
+          <td>0094</td>
+          <td>ハクリュー</td>
+          <td>Dragonair</td>
+          <td>哈克龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/148.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/148.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>149</td>
+          <td>0095</td>
+          <td>カイリュー</td>
+          <td>Dragonite</td>
+          <td>快龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/149.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/149.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>150</td>
+          <td>0096</td>
+          <td>ミュウツー</td>
+          <td>Mewtwo</td>
+          <td>超梦</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/150.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/150.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>151</td>
+          <td>0097</td>
+          <td>ミュウ</td>
+          <td>Mew</td>
+          <td>梦幻</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/151.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/151.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>152</td>
+          <td>0098</td>
+          <td>チコリータ</td>
+          <td>Chikorita</td>
+          <td>菊草叶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/152.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/152.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>153</td>
+          <td>0099</td>
+          <td>ベイリーフ</td>
+          <td>Bayleef</td>
+          <td>月桂叶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/153.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/153.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>154</td>
+          <td>009A</td>
+          <td>メガニウム</td>
+          <td>Meganium</td>
+          <td>大竺葵</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/154.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/154.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>155</td>
+          <td>009B</td>
+          <td>ヒノアラシ</td>
+          <td>Cyndaquil</td>
+          <td>火球鼠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/155.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/155.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>156</td>
+          <td>009C</td>
+          <td>マグマラシ</td>
+          <td>Quilava</td>
+          <td>火岩鼠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/156.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/156.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>157</td>
+          <td>009D</td>
+          <td>バクフーン</td>
+          <td>Typhlosion</td>
+          <td>火暴兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/157.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/157.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>158</td>
+          <td>009E</td>
+          <td>ワニノコ</td>
+          <td>Totodile</td>
+          <td>小锯鳄</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/158.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/158.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>159</td>
+          <td>009F</td>
+          <td>アリゲイツ</td>
+          <td>Croconaw</td>
+          <td>蓝鳄</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/159.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/159.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>160</td>
+          <td>00A0</td>
+          <td>オーダイル</td>
+          <td>Feraligatr</td>
+          <td>大力鳄</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/160.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/160.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>161</td>
+          <td>00A1</td>
+          <td>オタチ</td>
+          <td>Sentret</td>
+          <td>尾立</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/161.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/161.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>162</td>
+          <td>00A2</td>
+          <td>オオタチ</td>
+          <td>Furret</td>
+          <td>大尾立</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/162.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/162.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>163</td>
+          <td>00A3</td>
+          <td>ホーホー</td>
+          <td>Hoothoot</td>
+          <td>咕咕</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/163.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/163.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>164</td>
+          <td>00A4</td>
+          <td>ヨルノズク</td>
+          <td>Noctowl</td>
+          <td>猫头夜鹰</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/164.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/164.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>165</td>
+          <td>00A5</td>
+          <td>レディバ</td>
+          <td>Ledyba</td>
+          <td>芭瓢虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/165.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/165.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>166</td>
+          <td>00A6</td>
+          <td>レディアン</td>
+          <td>Ledian</td>
+          <td>安瓢虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/166.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/166.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>167</td>
+          <td>00A7</td>
+          <td>イトマル</td>
+          <td>Spinarak</td>
+          <td>圆丝蛛</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/167.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/167.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>168</td>
+          <td>00A8</td>
+          <td>アリアドス</td>
+          <td>Ariados</td>
+          <td>阿利多斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/168.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/168.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>169</td>
+          <td>00A9</td>
+          <td>クロバット</td>
+          <td>Crobat</td>
+          <td>叉字蝠</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/169.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/169.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>170</td>
+          <td>00AA</td>
+          <td>チョンチー</td>
+          <td>Chinchou</td>
+          <td>灯笼鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/170.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/170.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>171</td>
+          <td>00AB</td>
+          <td>ランターン</td>
+          <td>Lanturn</td>
+          <td>电灯怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/171.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/171.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>172</td>
+          <td>00AC</td>
+          <td>ピチュー</td>
+          <td>Pichu</td>
+          <td>皮丘</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/172.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/172.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>173</td>
+          <td>00AD</td>
+          <td>ピィ</td>
+          <td>Cleffa</td>
+          <td>皮宝宝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/173.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/173.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>174</td>
+          <td>00AE</td>
+          <td>ププリン</td>
+          <td>Igglybuff</td>
+          <td>宝宝丁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/174.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/174.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>175</td>
+          <td>00AF</td>
+          <td>トゲピー</td>
+          <td>Togepi</td>
+          <td>波克比</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/175.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/175.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>176</td>
+          <td>00B0</td>
+          <td>トゲチック</td>
+          <td>Togetic</td>
+          <td>波克基古</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/176.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/176.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>177</td>
+          <td>00B1</td>
+          <td>ネイティ</td>
+          <td>Natu</td>
+          <td>天然雀</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/177.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/177.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>178</td>
+          <td>00B2</td>
+          <td>ネイティオ</td>
+          <td>Xatu</td>
+          <td>天然鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/178.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/178.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>179</td>
+          <td>00B3</td>
+          <td>メリープ</td>
+          <td>Mareep</td>
+          <td>咩利羊</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/179.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/179.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>180</td>
+          <td>00B4</td>
+          <td>モココ</td>
+          <td>Flaaffy</td>
+          <td>茸茸羊</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/180.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/180.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>181</td>
+          <td>00B5</td>
+          <td>デンリュウ</td>
+          <td>Ampharos</td>
+          <td>电龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/181.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/181.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>182</td>
+          <td>00B6</td>
+          <td>キレイハナ</td>
+          <td>Bellossom</td>
+          <td>美丽花</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/182.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/182.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>183</td>
+          <td>00B7</td>
+          <td>マリル</td>
+          <td>Marill</td>
+          <td>玛力露</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/183.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/183.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>184</td>
+          <td>00B8</td>
+          <td>マリルリ</td>
+          <td>Azumarill</td>
+          <td>玛力露丽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/184.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/184.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>185</td>
+          <td>00B9</td>
+          <td>ウソッキー</td>
+          <td>Sudowoodo</td>
+          <td>树才怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/185.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/185.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>186</td>
+          <td>00BA</td>
+          <td>ニョロトノ</td>
+          <td>Politoed</td>
+          <td>蚊香蛙皇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/186.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/186.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>187</td>
+          <td>00BB</td>
+          <td>ハネッコ</td>
+          <td>Hoppip</td>
+          <td>毽子草</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/187.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/187.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>188</td>
+          <td>00BC</td>
+          <td>ポポッコ</td>
+          <td>Skiploom</td>
+          <td>毽子花</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/188.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/188.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>189</td>
+          <td>00BD</td>
+          <td>ワタッコ</td>
+          <td>Jumpluff</td>
+          <td>毽子棉</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/189.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/189.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>190</td>
+          <td>00BE</td>
+          <td>エイパム</td>
+          <td>Aipom</td>
+          <td>长尾怪手</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/190.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/190.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>191</td>
+          <td>00BF</td>
+          <td>ヒマナッツ</td>
+          <td>Sunkern</td>
+          <td>向日种子</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/191.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/191.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>192</td>
+          <td>00C0</td>
+          <td>キマワリ</td>
+          <td>Sunflora</td>
+          <td>向日花怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/192.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/192.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>193</td>
+          <td>00C1</td>
+          <td>ヤンヤンマ</td>
+          <td>Yanma</td>
+          <td>蜻蜻蜓</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/193.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/193.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>194</td>
+          <td>00C2</td>
+          <td>ウパー</td>
+          <td>Wooper</td>
+          <td>乌波</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/194.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/194.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>195</td>
+          <td>00C3</td>
+          <td>ヌオー</td>
+          <td>Quagsire</td>
+          <td>沼王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/195.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/195.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>196</td>
+          <td>00C4</td>
+          <td>エーフィ</td>
+          <td>Espeon</td>
+          <td>太阳伊布</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/196.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/196.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>197</td>
+          <td>00C5</td>
+          <td>ブラッキー</td>
+          <td>Umbreon</td>
+          <td>月亮伊布</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/197.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/197.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>198</td>
+          <td>00C6</td>
+          <td>ヤミカラス</td>
+          <td>Murkrow</td>
+          <td>黑暗鸦</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/198.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/198.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>199</td>
+          <td>00C7</td>
+          <td>ヤドキング</td>
+          <td>Slowking</td>
+          <td>呆呆王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/199.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/199.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>200</td>
+          <td>00C8</td>
+          <td>ムウマ</td>
+          <td>Misdreavus</td>
+          <td>梦妖</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/200.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/200.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>201</td>
+          <td>00C9</td>
+          <td>アンノーン</td>
+          <td>Unown</td>
+          <td>未知图腾</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/201.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/201.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>202</td>
+          <td>00CA</td>
+          <td>ソーナンス</td>
+          <td>Wobbuffet</td>
+          <td>果然翁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/202.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/202.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>203</td>
+          <td>00CB</td>
+          <td>キリンリキ</td>
+          <td>Girafarig</td>
+          <td>麒麟奇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/203.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/203.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>204</td>
+          <td>00CC</td>
+          <td>クヌギダマ</td>
+          <td>Pineco</td>
+          <td>榛果球</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/204.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/204.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>205</td>
+          <td>00CD</td>
+          <td>フォレトス</td>
+          <td>Forretress</td>
+          <td>佛烈托斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/205.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/205.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>206</td>
+          <td>00CE</td>
+          <td>ノコッチ</td>
+          <td>Dunsparce</td>
+          <td>土龙弟弟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/206.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/206.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>207</td>
+          <td>00CF</td>
+          <td>グライガー</td>
+          <td>Gligar</td>
+          <td>天蝎</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/207.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/207.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>208</td>
+          <td>00D0</td>
+          <td>ハガネール</td>
+          <td>Steelix</td>
+          <td>大钢蛇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/208.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/208.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>209</td>
+          <td>00D1</td>
+          <td>ブルー</td>
+          <td>Snubbull</td>
+          <td>布鲁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/209.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/209.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>210</td>
+          <td>00D2</td>
+          <td>グランブル</td>
+          <td>Granbull</td>
+          <td>布鲁皇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/210.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/210.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>211</td>
+          <td>00D3</td>
+          <td>ハリーセン</td>
+          <td>Qwilfish</td>
+          <td>千针鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/211.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/211.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>212</td>
+          <td>00D4</td>
+          <td>ハッサム</td>
+          <td>Scizor</td>
+          <td>巨钳螳螂</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/212.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/212.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>213</td>
+          <td>00D5</td>
+          <td>ツボツボ</td>
+          <td>Shuckle</td>
+          <td>壶壶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/213.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/213.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>214</td>
+          <td>00D6</td>
+          <td>ヘラクロス</td>
+          <td>Heracross</td>
+          <td>赫拉克罗斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/214.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/214.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>215</td>
+          <td>00D7</td>
+          <td>ニューラ</td>
+          <td>Sneasel</td>
+          <td>狃拉</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/215.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/215.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>216</td>
+          <td>00D8</td>
+          <td>ヒメグマ</td>
+          <td>Teddiursa</td>
+          <td>熊宝宝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/216.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/216.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>217</td>
+          <td>00D9</td>
+          <td>リングマ</td>
+          <td>Ursaring</td>
+          <td>圈圈熊</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/217.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/217.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>218</td>
+          <td>00DA</td>
+          <td>マグマッグ</td>
+          <td>Slugma</td>
+          <td>熔岩虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/218.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/218.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>219</td>
+          <td>00DB</td>
+          <td>マグカルゴ</td>
+          <td>Magcargo</td>
+          <td>熔岩蜗牛</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/219.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/219.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>220</td>
+          <td>00DC</td>
+          <td>ウリムー</td>
+          <td>Swinub</td>
+          <td>小山猪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/220.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/220.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>221</td>
+          <td>00DD</td>
+          <td>イノムー</td>
+          <td>Piloswine</td>
+          <td>长毛猪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/221.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/221.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>222</td>
+          <td>00DE</td>
+          <td>サニーゴ</td>
+          <td>Corsola</td>
+          <td>太阳珊瑚</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/222.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/222.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>223</td>
+          <td>00DF</td>
+          <td>テッポウオ</td>
+          <td>Remoraid</td>
+          <td>铁炮鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/223.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/223.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>224</td>
+          <td>00E0</td>
+          <td>オクタン</td>
+          <td>Octillery</td>
+          <td>章鱼桶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/224.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/224.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>225</td>
+          <td>00E1</td>
+          <td>デリバード</td>
+          <td>Delibird</td>
+          <td>信使鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/225.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/225.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>226</td>
+          <td>00E2</td>
+          <td>マンタイン</td>
+          <td>Mantine</td>
+          <td>巨翅飞鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/226.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/226.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>227</td>
+          <td>00E3</td>
+          <td>エアームド</td>
+          <td>Skarmory</td>
+          <td>盔甲鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/227.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/227.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>228</td>
+          <td>00E4</td>
+          <td>デルビル</td>
+          <td>Houndour</td>
+          <td>戴鲁比</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/228.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/228.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>229</td>
+          <td>00E5</td>
+          <td>ヘルガー</td>
+          <td>Houndoom</td>
+          <td>黑鲁加</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/229.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/229.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>230</td>
+          <td>00E6</td>
+          <td>キングドラ</td>
+          <td>Kingdra</td>
+          <td>刺龙王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/230.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/230.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>231</td>
+          <td>00E7</td>
+          <td>ゴマゾウ</td>
+          <td>Phanpy</td>
+          <td>小小象</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/231.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/231.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>232</td>
+          <td>00E8</td>
+          <td>ドンファン</td>
+          <td>Donphan</td>
+          <td>顿甲</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/232.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/232.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>233</td>
+          <td>00E9</td>
+          <td>ポリゴン２</td>
+          <td>Porygon2</td>
+          <td>多边兽２型</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/233.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/233.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>234</td>
+          <td>00EA</td>
+          <td>オドシシ</td>
+          <td>Stantler</td>
+          <td>惊角鹿</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/234.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/234.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>235</td>
+          <td>00EB</td>
+          <td>ドーブル</td>
+          <td>Smeargle</td>
+          <td>图图犬</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/235.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/235.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>236</td>
+          <td>00EC</td>
+          <td>バルキー</td>
+          <td>Tyrogue</td>
+          <td>无畏小子</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/236.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/236.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>237</td>
+          <td>00ED</td>
+          <td>カポエラー</td>
+          <td>Hitmontop</td>
+          <td>战舞郎</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/237.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/237.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>238</td>
+          <td>00EE</td>
+          <td>ムチュール</td>
+          <td>Smoochum</td>
+          <td>迷唇娃</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/238.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/238.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>239</td>
+          <td>00EF</td>
+          <td>エレキッド</td>
+          <td>Elekid</td>
+          <td>电击怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/239.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/239.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR</span></td>
+        </tr>
+        <tr>
+          <td>240</td>
+          <td>00F0</td>
+          <td>ブビィ</td>
+          <td>Magby</td>
+          <td>鸭嘴宝宝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/240.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/240.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>241</td>
+          <td>00F1</td>
+          <td>ミルタンク</td>
+          <td>Miltank</td>
+          <td>大奶罐</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/241.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/241.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>242</td>
+          <td>00F2</td>
+          <td>ハピナス</td>
+          <td>Blissey</td>
+          <td>幸福蛋</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/242.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/242.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>243</td>
+          <td>00F3</td>
+          <td>ライコウ</td>
+          <td>Raikou</td>
+          <td>雷公</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/243.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/243.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>244</td>
+          <td>00F4</td>
+          <td>エンテイ</td>
+          <td>Entei</td>
+          <td>炎帝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/244.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/244.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>245</td>
+          <td>00F5</td>
+          <td>スイクン</td>
+          <td>Suicune</td>
+          <td>水君</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/245.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/245.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>246</td>
+          <td>00F6</td>
+          <td>ヨーギラス</td>
+          <td>Larvitar</td>
+          <td>幼基拉斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/246.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/246.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>247</td>
+          <td>00F7</td>
+          <td>サナギラス</td>
+          <td>Pupitar</td>
+          <td>沙基拉斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/247.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/247.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>248</td>
+          <td>00F8</td>
+          <td>バンギラス</td>
+          <td>Tyranitar</td>
+          <td>班基拉斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/248.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/248.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>249</td>
+          <td>00F9</td>
+          <td>ルギア</td>
+          <td>Lugia</td>
+          <td>洛奇亚</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/249.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/249.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>250</td>
+          <td>00FA</td>
+          <td>ホウオウ</td>
+          <td>Ho-Oh</td>
+          <td>凤王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/250.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/250.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>251</td>
+          <td>00FB</td>
+          <td>セレビィ</td>
+          <td>Celebi</td>
+          <td>时拉比</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/251.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/251.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>252</td>
+          <td>0115</td>
+          <td>キモリ</td>
+          <td>Treecko</td>
+          <td>木守宫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/252.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/252.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>253</td>
+          <td>0116</td>
+          <td>ジュプトル</td>
+          <td>Grovyle</td>
+          <td>森林蜥蜴</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/253.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/253.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>254</td>
+          <td>0117</td>
+          <td>ジュカイン</td>
+          <td>Sceptile</td>
+          <td>蜥蜴王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/254.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/254.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>255</td>
+          <td>0118</td>
+          <td>アチャモ</td>
+          <td>Torchic</td>
+          <td>火稚鸡</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/255.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/255.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>256</td>
+          <td>0119</td>
+          <td>ワカシャモ</td>
+          <td>Combusken</td>
+          <td>力壮鸡</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/256.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/256.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>257</td>
+          <td>011A</td>
+          <td>バシャーモ</td>
+          <td>Blaziken</td>
+          <td>火焰鸡</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/257.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/257.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>258</td>
+          <td>011B</td>
+          <td>ミズゴロウ</td>
+          <td>Mudkip</td>
+          <td>水跃鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/258.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/258.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>259</td>
+          <td>011C</td>
+          <td>ヌマクロー</td>
+          <td>Marshtomp</td>
+          <td>沼跃鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/259.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/259.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>260</td>
+          <td>011D</td>
+          <td>ラグラージ</td>
+          <td>Swampert</td>
+          <td>巨沼怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/260.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/260.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>261</td>
+          <td>011E</td>
+          <td>ポチエナ</td>
+          <td>Poochyena</td>
+          <td>土狼犬</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/261.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/261.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>262</td>
+          <td>011F</td>
+          <td>グラエナ</td>
+          <td>Mightyena</td>
+          <td>大狼犬</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/262.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/262.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>263</td>
+          <td>0120</td>
+          <td>ジグザグマ</td>
+          <td>Zigzagoon</td>
+          <td>蛇纹熊</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/263.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/263.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>264</td>
+          <td>0121</td>
+          <td>マッスグマ</td>
+          <td>Linoone</td>
+          <td>直冲熊</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/264.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/264.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>265</td>
+          <td>0122</td>
+          <td>ケムッソ</td>
+          <td>Wurmple</td>
+          <td>刺尾虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/265.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/265.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>266</td>
+          <td>0123</td>
+          <td>カラサリス</td>
+          <td>Silcoon</td>
+          <td>甲壳茧</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/266.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/266.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>267</td>
+          <td>0124</td>
+          <td>アゲハント</td>
+          <td>Beautifly</td>
+          <td>狩猎凤蝶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/267.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/267.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>268</td>
+          <td>0125</td>
+          <td>マユルド</td>
+          <td>Cascoon</td>
+          <td>盾甲茧</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/268.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/268.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>269</td>
+          <td>0126</td>
+          <td>ドクケイル</td>
+          <td>Dustox</td>
+          <td>毒粉蛾</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/269.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/269.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>270</td>
+          <td>0127</td>
+          <td>ハスボー</td>
+          <td>Lotad</td>
+          <td>莲叶童子</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/270.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/270.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>271</td>
+          <td>0128</td>
+          <td>ハスブレロ</td>
+          <td>Lombre</td>
+          <td>莲帽小童</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/271.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/271.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>272</td>
+          <td>0129</td>
+          <td>ルンパッパ</td>
+          <td>Ludicolo</td>
+          <td>乐天河童</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/272.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/272.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>273</td>
+          <td>012A</td>
+          <td>タネボー</td>
+          <td>Seedot</td>
+          <td>橡实果</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/273.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/273.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>274</td>
+          <td>012B</td>
+          <td>コノハナ</td>
+          <td>Nuzleaf</td>
+          <td>长鼻叶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/274.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/274.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>275</td>
+          <td>012C</td>
+          <td>ダーテング</td>
+          <td>Shiftry</td>
+          <td>狡猾天狗</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/275.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/275.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>276</td>
+          <td>012D</td>
+          <td>ツチニン</td>
+          <td>Nincada</td>
+          <td>土居忍士</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/290.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/290.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>277</td>
+          <td>012E</td>
+          <td>テッカニン</td>
+          <td>Ninjask</td>
+          <td>铁面忍者</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/291.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/291.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>278</td>
+          <td>012F</td>
+          <td>ヌケニン</td>
+          <td>Shedinja</td>
+          <td>脱壳忍者</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/292.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/292.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>279</td>
+          <td>0130</td>
+          <td>スバメ</td>
+          <td>Taillow</td>
+          <td>傲骨燕</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/276.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/276.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>280</td>
+          <td>0131</td>
+          <td>オオスバメ</td>
+          <td>Swellow</td>
+          <td>大王燕</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/277.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/277.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>281</td>
+          <td>0132</td>
+          <td>キノココ</td>
+          <td>Shroomish</td>
+          <td>蘑蘑菇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/285.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/285.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>282</td>
+          <td>0133</td>
+          <td>キノガッサ</td>
+          <td>Breloom</td>
+          <td>斗笠菇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/286.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/286.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>283</td>
+          <td>0134</td>
+          <td>パッチール</td>
+          <td>Spinda</td>
+          <td>晃晃斑</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/327.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/327.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>284</td>
+          <td>0135</td>
+          <td>キャモメ</td>
+          <td>Wingull</td>
+          <td>长翅鸥</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/278.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/278.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>285</td>
+          <td>0136</td>
+          <td>ペリッパー</td>
+          <td>Pelipper</td>
+          <td>大嘴鸥</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/279.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/279.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>286</td>
+          <td>0137</td>
+          <td>アメタマ</td>
+          <td>Surskit</td>
+          <td>溜溜糖球</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/283.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/283.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>287</td>
+          <td>0138</td>
+          <td>アメモース</td>
+          <td>Masquerain</td>
+          <td>雨翅蛾</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/284.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/284.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>288</td>
+          <td>0139</td>
+          <td>ホエルコ</td>
+          <td>Wailmer</td>
+          <td>吼吼鲸</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/320.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/320.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>289</td>
+          <td>013A</td>
+          <td>ホエルオー</td>
+          <td>Wailord</td>
+          <td>吼鲸王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/321.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/321.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>290</td>
+          <td>013B</td>
+          <td>エネコ</td>
+          <td>Skitty</td>
+          <td>向尾喵</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/300.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/300.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>291</td>
+          <td>013C</td>
+          <td>エネコロロ</td>
+          <td>Delcatty</td>
+          <td>优雅猫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/301.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/301.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>292</td>
+          <td>013D</td>
+          <td>カクレオン</td>
+          <td>Kecleon</td>
+          <td>变隐龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/352.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/352.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>293</td>
+          <td>013E</td>
+          <td>ヤジロン</td>
+          <td>Baltoy</td>
+          <td>天秤偶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/343.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/343.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>294</td>
+          <td>013F</td>
+          <td>ネンドール</td>
+          <td>Claydol</td>
+          <td>念力土偶</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/344.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/344.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>295</td>
+          <td>0140</td>
+          <td>ノズパス</td>
+          <td>Nosepass</td>
+          <td>朝北鼻</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/299.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/299.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>296</td>
+          <td>0141</td>
+          <td>コータス</td>
+          <td>Torkoal</td>
+          <td>煤炭龟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/324.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/324.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>297</td>
+          <td>0142</td>
+          <td>ヤミラミ</td>
+          <td>Sableye</td>
+          <td>勾魂眼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/302.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/302.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>298</td>
+          <td>0143</td>
+          <td>ドジョッチ</td>
+          <td>Barboach</td>
+          <td>泥泥鳅</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/339.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/339.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>299</td>
+          <td>0144</td>
+          <td>ナマズン</td>
+          <td>Whiscash</td>
+          <td>鲶鱼王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/340.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/340.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>300</td>
+          <td>0145</td>
+          <td>ラブカス</td>
+          <td>Luvdisc</td>
+          <td>爱心鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/370.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/370.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>301</td>
+          <td>0146</td>
+          <td>ヘイガニ</td>
+          <td>Corphish</td>
+          <td>龙虾小兵</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/341.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/341.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>302</td>
+          <td>0147</td>
+          <td>シザリガー</td>
+          <td>Crawdaunt</td>
+          <td>铁螯龙虾</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/342.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/342.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>303</td>
+          <td>0148</td>
+          <td>ヒンバス</td>
+          <td>Feebas</td>
+          <td>丑丑鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/349.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/349.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>304</td>
+          <td>0149</td>
+          <td>ミロカロス</td>
+          <td>Milotic</td>
+          <td>美纳斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/350.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/350.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>305</td>
+          <td>014A</td>
+          <td>キバニア</td>
+          <td>Carvanha</td>
+          <td>利牙鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/318.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/318.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>306</td>
+          <td>014B</td>
+          <td>サメハダー</td>
+          <td>Sharpedo</td>
+          <td>巨牙鲨</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/319.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/319.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>307</td>
+          <td>014C</td>
+          <td>ナックラー</td>
+          <td>Trapinch</td>
+          <td>大颚蚁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/328.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/328.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>308</td>
+          <td>014D</td>
+          <td>ビブラーバ</td>
+          <td>Vibrava</td>
+          <td>超音波幼虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/329.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/329.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>309</td>
+          <td>014E</td>
+          <td>フライゴン</td>
+          <td>Flygon</td>
+          <td>沙漠蜻蜓</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/330.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/330.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>310</td>
+          <td>014F</td>
+          <td>マクノシタ</td>
+          <td>Makuhita</td>
+          <td>幕下力士</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/296.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/296.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>311</td>
+          <td>0150</td>
+          <td>ハリテヤマ</td>
+          <td>Hariyama</td>
+          <td>铁掌力士</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/297.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/297.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>312</td>
+          <td>0151</td>
+          <td>ラクライ</td>
+          <td>Electrike</td>
+          <td>落雷兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/309.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/309.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>313</td>
+          <td>0152</td>
+          <td>ライボルト</td>
+          <td>Manectric</td>
+          <td>雷电兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/310.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/310.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>314</td>
+          <td>0153</td>
+          <td>ドンメル</td>
+          <td>Numel</td>
+          <td>呆火驼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/322.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/322.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>315</td>
+          <td>0154</td>
+          <td>バクーダ</td>
+          <td>Camerupt</td>
+          <td>喷火驼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/323.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/323.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>316</td>
+          <td>0155</td>
+          <td>タマザラシ</td>
+          <td>Spheal</td>
+          <td>海豹球</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/363.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/363.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>317</td>
+          <td>0156</td>
+          <td>トドグラー</td>
+          <td>Sealeo</td>
+          <td>海魔狮</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/364.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/364.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>318</td>
+          <td>0157</td>
+          <td>トドゼルガ</td>
+          <td>Walrein</td>
+          <td>帝牙海狮</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/365.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/365.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>319</td>
+          <td>0158</td>
+          <td>サボネア</td>
+          <td>Cacnea</td>
+          <td>刺球仙人掌</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/331.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/331.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>320</td>
+          <td>0159</td>
+          <td>ノクタス</td>
+          <td>Cacturne</td>
+          <td>梦歌仙人掌</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/332.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/332.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>321</td>
+          <td>015A</td>
+          <td>ユキワラシ</td>
+          <td>Snorunt</td>
+          <td>雪童子</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/361.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/361.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>322</td>
+          <td>015B</td>
+          <td>オニゴーリ</td>
+          <td>Glalie</td>
+          <td>冰鬼护</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/362.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/362.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>323</td>
+          <td>015C</td>
+          <td>ルナトーン</td>
+          <td>Lunatone</td>
+          <td>月石</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/337.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/337.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>324</td>
+          <td>015D</td>
+          <td>ソルロック</td>
+          <td>Solrock</td>
+          <td>太阳岩</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/338.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/338.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>325</td>
+          <td>015E</td>
+          <td>ルリリ</td>
+          <td>Azurill</td>
+          <td>露力丽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/298.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/298.png?raw=true"></td>
+          <td><span class="version-tag version-lg">LG</span></td>
+        </tr>
+        <tr>
+          <td>326</td>
+          <td>015F</td>
+          <td>バネブー</td>
+          <td>Spoink</td>
+          <td>跳跳猪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/325.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/325.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>327</td>
+          <td>0160</td>
+          <td>ブーピッグ</td>
+          <td>Grumpig</td>
+          <td>噗噗猪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/326.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/326.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>328</td>
+          <td>0161</td>
+          <td>プラスル</td>
+          <td>Plusle</td>
+          <td>正电拍拍</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/311.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/311.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>329</td>
+          <td>0162</td>
+          <td>マイナン</td>
+          <td>Minun</td>
+          <td>负电拍拍</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/312.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/312.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>330</td>
+          <td>0163</td>
+          <td>クチート</td>
+          <td>Mawile</td>
+          <td>大嘴娃</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/303.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/303.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>331</td>
+          <td>0164</td>
+          <td>アサナン</td>
+          <td>Meditite</td>
+          <td>玛沙那</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/307.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/307.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>332</td>
+          <td>0165</td>
+          <td>チャーレム</td>
+          <td>Medicham</td>
+          <td>恰雷姆</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/308.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/308.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>333</td>
+          <td>0166</td>
+          <td>チルット</td>
+          <td>Swablu</td>
+          <td>青绵鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/333.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/333.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>334</td>
+          <td>0167</td>
+          <td>チルタリス</td>
+          <td>Altaria</td>
+          <td>七夕青鸟</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/334.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/334.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>335</td>
+          <td>0168</td>
+          <td>ソーナノ</td>
+          <td>Wynaut</td>
+          <td>小果然</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/360.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/360.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>336</td>
+          <td>0169</td>
+          <td>ヨマワル</td>
+          <td>Duskull</td>
+          <td>夜巡灵</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/354.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/354.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>337</td>
+          <td>016A</td>
+          <td>サマヨール</td>
+          <td>Dusclops</td>
+          <td>彷徨夜灵</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/355.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/355.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>338</td>
+          <td>016B</td>
+          <td>ロゼリア</td>
+          <td>Roselia</td>
+          <td>毒蔷薇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/315.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/315.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>339</td>
+          <td>016C</td>
+          <td>ナマケロ</td>
+          <td>Slakoth</td>
+          <td>懒人獭</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/287.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/287.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>340</td>
+          <td>016D</td>
+          <td>ヤルキモノ</td>
+          <td>Vigoroth</td>
+          <td>过动猿</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/288.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/288.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>341</td>
+          <td>016E</td>
+          <td>ケッキング</td>
+          <td>Slaking</td>
+          <td>请假王</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/289.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/289.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>342</td>
+          <td>016F</td>
+          <td>ゴクリン</td>
+          <td>Gulpin</td>
+          <td>溶食兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/316.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/316.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>343</td>
+          <td>0170</td>
+          <td>マルノーム</td>
+          <td>Swalot</td>
+          <td>吞食兽</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/317.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/317.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>344</td>
+          <td>0171</td>
+          <td>トロピウス</td>
+          <td>Tropius</td>
+          <td>热带龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/357.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/357.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>345</td>
+          <td>0172</td>
+          <td>ゴニョニョ</td>
+          <td>Whismur</td>
+          <td>咕妞妞</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/293.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/293.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>346</td>
+          <td>0173</td>
+          <td>ドゴーム</td>
+          <td>Loudred</td>
+          <td>吼爆弹</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/294.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/294.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>347</td>
+          <td>0174</td>
+          <td>バクオング</td>
+          <td>Exploud</td>
+          <td>爆音怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/295.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/295.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>348</td>
+          <td>0175</td>
+          <td>パールル</td>
+          <td>Clamperl</td>
+          <td>珍珠贝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/366.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/366.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>349</td>
+          <td>0176</td>
+          <td>ハンテール</td>
+          <td>Huntail</td>
+          <td>猎斑鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/367.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/367.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>350</td>
+          <td>0177</td>
+          <td>サクラビス</td>
+          <td>Gorebyss</td>
+          <td>樱花鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/368.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/368.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>351</td>
+          <td>0178</td>
+          <td>アブソル</td>
+          <td>Absol</td>
+          <td>阿勃梭鲁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/359.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/359.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>352</td>
+          <td>0179</td>
+          <td>カゲボウズ</td>
+          <td>Shuppet</td>
+          <td>怨影娃娃</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/353.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/353.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>353</td>
+          <td>017A</td>
+          <td>ジュペッタ</td>
+          <td>Banette</td>
+          <td>诅咒娃娃</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/354.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/354.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>354</td>
+          <td>017B</td>
+          <td>ハブネーク</td>
+          <td>Seviper</td>
+          <td>饭匙蛇</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/336.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/336.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>355</td>
+          <td>017C</td>
+          <td>ザングース</td>
+          <td>Zangoose</td>
+          <td>猫鼬斩</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/337.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/337.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>356</td>
+          <td>017D</td>
+          <td>ジーランス</td>
+          <td>Relicanth</td>
+          <td>古空棘鱼</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/369.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/369.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>357</td>
+          <td>017E</td>
+          <td>ココドラ</td>
+          <td>Aron</td>
+          <td>可可多拉</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/304.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/304.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>358</td>
+          <td>017F</td>
+          <td>コドラ</td>
+          <td>Lairon</td>
+          <td>可多拉</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/305.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/305.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>359</td>
+          <td>0180</td>
+          <td>ボスゴドラ</td>
+          <td>Aggron</td>
+          <td>波士可多拉</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/306.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/306.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>360</td>
+          <td>0181</td>
+          <td>ポワルン</td>
+          <td>Castform</td>
+          <td>飘浮泡泡</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/351.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/351.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>361</td>
+          <td>0182</td>
+          <td>バルビート</td>
+          <td>Volbeat</td>
+          <td>电萤虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/313.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/313.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>362</td>
+          <td>0183</td>
+          <td>イルミーゼ</td>
+          <td>Illumise</td>
+          <td>甜甜萤</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/314.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/314.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>363</td>
+          <td>0184</td>
+          <td>リリーラ</td>
+          <td>Lileep</td>
+          <td>触手百合</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/345.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/345.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>364</td>
+          <td>0185</td>
+          <td>ユレイドル</td>
+          <td>Cradily</td>
+          <td>摇篮百合</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/346.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/346.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>365</td>
+          <td>0186</td>
+          <td>アノプス</td>
+          <td>Anorith</td>
+          <td>太古羽虫</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/347.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/347.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>366</td>
+          <td>0187</td>
+          <td>アーマルド</td>
+          <td>Armaldo</td>
+          <td>太古盔甲</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/348.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/348.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>367</td>
+          <td>0188</td>
+          <td>ラルトス</td>
+          <td>Ralts</td>
+          <td>拉鲁拉丝</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/280.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/280.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>368</td>
+          <td>0189</td>
+          <td>キルリア</td>
+          <td>Kirlia</td>
+          <td>奇鲁莉安</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/281.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/281.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>369</td>
+          <td>018A</td>
+          <td>サーナイト</td>
+          <td>Gardevoir</td>
+          <td>沙奈朵</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/282.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/282.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>370</td>
+          <td>018B</td>
+          <td>タツベイ</td>
+          <td>Bagon</td>
+          <td>宝贝龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/371.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/371.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>371</td>
+          <td>018C</td>
+          <td>コモルー</td>
+          <td>Shelgon</td>
+          <td>甲壳龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/372.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/372.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>372</td>
+          <td>018D</td>
+          <td>ボーマンダ</td>
+          <td>Salamence</td>
+          <td>暴飞龙</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/373.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/373.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>373</td>
+          <td>018E</td>
+          <td>ダンバル</td>
+          <td>Beldum</td>
+          <td>铁哑铃</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/374.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/374.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>374</td>
+          <td>018F</td>
+          <td>メタング</td>
+          <td>Metang</td>
+          <td>金属怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/375.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/375.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>375</td>
+          <td>0190</td>
+          <td>メタグロス</td>
+          <td>Metagross</td>
+          <td>巨金怪</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/376.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/376.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>376</td>
+          <td>0191</td>
+          <td>レジロック</td>
+          <td>Regirock</td>
+          <td>雷吉洛克</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/377.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/377.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>377</td>
+          <td>0192</td>
+          <td>レジアイス</td>
+          <td>Regice</td>
+          <td>雷吉艾斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/378.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/378.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>378</td>
+          <td>0193</td>
+          <td>レジスチル</td>
+          <td>Registeel</td>
+          <td>雷吉斯奇鲁</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/379.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/379.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>379</td>
+          <td>0194</td>
+          <td>カイオーガ</td>
+          <td>Kyogre</td>
+          <td>盖欧卡</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/382.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/382.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>380</td>
+          <td>0195</td>
+          <td>グラードン</td>
+          <td>Groudon</td>
+          <td>固拉多</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/383.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/383.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>381</td>
+          <td>0196</td>
+          <td>レックウザ</td>
+          <td>Rayquaza</td>
+          <td>烈空坐</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/384.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/384.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>382</td>
+          <td>0197</td>
+          <td>ラティアス</td>
+          <td>Latias</td>
+          <td>拉帝亚斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/380.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/380.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>383</td>
+          <td>0198</td>
+          <td>ラティオス</td>
+          <td>Latios</td>
+          <td>拉帝欧斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/381.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/381.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>384</td>
+          <td>0199</td>
+          <td>ジラーチ</td>
+          <td>Jirachi</td>
+          <td>基拉祈</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/385.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/385.png?raw=true"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>385</td>
+          <td>019A</td>
+          <td>デオキシス</td>
+          <td>Deoxys</td>
+          <td>代欧奇希斯</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/386.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/386.png?raw=true"></td>
+          <td><span class="version-tag version-rf">FR（ACT）</span> <span class="version-tag version-lg">LG（DEF）</span></td>
+        </tr>
+        <tr>
+          <td>386</td>
+          <td>019B</td>
+          <td>チリーン</td>
+          <td>Chimecho</td>
+          <td>风铃铃</td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Normal/358.png?raw=true"></td>
+          <td><img src="https://github.com/Ruimusume/PMFRLG/blob/main/img/Shiny/358.png?raw=true"></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+
+        function searchPokemon() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase().trim();
+            const tableBody = document.getElementById('pokemonTableBody');
+            const rows = tableBody.getElementsByTagName('tr');
+            
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let found = false;
+                
+
+                for (let j = 0; j < cells.length; j++) {
+                    const cellText = cells[j].textContent.toLowerCase();
+                    if (cellText.includes(filter)) {
+                        found = true;
+                        break;
+                    }
+                }
+                
+
+                rows[i].style.display = found ? '' : 'none';
+            }
+        }
+        
+
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchPokemon();
+            }
+        });
+    </script>
+</body>
+</html>
