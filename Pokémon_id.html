@@ -90,18 +90,9 @@ body {
     border-color: #E60A24;
     box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
 }
+/* 移除按钮样式（也可直接删除按钮标签） */
 .search-bar button {
-    padding: 12px 20px;
-    background-color: #E60A24;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s;
-}
-.search-bar button:hover {
-    background-color: #b71c1c;
+    display: none;
 }
 .pokemon-table {
     width: 100%;
@@ -114,7 +105,7 @@ body {
 .pokemon-table th {
     background-color: #E60A24;
     color: white;
-    padding: 15px 10px;
+    padding: 10px 10px;
     text-align: center;
     font-weight: bold;
     font-size: 0.95rem;
@@ -191,10 +182,6 @@ body {
     font-size: 0.9rem;
     padding: 10px 12px;
 }
-.search-bar button {
-    font-size: 0.9rem;
-    padding: 10px 15px;
-}
 }
 
 @media (max-width: 480px) {
@@ -263,7 +250,6 @@ background-color: #f0f0f0;
     <img alt="logo" src="https://github.com/Ruimusume/PMFRLG/raw/main/icon/logo.webp?raw=true" style="max-width: 100%; height: auto; max-height: 128px;"> </div>
   <div class="search-bar">
     <input type="text" id="searchInput" placeholder="Search...">
-    <button onclick="searchPokemon()">Search</button>
   </div>
   <div class="table-wrapper">
     <table class="pokemon-table">
@@ -4167,7 +4153,7 @@ function searchPokemon() {
         rows[i].style.display = found ? '' : 'none';
     }
 }
-
+document.getElementById('searchInput').addEventListener('input', searchPokemon);
 document.getElementById('searchInput').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         searchPokemon();
