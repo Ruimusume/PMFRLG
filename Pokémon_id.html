@@ -3,8 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusume 露易娘</title>
+<title>Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusme 露易娘</title>
 <style>
+.header-subtitle {
+    font-size: clamp(9px, 1vw, 14px);
+    padding: 0 3px;
+}
+.header-subtitle span {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.header-subtitle {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+.main-title {
+    font-size: clamp(14px, 4vw, 24px);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    word-break: keep-all;
+}
+.main-title {
+    font-size: clamp(12px, 2vw, 20px);
+    padding: 0 3px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -71,6 +109,7 @@ body {
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    table-layout: auto;
 }
 .pokemon-table th {
     background-color: #E60A24;
@@ -82,6 +121,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
+    white-space: nowrap;
 }
 .pokemon-table td {
     padding: 10px;
@@ -91,12 +131,9 @@ body {
     color: #555;
     font-size: 0.95rem;
     font-weight: normal;
-}
-.pokemon-table td:nth-child(1) {
-    width: 60px;
-}
-.pokemon-table td:nth-child(2) {
-    width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
     width: 138px;
@@ -139,23 +176,24 @@ body {
     padding: 20px;
 }
 .pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
-.pokemon-table th, .pokemon-table td {
+.pokemon-table th {
+    font-size: 0.8rem;
     padding: 8px 5px;
+}
+.pokemon-table td {
+    font-size: 0.75rem;
+    padding: 8px 5px;
+}
+.search-bar input {
     font-size: 0.9rem;
+    padding: 10px 12px;
 }
-}
-.pokemon-table {
-    font-size: 0.85rem;
-}
-.pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
-    width: 138px;
-    height: 138px;
-}
-.table-wrapper {
-    overflow-x: auto;
+.search-bar button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
 }
 }
 
@@ -164,17 +202,64 @@ body {
     flex-direction: column;
 }
 .pokemon-table td:nth-child(6) img, .pokemon-table td:nth-child(7) img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+}
+.pokemon-table th {
+    font-size: 0.7rem;
+    padding: 6px 3px;
+}
+.pokemon-table td {
+    font-size: 0.65rem;
+    padding: 6px 3px;
+}
+.header {
+    font-size: 0.85rem;
+}
+.header p {
+    font-size: 0.9rem;
+}
+}
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+.table-wrapper::-webkit-scrollbar {
+height: 6px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+background-color: #E60A24;
+border-radius: 3px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+background-color: #f0f0f0;
+}
+.footer-copyright {
+    max-width: 1400px;
+    margin: 15px auto 0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #888;
+    opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+.footer-copyright {
+    font-size: 12px;
+    margin: 10px auto 0;
+    padding: 8px 0;
 }
 }
 </style>
 </head>
-<body>
+<body>zh
 <div class="container">
-  <div class="header">Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusume 露易娘<br>
-    Switch ポケットモンスター ファイアレッド・リーフグリーン 図鑑<br>
-    Switch Pokémon Fire Red / Leaf Green DEX<br>
+  <div class="header">
+    <div class="main-title">Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusume</div>
+    <div class="header-subtitle"> Switch ポケットモンスター ファイアレッド・リーフグリーン 図鑑<br>
+      Switch Pokémon Fire Red / Leaf Green DEX </div>
     <img alt="logo" src="https://github.com/Ruimusume/PMFRLG/raw/main/icon/logo.webp?raw=true" style="max-width: 100%; height: auto; max-height: 128px;"> </div>
   <div class="search-bar">
     <input type="text" id="searchInput" placeholder="Search...">
@@ -4059,38 +4144,35 @@ body {
     </table>
   </div>
 </div>
+<div class="footer-copyright"> by Ruimusume 露易娘 © 2026 All Rights Reserved </div>
 <script>
+function searchPokemon() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toLowerCase().trim();
+    const tableBody = document.getElementById('pokemonTableBody');
+    const rows = tableBody.getElementsByTagName('tr');
+    
+    for (let i = 0; i < rows.length; i++) {
+        const cells = rows[i].getElementsByTagName('td');
+        let found = false;
 
-        function searchPokemon() {
-            const input = document.getElementById('searchInput');
-            const filter = input.value.toLowerCase().trim();
-            const tableBody = document.getElementById('pokemonTableBody');
-            const rows = tableBody.getElementsByTagName('tr');
-            
-            for (let i = 0; i < rows.length; i++) {
-                const cells = rows[i].getElementsByTagName('td');
-                let found = false;
-                
-
-                for (let j = 0; j < cells.length; j++) {
-                    const cellText = cells[j].textContent.toLowerCase();
-                    if (cellText.includes(filter)) {
-                        found = true;
-                        break;
-                    }
-                }
-                
-
-                rows[i].style.display = found ? '' : 'none';
+        for (let j = 0; j < cells.length; j++) {
+            const cellText = cells[j].textContent.toLowerCase();
+            if (cellText.includes(filter)) {
+                found = true;
+                break;
             }
         }
-        
 
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                searchPokemon();
-            }
-        });
-    </script>
+        rows[i].style.display = found ? '' : 'none';
+    }
+}
+
+document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        searchPokemon();
+    }
+});
+</script>
 </body>
 </html>
