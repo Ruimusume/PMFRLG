@@ -1,4 +1,5 @@
-No.	hex	JP_name	EN_name	CN_name	Vers
+No.	HEX	JP_name	EN_name	CN_name	Vers
+0	0000	N/A	N/A	N/A	
 1	0001	フシギダネ	Bulbasaur	妙蛙种子	
 2	0002	フシギソウ	Ivysaur	妙蛙草	
 3	0003	フシギバナ	Venusaur	妙蛙花	
@@ -21,8 +22,8 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 20	0014	ラッタ	Raticate	拉达	
 21	0015	オニスズメ	Spearow	烈雀	
 22	0016	オニドリル	Fearow	大嘴雀	
-23	0017	アーボ	Ekans	阿柏蛇	RF
-24	0018	アーボック	Arbok	阿柏怪	RF
+23	0017	アーボ	Ekans	阿柏蛇	FR
+24	0018	アーボック	Arbok	阿柏怪	FR
 25	0019	ピカチュウ	Pikachu	皮卡丘	
 26	001A	ライチュウ	Raichu	雷丘	
 27	001B	サンド	Sandshrew	穿山鼠	LG
@@ -41,8 +42,8 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 40	0028	プクリン	Wigglytuff	胖可丁	
 41	0029	ズバット	Zubat	超音蝠	
 42	002A	ゴルバット	Golbat	大嘴蝠	
-43	002B	ナゾノクサ	Oddish	走路草	RF
-44	002C	クサイハナ	Gloom	臭臭花	RF
+43	002B	ナゾノクサ	Oddish	走路草	FR
+44	002C	クサイハナ	Gloom	臭臭花	FR
 45	002D	ラフレシア	Vileplume	霸王花	
 46	002E	パラス	Paras	派拉斯	
 47	002F	パラセクト	Parasect	派拉斯特	
@@ -52,12 +53,12 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 51	0033	ダグトリオ	Dugtrio	三地鼠	
 52	0034	ニャース	Meowth	喵喵	
 53	0035	ペルシアン	Persian	猫老大	
-54	0036	コダック	Psyduck	可达鸭	RF
-55	0037	ゴルダック	Golduck	哥达鸭	RF
+54	0036	コダック	Psyduck	可达鸭	FR
+55	0037	ゴルダック	Golduck	哥达鸭	FR
 56	0038	マンキー	Mankey	猴怪	
 57	0039	オコリザル	Primeape	火暴猴	
-58	003A	ガーディ	Growlithe	卡蒂狗	RF
-59	003B	ウインディ	Arcanine	风速狗	RF
+58	003A	ガーディ	Growlithe	卡蒂狗	FR
+59	003B	ウインディ	Arcanine	风速狗	FR
 60	003C	ニョロモ	Poliwag	蚊香蝌蚪	
 61	003D	ニョロゾ	Poliwhirl	蚊香君	
 62	003E	ニョロボン	Poliwrath	蚊香泳士	
@@ -88,8 +89,8 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 87	0057	ジュゴン	Dewgong	白海狮	
 88	0058	ベトベター	Grimer	臭泥	
 89	0059	ベトベトン	Muk	臭臭泥	
-90	005A	シェルダー	Shellder	大舌贝	RF
-91	005B	パルシェン	Cloyster	刺甲贝	RF
+90	005A	シェルダー	Shellder	大舌贝	FR
+91	005B	パルシェン	Cloyster	刺甲贝	FR
 92	005C	ゴース	Gastly	鬼斯	
 93	005D	ゴースト	Haunter	鬼斯通	
 94	005E	ゲンガー	Gengar	耿鬼	
@@ -121,9 +122,9 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 120	0078	ヒトデマン	Staryu	海星星	LG
 121	0079	スターミー	Starmie	宝石海星	LG
 122	007A	バリヤード	Mr. Mime	魔墙人偶	
-123	007B	ストライク	Scyther	飞天螳螂	RF
+123	007B	ストライク	Scyther	飞天螳螂	FR
 124	007C	ルージュラ	Jynx	迷唇姐	
-125	007D	エレブー	Electabuzz	电击兽	RF
+125	007D	エレブー	Electabuzz	电击兽	FR
 126	007E	ブーバー	Magmar	鸭嘴火兽	LG
 127	007F	カイロス	Pinsir	凯罗斯	LG
 128	0080	ケンタロス	Tauros	肯泰罗	
@@ -180,7 +181,7 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 179	00B3	メリープ	Mareep	咩利羊	
 180	00B4	モココ	Flaaffy	茸茸羊	
 181	00B5	デンリュウ	Ampharos	电龙	
-182	00B6	キレイハナ	Bellossom	美丽花	RF
+182	00B6	キレイハナ	Bellossom	美丽花	FR
 183	00B7	マリル	Marill	玛力露	LG
 184	00B8	マリルリ	Azumarill	玛力露丽	LG
 185	00B9	ウソッキー	Sudowoodo	树才怪	
@@ -192,8 +193,8 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 191	00BF	ヒマナッツ	Sunkern	向日种子	
 192	00C0	キマワリ	Sunflora	向日花怪	
 193	00C1	ヤンヤンマ	Yanma	蜻蜻蜓	
-194	00C2	ウパー	Wooper	乌波	RF
-195	00C3	ヌオー	Quagsire	沼王	RF
+194	00C2	ウパー	Wooper	乌波	FR
+195	00C3	ヌオー	Quagsire	沼王	FR
 196	00C4	エーフィ	Espeon	太阳伊布	
 197	00C5	ブラッキー	Umbreon	月亮伊布	
 198	00C6	ヤミカラス	Murkrow	黑暗鸦	
@@ -209,8 +210,8 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 208	00D0	ハガネール	Steelix	大钢蛇	
 209	00D1	ブルー	Snubbull	布鲁	
 210	00D2	グランブル	Granbull	布鲁皇	
-211	00D3	ハリーセン	Qwilfish	千针鱼	RF
-212	00D4	ハッサム	Scizor	巨钳螳螂	RF
+211	00D3	ハリーセン	Qwilfish	千针鱼	FR
+212	00D4	ハッサム	Scizor	巨钳螳螂	FR
 213	00D5	ツボツボ	Shuckle	壶壶	
 214	00D6	ヘラクロス	Heracross	赫拉克罗斯	
 215	00D7	ニューラ	Sneasel	狃拉	LG
@@ -223,9 +224,9 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 222	00DE	サニーゴ	Corsola	太阳珊瑚	
 223	00DF	テッポウオ	Remoraid	铁炮鱼	LG
 224	00E0	オクタン	Octillery	章鱼桶	LG
-225	00E1	デリバード	Delibird	信使鸟	RF
+225	00E1	デリバード	Delibird	信使鸟	FR
 226	00E2	マンタイン	Mantine	巨翅飞鱼	LG
-227	00E3	エアームド	Skarmory	盔甲鸟	RF
+227	00E3	エアームド	Skarmory	盔甲鸟	FR
 228	00E4	デルビル	Houndour	戴鲁比	
 229	00E5	ヘルガー	Houndoom	黑鲁加	
 230	00E6	キングドラ	Kingdra	刺龙王	
@@ -237,7 +238,7 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 236	00EC	バルキー	Tyrogue	无畏小子	
 237	00ED	カポエラー	Hitmontop	战舞郎	
 238	00EE	ムチュール	Smoochum	迷唇娃	
-239	00EF	エレキッド	Elekid	电击怪	RF
+239	00EF	エレキッド	Elekid	电击怪	FR
 240	00F0	ブビィ	Magby	鸭嘴宝宝	LG
 241	00F1	ミルタンク	Miltank	大奶罐	
 242	00F2	ハピナス	Blissey	幸福蛋	
@@ -250,6 +251,31 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 249	00F9	ルギア	Lugia	洛奇亚	
 250	00FA	ホウオウ	Ho-Oh	凤王	
 251	00FB	セレビィ	Celebi	时拉比	
+252	00FC	N/A	N/A	N/A	
+253	00FD	N/A	N/A	N/A	
+254	00FE	N/A	N/A	N/A	
+255	00FF	N/A	N/A	N/A	
+256	0100	N/A	N/A	N/A	
+257	0101	N/A	N/A	N/A	
+258	0102	N/A	N/A	N/A	
+259	0103	N/A	N/A	N/A	
+260	0104	N/A	N/A	N/A	
+261	0105	N/A	N/A	N/A	
+262	0106	N/A	N/A	N/A	
+263	0107	N/A	N/A	N/A	
+264	0108	N/A	N/A	N/A	
+265	0109	N/A	N/A	N/A	
+266	010A	N/A	N/A	N/A	
+267	010B	N/A	N/A	N/A	
+268	010C	N/A	N/A	N/A	
+269	010D	N/A	N/A	N/A	
+270	010E	N/A	N/A	N/A	
+271	010F	N/A	N/A	N/A	
+272	0110	N/A	N/A	N/A	
+273	0111	N/A	N/A	N/A	
+274	0112	N/A	N/A	N/A	
+275	0113	N/A	N/A	N/A	
+276	0114	N/A	N/A	N/A	
 277	0115	キモリ	Treecko	木守宫	
 278	0116	ジュプトル	Grovyle	森林蜥蜴	
 279	0117	ジュカイン	Sceptile	蜥蜴王	
@@ -383,8 +409,9 @@ No.	hex	JP_name	EN_name	CN_name	Vers
 407	0197	ラティアス	Latias	拉帝亚斯	
 408	0198	ラティオス	Latios	拉帝欧斯	
 409	0199	ジラーチ	Jirachi	基拉祈	
-410	019A	デオキシス	Deoxys	代欧奇希斯	RF(act)/LG(def)
+410	019A	デオキシス	Deoxys	代欧奇希斯	FR(act)/LG(def)
 411	019B	チリーン	Chimecho	风铃铃	
+412	019C	N/A	N/A	N/A	
 413	019D	アンノーン（Ｂ）	Unown(B)	未知图腾（B）	
 414	019E	アンノーン（Ｃ）	Unown(C)	未知图腾（C）	
 415	019F	アンノーン（Ｄ）	Unown(D)	未知图腾（D）	
