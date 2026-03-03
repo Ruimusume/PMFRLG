@@ -1,4 +1,4 @@
-序号	hex	JP_name	EN_name	CN_name	Vers
+No.	hex	JP_name	EN_name	CN_name	Vers
 1	0001	フシギダネ	Bulbasaur	妙蛙种子	
 2	0002	フシギソウ	Ivysaur	妙蛙草	
 3	0003	フシギバナ	Venusaur	妙蛙花	
@@ -199,7 +199,7 @@
 198	00C6	ヤミカラス	Murkrow	黑暗鸦	
 199	00C7	ヤドキング	Slowking	呆呆王	LG
 200	00C8	ムウマ	Misdreavus	梦妖	
-201	00C9	アンノーン	Unown	未知图腾	
+201	00C9	アンノーン（Ａ）	Unown(A)	未知图腾（A）	
 202	00CA	ソーナンス	Wobbuffet	果然翁	
 203	00CB	キリンリキ	Girafarig	麒麟奇	
 204	00CC	クヌギダマ	Pineco	榛果球	
@@ -250,7 +250,6 @@
 249	00F9	ルギア	Lugia	洛奇亚	
 250	00FA	ホウオウ	Ho-Oh	凤王	
 251	00FB	セレビィ	Celebi	时拉比	
-252	00FC	から 0114 ?	#N/A	#N/A	
 277	0115	キモリ	Treecko	木守宫	
 278	0116	ジュプトル	Grovyle	森林蜥蜴	
 279	0117	ジュカイン	Sceptile	蜥蜴王	
@@ -386,3 +385,30 @@
 409	0199	ジラーチ	Jirachi	基拉祈	
 410	019A	デオキシス	Deoxys	代欧奇希斯	RF(act)/LG(def)
 411	019B	チリーン	Chimecho	风铃铃	
+413	019D	アンノーン（Ｂ）	Unown(B)	未知图腾（B）	
+414	019E	アンノーン（Ｃ）	Unown(C)	未知图腾（C）	
+415	019F	アンノーン（Ｄ）	Unown(D)	未知图腾（D）	
+416	01A0	アンノーン（Ｅ）	Unown(E)	未知图腾（E）	
+417	01A1	アンノーン（Ｆ）	Unown(F)	未知图腾（F）	
+418	01A2	アンノーン（Ｇ）	Unown(G)	未知图腾（G）	
+419	01A3	アンノーン（Ｈ）	Unown(H)	未知图腾（H）	
+420	01A4	アンノーン（Ｉ）	Unown(I)	未知图腾（I）	
+421	01A5	アンノーン（Ｊ）	Unown(J)	未知图腾（J）	
+422	01A6	アンノーン（Ｋ）	Unown(K)	未知图腾（K）	
+423	01A7	アンノーン（Ｌ）	Unown(L)	未知图腾（L）	
+424	01A8	アンノーン（Ｍ）	Unown(M)	未知图腾（M）	
+425	01A9	アンノーン（Ｎ）	Unown(N)	未知图腾（N）	
+426	01AA	アンノーン（Ｏ）	Unown(O)	未知图腾（O）	
+427	01AB	アンノーン（Ｐ）	Unown(P)	未知图腾（P）	
+428	01AC	アンノーン（Ｑ）	Unown(Q)	未知图腾（Q）	
+429	01AD	アンノーン（Ｒ）	Unown(R)	未知图腾（R）	
+430	01AE	アンノーン（Ｓ）	Unown(S)	未知图腾（S）	
+431	01AF	アンノーン（Ｔ）	Unown(T)	未知图腾（T）	
+432	01B0	アンノーン（Ｕ）	Unown(U)	未知图腾（U）	
+433	01B1	アンノーン（Ｖ）	Unown(V)	未知图腾（V）	
+434	01B2	アンノーン（Ｗ）	Unown(W)	未知图腾（W）	
+435	01B3	アンノーン（Ｘ）	Unown(X)	未知图腾（X）	
+436	01B4	アンノーン（Ｙ）	Unown(Y)	未知图腾（Y）	
+437	01B5	アンノーン（Ｚ）	Unown(Z)	未知图腾（Z）	
+438	01B6	アンノーン（！）	Unown(!)	未知图腾（!）	
+439	01B7	アンノーン（？）	Unown(?)	未知图腾（?）	
