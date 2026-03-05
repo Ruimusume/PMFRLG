@@ -5,44 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusme 露易娘</title>
 <style>
-.header-subtitle {
-    font-size: clamp(9px, 1vw, 14px);
-    padding: 0 3px;
-}
-.header-subtitle span {
-    display: block;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-}
-.header-subtitle {
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    opacity: 0.8;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-}
-.main-title {
-    font-size: clamp(14px, 4vw, 24px);
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 6px;
-    display: block;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    word-break: keep-all;
-}
-.main-title {
-    font-size: clamp(12px, 2vw, 20px);
-    padding: 0 3px;
-}
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +32,39 @@ body {
     color: #666;
     font-size: 1.1rem;
 }
+.main-title {
+    font-size: clamp(12px, 2vw, 20px);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    word-break: keep-all;
+    padding: 0 3px;
+}
+.header-subtitle {
+    font-size: clamp(9px, 1vw, 14px);
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3px;
+}
+.header-subtitle span {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
 .search-bar {
     margin-bottom: 20px;
     display: flex;
@@ -89,6 +84,21 @@ body {
 .search-bar input:focus {
     border-color: #E60A24;
     box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+.table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #E60A24;
+    border-radius: 3px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
 }
 .pokemon-table {
     width: 100%;
@@ -122,24 +132,11 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.pokemon-table td:nth-child(7) img,
-.pokemon-table td:nth-child(8) img,
-.pokemon-table td:nth-child(9) img,
-.pokemon-table td:nth-child(10) img {
-    object-fit: contain;
-    border-radius: 8px;
-    background: #f8f8f8;
-    padding: 5px;
-}
-.pokemon-table td img:hover {
-    transform: none;
-}
 .pokemon-table tr {
     transition: background-color 0.3s;
 }
 .pokemon-table tr:hover {
     background-color: #f9f2f2;
-    transform: none;
 }
 .pokemon-table tr:nth-child(even) {
     background-color: #fafafa;
@@ -171,64 +168,6 @@ body {
 .version-lg {
     background-color: #02A31A;
 }
-
-@media (max-width: 992px) {
-.container {
-    padding: 20px;
-}
-.pokemon-table th {
-    font-size: 0.8rem;
-    padding: 8px 5px;
-}
-.pokemon-table td {
-    font-size: 0.75rem;
-    padding: 8px 5px;
-}
-.search-bar input {
-    font-size: 0.9rem;
-    padding: 10px 12px;
-}
-}
-
-@media (max-width: 480px) {
-.search-bar {
-    flex-direction: column;
-}
-
-.pokemon-table td:nth-child(3) img {
-    width: 14px;
-
-}
-.pokemon-table th {
-    font-size: 0.7rem;
-    padding: 6px 3px;
-}
-.pokemon-table td {
-    font-size: 0.65rem;
-    padding: 6px 3px;
-}
-.header {
-    font-size: 0.85rem;
-}
-.header p {
-    font-size: 0.9rem;
-}
-}
-.table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
-.table-wrapper::-webkit-scrollbar {
-height: 6px;
-}
-.table-wrapper::-webkit-scrollbar-thumb {
-background-color: #E60A24;
-border-radius: 3px;
-}
-.table-wrapper::-webkit-scrollbar-track {
-background-color: #f0f0f0;
-}
 .footer-copyright {
     max-width: 1400px;
     margin: 15px auto 0;
@@ -237,14 +176,6 @@ background-color: #f0f0f0;
     font-size: 14px;
     color: #888;
     opacity: 0.9;
-}
-
-@media (max-width: 480px) {
-.footer-copyright {
-    font-size: 12px;
-    margin: 10px auto 0;
-    padding: 8px 0;
-}
 }
 .download-progress {
     position: fixed;
@@ -299,20 +230,6 @@ background-color: #f0f0f0;
 .offline-badge.hidden {
     display: none;
 }
-img[data-src] {
-    min-width: 32px;
-    min-height: 32px;
-    background: transparent;
-}
-img:not([src]), img[src=""] {
-    opacity: 0;
-    min-width: 32px;
-    min-height: 32px;
-}
-img.cached {
-    opacity: 1;
-}
-
 .debug-panel {
     position: fixed;
     bottom: 10px;
@@ -350,6 +267,93 @@ img.cached {
 .debug-panel .error { color: #f44336; }
 .debug-panel .warning { color: #ff9800; }
 .debug-panel .info { color: #2196F3; }
+.header-actions {
+    display: inline-flex;
+    gap: 5px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.action-btn {
+    background: #E60A24;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+.action-btn:hover {
+    background: #b0081d;
+}
+.action-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+.action-btn.small {
+    padding: 2px 8px;
+    font-size: 11px;
+}
+img[data-src] {
+    min-width: 32px;
+    min-height: 32px;
+    background: transparent;
+}
+img:not([src]), img[src=""] {
+    opacity: 0;
+    min-width: 32px;
+    min-height: 32px;
+}
+img.cached {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+.container {
+    padding: 20px;
+}
+.pokemon-table th {
+    font-size: 0.8rem;
+    padding: 8px 5px;
+}
+.pokemon-table td {
+    font-size: 0.75rem;
+    padding: 8px 5px;
+}
+.search-bar input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+}
+}
+
+@media (max-width: 480px) {
+.search-bar {
+    flex-direction: column;
+}
+.pokemon-table td:nth-child(3) img {
+    width: 14px;
+}
+.pokemon-table th {
+    font-size: 0.7rem;
+    padding: 6px 3px;
+}
+.pokemon-table td {
+    font-size: 0.65rem;
+    padding: 6px 3px;
+}
+.header {
+    font-size: 0.85rem;
+}
+.header p {
+    font-size: 0.9rem;
+}
+.footer-copyright {
+    font-size: 12px;
+    margin: 10px auto 0;
+    padding: 8px 0;
+}
+}
 </style>
 </head>
 <body>
@@ -372,11 +376,17 @@ img.cached {
   <div class="header">
     <div class="main-title">Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusume
         <span id="cacheBadge" class="offline-badge hidden">本地缓存</span>
-        <span style="font-size:12px; cursor:pointer; background:#E60A24; color:white; padding:2px 8px; border-radius:4px; margin-left:10px;" onclick="toggleDebug()">调试</span>
+        <span class="header-actions">
+            <button id="reloadCacheBtn" class="action-btn small" onclick="window.debugCache?.manualReload()">重新下载</button>
+            <button id="clearCacheBtn" class="action-btn small" onclick="window.debugCache?.clearAndReload()">清除缓存</button>
+            <span style="font-size:12px; cursor:pointer; background:#E60A24; color:white; padding:2px 8px; border-radius:4px;" onclick="toggleDebug()">调试</span>
+        </span>
     </div>
     <div class="header-subtitle"> Switch ポケットモンスター ファイアレッド・リーフグリーン 図鑑<br>
       Switch Pokémon Fire Red / Leaf Green DEX </div>
-    <img alt="logo" src="https://github.com/Ruimusume/PMFRLG/raw/main/icon/logo.webp" style="max-width: 100%; height: auto; max-height: 128px;"> </div>
+    <img alt="logo" src="https://github.com/Ruimusume/PMFRLG/raw/main/icon/logo.webp" style="max-width: 100%; height: auto; max-height: 128px;"> 
+  </div>
+  
   <div class="search-bar">
     <input type="text" id="searchInput" placeholder="Search...">
   </div>
@@ -6565,16 +6575,21 @@ img.cached {
 
 <script>
 (function() {
+
     const CONFIG = {
         zipUrl: 'https://raw.githubusercontent.com/Ruimusume/PMFRLG/main/img.zip',
         fallbackUrls: [
             'https://raw.githubusercontent.com/Ruimusume/PMFRLG/main/img.zip',
+            'https://cdn.jsdelivr.net/gh/Ruimusume/PMFRLG@main/img.zip'
         ],
         cacheVersion: '1.0',
         dbName: 'PokemonImages',
         storeName: 'images',
         baseUrl: '',
-        debug: true
+        debug: true,
+        maxRetries: 3,
+        batchSize: 20,
+        cacheExpiry: 7 * 24 * 60 * 60 * 1000
     };
 
     const debugPanel = document.getElementById('debugPanel');
@@ -6620,79 +6635,72 @@ img.cached {
         constructor() {
             this.db = null;
             this.ready = this.init();
+            this.initialized = false;
         }
 
         init() {
             return new Promise((resolve, reject) => {
-                const request = indexedDB.open(CONFIG.dbName, 3);
-                
-                request.onerror = () => {
-                    error('IndexedDB打开失败:', request.error);
-                    reject(request.error);
-                };
-                
-                request.onsuccess = () => {
-                    this.db = request.result;
-                    success('IndexedDB打开成功');
-                    resolve();
-                };
-                
-                request.onupgradeneeded = (event) => {
-                    const db = event.target.result;
-                    log('IndexedDB升级，旧版本:', event.oldVersion);
+                try {
+                    const request = indexedDB.open(CONFIG.dbName, 4);
                     
-                    if (db.objectStoreNames.contains(CONFIG.storeName)) {
-                        db.deleteObjectStore(CONFIG.storeName);
-                        log('删除旧存储');
-                    }
+                    request.onerror = () => {
+                        error('IndexedDB打开失败:', request.error);
+                        reject(request.error);
+                    };
                     
-                    const store = db.createObjectStore(CONFIG.storeName, { keyPath: 'url' });
-                    store.createIndex('version', 'version', { unique: false });
-                    store.createIndex('filename', 'filename', { unique: false });
-                    success('创建新存储');
-                };
+                    request.onsuccess = () => {
+                        this.db = request.result;
+                        this.initialized = true;
+
+                        this.db.onclose = () => {
+                            warn('IndexedDB被关闭');
+                            this.initialized = false;
+                        };
+                        
+                        this.db.onerror = (e) => {
+                            error('IndexedDB错误:', e.target.error);
+                        };
+                        
+                        success('IndexedDB打开成功');
+                        resolve();
+                    };
+                    
+                    request.onupgradeneeded = (event) => {
+                        const db = event.target.result;
+                        const oldVersion = event.oldVersion;
+                        log('IndexedDB升级，旧版本:', oldVersion, '新版本:', 4);
+
+                        if (db.objectStoreNames.contains(CONFIG.storeName)) {
+                            db.deleteObjectStore(CONFIG.storeName);
+                            log('删除旧存储');
+                        }
+
+                        const store = db.createObjectStore(CONFIG.storeName, { keyPath: 'url' });
+                        store.createIndex('version', 'version', { unique: false });
+                        store.createIndex('filename', 'filename', { unique: false });
+                        store.createIndex('timestamp', 'timestamp', { unique: false });
+                        success('创建新存储');
+                    };
+                } catch (e) {
+                    error('IndexedDB初始化异常:', e);
+                    reject(e);
+                }
             });
+        }
+
+        async ensureConnection() {
+            if (!this.initialized || !this.db) {
+                await this.ready;
+            }
         }
 
         async saveImage(url, blob, filename) {
-            await this.ready;
+            await this.ensureConnection();
             return new Promise((resolve, reject) => {
-                const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
-                const store = transaction.objectStore(CONFIG.storeName);
-                
-                const data = {
-                    url: url,
-                    blob: blob,
-                    filename: filename,
-                    version: CONFIG.cacheVersion,
-                    timestamp: Date.now()
-                };
-                
-                const request = store.put(data);
-                
-                request.onsuccess = () => {
-                    success('缓存成功:', filename);
-                    resolve();
-                };
-                
-                request.onerror = () => {
-                    error('缓存失败:', filename, request.error);
-                    reject(request.error);
-                };
-            });
-        }
-
-        async saveMultipleImages(entries) {
-            await this.ready;
-            return new Promise((resolve, reject) => {
-                const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
-                const store = transaction.objectStore(CONFIG.storeName);
-                
-                let completed = 0;
-                let failed = 0;
-                const total = entries.length;
-                
-                entries.forEach(({ url, blob, filename }) => {
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    
                     const data = {
                         url: url,
                         blob: blob,
@@ -6704,127 +6712,297 @@ img.cached {
                     const request = store.put(data);
                     
                     request.onsuccess = () => {
-                        completed++;
-                        if ((completed + failed) % 50 === 0) {
-                            log(`缓存进度: ${completed}/${total}`);
-                        }
-                        if (completed + failed === total) {
-                            success(`批量保存完成: ${completed}成功, ${failed}失败`);
-                            resolve();
-                        }
+                        success('缓存成功:', filename);
+                        resolve();
                     };
                     
                     request.onerror = () => {
-                        failed++;
-                        error('批量保存失败:', filename);
-                        if (completed + failed === total) {
-                            warn(`批量保存完成，有${failed}个失败`);
-                            resolve();
-                        }
+                        error('缓存失败:', filename, request.error);
+                        reject(request.error);
                     };
-                });
+                    
+                } catch (e) {
+                    error('保存图片异常:', e);
+                    reject(e);
+                }
+            });
+        }
+
+        async saveMultipleImages(entries) {
+            await this.ensureConnection();
+            return new Promise((resolve, reject) => {
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    
+                    let completed = 0;
+                    let failed = 0;
+                    const total = entries.length;
+                    
+                    entries.forEach(({ url, blob, filename }) => {
+                        const data = {
+                            url: url,
+                            blob: blob,
+                            filename: filename,
+                            version: CONFIG.cacheVersion,
+                            timestamp: Date.now()
+                        };
+                        
+                        const request = store.put(data);
+                        
+                        request.onsuccess = () => {
+                            completed++;
+                            if (completed % 50 === 0) {
+                                log(`缓存进度: ${completed}/${total}`);
+                            }
+                            checkComplete();
+                        };
+                        
+                        request.onerror = () => {
+                            failed++;
+                            error('批量保存失败:', filename);
+                            checkComplete();
+                        };
+                        
+                        function checkComplete() {
+                            if (completed + failed === total) {
+                                if (failed === 0) {
+                                    success(`批量保存完成: ${completed}成功`);
+                                } else {
+                                    warn(`批量保存完成: ${completed}成功, ${failed}失败`);
+                                }
+                                resolve({ completed, failed });
+                            }
+                        }
+                    });
+                    
+                } catch (e) {
+                    error('批量保存异常:', e);
+                    reject(e);
+                }
             });
         }
 
         async getImage(url) {
-            await this.ready;
+            await this.ensureConnection();
             return new Promise((resolve, reject) => {
-                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
-                const store = transaction.objectStore(CONFIG.storeName);
-                const request = store.get(url);
-                
-                request.onsuccess = () => {
-                    const data = request.result;
-                    if (data && data.version === CONFIG.cacheVersion) {
-                        success('缓存命中:', data.filename);
-                        resolve(data.blob);
-                    } else {
-                        if (data) {
-                            warn('缓存版本不匹配:', data.filename, '期望:', CONFIG.cacheVersion, '实际:', data.version);
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    const request = store.get(url);
+                    
+                    request.onsuccess = () => {
+                        const data = request.result;
+                        if (data && data.version === CONFIG.cacheVersion) {
+
+                            if (Date.now() - data.timestamp > CONFIG.cacheExpiry) {
+                                log('缓存已过期:', data.filename);
+                                resolve(null);
+                                return;
+                            }
+                            success('缓存命中:', data.filename);
+                            resolve(data.blob);
                         } else {
-                            log('缓存未找到:', url);
+                            if (data) {
+                                if (data.version !== CONFIG.cacheVersion) {
+                                    warn('缓存版本不匹配:', data.filename, '期望:', CONFIG.cacheVersion, '实际:', data.version);
+                                }
+                                if (Date.now() - data.timestamp > CONFIG.cacheExpiry) {
+                                    log('缓存已过期:', data.filename);
+                                }
+                            } else {
+                                log('缓存未找到:', url);
+                            }
+                            resolve(null);
                         }
-                        resolve(null);
-                    }
-                };
-                request.onerror = () => {
-                    error('缓存读取失败:', url);
-                    reject(request.error);
-                };
+                    };
+                    
+                    request.onerror = () => {
+                        error('缓存读取失败:', url, request.error);
+                        reject(request.error);
+                    };
+                    
+                } catch (e) {
+                    error('获取图片异常:', e);
+                    reject(e);
+                }
             });
         }
 
         async hasImages() {
-            await this.ready;
+            await this.ensureConnection();
             return new Promise((resolve, reject) => {
-                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
-                const store = transaction.objectStore(CONFIG.storeName);
-                const countRequest = store.count();
-                
-                countRequest.onsuccess = () => {
-                    log('当前缓存图片数量:', countRequest.result);
-                    resolve(countRequest.result > 0);
-                };
-                countRequest.onerror = () => {
-                    reject(countRequest.error);
-                };
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    const countRequest = store.count();
+                    
+                    countRequest.onsuccess = () => {
+                        const count = countRequest.result;
+                        log('当前缓存图片数量:', count);
+                        resolve(count > 0);
+                    };
+                    
+                    countRequest.onerror = () => {
+                        reject(countRequest.error);
+                    };
+                    
+                } catch (e) {
+                    error('检查缓存异常:', e);
+                    reject(e);
+                }
             });
         }
 
         async getImageCount() {
-            await this.ready;
+            await this.ensureConnection();
             return new Promise((resolve, reject) => {
-                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
-                const store = transaction.objectStore(CONFIG.storeName);
-                const countRequest = store.count();
-                
-                countRequest.onsuccess = () => {
-                    resolve(countRequest.result);
-                };
-                countRequest.onerror = () => {
-                    reject(countRequest.error);
-                };
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    const countRequest = store.count();
+                    
+                    countRequest.onsuccess = () => {
+                        resolve(countRequest.result);
+                    };
+                    
+                    countRequest.onerror = () => {
+                        reject(countRequest.error);
+                    };
+                    
+                } catch (e) {
+                    error('获取计数异常:', e);
+                    reject(e);
+                }
             });
         }
 
         async getSampleUrls(limit = 5) {
-            await this.ready;
+            await this.ensureConnection();
             return new Promise((resolve, reject) => {
-                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
-                const store = transaction.objectStore(CONFIG.storeName);
-                const urls = [];
-                
-                const request = store.openCursor();
-                request.onsuccess = (event) => {
-                    const cursor = event.target.result;
-                    if (cursor && urls.length < limit) {
-                        urls.push(cursor.value.url);
-                        cursor.continue();
-                    } else {
-                        resolve(urls);
-                    }
-                };
-                request.onerror = () => {
-                    reject(request.error);
-                };
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    const urls = [];
+                    
+                    const request = store.openCursor();
+                    request.onsuccess = (event) => {
+                        const cursor = event.target.result;
+                        if (cursor && urls.length < limit) {
+                            urls.push(cursor.value.url);
+                            cursor.continue();
+                        } else {
+                            resolve(urls);
+                        }
+                    };
+                    
+                    request.onerror = () => {
+                        reject(request.error);
+                    };
+                    
+                } catch (e) {
+                    error('获取示例URL异常:', e);
+                    reject(e);
+                }
             });
         }
 
         async clear() {
-            await this.ready;
+            await this.ensureConnection();
             return new Promise((resolve, reject) => {
-                const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
-                const store = transaction.objectStore(CONFIG.storeName);
-                const request = store.clear();
-                
-                request.onsuccess = () => {
-                    log('缓存已清空');
-                    resolve();
-                };
-                request.onerror = () => {
-                    error('清空缓存失败');
-                    reject(request.error);
-                };
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    const request = store.clear();
+                    
+                    request.onsuccess = () => {
+                        log('缓存已清空');
+                        resolve();
+                    };
+                    
+                    request.onerror = () => {
+                        error('清空缓存失败', request.error);
+                        reject(request.error);
+                    };
+                    
+                } catch (e) {
+                    error('清空缓存异常:', e);
+                    reject(e);
+                }
+            });
+        }
+
+        async deleteDatabase() {
+            return new Promise((resolve, reject) => {
+                try {
+                    if (this.db) {
+                        this.db.close();
+                        this.db = null;
+                        this.initialized = false;
+                    }
+                    
+                    const request = indexedDB.deleteDatabase(CONFIG.dbName);
+                    
+                    request.onsuccess = () => {
+                        success('数据库删除成功');
+                        resolve();
+                    };
+                    
+                    request.onerror = () => {
+                        error('数据库删除失败', request.error);
+                        reject(request.error);
+                    };
+                    
+                    request.onblocked = () => {
+                        warn('数据库删除被阻塞，请关闭其他标签页');
+                        reject(new Error('数据库删除被阻塞'));
+                    };
+                    
+                } catch (e) {
+                    error('删除数据库异常:', e);
+                    reject(e);
+                }
+            });
+        }
+
+        async cleanupExpired() {
+            await this.ensureConnection();
+            return new Promise((resolve, reject) => {
+                try {
+                    const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
+                    const store = transaction.objectStore(CONFIG.storeName);
+                    const index = store.index('timestamp');
+                    const expiryTime = Date.now() - CONFIG.cacheExpiry;
+                    
+                    const range = IDBKeyRange.upperBound(expiryTime);
+                    const request = index.openCursor(range);
+                    
+                    let deletedCount = 0;
+                    
+                    request.onsuccess = (event) => {
+                        const cursor = event.target.result;
+                        if (cursor) {
+                            store.delete(cursor.primaryKey);
+                            deletedCount++;
+                            cursor.continue();
+                        }
+                    };
+                    
+                    transaction.oncomplete = () => {
+                        if (deletedCount > 0) {
+                            log(`清理了 ${deletedCount} 个过期缓存`);
+                        }
+                        resolve(deletedCount);
+                    };
+                    
+                    transaction.onerror = () => {
+                        reject(transaction.error);
+                    };
+                    
+                } catch (e) {
+                    error('清理过期缓存异常:', e);
+                    reject(e);
+                }
             });
         }
     }
@@ -6848,26 +7026,43 @@ img.cached {
                 resolve(window.JSZip);
             };
             script.onerror = (e) => {
-                error('JSZip加载失败', e);
-                reject(e);
+                error('JSZip加载失败，尝试备用CDN...');
+                // 尝试备用CDN
+                const backupScript = document.createElement('script');
+                backupScript.src = 'https://cdn.bootcdn.net/ajax/libs/jszip/3.10.1/jszip.min.js';
+                backupScript.onload = () => {
+                    success('JSZip备用CDN加载成功');
+                    resolve(window.JSZip);
+                };
+                backupScript.onerror = () => {
+                    error('JSZip加载失败');
+                    reject(e);
+                };
+                document.head.appendChild(backupScript);
             };
             
             document.head.appendChild(script);
         });
     }
 
-    async function downloadWithRetry(url, retries = 3) {
+    async function downloadWithRetry(url, retries = CONFIG.maxRetries) {
         for (let i = 0; i < retries; i++) {
             try {
                 log(`下载尝试 ${i+1}/${retries}:`, url);
                 
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000);
+                
                 const response = await fetch(url + '?t=' + Date.now(), {
                     mode: 'cors',
                     credentials: 'omit',
+                    signal: controller.signal,
                     headers: {
                         'Accept': 'application/octet-stream'
                     }
                 });
+                
+                clearTimeout(timeoutId);
                 
                 if (response.ok) {
                     success('下载成功，状态:', response.status);
@@ -6878,47 +7073,95 @@ img.cached {
                 if (response.status === 404) {
                     throw new Error('文件不存在 (404)');
                 }
+                if (response.status === 429) {
+
+                    await new Promise(resolve => setTimeout(resolve, 5000 * (i + 1)));
+                }
             } catch (e) {
                 error('下载异常:', e.message);
+                if (e.name === 'AbortError') {
+                    error('下载超时');
+                }
                 if (i === retries - 1) throw e;
-                await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
+                await new Promise(resolve => setTimeout(resolve, 2000 * (i + 1)));
             }
         }
         throw new Error('下载失败');
     }
 
     function normalizePath(path) {
+        if (!path) return path;
         let normalized = path.replace(/\\/g, '/');
         normalized = normalized.replace(/^\//, '');
         normalized = normalized.replace(/\/+/g, '/');
-        return normalized;
+
+        return normalized.toLowerCase();
     }
 
     function extractCachePath(zipPath) {
-        let normalized = zipPath.replace(/\\/g, '/');
+        let normalized = zipPath.replace(/\\/g, '/').toLowerCase();
+
+        const patterns = [
+            /^img\//i,
+            /.*\/img\//i,
+            /^.*?img\//i
+        ];
         
-        if (normalized.startsWith('img/')) {
-            return normalized;
-        }
-        
-        const imgIndex = normalized.indexOf('img/');
-        if (imgIndex !== -1) {
-            return normalized.substring(imgIndex);
+        for (const pattern of patterns) {
+            const match = normalized.match(pattern);
+            if (match) {
+                const start = match[0].length;
+                return 'img/' + normalized.substring(start);
+            }
         }
 
         return normalized;
     }
 
-    async function loadImageWithCache(img) {
+    async function loadAllImages() {
+        log('开始加载所有图片');
+        const images = document.querySelectorAll('img[data-src]');
+        log(`找到 ${images.length} 张图片需要加载`);
+        
+        let loaded = 0;
+        let failed = 0;
+        
+        const loadPromises = [];
+        
+        for (const img of images) {
+            loadPromises.push(
+                loadImage(img).then(result => {
+                    if (result) {
+                        loaded++;
+                    } else {
+                        failed++;
+                    }
+                }).catch(() => {
+                    failed++;
+                })
+            );
+
+            if (loadPromises.length >= 20) {
+                await Promise.all(loadPromises);
+                loadPromises.length = 0;
+                await new Promise(resolve => setTimeout(resolve, 10));
+            }
+        }
+        
+        if (loadPromises.length > 0) {
+            await Promise.all(loadPromises);
+        }
+        
+        log(`图片加载完成: ${loaded}成功, ${failed}失败`);
+    }
+
+    async function loadImage(img) {
         const realSrc = img.getAttribute('data-src');
         if (!realSrc) return false;
 
-        const normalizedSrc = normalizePath(realSrc);
+        if (img.classList.contains('loaded')) return true;
 
-        if (normalizedSrc !== realSrc) {
-            img.setAttribute('data-src', normalizedSrc);
-        }
-        
+        const normalizedSrc = normalizePath(realSrc);
         const filename = normalizedSrc.split('/').pop()?.split('?')[0] || 'unknown';
         
         try {
@@ -6926,63 +7169,82 @@ img.cached {
             const cachedBlob = await imageCache.getImage(normalizedSrc);
             
             if (cachedBlob) {
-                const url = URL.createObjectURL(cachedBlob);
-                img.src = url;
-                img.onload = () => {
-                    URL.revokeObjectURL(url);
-                    img.classList.add('cached');
-                    img.removeAttribute('data-src');
-                    success('图片加载成功:', filename);
-                };
-                img.onerror = (e) => {
-                    URL.revokeObjectURL(url);
-                    warn('缓存图片加载失败，降级到网络:', filename, e);
-                    img.src = normalizedSrc;
-                };
-                return true;
+                return new Promise((resolve) => {
+                    const url = URL.createObjectURL(cachedBlob);
+                    img.src = url;
+                    img.onload = () => {
+                        URL.revokeObjectURL(url);
+                        img.classList.add('loaded', 'cached');
+                        img.removeAttribute('data-src');
+                        success('缓存图片加载成功:', filename);
+                        resolve(true);
+                    };
+                    img.onerror = (e) => {
+                        URL.revokeObjectURL(url);
+                        warn('缓存图片加载失败，降级到网络:', filename, e);
+
+                        loadFromNetwork(img, normalizedSrc, filename).then(resolve);
+                    };
+                });
             } else {
-                log('缓存未命中，从网络加载:', filename);
-                img.src = normalizedSrc;
-                img.onload = () => {
-                    img.removeAttribute('data-src');
-                    success('网络图片加载成功:', filename);
-                };
-                img.onerror = (e) => {
-                    error('网络图片加载失败:', filename, normalizedSrc, e);
-                };
-                return false;
+
+                return loadFromNetwork(img, normalizedSrc, filename);
             }
         } catch (error) {
             error('缓存读取失败，从网络加载:', error);
-            img.src = normalizedSrc;
-            img.removeAttribute('data-src');
-            return false;
+            return loadFromNetwork(img, normalizedSrc, filename);
         }
     }
 
-    async function downloadAndExtractZip() {
+    function loadFromNetwork(img, src, filename) {
+        return new Promise((resolve) => {
+            const timestamp = Date.now();
+            const url = src + (src.includes('?') ? '&' : '?') + 't=' + timestamp;
+            
+            img.src = url;
+            img.onload = () => {
+                img.classList.add('loaded');
+                img.removeAttribute('data-src');
+                success('网络图片加载成功:', filename);
+                resolve(true);
+            };
+            img.onerror = (e) => {
+                error('网络图片加载失败:', filename, src, e);
+                img.src = 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 32 32\'%3E%3Crect width=\'32\' height=\'32\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'8\' y=\'20\' font-size=\'12\' fill=\'%23999\'%3E?%3C/text%3E%3C/svg%3E';
+                img.classList.add('loaded', 'error');
+                img.removeAttribute('data-src');
+                resolve(false);
+            };
+        });
+    }
+
+    async function downloadAndExtractZip(manual = false) {
         const progressDiv = document.getElementById('downloadProgress');
         const progressFill = document.getElementById('progressFill');
         const progressText = document.getElementById('progressText');
         const errorMsg = document.getElementById('errorMessage');
+        const reloadBtn = document.getElementById('reloadCacheBtn');
+        const clearBtn = document.getElementById('clearCacheBtn');
         
         progressDiv.classList.remove('hidden');
         progressFill.style.width = '0%';
+
+        if (reloadBtn) reloadBtn.disabled = true;
+        if (clearBtn) clearBtn.disabled = true;
         
         try {
-            log('清空旧缓存...');
-            await imageCache.clear();
+            await imageCache.cleanupExpired();
 
             errorMsg.textContent = '正在连接...';
             let response;
-            
+
             for (const url of CONFIG.fallbackUrls) {
                 try {
                     response = await downloadWithRetry(url);
                     success('使用链接成功:', url);
                     break;
                 } catch (e) {
-                    warn('链接失败:', url);
+                    warn('链接失败:', url, e.message);
                     continue;
                 }
             }
@@ -7011,6 +7273,10 @@ img.cached {
                     const mbLoaded = (loaded / 1024 / 1024).toFixed(1);
                     const mbTotal = (total / 1024 / 1024).toFixed(1);
                     progressText.textContent = `下载中 ${mbLoaded}MB / ${mbTotal}MB (${percent}%)`;
+                } else {
+
+                    const mbLoaded = (loaded / 1024 / 1024).toFixed(1);
+                    progressText.textContent = `下载中 ${mbLoaded}MB ...`;
                 }
             }
             
@@ -7038,67 +7304,63 @@ img.cached {
                 }
             });
             
-            log('ZIP内原始路径（前10个）:', imageFiles.slice(0, 10));
+            log('ZIP内原始路径总数:', imageFiles.length);
             
             const totalImages = imageFiles.length;
             errorMsg.textContent = `找到 ${totalImages} 张图片`;
             
-            const batchSize = 30;
+            const batchSize = CONFIG.batchSize;
             let processed = 0;
             let successCount = 0;
+
+            const allEntries = [];
             
-            for (let i = 0; i < imageFiles.length; i += batchSize) {
-                const batch = imageFiles.slice(i, i + batchSize);
-                const saveEntries = [];
-                
-                for (const originalPath of batch) {
-                    try {
-                        const file = zip.files[originalPath];
-                        const blob = await file.async('blob');
-
-                        const cachePath = extractCachePath(originalPath);
-
-                        const normalizedPath = normalizePath(cachePath);
-                        
-                        log('缓存路径:', originalPath, '->', normalizedPath);
-                        
-                        saveEntries.push({ 
-                            url: normalizedPath, 
-                            blob, 
-                            filename: normalizedPath 
-                        });
-                        successCount++;
-                        
-                    } catch (e) {
-                        error('处理文件失败:', originalPath, e.message);
-                    }
+            for (const originalPath of imageFiles) {
+                try {
+                    const file = zip.files[originalPath];
+                    const blob = await file.async('blob');
+                    const cachePath = extractCachePath(originalPath);
+                    const normalizedPath = normalizePath(cachePath);
+                    
+                    allEntries.push({ 
+                        url: normalizedPath, 
+                        blob, 
+                        filename: normalizedPath 
+                    });
+                    successCount++;
+                    
+                } catch (e) {
+                    error('处理文件失败:', originalPath, e.message);
                 }
-                
-                if (saveEntries.length > 0) {
-                    await imageCache.saveMultipleImages(saveEntries);
-                }
+            }
+
+            for (let i = 0; i < allEntries.length; i += batchSize) {
+                const batch = allEntries.slice(i, i + batchSize);
+                await imageCache.saveMultipleImages(batch);
                 
                 processed += batch.length;
                 const percent = Math.round((processed / totalImages) * 100);
                 progressFill.style.width = percent + '%';
                 progressText.textContent = `${processed}/${totalImages} 已缓存 (${percent}%)`;
-                
+
                 await new Promise(resolve => setTimeout(resolve, 10));
             }
 
-            progressFill.style.width = '100%';
-            progressText.textContent = `完成！共缓存 ${successCount} 张图片`;
-            errorMsg.textContent = '图片缓存成功！正在验证...';
-            
             const finalCount = await imageCache.getImageCount();
             success('最终缓存图片数量:', finalCount);
             
+            progressFill.style.width = '100%';
+            progressText.textContent = `完成！共缓存 ${finalCount} 张图片`;
+            
             if (finalCount > 0) {
-                const samples = await imageCache.getSampleUrls();
-                log('缓存示例URLs:', samples);
-                
                 document.getElementById('cacheBadge').classList.remove('hidden');
                 errorMsg.textContent = `缓存成功！共 ${finalCount} 张图片，即将刷新...`;
+
+                try {
+                    localStorage.setItem('lastCacheVersion', CONFIG.cacheVersion);
+                    localStorage.setItem('lastCacheTime', Date.now().toString());
+                } catch (e) {
+                }
                 
                 setTimeout(() => {
                     window.location.reload();
@@ -7111,29 +7373,25 @@ img.cached {
             error('下载流程失败:', error);
             errorMsg.textContent = `错误: ${error.message}`;
             progressText.textContent = '下载失败，使用普通加载模式';
+
+            const retryBtn = document.createElement('button');
+            retryBtn.className = 'action-btn';
+            retryBtn.textContent = '重试下载';
+            retryBtn.onclick = () => {
+                progressDiv.querySelector('.error-message')?.removeChild(retryBtn);
+                downloadAndExtractZip(true);
+            };
+            errorMsg.appendChild(document.createElement('br'));
+            errorMsg.appendChild(retryBtn);
             
             setTimeout(() => {
                 progressDiv.classList.add('hidden');
-                initLazyLoad();
-            }, 3000);
+                loadAllImages();
+            }, 5000);
+        } finally {
+            if (reloadBtn) reloadBtn.disabled = false;
+            if (clearBtn) clearBtn.disabled = false;
         }
-    }
-
-    function initLazyLoad() {
-        log('启动懒加载模式');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    loadImageWithCache(img);
-                    observer.unobserve(img);
-                }
-            });
-        }, { rootMargin: '200px 0px' });
-        
-        document.querySelectorAll('img[data-src]').forEach(img => {
-            observer.observe(img);
-        });
     }
 
     function normalizeAllImagePaths() {
@@ -7151,24 +7409,38 @@ img.cached {
 
     async function checkCacheAndStart() {
         try {
+            let needRedownload = false;
+            try {
+                const lastVersion = localStorage.getItem('lastCacheVersion');
+                if (lastVersion && lastVersion !== CONFIG.cacheVersion) {
+                    log('缓存版本已变更，需要重新下载');
+                    needRedownload = true;
+                }
+            } catch (e) {
+            }
+
             const hasCache = await imageCache.hasImages();
             const count = hasCache ? await imageCache.getImageCount() : 0;
             
-            if (hasCache && count > 100) {
+            if (!needRedownload && hasCache && count > 100) {
                 success(`使用本地缓存 (${count}张图片)`);
                 document.getElementById('cacheBadge').classList.remove('hidden');
-
+                
                 const samples = await imageCache.getSampleUrls();
                 log('缓存示例URLs:', samples);
-                
-                initLazyLoad();
+
+                await loadAllImages();
             } else {
-                log('首次运行或缓存不足，开始下载');
+                if (needRedownload) {
+                    log('版本变更，重新下载');
+                } else {
+                    log('首次运行或缓存不足，开始下载');
+                }
                 await downloadAndExtractZip();
             }
         } catch (e) {
             error('缓存检查失败', e);
-            initLazyLoad();
+            loadAllImages();
         }
     }
 
@@ -7199,24 +7471,53 @@ img.cached {
         if (e.key === 'Enter') searchPokemon();
     });
 
+    window.manualReloadCache = async function() {
+        if (confirm('确定要重新下载所有图片缓存吗？')) {
+            try {
+                await imageCache.clear();
+                await downloadAndExtractZip(true);
+            } catch (e) {
+                error('手动重载失败:', e);
+                alert('重载失败，请查看控制台');
+            }
+        }
+    };
+
+    window.clearAndReload = async function() {
+        if (confirm('确定要清除所有缓存并刷新页面吗？')) {
+            try {
+                await imageCache.deleteDatabase();
+                localStorage.removeItem('lastCacheVersion');
+                localStorage.removeItem('lastCacheTime');
+                window.location.reload();
+            } catch (e) {
+                error('清除缓存失败:', e);
+                alert('清除失败，请查看控制台');
+            }
+        }
+    };
+
     window.addEventListener('DOMContentLoaded', () => {
-        normalizeAllImagePaths(); 
+        normalizeAllImagePaths();
         setTimeout(checkCacheAndStart, 100);
     });
 
     window.debugCache = {
         clear: () => imageCache.clear(),
-        info: () => imageCache.getImageCount(),
+        clearAndReload: window.clearAndReload,
+        info: () => imageCache.getImageCount().then(count => console.log('缓存数量:', count)),
         reload: () => window.location.reload(),
+        manualReload: window.manualReloadCache,
         logs: () => console.log(document.getElementById('debugLogs').innerText),
-        checkPath: (path) => {
+        checkPath: async (path) => {
             const normalized = normalizePath(path);
             console.log('原始路径:', path);
             console.log('标准化后:', normalized);
-            imageCache.getImage(normalized).then(blob => {
-                console.log('缓存中存在:', !!blob);
-            });
-        }
+            const blob = await imageCache.getImage(normalized);
+            console.log('缓存中存在:', !!blob);
+        },
+        cleanup: () => imageCache.cleanupExpired(),
+        version: CONFIG.cacheVersion
     };
 
 })();
