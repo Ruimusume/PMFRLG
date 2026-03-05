@@ -376,7 +376,11 @@ img.cached {
   <div class="header">
     <div class="main-title">Switch 口袋妖怪 火红・叶绿 道具ID by Ruimusume
         <span id="cacheBadge" class="offline-badge hidden">本地缓存</span>
-        <span style="font-size:12px; cursor:pointer; background:#E60A24; color:white; padding:2px 8px; border-radius:4px; margin-left:10px;" onclick="toggleDebug()">调试</span>
+        <span class="header-actions">
+            <button id="reloadCacheBtn" class="action-btn small" onclick="window.debugCache?.manualReload()">重新下载</button>
+            <button id="clearCacheBtn" class="action-btn small" onclick="window.debugCache?.clearAndReload()">清除缓存</button>
+            <span style="font-size:12px; cursor:pointer; background:#E60A24; color:white; padding:2px 8px; border-radius:4px;" onclick="toggleDebug()">调试</span>
+        </span>
     </div>
     <div class="header-subtitle"> Switch ポケットモンスター ファイアレッド・リーフグリーン アイテムID<br>
       Switch Pokémon Fire Red / Leaf Green items ID </div>
