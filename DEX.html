@@ -377,8 +377,8 @@ img.cached {
     <div class="main-title">Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusume
         <span id="cacheBadge" class="offline-badge hidden">本地缓存</span>
         <span class="header-actions">
-            <button id="reloadCacheBtn" class="action-btn small" onclick="window.debugCache?.manualReload()">重新下载</button>
-            <button id="clearCacheBtn" class="action-btn small" onclick="window.debugCache?.clearAndReload()">清除缓存</button>
+            <button id="reloadCacheBtn" class="action-btn small" onclick="window.manualReloadCache()">重新下载</button>
+            <button id="clearCacheBtn" class="action-btn small" onclick="window.clearAndReload()">清除缓存</button>
             <span style="font-size:12px; cursor:pointer; background:#E60A24; color:white; padding:2px 8px; border-radius:4px;" onclick="toggleDebug()">调试</span>
         </span>
     </div>
@@ -407,7 +407,7 @@ img.cached {
         </tr>
       </thead>
       <tbody id="pokemonTableBody">
-  <tr>
+	    <tr>
     <td>0</td>
     <td>0000</td>
     <td>00008840 18206878</td>
@@ -7027,7 +7027,6 @@ img.cached {
             };
             script.onerror = (e) => {
                 error('JSZip加载失败，尝试备用CDN...');
-                // 尝试备用CDN
                 const backupScript = document.createElement('script');
                 backupScript.src = 'https://cdn.bootcdn.net/ajax/libs/jszip/3.10.1/jszip.min.js';
                 backupScript.onload = () => {
@@ -7074,7 +7073,6 @@ img.cached {
                     throw new Error('文件不存在 (404)');
                 }
                 if (response.status === 429) {
-
                     await new Promise(resolve => setTimeout(resolve, 5000 * (i + 1)));
                 }
             } catch (e) {
@@ -7094,7 +7092,6 @@ img.cached {
         let normalized = path.replace(/\\/g, '/');
         normalized = normalized.replace(/^\//, '');
         normalized = normalized.replace(/\/+/g, '/');
-
         return normalized.toLowerCase();
     }
 
@@ -7165,7 +7162,6 @@ img.cached {
         const filename = normalizedSrc.split('/').pop()?.split('?')[0] || 'unknown';
         
         try {
-
             const cachedBlob = await imageCache.getImage(normalizedSrc);
             
             if (cachedBlob) {
@@ -7182,12 +7178,10 @@ img.cached {
                     img.onerror = (e) => {
                         URL.revokeObjectURL(url);
                         warn('缓存图片加载失败，降级到网络:', filename, e);
-
                         loadFromNetwork(img, normalizedSrc, filename).then(resolve);
                     };
                 });
             } else {
-
                 return loadFromNetwork(img, normalizedSrc, filename);
             }
         } catch (error) {
@@ -7274,7 +7268,6 @@ img.cached {
                     const mbTotal = (total / 1024 / 1024).toFixed(1);
                     progressText.textContent = `下载中 ${mbLoaded}MB / ${mbTotal}MB (${percent}%)`;
                 } else {
-
                     const mbLoaded = (loaded / 1024 / 1024).toFixed(1);
                     progressText.textContent = `下载中 ${mbLoaded}MB ...`;
                 }
@@ -7474,7 +7467,6 @@ img.cached {
     window.manualReloadCache = async function() {
         if (confirm('确定要重新下载所有图片缓存吗？')) {
             try {
-                await imageCache.clear();
                 await downloadAndExtractZip(true);
             } catch (e) {
                 error('手动重载失败:', e);
