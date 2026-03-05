@@ -83,6 +83,7 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 ## DataBase
 [Pokémon_DEX ID](https://htmlpreview.github.io/?//github.com/Ruimusume/PMFRLG/blob/main/DEX.html)<br>
 [item ID](https://htmlpreview.github.io/?//github.com/Ruimusume/PMFRLG/blob/main/item.html)<br>
+[Area_id](https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/Area_id.txt)<br>
 ## Restart Game & Claer Save Data
 If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
 <img alt="claer" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/claer.png?raw=true" />
