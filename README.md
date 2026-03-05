@@ -98,11 +98,11 @@ If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title 
 ## Area ID tool
 You can record and view the ID and modifications of each Area here.Only for Japanese version.
 [https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID](https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID)
+<div align="center"><img alt="tool" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/RFGL_J_Area_ID_tool.png?raw=true"/></div>
 
 ## Source of Contribution
-[https://gamehacking.org/game/5612](https://gamehacking.org/game/5612)
-[https://gamehacking.org/game/5633](https://gamehacking.org/game/5633)
-[https://gamehacking.org/game/5634](https://gamehacking.org/game/5634)
-[https://gamehacking.org/game/5615](https://gamehacking.org/game/5615)
-
-<div align="center"><img alt="tool" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/RFGL_J_Area_ID_tool.png?raw=true"/></div>
+Thank you very much to previous authors.<br>
+[https://gamehacking.org/game/5612](https://gamehacking.org/game/5612)<br>
+[https://gamehacking.org/game/5615](https://gamehacking.org/game/5615)<br>
+[https://gamehacking.org/game/5633](https://gamehacking.org/game/5633)<br>
+[https://gamehacking.org/game/5634](https://gamehacking.org/game/5634)<br>
