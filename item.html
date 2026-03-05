@@ -1,0 +1,4081 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switch 口袋妖怪 火红・叶绿 道具ID by Ruimusme 露易娘</title>
+<style>
+.header-subtitle {
+    font-size: clamp(9px, 1vw, 14px);
+    padding: 0 3px;
+}
+.header-subtitle span {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+.header-subtitle {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+.main-title {
+    font-size: clamp(14px, 4vw, 24px);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    word-break: keep-all;
+}
+.main-title {
+    font-size: clamp(12px, 2vw, 20px);
+    padding: 0 3px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+}
+body {
+    background-color: #f5f7fa;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.search-bar input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+.search-bar input:focus {
+    border-color: #E60A24;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+.pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    table-layout: auto;
+}
+.pokemon-table th {
+    background-color: #E60A24;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    white-space: nowrap;
+}
+.pokemon-table td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+    color: #555;
+    font-size: 0.8rem;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pokemon-table td:nth-child(7) img,
+.pokemon-table td:nth-child(8) img,
+.pokemon-table td:nth-child(9) img,
+.pokemon-table td:nth-child(10) img {
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f8f8f8;
+    padding: 5px;
+}
+.pokemon-table td img:hover {
+    transform: none;
+}
+.pokemon-table tr {
+    transition: background-color 0.3s;
+}
+.pokemon-table tr:hover {
+    background-color: #f9f2f2;
+    transform: none;
+}
+.pokemon-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+.version-tag {
+    display: inline-block;
+    padding: 4px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    height: 20px; 
+    line-height: 1.1;
+}
+.versions-tag {
+    display: inline-block;
+    padding: 4px 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    height: 20px; 
+    line-height: 1.1;
+    margin-block: 21px;
+}
+.version-fr {
+    background-color: #D64619;
+}
+.version-lg {
+    background-color: #02A31A;
+}
+
+@media (max-width: 992px) {
+.container {
+    padding: 20px;
+}
+.pokemon-table th {
+    font-size: 0.8rem;
+    padding: 8px 5px;
+}
+.pokemon-table td {
+    font-size: 0.75rem;
+    padding: 8px 5px;
+}
+.search-bar input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+}
+}
+
+@media (max-width: 480px) {
+.search-bar {
+    flex-direction: column;
+}
+
+.pokemon-table td:nth-child(3) img {
+    width: 14px;
+
+}
+.pokemon-table th {
+    font-size: 0.7rem;
+    padding: 6px 3px;
+}
+.pokemon-table td {
+    font-size: 0.65rem;
+    padding: 6px 3px;
+}
+.header {
+    font-size: 0.85rem;
+}
+.header p {
+    font-size: 0.9rem;
+}
+}
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+.table-wrapper::-webkit-scrollbar {
+height: 6px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+background-color: #E60A24;
+border-radius: 3px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+background-color: #f0f0f0;
+}
+.footer-copyright {
+    max-width: 1400px;
+    margin: 15px auto 0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #888;
+    opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+.footer-copyright {
+    font-size: 12px;
+    margin: 10px auto 0;
+    padding: 8px 0;
+}
+}
+.download-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(230, 10, 36, 0.95);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 10000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+.download-progress.hidden {
+    transform: translateY(-100%);
+}
+.progress-bar {
+    width: 80%;
+    max-width: 600px;
+    height: 20px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    background: white;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+.progress-text {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.error-message {
+    color: #ffdddd;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.offline-badge {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.offline-badge.hidden {
+    display: none;
+}
+img[data-src] {
+    min-width: 32px;
+    min-height: 32px;
+    background: transparent;
+}
+img:not([src]), img[src=""] {
+    opacity: 0;
+    min-width: 32px;
+    min-height: 32px;
+}
+img.cached {
+    opacity: 1;
+}
+
+.debug-panel {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 450px;
+    max-height: 350px;
+    background: rgba(0,0,0,0.95);
+    color: #0f0;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 11px;
+    z-index: 10001;
+    overflow: auto;
+    display: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border: 1px solid #E60A24;
+}
+.debug-panel.show {
+    display: block;
+}
+.debug-panel .title {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E60A24;
+}
+.debug-panel .log-entry {
+    border-bottom: 1px solid #333;
+    padding: 3px 0;
+    word-break: break-all;
+}
+.debug-panel .success { color: #4CAF50; }
+.debug-panel .error { color: #f44336; }
+.debug-panel .warning { color: #ff9800; }
+.debug-panel .info { color: #2196F3; }
+</style>
+</head>
+<body>
+
+<div id="downloadProgress" class="download-progress hidden">
+    <div>正在准备图片资源 <span id="offlineStatus"></span></div>
+    <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+    </div>
+    <div id="progressText" class="progress-text">0/0 已完成</div>
+    <div id="errorMessage" class="error-message"></div>
+</div>
+
+<div id="debugPanel" class="debug-panel">
+    <div class="title">调试信息 <span style="color:#888; font-size:10px; float:right;" onclick="this.parentElement.parentElement.classList.remove('show')">[关闭]</span></div>
+    <div id="debugLogs"></div>
+</div>
+
+<div class="container">
+  <div class="header">
+    <div class="main-title">Switch 口袋妖怪 火红・叶绿 道具ID by Ruimusume
+        <span id="cacheBadge" class="offline-badge hidden">本地缓存</span>
+        <span style="font-size:12px; cursor:pointer; background:#E60A24; color:white; padding:2px 8px; border-radius:4px; margin-left:10px;" onclick="toggleDebug()">调试</span>
+    </div>
+    <div class="header-subtitle"> Switch ポケットモンスター ファイアレッド・リーフグリーン アイテムID<br>
+      Switch Pokémon Fire Red / Leaf Green items ID </div>
+    <img alt="logo" src="https://github.com/Ruimusume/PMFRLG/raw/main/icon/logo.webp" style="max-width: 100%; height: auto; max-height: 128px;"> </div>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search...">
+  </div>
+  <div class="table-wrapper">
+    <table class="pokemon-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>HEX</th>
+          <th>JP_name</th>
+          <th>EN_name</th>
+          <th>CN_name</th>
+		  <th>icon</th>
+        </tr>
+      </thead>
+      <tbody id="pokemonTableBody">
+
+  <tr>
+    <td>0</td>
+    <td>0000</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0001</td>
+    <td>マスターボール</td>
+    <td>MASTER BALL</td>
+    <td>大师球</td>
+    <td><img data-src="img\items\1.png"></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>0002</td>
+    <td>ハイパーボール</td>
+    <td>ULTRA BALL</td>
+    <td>高级球</td>
+    <td><img data-src="img\items\2.png"></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>0003</td>
+    <td>スーパーボール</td>
+    <td>GREAT BALL</td>
+    <td>超级球</td>
+    <td><img data-src="img\items\3.png"></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>0004</td>
+    <td>モンスターボール</td>
+    <td>POKé BALL</td>
+    <td>精灵球</td>
+    <td><img data-src="img\items\4.png"></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>0005</td>
+    <td>サファリボール</td>
+    <td>SAFARI BALL</td>
+    <td>狩猎球</td>
+    <td><img data-src="img\items\5.png"></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>0006</td>
+    <td>ネットボール</td>
+    <td>NET BALL</td>
+    <td>捕网球</td>
+    <td><img data-src="img\items\6.png"></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>0007</td>
+    <td>ダイブボール</td>
+    <td>DIVE BALL</td>
+    <td>潜水球</td>
+    <td><img data-src="img\items\7.png"></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>0008</td>
+    <td>ネストボール</td>
+    <td>NEST BALL</td>
+    <td>巢穴球</td>
+    <td><img data-src="img\items\8.png"></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>0009</td>
+    <td>リピートボール</td>
+    <td>REPEAT BALL</td>
+    <td>重复球</td>
+    <td><img data-src="img\items\9.png"></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>000A</td>
+    <td>タイマーボール</td>
+    <td>TIMER BALL</td>
+    <td>计时球</td>
+    <td><img data-src="img\items\10.png"></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>000B</td>
+    <td>ゴージャスボール</td>
+    <td>LUXURY BALL</td>
+    <td>豪华球</td>
+    <td><img data-src="img\items\11.png"></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>000C</td>
+    <td>プレミアボール</td>
+    <td>PREMIER BALL</td>
+    <td>纪念球</td>
+    <td><img data-src="img\items\12.png"></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>000D</td>
+    <td>キズぐすり</td>
+    <td>POTION</td>
+    <td>伤药</td>
+    <td><img data-src="img\items\13.png"></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>000E</td>
+    <td>どくけし</td>
+    <td>ANTIDOTE</td>
+    <td>解毒药</td>
+    <td><img data-src="img\items\14.png"></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>000F</td>
+    <td>やけどなおし</td>
+    <td>BURN HEAL</td>
+    <td>灼伤药</td>
+    <td><img data-src="img\items\15.png"></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>0010</td>
+    <td>こおりなおし</td>
+    <td>ICE HEAL</td>
+    <td>解冻药</td>
+    <td><img data-src="img\items\16.png"></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>0011</td>
+    <td>ねむけざまし</td>
+    <td>AWAKENING</td>
+    <td>解眠药</td>
+    <td><img data-src="img\items\17.png"></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>0012</td>
+    <td>まひなおし</td>
+    <td>PARLYZ HEAL</td>
+    <td>解麻药</td>
+    <td><img data-src="img\items\18.png"></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>0013</td>
+    <td>かいふくのくすり</td>
+    <td>FULL RESTORE</td>
+    <td>全复药</td>
+    <td><img data-src="img\items\19.png"></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>0014</td>
+    <td>まんたんのくすり</td>
+    <td>MAX POTION</td>
+    <td>全满药</td>
+    <td><img data-src="img\items\20.png"></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>0015</td>
+    <td>すごいキズぐすり</td>
+    <td>HYPER POTION</td>
+    <td>厉害伤药</td>
+    <td><img data-src="img\items\21.png"></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>0016</td>
+    <td>いいキズぐすり</td>
+    <td>SUPER POTION</td>
+    <td>好伤药</td>
+    <td><img data-src="img\items\22.png"></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>0017</td>
+    <td>なんでもなおし</td>
+    <td>FULL HEAL</td>
+    <td>万灵药</td>
+    <td><img data-src="img\items\23.png"></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>0018</td>
+    <td>げんきのかけら</td>
+    <td>REVIVE</td>
+    <td>活力碎片</td>
+    <td><img data-src="img\items\24.png"></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>0019</td>
+    <td>げんきのかたまり</td>
+    <td>MAX REVIVE</td>
+    <td>活力块</td>
+    <td><img data-src="img\items\25.png"></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>001A</td>
+    <td>おいしいみず</td>
+    <td>FRESH WATER</td>
+    <td>美味之水</td>
+    <td><img data-src="img\items\26.png"></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>001B</td>
+    <td>サイコソーダ</td>
+    <td>SODA POP</td>
+    <td>劲爽汽水</td>
+    <td><img data-src="img\items\27.png"></td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>001C</td>
+    <td>ミックスオレ</td>
+    <td>LEMONADE</td>
+    <td>果汁牛奶</td>
+    <td><img data-src="img\items\28.png"></td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>001D</td>
+    <td>モーモーミルク</td>
+    <td>MOOMOO MILK</td>
+    <td>哞哞鲜奶</td>
+    <td><img data-src="img\items\29.png"></td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>001E</td>
+    <td>ちからのこな</td>
+    <td>ENERGYPOWDER</td>
+    <td>元气粉</td>
+    <td><img data-src="img\items\30.png"></td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>001F</td>
+    <td>ちからのねっこ</td>
+    <td>ENERGY ROOT</td>
+    <td>元气根</td>
+    <td><img data-src="img\items\31.png"></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>0020</td>
+    <td>ばんのうごな</td>
+    <td>HEAL POWDER</td>
+    <td>万能粉</td>
+    <td><img data-src="img\items\32.png"></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>0021</td>
+    <td>ふっかつそう</td>
+    <td>REVIVAL HERB</td>
+    <td>复活草</td>
+    <td><img data-src="img\items\33.png"></td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>0022</td>
+    <td>ピーピーエイド</td>
+    <td>ETHER</td>
+    <td>ＰＰ单项小补剂</td>
+    <td><img data-src="img\items\34.png"></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>0023</td>
+    <td>ピーピーリカバー</td>
+    <td>MAX ETHER</td>
+    <td>ＰＰ单项全补剂</td>
+    <td><img data-src="img\items\35.png"></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>0024</td>
+    <td>ピーピーエイダー</td>
+    <td>ELIXIR</td>
+    <td>ＰＰ多项小补剂</td>
+    <td><img data-src="img\items\36.png"></td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>0025</td>
+    <td>ピーピーマックス</td>
+    <td>MAX ELIXIR</td>
+    <td>ＰＰ多项全补剂</td>
+    <td><img data-src="img\items\37.png"></td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>0026</td>
+    <td>フエンせんべい</td>
+    <td>LAVA COOKIE</td>
+    <td>釜炎仙贝</td>
+    <td><img data-src="img\items\38.png"></td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>0027</td>
+    <td>あおいビードロ</td>
+    <td>BLUE FLUTE</td>
+    <td>蓝色玻璃哨</td>
+    <td><img data-src="img\items\39.png"></td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>0028</td>
+    <td>きいろビードロ</td>
+    <td>YELLOW FLUTE</td>
+    <td>黄色玻璃哨</td>
+    <td><img data-src="img\items\40.png"></td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>0029</td>
+    <td>あかいビードロ</td>
+    <td>RED FLUTE</td>
+    <td>红色玻璃哨</td>
+    <td><img data-src="img\items\41.png"></td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>002A</td>
+    <td>くろいビードロ</td>
+    <td>BLACK FLUTE</td>
+    <td>黑色玻璃哨</td>
+    <td><img data-src="img\items\42.png"></td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>002B</td>
+    <td>しろいビードロ</td>
+    <td>WHITE FLUTE</td>
+    <td>白色玻璃哨</td>
+    <td><img data-src="img\items\43.png"></td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>002C</td>
+    <td>きのみジュース</td>
+    <td>BERRY JUICE</td>
+    <td>树果汁</td>
+    <td><img data-src="img\items\44.png"></td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>002D</td>
+    <td>せいなるはい</td>
+    <td>SACRED ASH</td>
+    <td>圣灰</td>
+    <td><img data-src="img\items\45.png"></td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>002E</td>
+    <td>あさせのしお</td>
+    <td>SHOAL SALT</td>
+    <td>浅滩海盐</td>
+    <td><img data-src="img\items\46.png"></td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>002F</td>
+    <td>あさせのかいがら</td>
+    <td>SHOAL SHELL</td>
+    <td>浅滩贝壳</td>
+    <td><img data-src="img\items\47.png"></td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>0030</td>
+    <td>あかいかけら</td>
+    <td>RED SHARD</td>
+    <td>红色碎片</td>
+    <td><img data-src="img\items\48.png"></td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>0031</td>
+    <td>あおいかけら</td>
+    <td>BLUE SHARD</td>
+    <td>蓝色碎片</td>
+    <td><img data-src="img\items\49.png"></td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>0032</td>
+    <td>きいろいかけら</td>
+    <td>YELLOW SHARD</td>
+    <td>黄色碎片</td>
+    <td><img data-src="img\items\50.png"></td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>0033</td>
+    <td>みどりのかけら</td>
+    <td>GREEN SHARD</td>
+    <td>绿色碎片</td>
+    <td><img data-src="img\items\51.png"></td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>0034</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>0035</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>0036</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>0037</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>0038</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>0039</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>003A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>003B</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>003C</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>003D</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>003E</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>003F</td>
+    <td>マックスアップ</td>
+    <td>HP UP</td>
+    <td>ＨＰ增强剂</td>
+    <td><img data-src="img\items\63.png"></td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>0040</td>
+    <td>タウリン</td>
+    <td>PROTEIN</td>
+    <td>攻击增强剂</td>
+    <td><img data-src="img\items\64.png"></td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>0041</td>
+    <td>ブロムヘキシン</td>
+    <td>IRON</td>
+    <td>防御增强剂</td>
+    <td><img data-src="img\items\65.png"></td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>0042</td>
+    <td>インドメタシン</td>
+    <td>CARBOS</td>
+    <td>速度增强剂</td>
+    <td><img data-src="img\items\66.png"></td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>0043</td>
+    <td>リゾチウム</td>
+    <td>CALCIUM</td>
+    <td>特攻增强剂</td>
+    <td><img data-src="img\items\67.png"></td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>0044</td>
+    <td>ふしぎなアメ</td>
+    <td>RARE CANDY</td>
+    <td>神奇糖果</td>
+    <td><img data-src="img\items\68.png"></td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>0045</td>
+    <td>ポイントアップ</td>
+    <td>PP UP</td>
+    <td>ＰＰ提升剂</td>
+    <td><img data-src="img\items\69.png"></td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>0046</td>
+    <td>キトサン</td>
+    <td>ZINC</td>
+    <td>特防增强剂</td>
+    <td><img data-src="img\items\70.png"></td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>0047</td>
+    <td>ポイントマックス</td>
+    <td>PP MAX</td>
+    <td>ＰＰ极限提升剂</td>
+    <td><img data-src="img\items\71.png"></td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>0048</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>0049</td>
+    <td>エフェクトガード</td>
+    <td>GUARD SPEC.</td>
+    <td>能力防守</td>
+    <td><img data-src="img\items\73.png"></td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>004A</td>
+    <td>クリティカッター</td>
+    <td>DIRE HIT</td>
+    <td>要害攻击</td>
+    <td><img data-src="img\items\74.png"></td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>004B</td>
+    <td>プラスパワー</td>
+    <td>X ATTACK</td>
+    <td>力量强化</td>
+    <td><img data-src="img\items\75.png"></td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>004C</td>
+    <td>ディフェンダー</td>
+    <td>X DEFEND</td>
+    <td>防御强化</td>
+    <td><img data-src="img\items\76.png"></td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>004D</td>
+    <td>スピーダー</td>
+    <td>X SPEED</td>
+    <td>速度强化</td>
+    <td><img data-src="img\items\77.png"></td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>004E</td>
+    <td>ヨクアタール</td>
+    <td>X ACCURACY</td>
+    <td>命中强化</td>
+    <td><img data-src="img\items\78.png"></td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>004F</td>
+    <td>スペシャルアップ</td>
+    <td>X SPECIAL</td>
+    <td>特攻强化</td>
+    <td><img data-src="img\items\79.png"></td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>0050</td>
+    <td>ピッピにんぎょう</td>
+    <td>POKé DOLL</td>
+    <td>皮皮玩偶</td>
+    <td><img data-src="img\items\80.png"></td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>0051</td>
+    <td>エネコのシッポ</td>
+    <td>FLUFFY TAIL</td>
+    <td>向尾喵的尾巴</td>
+    <td><img data-src="img\items\81.png"></td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>0052</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>0053</td>
+    <td>シルバースプレー</td>
+    <td>SUPER REPEL</td>
+    <td>白银喷雾</td>
+    <td><img data-src="img\items\83.png"></td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>0054</td>
+    <td>ゴールドスプレー</td>
+    <td>MAX REPEL</td>
+    <td>黄金喷雾</td>
+    <td><img data-src="img\items\84.png"></td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>0055</td>
+    <td>あなぬけのヒモ</td>
+    <td>ESCAPE ROPE</td>
+    <td>离洞绳</td>
+    <td><img data-src="img\items\85.png"></td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>0056</td>
+    <td>むしよけスプレー</td>
+    <td>REPEL</td>
+    <td>除虫喷雾</td>
+    <td><img data-src="img\items\86.png"></td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>0057</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>0058</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>0059</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>005A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>005B</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>005C</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>005D</td>
+    <td>たいようのいし</td>
+    <td>SUN STONE</td>
+    <td>日之石</td>
+    <td><img data-src="img\items\93.png"></td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>005E</td>
+    <td>つきのいし</td>
+    <td>MOON STONE</td>
+    <td>月之石</td>
+    <td><img data-src="img\items\94.png"></td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>005F</td>
+    <td>ほのおのいし</td>
+    <td>FIRE STONE</td>
+    <td>火之石</td>
+    <td><img data-src="img\items\95.png"></td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>0060</td>
+    <td>かみなりのいし</td>
+    <td>THUNDERSTONE</td>
+    <td>雷之石</td>
+    <td><img data-src="img\items\96.png"></td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>0061</td>
+    <td>みずのいし</td>
+    <td>WATER STONE</td>
+    <td>水之石</td>
+    <td><img data-src="img\items\97.png"></td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>0062</td>
+    <td>リーフのいし</td>
+    <td>LEAF STONE</td>
+    <td>叶之石</td>
+    <td><img data-src="img\items\98.png"></td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>0063</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>0064</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>0065</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>0066</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>0067</td>
+    <td>ちいさなキノコ</td>
+    <td>TINYMUSHROOM</td>
+    <td>小蘑菇</td>
+    <td><img data-src="img\items\103.png"></td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>0068</td>
+    <td>おおきなキノコ</td>
+    <td>BIG MUSHROOM</td>
+    <td>大蘑菇</td>
+    <td><img data-src="img\items\104.png"></td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>0069</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>006A</td>
+    <td>しんじゅ</td>
+    <td>PEARL</td>
+    <td>珍珠</td>
+    <td><img data-src="img\items\106.png"></td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>006B</td>
+    <td>おおきなしんじゅ</td>
+    <td>BIG PEARL</td>
+    <td>大珍珠</td>
+    <td><img data-src="img\items\107.png"></td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>006C</td>
+    <td>ほしのすな</td>
+    <td>STARDUST</td>
+    <td>星星沙子</td>
+    <td><img data-src="img\items\108.png"></td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>006D</td>
+    <td>ほしのかけら</td>
+    <td>STAR PIECE</td>
+    <td>星星碎片</td>
+    <td><img data-src="img\items\109.png"></td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>006E</td>
+    <td>きんのたま</td>
+    <td>NUGGET</td>
+    <td>金珠</td>
+    <td><img data-src="img\items\110.png"></td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>006F</td>
+    <td>ハートのウロコ</td>
+    <td>HEART SCALE</td>
+    <td>心之鳞片</td>
+    <td><img data-src="img\items\111.png"></td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>0070</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>0071</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>0072</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>0073</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>0074</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>0075</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>0076</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>0077</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>0078</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>0079</td>
+    <td>オレンジメール</td>
+    <td>ORANGE MAIL</td>
+    <td>橙色邮件</td>
+    <td><img data-src="img\items\121.png"></td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>007A</td>
+    <td>ハーバーメール</td>
+    <td>HARBOR MAIL</td>
+    <td>港口邮件</td>
+    <td><img data-src="img\items\122.png"></td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>007B</td>
+    <td>キラキラメール</td>
+    <td>GLITTER MAIL</td>
+    <td>闪亮邮件</td>
+    <td><img data-src="img\items\123.png"></td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>007C</td>
+    <td>メカニカルメール</td>
+    <td>MECH MAIL</td>
+    <td>机械邮件</td>
+    <td><img data-src="img\items\124.png"></td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>007D</td>
+    <td>ウッディメール</td>
+    <td>WOOD MAIL</td>
+    <td>木纹邮件</td>
+    <td><img data-src="img\items\125.png"></td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>007E</td>
+    <td>クロスメール</td>
+    <td>WAVE MAIL</td>
+    <td>波涛邮件</td>
+    <td><img data-src="img\items\126.png"></td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>007F</td>
+    <td>トレジャーメール</td>
+    <td>BEAD MAIL</td>
+    <td>珠宝邮件</td>
+    <td><img data-src="img\items\127.png"></td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>0080</td>
+    <td>シャドーメール</td>
+    <td>SHADOW MAIL</td>
+    <td>影子邮件</td>
+    <td><img data-src="img\items\128.png"></td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>0081</td>
+    <td>トロピカルメール</td>
+    <td>TROPIC MAIL</td>
+    <td>热带邮件</td>
+    <td><img data-src="img\items\129.png"></td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>0082</td>
+    <td>ドリームメール</td>
+    <td>DREAM MAIL</td>
+    <td>梦境邮件</td>
+    <td><img data-src="img\items\130.png"></td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>0083</td>
+    <td>ミラクルメール</td>
+    <td>FAB MAIL</td>
+    <td>奇迹邮件</td>
+    <td><img data-src="img\items\131.png"></td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>0084</td>
+    <td>レトロメール</td>
+    <td>RETRO MAIL</td>
+    <td>复古邮件</td>
+    <td><img data-src="img\items\132.png"></td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>0085</td>
+    <td>クラボのみ</td>
+    <td>CHERI BERRY</td>
+    <td>樱子果</td>
+    <td><img data-src="img\items\133.png"></td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>0086</td>
+    <td>カゴのみ</td>
+    <td>CHESTO BERRY</td>
+    <td>零余果</td>
+    <td><img data-src="img\items\134.png"></td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>0087</td>
+    <td>モモンのみ</td>
+    <td>PECHA BERRY</td>
+    <td>桃桃果</td>
+    <td><img data-src="img\items\135.png"></td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>0088</td>
+    <td>チーゴのみ</td>
+    <td>RAWST BERRY</td>
+    <td>莓莓果</td>
+    <td><img data-src="img\items\136.png"></td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>0089</td>
+    <td>ナナシのみ</td>
+    <td>ASPEAR BERRY</td>
+    <td>利木果</td>
+    <td><img data-src="img\items\137.png"></td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>008A</td>
+    <td>ヒメリのみ</td>
+    <td>LEPPA BERRY</td>
+    <td>苹野果</td>
+    <td><img data-src="img\items\138.png"></td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>008B</td>
+    <td>オレンのみ</td>
+    <td>ORAN BERRY</td>
+    <td>橙橙果</td>
+    <td><img data-src="img\items\139.png"></td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>008C</td>
+    <td>キーのみ</td>
+    <td>PERSIM BERRY</td>
+    <td>柿仔果</td>
+    <td><img data-src="img\items\140.png"></td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>008D</td>
+    <td>ラムのみ</td>
+    <td>LUM BERRY</td>
+    <td>木子果</td>
+    <td><img data-src="img\items\141.png"></td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>008E</td>
+    <td>オボンのみ</td>
+    <td>SITRUS BERRY</td>
+    <td>文柚果</td>
+    <td><img data-src="img\items\142.png"></td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>008F</td>
+    <td>フィラのみ</td>
+    <td>FIGY BERRY</td>
+    <td>勿花果</td>
+    <td><img data-src="img\items\143.png"></td>
+  </tr>
+  <tr>
+    <td>144</td>
+    <td>0090</td>
+    <td>ウイのみ</td>
+    <td>WIKI BERRY</td>
+    <td>异奇果</td>
+    <td><img data-src="img\items\144.png"></td>
+  </tr>
+  <tr>
+    <td>145</td>
+    <td>0091</td>
+    <td>マゴのみ</td>
+    <td>MAGO BERRY</td>
+    <td>芒芒果</td>
+    <td><img data-src="img\items\145.png"></td>
+  </tr>
+  <tr>
+    <td>146</td>
+    <td>0092</td>
+    <td>バンジのみ</td>
+    <td>AGUAV BERRY</td>
+    <td>乐芭果</td>
+    <td><img data-src="img\items\146.png"></td>
+  </tr>
+  <tr>
+    <td>147</td>
+    <td>0093</td>
+    <td>イアのみ</td>
+    <td>IAPAPA BERRY</td>
+    <td>芭亚果</td>
+    <td><img data-src="img\items\147.png"></td>
+  </tr>
+  <tr>
+    <td>148</td>
+    <td>0094</td>
+    <td>ズリのみ</td>
+    <td>RAZZ BERRY</td>
+    <td>蔓莓果</td>
+    <td><img data-src="img\items\148.png"></td>
+  </tr>
+  <tr>
+    <td>149</td>
+    <td>0095</td>
+    <td>ブリーのみ</td>
+    <td>BLUK BERRY</td>
+    <td>墨莓果</td>
+    <td><img data-src="img\items\149.png"></td>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td>0096</td>
+    <td>ナナのみ</td>
+    <td>NANAB BERRY</td>
+    <td>蕉香果</td>
+    <td><img data-src="img\items\150.png"></td>
+  </tr>
+  <tr>
+    <td>151</td>
+    <td>0097</td>
+    <td>セシナのみ</td>
+    <td>WEPEAR BERRY</td>
+    <td>西梨果</td>
+    <td><img data-src="img\items\151.png"></td>
+  </tr>
+  <tr>
+    <td>152</td>
+    <td>0098</td>
+    <td>パイルのみ</td>
+    <td>PINAP BERRY</td>
+    <td>凰梨果</td>
+    <td><img data-src="img\items\152.png"></td>
+  </tr>
+  <tr>
+    <td>153</td>
+    <td>0099</td>
+    <td>ザロクのみ</td>
+    <td>POMEG BERRY</td>
+    <td>榴石果</td>
+    <td><img data-src="img\items\153.png"></td>
+  </tr>
+  <tr>
+    <td>154</td>
+    <td>009A</td>
+    <td>ネコブのみ</td>
+    <td>KELPSY BERRY</td>
+    <td>藻根果</td>
+    <td><img data-src="img\items\154.png"></td>
+  </tr>
+  <tr>
+    <td>155</td>
+    <td>009B</td>
+    <td>タポルのみ</td>
+    <td>QUALOT BERRY</td>
+    <td>比巴果</td>
+    <td><img data-src="img\items\155.png"></td>
+  </tr>
+  <tr>
+    <td>156</td>
+    <td>009C</td>
+    <td>ロメのみ</td>
+    <td>HONDEW BERRY</td>
+    <td>哈密果</td>
+    <td><img data-src="img\items\156.png"></td>
+  </tr>
+  <tr>
+    <td>157</td>
+    <td>009D</td>
+    <td>ウブのみ</td>
+    <td>GREPA BERRY</td>
+    <td>萄葡果</td>
+    <td><img data-src="img\items\157.png"></td>
+  </tr>
+  <tr>
+    <td>158</td>
+    <td>009E</td>
+    <td>マトマのみ</td>
+    <td>TAMATO BERRY</td>
+    <td>茄番果</td>
+    <td><img data-src="img\items\158.png"></td>
+  </tr>
+  <tr>
+    <td>159</td>
+    <td>009F</td>
+    <td>モコシのみ</td>
+    <td>CORNN BERRY</td>
+    <td>玉黍果</td>
+    <td><img data-src="img\items\159.png"></td>
+  </tr>
+  <tr>
+    <td>160</td>
+    <td>00A0</td>
+    <td>ゴスのみ</td>
+    <td>MAGOST BERRY</td>
+    <td>岳竹果</td>
+    <td><img data-src="img\items\160.png"></td>
+  </tr>
+  <tr>
+    <td>161</td>
+    <td>00A1</td>
+    <td>ラブタのみ</td>
+    <td>RABUTA BERRY</td>
+    <td>茸丹果</td>
+    <td><img data-src="img\items\161.png"></td>
+  </tr>
+  <tr>
+    <td>162</td>
+    <td>00A2</td>
+    <td>ノメルのみ</td>
+    <td>NOMEL BERRY</td>
+    <td>檬柠果</td>
+    <td><img data-src="img\items\162.png"></td>
+  </tr>
+  <tr>
+    <td>163</td>
+    <td>00A3</td>
+    <td>ノワキのみ</td>
+    <td>SPELON BERRY</td>
+    <td>刺角果</td>
+    <td><img data-src="img\items\163.png"></td>
+  </tr>
+  <tr>
+    <td>164</td>
+    <td>00A4</td>
+    <td>シーヤのみ</td>
+    <td>PAMTRE BERRY</td>
+    <td>椰木果</td>
+    <td><img data-src="img\items\164.png"></td>
+  </tr>
+  <tr>
+    <td>165</td>
+    <td>00A5</td>
+    <td>カイスのみ</td>
+    <td>WATMEL BERRY</td>
+    <td>瓜西果</td>
+    <td><img data-src="img\items\165.png"></td>
+  </tr>
+  <tr>
+    <td>166</td>
+    <td>00A6</td>
+    <td>ドリのみ</td>
+    <td>DURIN BERRY</td>
+    <td>金枕果</td>
+    <td><img data-src="img\items\166.png"></td>
+  </tr>
+  <tr>
+    <td>167</td>
+    <td>00A7</td>
+    <td>ベリブのみ</td>
+    <td>BELUE BERRY</td>
+    <td>靛莓果</td>
+    <td><img data-src="img\items\167.png"></td>
+  </tr>
+  <tr>
+    <td>168</td>
+    <td>00A8</td>
+    <td>チイラのみ</td>
+    <td>LIECHI BERRY</td>
+    <td>枝荔果</td>
+    <td><img data-src="img\items\168.png"></td>
+  </tr>
+  <tr>
+    <td>169</td>
+    <td>00A9</td>
+    <td>リュガのみ</td>
+    <td>GANLON BERRY</td>
+    <td>龙睛果</td>
+    <td><img data-src="img\items\169.png"></td>
+  </tr>
+  <tr>
+    <td>170</td>
+    <td>00AA</td>
+    <td>カムラのみ</td>
+    <td>SALAC BERRY</td>
+    <td>沙鳞果</td>
+    <td><img data-src="img\items\170.png"></td>
+  </tr>
+  <tr>
+    <td>171</td>
+    <td>00AB</td>
+    <td>ヤタピのみ</td>
+    <td>PETAYA BERRY</td>
+    <td>龙火果</td>
+    <td><img data-src="img\items\171.png"></td>
+  </tr>
+  <tr>
+    <td>172</td>
+    <td>00AC</td>
+    <td>ズアのみ</td>
+    <td>APICOT BERRY</td>
+    <td>杏仔果</td>
+    <td><img data-src="img\items\172.png"></td>
+  </tr>
+  <tr>
+    <td>173</td>
+    <td>00AD</td>
+    <td>サンのみ</td>
+    <td>LANSAT BERRY</td>
+    <td>兰萨果</td>
+    <td><img data-src="img\items\173.png"></td>
+  </tr>
+  <tr>
+    <td>174</td>
+    <td>00AE</td>
+    <td>スターのみ</td>
+    <td>STARF BERRY</td>
+    <td>星桃果</td>
+    <td><img data-src="img\items\174.png"></td>
+  </tr>
+  <tr>
+    <td>175</td>
+    <td>00AF</td>
+    <td>ナゾのみ</td>
+    <td>ENIGMA BERRY</td>
+    <td>谜芝果</td>
+    <td><img data-src="img\items\175.png"></td>
+  </tr>
+  <tr>
+    <td>176</td>
+    <td>00B0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>177</td>
+    <td>00B1</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>178</td>
+    <td>00B2</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>179</td>
+    <td>00B3</td>
+    <td>ひかりのこな</td>
+    <td>BRIGHTPOWDER</td>
+    <td>光粉</td>
+    <td><img data-src="img\items\179.png"></td>
+  </tr>
+  <tr>
+    <td>180</td>
+    <td>00B4</td>
+    <td>しろいハーブ</td>
+    <td>WHITE HERB</td>
+    <td>白色香草</td>
+    <td><img data-src="img\items\180.png"></td>
+  </tr>
+  <tr>
+    <td>181</td>
+    <td>00B5</td>
+    <td>きょうせいギプス</td>
+    <td>MACHO BRACE</td>
+    <td>强制锻炼器</td>
+    <td><img data-src="img\items\181.png"></td>
+  </tr>
+  <tr>
+    <td>182</td>
+    <td>00B6</td>
+    <td>がくしゅうそうち</td>
+    <td>EXP. SHARE</td>
+    <td>学习装置</td>
+    <td><img data-src="img\items\182.png"></td>
+  </tr>
+  <tr>
+    <td>183</td>
+    <td>00B7</td>
+    <td>せんせいのツメ</td>
+    <td>QUICK CLAW</td>
+    <td>先制之爪</td>
+    <td><img data-src="img\items\183.png"></td>
+  </tr>
+  <tr>
+    <td>184</td>
+    <td>00B8</td>
+    <td>やすらぎのすず</td>
+    <td>SOOTHE BELL</td>
+    <td>安抚之铃</td>
+    <td><img data-src="img\items\184.png"></td>
+  </tr>
+  <tr>
+    <td>185</td>
+    <td>00B9</td>
+    <td>メンタルハーブ</td>
+    <td>MENTAL HERB</td>
+    <td>心灵香草</td>
+    <td><img data-src="img\items\185.png"></td>
+  </tr>
+  <tr>
+    <td>186</td>
+    <td>00BA</td>
+    <td>こだわりハチマキ</td>
+    <td>CHOICE BAND</td>
+    <td>讲究头带</td>
+    <td><img data-src="img\items\186.png"></td>
+  </tr>
+  <tr>
+    <td>187</td>
+    <td>00BB</td>
+    <td>おうじゃのしるし</td>
+    <td>KING'S ROCK</td>
+    <td>王者之证</td>
+    <td><img data-src="img\items\187.png"></td>
+  </tr>
+  <tr>
+    <td>188</td>
+    <td>00BC</td>
+    <td>ぎんのこな</td>
+    <td>SILVERPOWDER</td>
+    <td>银粉</td>
+    <td><img data-src="img\items\188.png"></td>
+  </tr>
+  <tr>
+    <td>189</td>
+    <td>00BD</td>
+    <td>おまもりこばん</td>
+    <td>AMULET COIN</td>
+    <td>护符金币</td>
+    <td><img data-src="img\items\189.png"></td>
+  </tr>
+  <tr>
+    <td>190</td>
+    <td>00BE</td>
+    <td>きよめのおふだ</td>
+    <td>CLEANSE TAG</td>
+    <td>洁净之符</td>
+    <td><img data-src="img\items\190.png"></td>
+  </tr>
+  <tr>
+    <td>191</td>
+    <td>00BF</td>
+    <td>こころのしずく</td>
+    <td>SOUL DEW</td>
+    <td>心之水滴</td>
+    <td><img data-src="img\items\191.png"></td>
+  </tr>
+  <tr>
+    <td>192</td>
+    <td>00C0</td>
+    <td>しんかいのキバ</td>
+    <td>DEEPSEATOOTH</td>
+    <td>深海之牙</td>
+    <td><img data-src="img\items\192.png"></td>
+  </tr>
+  <tr>
+    <td>193</td>
+    <td>00C1</td>
+    <td>しんかいのウロコ</td>
+    <td>DEEPSEASCALE</td>
+    <td>深海鳞片</td>
+    <td><img data-src="img\items\193.png"></td>
+  </tr>
+  <tr>
+    <td>194</td>
+    <td>00C2</td>
+    <td>けむりだま</td>
+    <td>SMOKE BALL</td>
+    <td>烟雾球</td>
+    <td><img data-src="img\items\194.png"></td>
+  </tr>
+  <tr>
+    <td>195</td>
+    <td>00C3</td>
+    <td>かわらずのいし</td>
+    <td>EVERSTONE</td>
+    <td>不变之石</td>
+    <td><img data-src="img\items\195.png"></td>
+  </tr>
+  <tr>
+    <td>196</td>
+    <td>00C4</td>
+    <td>きあいのハチマキ</td>
+    <td>FOCUS BAND</td>
+    <td>气势头带</td>
+    <td><img data-src="img\items\196.png"></td>
+  </tr>
+  <tr>
+    <td>197</td>
+    <td>00C5</td>
+    <td>しあわせタマゴ</td>
+    <td>LUCKY EGG</td>
+    <td>幸运蛋</td>
+    <td><img data-src="img\items\197.png"></td>
+  </tr>
+  <tr>
+    <td>198</td>
+    <td>00C6</td>
+    <td>ピントレンズ</td>
+    <td>SCOPE LENS</td>
+    <td>焦点镜</td>
+    <td><img data-src="img\items\198.png"></td>
+  </tr>
+  <tr>
+    <td>199</td>
+    <td>00C7</td>
+    <td>メタルコート</td>
+    <td>METAL COAT</td>
+    <td>金属膜</td>
+    <td><img data-src="img\items\199.png"></td>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>00C8</td>
+    <td>たべのこし</td>
+    <td>LEFTOVERS</td>
+    <td>吃剩的东西</td>
+    <td><img data-src="img\items\200.png"></td>
+  </tr>
+  <tr>
+    <td>201</td>
+    <td>00C9</td>
+    <td>りゅうのウロコ</td>
+    <td>DRAGON SCALE</td>
+    <td>龙之鳞片</td>
+    <td><img data-src="img\items\201.png"></td>
+  </tr>
+  <tr>
+    <td>202</td>
+    <td>00CA</td>
+    <td>でんきだま</td>
+    <td>LIGHT BALL</td>
+    <td>电气球</td>
+    <td><img data-src="img\items\202.png"></td>
+  </tr>
+  <tr>
+    <td>203</td>
+    <td>00CB</td>
+    <td>やわらかいすな</td>
+    <td>SOFT SAND</td>
+    <td>柔软沙子</td>
+    <td><img data-src="img\items\203.png"></td>
+  </tr>
+  <tr>
+    <td>204</td>
+    <td>00CC</td>
+    <td>かたいいし</td>
+    <td>HARD STONE</td>
+    <td>硬石头</td>
+    <td><img data-src="img\items\204.png"></td>
+  </tr>
+  <tr>
+    <td>205</td>
+    <td>00CD</td>
+    <td>きせきのタネ</td>
+    <td>MIRACLE SEED</td>
+    <td>奇迹种子</td>
+    <td><img data-src="img\items\205.png"></td>
+  </tr>
+  <tr>
+    <td>206</td>
+    <td>00CE</td>
+    <td>くろいメガネ</td>
+    <td>BLACKGLASSES</td>
+    <td>黑色眼镜</td>
+    <td><img data-src="img\items\206.png"></td>
+  </tr>
+  <tr>
+    <td>207</td>
+    <td>00CF</td>
+    <td>くろおび</td>
+    <td>BLACK BELT</td>
+    <td>黑带</td>
+    <td><img data-src="img\items\207.png"></td>
+  </tr>
+  <tr>
+    <td>208</td>
+    <td>00D0</td>
+    <td>じしゃく</td>
+    <td>MAGNET</td>
+    <td>磁铁</td>
+    <td><img data-src="img\items\208.png"></td>
+  </tr>
+  <tr>
+    <td>209</td>
+    <td>00D1</td>
+    <td>しんぴのしずく</td>
+    <td>MYSTIC WATER</td>
+    <td>神秘水滴</td>
+    <td><img data-src="img\items\209.png"></td>
+  </tr>
+  <tr>
+    <td>210</td>
+    <td>00D2</td>
+    <td>するどいくちばし</td>
+    <td>SHARP BEAK</td>
+    <td>锐利鸟嘴</td>
+    <td><img data-src="img\items\210.png"></td>
+  </tr>
+  <tr>
+    <td>211</td>
+    <td>00D3</td>
+    <td>どくバリ</td>
+    <td>POISON BARB</td>
+    <td>毒针</td>
+    <td><img data-src="img\items\211.png"></td>
+  </tr>
+  <tr>
+    <td>212</td>
+    <td>00D4</td>
+    <td>とけないこおり</td>
+    <td>NEVERMELTICE</td>
+    <td>不融冰</td>
+    <td><img data-src="img\items\212.png"></td>
+  </tr>
+  <tr>
+    <td>213</td>
+    <td>00D5</td>
+    <td>のろいのおふだ</td>
+    <td>SPELL TAG</td>
+    <td>咒术之符</td>
+    <td><img data-src="img\items\213.png"></td>
+  </tr>
+  <tr>
+    <td>214</td>
+    <td>00D6</td>
+    <td>まがったスプーン</td>
+    <td>TWISTEDSPOON</td>
+    <td>弯曲的汤匙</td>
+    <td><img data-src="img\items\214.png"></td>
+  </tr>
+  <tr>
+    <td>215</td>
+    <td>00D7</td>
+    <td>もくたん</td>
+    <td>CHARCOAL</td>
+    <td>木炭</td>
+    <td><img data-src="img\items\215.png"></td>
+  </tr>
+  <tr>
+    <td>216</td>
+    <td>00D8</td>
+    <td>りゅうのキバ</td>
+    <td>DRAGON FANG</td>
+    <td>龙之牙</td>
+    <td><img data-src="img\items\216.png"></td>
+  </tr>
+  <tr>
+    <td>217</td>
+    <td>00D9</td>
+    <td>シルクのスカーフ</td>
+    <td>SILK SCARF</td>
+    <td>丝绸围巾</td>
+    <td><img data-src="img\items\217.png"></td>
+  </tr>
+  <tr>
+    <td>218</td>
+    <td>00DA</td>
+    <td>アップグレード</td>
+    <td>UP-GRADE</td>
+    <td>升级数据</td>
+    <td><img data-src="img\items\218.png"></td>
+  </tr>
+  <tr>
+    <td>219</td>
+    <td>00DB</td>
+    <td>かいがらのすず</td>
+    <td>SHELL BELL</td>
+    <td>贝壳之铃</td>
+    <td><img data-src="img\items\219.png"></td>
+  </tr>
+  <tr>
+    <td>220</td>
+    <td>00DC</td>
+    <td>うしおのおこう</td>
+    <td>SEA INCENSE</td>
+    <td>海潮薰香</td>
+    <td><img data-src="img\items\220.png"></td>
+  </tr>
+  <tr>
+    <td>221</td>
+    <td>00DD</td>
+    <td>のんきのおこう</td>
+    <td>LAX INCENSE</td>
+    <td>悠闲薰香</td>
+    <td><img data-src="img\items\221.png"></td>
+  </tr>
+  <tr>
+    <td>222</td>
+    <td>00DE</td>
+    <td>ラッキーパンチ</td>
+    <td>LUCKY PUNCH</td>
+    <td>吉利拳</td>
+    <td><img data-src="img\items\222.png"></td>
+  </tr>
+  <tr>
+    <td>223</td>
+    <td>00DF</td>
+    <td>メタルパウダー</td>
+    <td>METAL POWDER</td>
+    <td>金属粉</td>
+    <td><img data-src="img\items\223.png"></td>
+  </tr>
+  <tr>
+    <td>224</td>
+    <td>00E0</td>
+    <td>ふといホネ</td>
+    <td>THICK CLUB</td>
+    <td>粗骨头</td>
+    <td><img data-src="img\items\224.png"></td>
+  </tr>
+  <tr>
+    <td>225</td>
+    <td>00E1</td>
+    <td>ながねぎ</td>
+    <td>STICK</td>
+    <td>大葱</td>
+    <td><img data-src="img\items\225.png"></td>
+  </tr>
+  <tr>
+    <td>226</td>
+    <td>00E2</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>227</td>
+    <td>00E3</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>228</td>
+    <td>00E4</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>229</td>
+    <td>00E5</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>230</td>
+    <td>00E6</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>231</td>
+    <td>00E7</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>232</td>
+    <td>00E8</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>233</td>
+    <td>00E9</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>234</td>
+    <td>00EA</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>235</td>
+    <td>00EB</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>236</td>
+    <td>00EC</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>237</td>
+    <td>00ED</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>238</td>
+    <td>00EE</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>239</td>
+    <td>00EF</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>240</td>
+    <td>00F0</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>241</td>
+    <td>00F1</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>242</td>
+    <td>00F2</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>243</td>
+    <td>00F3</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>244</td>
+    <td>00F4</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>245</td>
+    <td>00F5</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>246</td>
+    <td>00F6</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>247</td>
+    <td>00F7</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>248</td>
+    <td>00F8</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>249</td>
+    <td>00F9</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>250</td>
+    <td>00FA</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>251</td>
+    <td>00FB</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>252</td>
+    <td>00FC</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>253</td>
+    <td>00FD</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>254</td>
+    <td>00FE</td>
+    <td>あかいバンダナ</td>
+    <td>RED SCARF</td>
+    <td>红色头巾</td>
+    <td><img data-src="img\items\254.png"></td>
+  </tr>
+  <tr>
+    <td>255</td>
+    <td>00FF</td>
+    <td>あおいバンダナ</td>
+    <td>BLUE SCARF</td>
+    <td>蓝色头巾</td>
+    <td><img data-src="img\items\255.png"></td>
+  </tr>
+  <tr>
+    <td>256</td>
+    <td>0100</td>
+    <td>ピンクのバンダナ</td>
+    <td>PINK SCARF</td>
+    <td>粉红头巾</td>
+    <td><img data-src="img\items\256.png"></td>
+  </tr>
+  <tr>
+    <td>257</td>
+    <td>0101</td>
+    <td>みどりのバンダナ</td>
+    <td>GREEN SCARF</td>
+    <td>绿色头巾</td>
+    <td><img data-src="img\items\257.png"></td>
+  </tr>
+  <tr>
+    <td>258</td>
+    <td>0102</td>
+    <td>きいろのバンダナ</td>
+    <td>YELLOW SCARF</td>
+    <td>黄色头巾</td>
+    <td><img data-src="img\items\258.png"></td>
+  </tr>
+  <tr>
+    <td>259</td>
+    <td>0103</td>
+    <td>マッハじてんしゃ</td>
+    <td>MACH BIKE</td>
+    <td>音速自行车</td>
+    <td><img data-src="img\items\259.png"></td>
+  </tr>
+  <tr>
+    <td>260</td>
+    <td>0104</td>
+    <td>コインケース</td>
+    <td>COIN CASE</td>
+    <td>代币盒</td>
+    <td><img data-src="img\items\260.png"></td>
+  </tr>
+  <tr>
+    <td>261</td>
+    <td>0105</td>
+    <td>ダウジングマシン</td>
+    <td>ITEMFINDER</td>
+    <td>探宝器</td>
+    <td><img data-src="img\items\261.png"></td>
+  </tr>
+  <tr>
+    <td>262</td>
+    <td>0106</td>
+    <td>ボロのつりざお</td>
+    <td>OLD ROD</td>
+    <td>破旧钓竿</td>
+    <td><img data-src="img\items\262.png"></td>
+  </tr>
+  <tr>
+    <td>263</td>
+    <td>0107</td>
+    <td>いいつりざお</td>
+    <td>GOOD ROD</td>
+    <td>好钓竿</td>
+    <td><img data-src="img\items\263.png"></td>
+  </tr>
+  <tr>
+    <td>264</td>
+    <td>0108</td>
+    <td>すごいつりざお</td>
+    <td>SUPER ROD</td>
+    <td>厉害钓竿</td>
+    <td><img data-src="img\items\264.png"></td>
+  </tr>
+  <tr>
+    <td>265</td>
+    <td>0109</td>
+    <td>ふねのチケット</td>
+    <td>S.S. TICKET</td>
+    <td>船票</td>
+    <td><img data-src="img\items\265.png"></td>
+  </tr>
+  <tr>
+    <td>266</td>
+    <td>010A</td>
+    <td>コンテストパス</td>
+    <td>CONTEST PASS</td>
+    <td>华丽大赛参加证</td>
+    <td><img data-src="img\items\266.png"></td>
+  </tr>
+  <tr>
+    <td>267</td>
+    <td>010B</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>268</td>
+    <td>010C</td>
+    <td>ホエルコじょうろ</td>
+    <td>WAILMER PAIL</td>
+    <td>吼吼鲸喷壶</td>
+    <td><img data-src="img\items\268.png"></td>
+  </tr>
+  <tr>
+    <td>269</td>
+    <td>010D</td>
+    <td>デボンのにもつ</td>
+    <td>DEVON GOODS</td>
+    <td>得文的物品</td>
+    <td><img data-src="img\items\269.png"></td>
+  </tr>
+  <tr>
+    <td>270</td>
+    <td>010E</td>
+    <td>はいぶくろ</td>
+    <td>SOOT SACK</td>
+    <td>集灰袋</td>
+    <td><img data-src="img\items\270.png"></td>
+  </tr>
+  <tr>
+    <td>271</td>
+    <td>010F</td>
+    <td>ちかのカギ</td>
+    <td>BASEMENT KEY</td>
+    <td>地下钥匙</td>
+    <td><img data-src="img\items\271.png"></td>
+  </tr>
+  <tr>
+    <td>272</td>
+    <td>0110</td>
+    <td>ダートじてんしゃ</td>
+    <td>ACRO BIKE</td>
+    <td>越野自行车</td>
+    <td><img data-src="img\items\272.png"></td>
+  </tr>
+  <tr>
+    <td>273</td>
+    <td>0111</td>
+    <td>ポロックケース</td>
+    <td>PoKeBlLoCk CASE</td>
+    <td>宝可方块盒</td>
+    <td><img data-src="img\items\273.png"></td>
+  </tr>
+  <tr>
+    <td>274</td>
+    <td>0112</td>
+    <td>ダイゴへのてがみ</td>
+    <td>LETTER</td>
+    <td>给大吾的信</td>
+    <td><img data-src="img\items\274.png"></td>
+  </tr>
+  <tr>
+    <td>275</td>
+    <td>0113</td>
+    <td>むげんのチケット</td>
+    <td>EON TICKET</td>
+    <td>无限船票</td>
+    <td><img data-src="img\items\275.png"></td>
+  </tr>
+  <tr>
+    <td>276</td>
+    <td>0114</td>
+    <td>べにいろのたま</td>
+    <td>RED ORB</td>
+    <td>朱红色宝珠</td>
+    <td><img data-src="img\items\276.png"></td>
+  </tr>
+  <tr>
+    <td>277</td>
+    <td>0115</td>
+    <td>あいいろのたま</td>
+    <td>BLUE ORB</td>
+    <td>靛蓝色宝珠</td>
+    <td><img data-src="img\items\277.png"></td>
+  </tr>
+  <tr>
+    <td>278</td>
+    <td>0116</td>
+    <td>たんちき</td>
+    <td>SCANNER</td>
+    <td>探测器</td>
+    <td><img data-src="img\items\278.png"></td>
+  </tr>
+  <tr>
+    <td>279</td>
+    <td>0117</td>
+    <td>ゴーゴーゴーグル</td>
+    <td>GO-GOGGLES</td>
+    <td>ＧＯＧＯ护目镜</td>
+    <td><img data-src="img\items\279.png"></td>
+  </tr>
+  <tr>
+    <td>280</td>
+    <td>0118</td>
+    <td>いんせき</td>
+    <td>METEORITE</td>
+    <td>陨石</td>
+    <td><img data-src="img\items\280.png"></td>
+  </tr>
+  <tr>
+    <td>281</td>
+    <td>0119</td>
+    <td>１ごうしつのカギ</td>
+    <td>RM. 1 KEY</td>
+    <td>１号客房的钥匙</td>
+    <td><img data-src="img\items\281.png"></td>
+  </tr>
+  <tr>
+    <td>282</td>
+    <td>011A</td>
+    <td>２ごうしつのカギ</td>
+    <td>RM. 2 KEY</td>
+    <td>２号客房的钥匙</td>
+    <td><img data-src="img\items\282.png"></td>
+  </tr>
+  <tr>
+    <td>283</td>
+    <td>011B</td>
+    <td>４ごうしつのカギ</td>
+    <td>RM. 4 KEY</td>
+    <td>４号客房的钥匙</td>
+    <td><img data-src="img\items\283.png"></td>
+  </tr>
+  <tr>
+    <td>284</td>
+    <td>011C</td>
+    <td>６ごうしつのカギ</td>
+    <td>RM. 6 KEY</td>
+    <td>６号客房的钥匙</td>
+    <td><img data-src="img\items\284.png"></td>
+  </tr>
+  <tr>
+    <td>285</td>
+    <td>011D</td>
+    <td>そうこのカギ</td>
+    <td>STORAGE KEY</td>
+    <td>仓库钥匙</td>
+    <td><img data-src="img\items\285.png"></td>
+  </tr>
+  <tr>
+    <td>286</td>
+    <td>011E</td>
+    <td>ねっこのカセキ</td>
+    <td>ROOT FOSSIL</td>
+    <td>根状化石</td>
+    <td><img data-src="img\items\286.png"></td>
+  </tr>
+  <tr>
+    <td>287</td>
+    <td>011F</td>
+    <td>ツメのカセキ</td>
+    <td>CLAW FOSSIL</td>
+    <td>爪子化石</td>
+    <td><img data-src="img\items\287.png"></td>
+  </tr>
+  <tr>
+    <td>288</td>
+    <td>0120</td>
+    <td>デボンスコープ</td>
+    <td>DEVON SCOPE</td>
+    <td>得文侦测镜</td>
+    <td><img data-src="img\items\288.png"></td>
+  </tr>
+  <tr>
+    <td>289</td>
+    <td>0121</td>
+    <td>わざマシン01</td>
+    <td>TM01</td>
+    <td>招式学习器01</td>
+    <td><img data-src="img\items\289.png"></td>
+  </tr>
+  <tr>
+    <td>290</td>
+    <td>0122</td>
+    <td>わざマシン02</td>
+    <td>TM02</td>
+    <td>招式学习器02</td>
+    <td><img data-src="img\items\290.png"></td>
+  </tr>
+  <tr>
+    <td>291</td>
+    <td>0123</td>
+    <td>わざマシン03</td>
+    <td>TM03</td>
+    <td>招式学习器03</td>
+    <td><img data-src="img\items\291.png"></td>
+  </tr>
+  <tr>
+    <td>292</td>
+    <td>0124</td>
+    <td>わざマシン04</td>
+    <td>TM04</td>
+    <td>招式学习器04</td>
+    <td><img data-src="img\items\292.png"></td>
+  </tr>
+  <tr>
+    <td>293</td>
+    <td>0125</td>
+    <td>わざマシン05</td>
+    <td>TM05</td>
+    <td>招式学习器05</td>
+    <td><img data-src="img\items\293.png"></td>
+  </tr>
+  <tr>
+    <td>294</td>
+    <td>0126</td>
+    <td>わざマシン06</td>
+    <td>TM06</td>
+    <td>招式学习器06</td>
+    <td><img data-src="img\items\294.png"></td>
+  </tr>
+  <tr>
+    <td>295</td>
+    <td>0127</td>
+    <td>わざマシン07</td>
+    <td>TM07</td>
+    <td>招式学习器07</td>
+    <td><img data-src="img\items\295.png"></td>
+  </tr>
+  <tr>
+    <td>296</td>
+    <td>0128</td>
+    <td>わざマシン08</td>
+    <td>TM08</td>
+    <td>招式学习器08</td>
+    <td><img data-src="img\items\296.png"></td>
+  </tr>
+  <tr>
+    <td>297</td>
+    <td>0129</td>
+    <td>わざマシン09</td>
+    <td>TM09</td>
+    <td>招式学习器09</td>
+    <td><img data-src="img\items\297.png"></td>
+  </tr>
+  <tr>
+    <td>298</td>
+    <td>012A</td>
+    <td>わざマシン10</td>
+    <td>TM10</td>
+    <td>招式学习器10</td>
+    <td><img data-src="img\items\298.png"></td>
+  </tr>
+  <tr>
+    <td>299</td>
+    <td>012B</td>
+    <td>わざマシン11</td>
+    <td>TM11</td>
+    <td>招式学习器11</td>
+    <td><img data-src="img\items\299.png"></td>
+  </tr>
+  <tr>
+    <td>300</td>
+    <td>012C</td>
+    <td>わざマシン12</td>
+    <td>TM12</td>
+    <td>招式学习器12</td>
+    <td><img data-src="img\items\300.png"></td>
+  </tr>
+  <tr>
+    <td>301</td>
+    <td>012D</td>
+    <td>わざマシン13</td>
+    <td>TM13</td>
+    <td>招式学习器13</td>
+    <td><img data-src="img\items\301.png"></td>
+  </tr>
+  <tr>
+    <td>302</td>
+    <td>012E</td>
+    <td>わざマシン14</td>
+    <td>TM14</td>
+    <td>招式学习器14</td>
+    <td><img data-src="img\items\302.png"></td>
+  </tr>
+  <tr>
+    <td>303</td>
+    <td>012F</td>
+    <td>わざマシン15</td>
+    <td>TM15</td>
+    <td>招式学习器15</td>
+    <td><img data-src="img\items\303.png"></td>
+  </tr>
+  <tr>
+    <td>304</td>
+    <td>0130</td>
+    <td>わざマシン16</td>
+    <td>TM16</td>
+    <td>招式学习器16</td>
+    <td><img data-src="img\items\304.png"></td>
+  </tr>
+  <tr>
+    <td>305</td>
+    <td>0131</td>
+    <td>わざマシン17</td>
+    <td>TM17</td>
+    <td>招式学习器17</td>
+    <td><img data-src="img\items\305.png"></td>
+  </tr>
+  <tr>
+    <td>306</td>
+    <td>0132</td>
+    <td>わざマシン18</td>
+    <td>TM18</td>
+    <td>招式学习器18</td>
+    <td><img data-src="img\items\306.png"></td>
+  </tr>
+  <tr>
+    <td>307</td>
+    <td>0133</td>
+    <td>わざマシン19</td>
+    <td>TM19</td>
+    <td>招式学习器19</td>
+    <td><img data-src="img\items\307.png"></td>
+  </tr>
+  <tr>
+    <td>308</td>
+    <td>0134</td>
+    <td>わざマシン20</td>
+    <td>TM20</td>
+    <td>招式学习器20</td>
+    <td><img data-src="img\items\308.png"></td>
+  </tr>
+  <tr>
+    <td>309</td>
+    <td>0135</td>
+    <td>わざマシン21</td>
+    <td>TM21</td>
+    <td>招式学习器21</td>
+    <td><img data-src="img\items\309.png"></td>
+  </tr>
+  <tr>
+    <td>310</td>
+    <td>0136</td>
+    <td>わざマシン22</td>
+    <td>TM22</td>
+    <td>招式学习器22</td>
+    <td><img data-src="img\items\310.png"></td>
+  </tr>
+  <tr>
+    <td>311</td>
+    <td>0137</td>
+    <td>わざマシン23</td>
+    <td>TM23</td>
+    <td>招式学习器23</td>
+    <td><img data-src="img\items\311.png"></td>
+  </tr>
+  <tr>
+    <td>312</td>
+    <td>0138</td>
+    <td>わざマシン24</td>
+    <td>TM24</td>
+    <td>招式学习器24</td>
+    <td><img data-src="img\items\312.png"></td>
+  </tr>
+  <tr>
+    <td>313</td>
+    <td>0139</td>
+    <td>わざマシン25</td>
+    <td>TM25</td>
+    <td>招式学习器25</td>
+    <td><img data-src="img\items\313.png"></td>
+  </tr>
+  <tr>
+    <td>314</td>
+    <td>013A</td>
+    <td>わざマシン26</td>
+    <td>TM26</td>
+    <td>招式学习器26</td>
+    <td><img data-src="img\items\314.png"></td>
+  </tr>
+  <tr>
+    <td>315</td>
+    <td>013B</td>
+    <td>わざマシン27</td>
+    <td>TM27</td>
+    <td>招式学习器27</td>
+    <td><img data-src="img\items\315.png"></td>
+  </tr>
+  <tr>
+    <td>316</td>
+    <td>013C</td>
+    <td>わざマシン28</td>
+    <td>TM28</td>
+    <td>招式学习器28</td>
+    <td><img data-src="img\items\316.png"></td>
+  </tr>
+  <tr>
+    <td>317</td>
+    <td>013D</td>
+    <td>わざマシン29</td>
+    <td>TM29</td>
+    <td>招式学习器29</td>
+    <td><img data-src="img\items\317.png"></td>
+  </tr>
+  <tr>
+    <td>318</td>
+    <td>013E</td>
+    <td>わざマシン30</td>
+    <td>TM30</td>
+    <td>招式学习器30</td>
+    <td><img data-src="img\items\318.png"></td>
+  </tr>
+  <tr>
+    <td>319</td>
+    <td>013F</td>
+    <td>わざマシン31</td>
+    <td>TM31</td>
+    <td>招式学习器31</td>
+    <td><img data-src="img\items\319.png"></td>
+  </tr>
+  <tr>
+    <td>320</td>
+    <td>0140</td>
+    <td>わざマシン32</td>
+    <td>TM32</td>
+    <td>招式学习器32</td>
+    <td><img data-src="img\items\320.png"></td>
+  </tr>
+  <tr>
+    <td>321</td>
+    <td>0141</td>
+    <td>わざマシン33</td>
+    <td>TM33</td>
+    <td>招式学习器33</td>
+    <td><img data-src="img\items\321.png"></td>
+  </tr>
+  <tr>
+    <td>322</td>
+    <td>0142</td>
+    <td>わざマシン34</td>
+    <td>TM34</td>
+    <td>招式学习器34</td>
+    <td><img data-src="img\items\322.png"></td>
+  </tr>
+  <tr>
+    <td>323</td>
+    <td>0143</td>
+    <td>わざマシン35</td>
+    <td>TM35</td>
+    <td>招式学习器35</td>
+    <td><img data-src="img\items\323.png"></td>
+  </tr>
+  <tr>
+    <td>324</td>
+    <td>0144</td>
+    <td>わざマシン36</td>
+    <td>TM36</td>
+    <td>招式学习器36</td>
+    <td><img data-src="img\items\324.png"></td>
+  </tr>
+  <tr>
+    <td>325</td>
+    <td>0145</td>
+    <td>わざマシン37</td>
+    <td>TM37</td>
+    <td>招式学习器37</td>
+    <td><img data-src="img\items\325.png"></td>
+  </tr>
+  <tr>
+    <td>326</td>
+    <td>0146</td>
+    <td>わざマシン38</td>
+    <td>TM38</td>
+    <td>招式学习器38</td>
+    <td><img data-src="img\items\326.png"></td>
+  </tr>
+  <tr>
+    <td>327</td>
+    <td>0147</td>
+    <td>わざマシン39</td>
+    <td>TM39</td>
+    <td>招式学习器39</td>
+    <td><img data-src="img\items\327.png"></td>
+  </tr>
+  <tr>
+    <td>328</td>
+    <td>0148</td>
+    <td>わざマシン40</td>
+    <td>TM40</td>
+    <td>招式学习器40</td>
+    <td><img data-src="img\items\328.png"></td>
+  </tr>
+  <tr>
+    <td>329</td>
+    <td>0149</td>
+    <td>わざマシン41</td>
+    <td>TM41</td>
+    <td>招式学习器41</td>
+    <td><img data-src="img\items\329.png"></td>
+  </tr>
+  <tr>
+    <td>330</td>
+    <td>014A</td>
+    <td>わざマシン42</td>
+    <td>TM42</td>
+    <td>招式学习器42</td>
+    <td><img data-src="img\items\330.png"></td>
+  </tr>
+  <tr>
+    <td>331</td>
+    <td>014B</td>
+    <td>わざマシン43</td>
+    <td>TM43</td>
+    <td>招式学习器43</td>
+    <td><img data-src="img\items\331.png"></td>
+  </tr>
+  <tr>
+    <td>332</td>
+    <td>014C</td>
+    <td>わざマシン44</td>
+    <td>TM44</td>
+    <td>招式学习器44</td>
+    <td><img data-src="img\items\332.png"></td>
+  </tr>
+  <tr>
+    <td>333</td>
+    <td>014D</td>
+    <td>わざマシン45</td>
+    <td>TM45</td>
+    <td>招式学习器45</td>
+    <td><img data-src="img\items\333.png"></td>
+  </tr>
+  <tr>
+    <td>334</td>
+    <td>014E</td>
+    <td>わざマシン46</td>
+    <td>TM46</td>
+    <td>招式学习器46</td>
+    <td><img data-src="img\items\334.png"></td>
+  </tr>
+  <tr>
+    <td>335</td>
+    <td>014F</td>
+    <td>わざマシン47</td>
+    <td>TM47</td>
+    <td>招式学习器47</td>
+    <td><img data-src="img\items\335.png"></td>
+  </tr>
+  <tr>
+    <td>336</td>
+    <td>0150</td>
+    <td>わざマシン48</td>
+    <td>TM48</td>
+    <td>招式学习器48</td>
+    <td><img data-src="img\items\336.png"></td>
+  </tr>
+  <tr>
+    <td>337</td>
+    <td>0151</td>
+    <td>わざマシン49</td>
+    <td>TM49</td>
+    <td>招式学习器49</td>
+    <td><img data-src="img\items\337.png"></td>
+  </tr>
+  <tr>
+    <td>338</td>
+    <td>0152</td>
+    <td>わざマシン50</td>
+    <td>TM50</td>
+    <td>招式学习器50</td>
+    <td><img data-src="img\items\338.png"></td>
+  </tr>
+  <tr>
+    <td>339</td>
+    <td>0153</td>
+    <td>ひでんマシン01</td>
+    <td>HM01</td>
+    <td>秘传学习器01</td>
+    <td><img data-src="img\items\339.png"></td>
+  </tr>
+  <tr>
+    <td>340</td>
+    <td>0154</td>
+    <td>ひでんマシン02</td>
+    <td>HM02</td>
+    <td>秘传学习器02</td>
+    <td><img data-src="img\items\340.png"></td>
+  </tr>
+  <tr>
+    <td>341</td>
+    <td>0155</td>
+    <td>ひでんマシン03</td>
+    <td>HM03</td>
+    <td>秘传学习器03</td>
+    <td><img data-src="img\items\341.png"></td>
+  </tr>
+  <tr>
+    <td>342</td>
+    <td>0156</td>
+    <td>ひでんマシン04</td>
+    <td>HM04</td>
+    <td>秘传学习器04</td>
+    <td><img data-src="img\items\342.png"></td>
+  </tr>
+  <tr>
+    <td>343</td>
+    <td>0157</td>
+    <td>ひでんマシン05</td>
+    <td>HM05</td>
+    <td>秘传学习器05</td>
+    <td><img data-src="img\items\343.png"></td>
+  </tr>
+  <tr>
+    <td>344</td>
+    <td>0158</td>
+    <td>ひでんマシン06</td>
+    <td>HM06</td>
+    <td>秘传学习器06</td>
+    <td><img data-src="img\items\344.png"></td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td>0159</td>
+    <td>ひでんマシン07</td>
+    <td>HM07</td>
+    <td>秘传学习器07</td>
+    <td><img data-src="img\items\345.png"></td>
+  </tr>
+  <tr>
+    <td>346</td>
+    <td>015A</td>
+    <td>ひでんマシン08</td>
+    <td>HM08</td>
+    <td>秘传学习器08</td>
+    <td><img data-src="img\items\346.png"></td>
+  </tr>
+  <tr>
+    <td>347</td>
+    <td>015B</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>348</td>
+    <td>015C</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td>N/A</td>
+    <td><img data-src="img\items\0.png"></td>
+  </tr>
+  <tr>
+    <td>349</td>
+    <td>015D</td>
+    <td>おとどけもの</td>
+    <td>OAK'S PARCEL</td>
+    <td>包裹</td>
+    <td><img data-src="img\items\349.png"></td>
+  </tr>
+  <tr>
+    <td>350</td>
+    <td>015E</td>
+    <td>ポケモンのふえ</td>
+    <td>POKé FLUTE</td>
+    <td>宝可梦之笛</td>
+    <td><img data-src="img\items\350.png"></td>
+  </tr>
+  <tr>
+    <td>351</td>
+    <td>015F</td>
+    <td>ひみつのカギ</td>
+    <td>SECRET KEY</td>
+    <td>秘密钥匙</td>
+    <td><img data-src="img\items\351.png"></td>
+  </tr>
+  <tr>
+    <td>352</td>
+    <td>0160</td>
+    <td>ひきかえけん</td>
+    <td>BIKE VOUCHER</td>
+    <td>兑换券</td>
+    <td><img data-src="img\items\352.png"></td>
+  </tr>
+  <tr>
+    <td>353</td>
+    <td>0161</td>
+    <td>きんのいれば</td>
+    <td>GOLD TEETH</td>
+    <td>金假牙</td>
+    <td><img data-src="img\items\353.png"></td>
+  </tr>
+  <tr>
+    <td>354</td>
+    <td>0162</td>
+    <td>ひみつのコハク</td>
+    <td>OLD AMBER</td>
+    <td>秘密琥珀</td>
+    <td><img data-src="img\items\354.png"></td>
+  </tr>
+  <tr>
+    <td>355</td>
+    <td>0163</td>
+    <td>カードキー</td>
+    <td>CARD KEY</td>
+    <td>钥匙卡</td>
+    <td><img data-src="img\items\355.png"></td>
+  </tr>
+  <tr>
+    <td>356</td>
+    <td>0164</td>
+    <td>エレベータのカギ</td>
+    <td>LIFT KEY</td>
+    <td>电梯钥匙</td>
+    <td><img data-src="img\items\356.png"></td>
+  </tr>
+  <tr>
+    <td>357</td>
+    <td>0165</td>
+    <td>かいのカセキ</td>
+    <td>HELIX FOSSIL</td>
+    <td>贝壳化石</td>
+    <td><img data-src="img\items\357.png"></td>
+  </tr>
+  <tr>
+    <td>358</td>
+    <td>0166</td>
+    <td>こうらのカセキ</td>
+    <td>DOME FOSSIL</td>
+    <td>甲壳化石</td>
+    <td><img data-src="img\items\358.png"></td>
+  </tr>
+  <tr>
+    <td>359</td>
+    <td>0167</td>
+    <td>シルフスコープ</td>
+    <td>SILPH SCOPE</td>
+    <td>西尔佛检视镜</td>
+    <td><img data-src="img\items\359.png"></td>
+  </tr>
+  <tr>
+    <td>360</td>
+    <td>0168</td>
+    <td>じてんしゃ</td>
+    <td>BICYCLE</td>
+    <td>自行车</td>
+    <td><img data-src="img\items\360.png"></td>
+  </tr>
+  <tr>
+    <td>361</td>
+    <td>0169</td>
+    <td>タウンマップ</td>
+    <td>TOWN MAP</td>
+    <td>城镇地图</td>
+    <td><img data-src="img\items\361.png"></td>
+  </tr>
+  <tr>
+    <td>362</td>
+    <td>016A</td>
+    <td>バトルサーチャー</td>
+    <td>VS SEEKER</td>
+    <td>对战搜寻器</td>
+    <td><img data-src="img\items\362.png"></td>
+  </tr>
+  <tr>
+    <td>363</td>
+    <td>016B</td>
+    <td>ボイスチェッカー</td>
+    <td>FAME CHECKER</td>
+    <td>声音记录器</td>
+    <td><img data-src="img\items\363.png"></td>
+  </tr>
+  <tr>
+    <td>364</td>
+    <td>016C</td>
+    <td>わざマシンケース</td>
+    <td>TM CASE</td>
+    <td>招式学习器盒</td>
+    <td><img data-src="img\items\364.png"></td>
+  </tr>
+  <tr>
+    <td>365</td>
+    <td>016D</td>
+    <td>きのみぶくろ</td>
+    <td>BERRY POUCH</td>
+    <td>树果袋</td>
+    <td><img data-src="img\items\365.png"></td>
+  </tr>
+  <tr>
+    <td>366</td>
+    <td>016E</td>
+    <td>おしえテレビ</td>
+    <td>TEACHY TV</td>
+    <td>教学电视</td>
+    <td><img data-src="img\items\366.png"></td>
+  </tr>
+  <tr>
+    <td>367</td>
+    <td>016F</td>
+    <td>トライパス</td>
+    <td>TRI-PASS</td>
+    <td>三岛通行船券</td>
+    <td><img data-src="img\items\367.png"></td>
+  </tr>
+  <tr>
+    <td>368</td>
+    <td>0170</td>
+    <td>レインボーパス</td>
+    <td>RAINBOW PASS</td>
+    <td>七彩通行船券</td>
+    <td><img data-src="img\items\368.png"></td>
+  </tr>
+  <tr>
+    <td>369</td>
+    <td>0171</td>
+    <td>おちゃ</td>
+    <td>TEA</td>
+    <td>茶</td>
+    <td><img data-src="img\items\369.png"></td>
+  </tr>
+  <tr>
+    <td>370</td>
+    <td>0172</td>
+    <td>しんぴのチケット</td>
+    <td>MYSTICTICKET</td>
+    <td>神秘船票</td>
+    <td><img data-src="img\items\370.png"></td>
+  </tr>
+  <tr>
+    <td>371</td>
+    <td>0173</td>
+    <td>オーロラチケット</td>
+    <td>AURORATICKET</td>
+    <td>极光船票</td>
+    <td><img data-src="img\items\371.png"></td>
+  </tr>
+  <tr>
+    <td>372</td>
+    <td>0174</td>
+    <td>こないれ</td>
+    <td>POWDER JAR</td>
+    <td>粉末瓶</td>
+    <td><img data-src="img\items\372.png"></td>
+  </tr>
+  <tr>
+    <td>373</td>
+    <td>0175</td>
+    <td>ルビー</td>
+    <td>RUBY</td>
+    <td>红宝石</td>
+    <td><img data-src="img\items\373.png"></td>
+  </tr>
+  <tr>
+    <td>374</td>
+    <td>0176</td>
+    <td>サファイヤ</td>
+    <td>SAPPHIRE</td>
+    <td>蓝宝石</td>
+    <td><img data-src="img\items\374.png"></td>
+  </tr>
+  <tr>
+    <td>375</td>
+    <td>0177</td>
+    <td>とじる</td>
+    <td>CANCEL</td>
+    <td>关闭</td>
+    <td><img data-src="img\items\375.png"></td>
+  </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="footer-copyright"> by Ruimusume 露易娘 © 2026 All Rights Reserved </div>
+
+<script>
+(function() {
+    const CONFIG = {
+        zipUrl: 'https://raw.githubusercontent.com/Ruimusume/PMFRLG/main/item.zip',
+        fallbackUrls: [
+            'https://raw.githubusercontent.com/Ruimusume/PMFRLG/main/item.zip',
+        ],
+        cacheVersion: '1.0',
+        dbName: 'PokemonImages',
+        storeName: 'images',
+        baseUrl: '',
+        debug: true
+    };
+
+    const debugPanel = document.getElementById('debugPanel');
+    const debugLogs = document.getElementById('debugLogs');
+    
+    window.toggleDebug = function() {
+        debugPanel.classList.toggle('show');
+    };
+    
+    function addDebugLog(type, ...args) {
+        if (!CONFIG.debug) return;
+        
+        const time = new Date().toLocaleTimeString();
+        const message = args.map(arg => {
+            if (typeof arg === 'object') {
+                try {
+                    return JSON.stringify(arg).slice(0, 200);
+                } catch {
+                    return String(arg);
+                }
+            }
+            return String(arg);
+        }).join(' ');
+        
+        const entry = document.createElement('div');
+        entry.className = `log-entry ${type}`;
+        entry.innerHTML = `<span style="color:#888;">[${time}]</span> ${message}`;
+        debugLogs.appendChild(entry);
+        
+        while (debugLogs.children.length > 100) {
+            debugLogs.removeChild(debugLogs.firstChild);
+        }
+        
+        console.log(`[${type}]`, ...args);
+    }
+    
+    const log = (...args) => addDebugLog('info', ...args);
+    const success = (...args) => addDebugLog('success', ...args);
+    const error = (...args) => addDebugLog('error', ...args);
+    const warn = (...args) => addDebugLog('warning', ...args);
+
+    class ImageCache {
+        constructor() {
+            this.db = null;
+            this.ready = this.init();
+        }
+
+        init() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open(CONFIG.dbName, 3);
+                
+                request.onerror = () => {
+                    error('IndexedDB打开失败:', request.error);
+                    reject(request.error);
+                };
+                
+                request.onsuccess = () => {
+                    this.db = request.result;
+                    success('IndexedDB打开成功');
+                    resolve();
+                };
+                
+                request.onupgradeneeded = (event) => {
+                    const db = event.target.result;
+                    log('IndexedDB升级，旧版本:', event.oldVersion);
+                    
+                    if (db.objectStoreNames.contains(CONFIG.storeName)) {
+                        db.deleteObjectStore(CONFIG.storeName);
+                        log('删除旧存储');
+                    }
+                    
+                    const store = db.createObjectStore(CONFIG.storeName, { keyPath: 'url' });
+                    store.createIndex('version', 'version', { unique: false });
+                    store.createIndex('filename', 'filename', { unique: false });
+                    success('创建新存储');
+                };
+            });
+        }
+
+        async saveImage(url, blob, filename) {
+            await this.ready;
+            return new Promise((resolve, reject) => {
+                const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
+                const store = transaction.objectStore(CONFIG.storeName);
+                
+                const data = {
+                    url: url,
+                    blob: blob,
+                    filename: filename,
+                    version: CONFIG.cacheVersion,
+                    timestamp: Date.now()
+                };
+                
+                const request = store.put(data);
+                
+                request.onsuccess = () => {
+                    success('缓存成功:', filename);
+                    resolve();
+                };
+                
+                request.onerror = () => {
+                    error('缓存失败:', filename, request.error);
+                    reject(request.error);
+                };
+            });
+        }
+
+        async saveMultipleImages(entries) {
+            await this.ready;
+            return new Promise((resolve, reject) => {
+                const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
+                const store = transaction.objectStore(CONFIG.storeName);
+                
+                let completed = 0;
+                let failed = 0;
+                const total = entries.length;
+                
+                entries.forEach(({ url, blob, filename }) => {
+                    const data = {
+                        url: url,
+                        blob: blob,
+                        filename: filename,
+                        version: CONFIG.cacheVersion,
+                        timestamp: Date.now()
+                    };
+                    
+                    const request = store.put(data);
+                    
+                    request.onsuccess = () => {
+                        completed++;
+                        if ((completed + failed) % 50 === 0) {
+                            log(`缓存进度: ${completed}/${total}`);
+                        }
+                        if (completed + failed === total) {
+                            success(`批量保存完成: ${completed}成功, ${failed}失败`);
+                            resolve();
+                        }
+                    };
+                    
+                    request.onerror = () => {
+                        failed++;
+                        error('批量保存失败:', filename);
+                        if (completed + failed === total) {
+                            warn(`批量保存完成，有${failed}个失败`);
+                            resolve();
+                        }
+                    };
+                });
+            });
+        }
+
+        async getImage(url) {
+            await this.ready;
+            return new Promise((resolve, reject) => {
+                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                const store = transaction.objectStore(CONFIG.storeName);
+                const request = store.get(url);
+                
+                request.onsuccess = () => {
+                    const data = request.result;
+                    if (data && data.version === CONFIG.cacheVersion) {
+                        success('缓存命中:', data.filename);
+                        resolve(data.blob);
+                    } else {
+                        if (data) {
+                            warn('缓存版本不匹配:', data.filename, '期望:', CONFIG.cacheVersion, '实际:', data.version);
+                        } else {
+                            log('缓存未找到:', url);
+                        }
+                        resolve(null);
+                    }
+                };
+                request.onerror = () => {
+                    error('缓存读取失败:', url);
+                    reject(request.error);
+                };
+            });
+        }
+
+        async hasImages() {
+            await this.ready;
+            return new Promise((resolve, reject) => {
+                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                const store = transaction.objectStore(CONFIG.storeName);
+                const countRequest = store.count();
+                
+                countRequest.onsuccess = () => {
+                    log('当前缓存图片数量:', countRequest.result);
+                    resolve(countRequest.result > 0);
+                };
+                countRequest.onerror = () => {
+                    reject(countRequest.error);
+                };
+            });
+        }
+
+        async getImageCount() {
+            await this.ready;
+            return new Promise((resolve, reject) => {
+                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                const store = transaction.objectStore(CONFIG.storeName);
+                const countRequest = store.count();
+                
+                countRequest.onsuccess = () => {
+                    resolve(countRequest.result);
+                };
+                countRequest.onerror = () => {
+                    reject(countRequest.error);
+                };
+            });
+        }
+
+        async getSampleUrls(limit = 5) {
+            await this.ready;
+            return new Promise((resolve, reject) => {
+                const transaction = this.db.transaction([CONFIG.storeName], 'readonly');
+                const store = transaction.objectStore(CONFIG.storeName);
+                const urls = [];
+                
+                const request = store.openCursor();
+                request.onsuccess = (event) => {
+                    const cursor = event.target.result;
+                    if (cursor && urls.length < limit) {
+                        urls.push(cursor.value.url);
+                        cursor.continue();
+                    } else {
+                        resolve(urls);
+                    }
+                };
+                request.onerror = () => {
+                    reject(request.error);
+                };
+            });
+        }
+
+        async clear() {
+            await this.ready;
+            return new Promise((resolve, reject) => {
+                const transaction = this.db.transaction([CONFIG.storeName], 'readwrite');
+                const store = transaction.objectStore(CONFIG.storeName);
+                const request = store.clear();
+                
+                request.onsuccess = () => {
+                    log('缓存已清空');
+                    resolve();
+                };
+                request.onerror = () => {
+                    error('清空缓存失败');
+                    reject(request.error);
+                };
+            });
+        }
+    }
+
+    const imageCache = new ImageCache();
+
+    function loadJSZip() {
+        return new Promise((resolve, reject) => {
+            if (window.JSZip) {
+                resolve(window.JSZip);
+                return;
+            }
+            
+            log('加载JSZip库...');
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+            script.crossOrigin = 'anonymous';
+            
+            script.onload = () => {
+                success('JSZip加载成功');
+                resolve(window.JSZip);
+            };
+            script.onerror = (e) => {
+                error('JSZip加载失败', e);
+                reject(e);
+            };
+            
+            document.head.appendChild(script);
+        });
+    }
+
+    async function downloadWithRetry(url, retries = 3) {
+        for (let i = 0; i < retries; i++) {
+            try {
+                log(`下载尝试 ${i+1}/${retries}:`, url);
+                
+                const response = await fetch(url + '?t=' + Date.now(), {
+                    mode: 'cors',
+                    credentials: 'omit',
+                    headers: {
+                        'Accept': 'application/octet-stream'
+                    }
+                });
+                
+                if (response.ok) {
+                    success('下载成功，状态:', response.status);
+                    return response;
+                }
+                
+                error('下载失败，状态:', response.status);
+                if (response.status === 404) {
+                    throw new Error('文件不存在 (404)');
+                }
+            } catch (e) {
+                error('下载异常:', e.message);
+                if (i === retries - 1) throw e;
+                await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
+            }
+        }
+        throw new Error('下载失败');
+    }
+
+
+    function normalizePath(path) {
+
+        let normalized = path.replace(/\\/g, '/');
+
+        normalized = normalized.replace(/^\//, '');
+
+        normalized = normalized.replace(/\/+/g, '/');
+        return normalized;
+    }
+
+
+    function extractCachePath(zipPath) {
+
+        let normalized = zipPath.replace(/\\/g, '/');
+        
+
+        if (normalized.startsWith('img/')) {
+            return normalized;
+        }
+        
+
+        const imgIndex = normalized.indexOf('img/');
+        if (imgIndex !== -1) {
+            return normalized.substring(imgIndex);
+        }
+        
+
+        return normalized;
+    }
+
+    async function loadImageWithCache(img) {
+        const realSrc = img.getAttribute('data-src');
+        if (!realSrc) return false;
+        
+
+        const normalizedSrc = normalizePath(realSrc);
+        
+
+        if (normalizedSrc !== realSrc) {
+            img.setAttribute('data-src', normalizedSrc);
+        }
+        
+        const filename = normalizedSrc.split('/').pop()?.split('?')[0] || 'unknown';
+        
+        try {
+            const cachedBlob = await imageCache.getImage(normalizedSrc);
+            
+            if (cachedBlob) {
+                const url = URL.createObjectURL(cachedBlob);
+                img.src = url;
+                img.onload = () => {
+                    URL.revokeObjectURL(url);
+                    img.classList.add('cached');
+                    img.removeAttribute('data-src');
+                    success('图片加载成功:', filename);
+                };
+                img.onerror = (e) => {
+                    URL.revokeObjectURL(url);
+                    warn('缓存图片加载失败，降级到网络:', filename, e);
+                    img.src = normalizedSrc;
+                };
+                return true;
+            } else {
+                log('缓存未命中，从网络加载:', filename);
+                img.src = normalizedSrc;
+                img.onload = () => {
+                    img.removeAttribute('data-src');
+                    success('网络图片加载成功:', filename);
+                };
+                img.onerror = (e) => {
+                    error('网络图片加载失败:', filename, normalizedSrc, e);
+                };
+                return false;
+            }
+        } catch (error) {
+            error('缓存读取失败，从网络加载:', error);
+            img.src = normalizedSrc;
+            img.removeAttribute('data-src');
+            return false;
+        }
+    }
+
+    async function downloadAndExtractZip() {
+        const progressDiv = document.getElementById('downloadProgress');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const errorMsg = document.getElementById('errorMessage');
+        
+        progressDiv.classList.remove('hidden');
+        progressFill.style.width = '0%';
+        
+        try {
+            log('清空旧缓存...');
+            await imageCache.clear();
+
+            errorMsg.textContent = '正在连接...';
+            let response;
+            
+            for (const url of CONFIG.fallbackUrls) {
+                try {
+                    response = await downloadWithRetry(url);
+                    success('使用链接成功:', url);
+                    break;
+                } catch (e) {
+                    warn('链接失败:', url);
+                    continue;
+                }
+            }
+            
+            if (!response) throw new Error('所有下载链接都失败');
+            
+            errorMsg.textContent = '连接成功，开始下载...';
+            
+            const contentLength = response.headers.get('content-length');
+            const total = parseInt(contentLength, 10) || 0;
+            let loaded = 0;
+            
+            const reader = response.body.getReader();
+            const chunks = [];
+            
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                
+                chunks.push(value);
+                loaded += value.length;
+                
+                if (total > 0) {
+                    const percent = Math.round((loaded / total) * 100);
+                    progressFill.style.width = percent + '%';
+                    const mbLoaded = (loaded / 1024 / 1024).toFixed(1);
+                    const mbTotal = (total / 1024 / 1024).toFixed(1);
+                    progressText.textContent = `下载中 ${mbLoaded}MB / ${mbTotal}MB (${percent}%)`;
+                }
+            }
+            
+            success('下载完成，总大小:', (loaded/1024/1024).toFixed(1) + 'MB');
+            
+            const zipData = new Uint8Array(loaded);
+            let position = 0;
+            for (const chunk of chunks) {
+                zipData.set(chunk, position);
+                position += chunk.length;
+            }
+            
+            errorMsg.textContent = '下载完成，正在加载解压工具...';
+            
+            const JSZip = await loadJSZip();
+            
+            errorMsg.textContent = '正在解压图片...';
+            
+            const zip = await JSZip.loadAsync(zipData);
+
+            const imageFiles = [];
+            zip.forEach((relativePath, file) => {
+                if (!file.dir && /\.(png|jpg|jpeg|gif|webp)$/i.test(relativePath)) {
+                    imageFiles.push(relativePath);
+                }
+            });
+            
+            log('ZIP内原始路径（前10个）:', imageFiles.slice(0, 10));
+            
+            const totalImages = imageFiles.length;
+            errorMsg.textContent = `找到 ${totalImages} 张图片`;
+            
+            const batchSize = 30;
+            let processed = 0;
+            let successCount = 0;
+            
+            for (let i = 0; i < imageFiles.length; i += batchSize) {
+                const batch = imageFiles.slice(i, i + batchSize);
+                const saveEntries = [];
+                
+                for (const originalPath of batch) {
+                    try {
+                        const file = zip.files[originalPath];
+                        const blob = await file.async('blob');
+                        
+                        const cachePath = extractCachePath(originalPath);
+                        
+                        const normalizedPath = normalizePath(cachePath);
+                        
+                        log('缓存路径:', originalPath, '->', normalizedPath);
+                        
+                        saveEntries.push({ 
+                            url: normalizedPath, 
+                            blob, 
+                            filename: normalizedPath 
+                        });
+                        successCount++;
+                        
+                    } catch (e) {
+                        error('处理文件失败:', originalPath, e.message);
+                    }
+                }
+                
+                if (saveEntries.length > 0) {
+                    await imageCache.saveMultipleImages(saveEntries);
+                }
+                
+                processed += batch.length;
+                const percent = Math.round((processed / totalImages) * 100);
+                progressFill.style.width = percent + '%';
+                progressText.textContent = `${processed}/${totalImages} 已缓存 (${percent}%)`;
+                
+                await new Promise(resolve => setTimeout(resolve, 10));
+            }
+
+            progressFill.style.width = '100%';
+            progressText.textContent = `完成！共缓存 ${successCount} 张图片`;
+            errorMsg.textContent = '图片缓存成功！正在验证...';
+            
+            const finalCount = await imageCache.getImageCount();
+            success('最终缓存图片数量:', finalCount);
+            
+            if (finalCount > 0) {
+                const samples = await imageCache.getSampleUrls();
+                log('缓存示例URLs:', samples);
+                
+                document.getElementById('cacheBadge').classList.remove('hidden');
+                errorMsg.textContent = `缓存成功！共 ${finalCount} 张图片，即将刷新...`;
+                
+                setTimeout(() => {
+                    window.location.reload();
+                }, 2000);
+            } else {
+                throw new Error('缓存失败：没有图片被保存');
+            }
+            
+        } catch (error) {
+            error('下载流程失败:', error);
+            errorMsg.textContent = `错误: ${error.message}`;
+            progressText.textContent = '下载失败，使用普通加载模式';
+            
+            setTimeout(() => {
+                progressDiv.classList.add('hidden');
+                initLazyLoad();
+            }, 3000);
+        }
+    }
+
+    function initLazyLoad() {
+        log('启动懒加载模式');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    loadImageWithCache(img);
+                    observer.unobserve(img);
+                }
+            });
+        }, { rootMargin: '200px 0px' });
+        
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            observer.observe(img);
+        });
+    }
+
+    function normalizeAllImagePaths() {
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            const src = img.getAttribute('data-src');
+            if (src) {
+                const normalized = normalizePath(src);
+                if (normalized !== src) {
+                    img.setAttribute('data-src', normalized);
+                    log('标准化路径:', src, '->', normalized);
+                }
+            }
+        });
+    }
+
+    async function checkCacheAndStart() {
+        try {
+            const hasCache = await imageCache.hasImages();
+            const count = hasCache ? await imageCache.getImageCount() : 0;
+            
+            if (hasCache && count > 100) {
+                success(`使用本地缓存 (${count}张图片)`);
+                document.getElementById('cacheBadge').classList.remove('hidden');
+                
+                const samples = await imageCache.getSampleUrls();
+                log('缓存示例URLs:', samples);
+                
+                initLazyLoad();
+            } else {
+                log('首次运行或缓存不足，开始下载');
+                await downloadAndExtractZip();
+            }
+        } catch (e) {
+            error('缓存检查失败', e);
+            initLazyLoad();
+        }
+    }
+
+    const searchInput = document.getElementById('searchInput');
+    const tableBody = document.getElementById('pokemonTableBody');
+
+    function searchPokemon() {
+        const filter = searchInput.value.toLowerCase().trim();
+        const rows = tableBody.getElementsByTagName('tr');
+        
+        for (let i = 0; i < rows.length; i++) {
+            const cells = rows[i].getElementsByTagName('td');
+            let found = false;
+            
+            for (let j = 0; j < cells.length; j++) {
+                if (cells[j].textContent.toLowerCase().includes(filter)) {
+                    found = true;
+                    break;
+                }
+            }
+            
+            rows[i].style.display = found ? '' : 'none';
+        }
+    }
+
+    searchInput.addEventListener('input', searchPokemon);
+    searchInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') searchPokemon();
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+        normalizeAllImagePaths(); 
+        setTimeout(checkCacheAndStart, 100);
+    });
+
+    window.debugCache = {
+        clear: () => imageCache.clear(),
+        info: () => imageCache.getImageCount(),
+        reload: () => window.location.reload(),
+        logs: () => console.log(document.getElementById('debugLogs').innerText),
+        checkPath: (path) => {
+            const normalized = normalizePath(path);
+            console.log('原始路径:', path);
+            console.log('标准化后:', normalized);
+            imageCache.getImage(normalized).then(blob => {
+                console.log('缓存中存在:', !!blob);
+            });
+        }
+    };
+
+})();
+</script>
+</body>
+</html>

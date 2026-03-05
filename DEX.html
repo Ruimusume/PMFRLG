@@ -6887,45 +6887,34 @@ img.cached {
         throw new Error('下载失败');
     }
 
-    // 统一处理路径中的斜杠，保持原始路径结构
     function normalizePath(path) {
-        // 统一将反斜杠替换为正斜杠
         let normalized = path.replace(/\\/g, '/');
-        // 移除开头的 / (如果存在)
         normalized = normalized.replace(/^\//, '');
-        // 移除可能的多个连续斜杠
         normalized = normalized.replace(/\/+/g, '/');
         return normalized;
     }
 
-    // 从ZIP路径提取用于缓存的路径
     function extractCachePath(zipPath) {
-        // 统一将反斜杠替换为正斜杠
         let normalized = zipPath.replace(/\\/g, '/');
         
-        // 如果路径以 img/ 开头，保留这个结构
         if (normalized.startsWith('img/')) {
             return normalized;
         }
         
-        // 如果不是以 img/ 开头，但包含 img/，提取从 img/ 开始的部分
         const imgIndex = normalized.indexOf('img/');
         if (imgIndex !== -1) {
             return normalized.substring(imgIndex);
         }
-        
-        // 否则返回原路径
+
         return normalized;
     }
 
     async function loadImageWithCache(img) {
         const realSrc = img.getAttribute('data-src');
         if (!realSrc) return false;
-        
-        // 统一处理路径中的斜杠
+
         const normalizedSrc = normalizePath(realSrc);
-        
-        // 如果 data-src 被修改过，更新属性值
+
         if (normalizedSrc !== realSrc) {
             img.setAttribute('data-src', normalizedSrc);
         }
@@ -6933,7 +6922,7 @@ img.cached {
         const filename = normalizedSrc.split('/').pop()?.split('?')[0] || 'unknown';
         
         try {
-            // 使用标准化后的路径进行缓存查询
+
             const cachedBlob = await imageCache.getImage(normalizedSrc);
             
             if (cachedBlob) {
@@ -7066,11 +7055,9 @@ img.cached {
                     try {
                         const file = zip.files[originalPath];
                         const blob = await file.async('blob');
-                        
-                        // 获取用于缓存的路径
+
                         const cachePath = extractCachePath(originalPath);
-                        
-                        // 确保路径格式统一
+
                         const normalizedPath = normalizePath(cachePath);
                         
                         log('缓存路径:', originalPath, '->', normalizedPath);
@@ -7149,7 +7136,6 @@ img.cached {
         });
     }
 
-    // 初始化时统一处理所有图片路径
     function normalizeAllImagePaths() {
         document.querySelectorAll('img[data-src]').forEach(img => {
             const src = img.getAttribute('data-src');
@@ -7171,8 +7157,7 @@ img.cached {
             if (hasCache && count > 100) {
                 success(`使用本地缓存 (${count}张图片)`);
                 document.getElementById('cacheBadge').classList.remove('hidden');
-                
-                // 显示一些缓存示例
+
                 const samples = await imageCache.getSampleUrls();
                 log('缓存示例URLs:', samples);
                 
