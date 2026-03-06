@@ -107,7 +107,7 @@ You can record and view the ID and modifications of each Area here.Only for Japa
 ## Disable MemCrypt
 Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`
 English version, ROM Patch - Patches 0x804F8E2 with 0x2400. Raw 0x1824.<br>
-Japanese version, ROM Patch - Patches 0x804F0F8 with 0x2400. Raw 0x1824.
+Japanese version, ROM Patch - Patches 0x804F0F8 with 0x2400. Raw 0x1824.<br>
 `Thank you to the original author Kenobi, LoadingNOW`
 
 ## Source of Contribution
