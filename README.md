@@ -105,7 +105,7 @@ You can record and view the ID and modifications of each Area here.Only for Japa
 <div align="center"><img alt="tool" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/RFGL_J_Area_ID_tool.png?raw=true"/></div>
 
 ## Disable MemCrypt
-Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`
+Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
 English version, ROM Patch - Patches 0x804F8E2 with 0x2400. Raw 0x1824.<br>
 Japanese version, ROM Patch - Patches 0x804F0F8 with 0x2400. Raw 0x1824.<br>
 `Thank you to the original author Kenobi, LoadingNOW`
