@@ -86,6 +86,7 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 - [Area_id](https://github.com/Ruimusume/PMFRLG/blob/main/Area_id.txt)
 - [waza_id](https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt)
 - [Char_map_JP](https://github.com/Ruimusume/PMFRLG/blob/main/Char_map_JP.txt)
+
 ## Restart Game & Claer Save Data
 If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
 <img alt="claer" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/claer.png?raw=true" />
@@ -102,6 +103,9 @@ If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title 
 You can record and view the ID and modifications of each Area here.Only for Japanese version.
 [https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID](https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID)
 <div align="center"><img alt="tool" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/RFGL_J_Area_ID_tool.png?raw=true"/></div>
+
+## Disable MemCrypt
+English version, ROM Patch - Patches 0x804F8E2 with 0x2400. Raw 0x1824.
 
 ## Source of Contribution
 Thank you very much to previous authors.<br>
