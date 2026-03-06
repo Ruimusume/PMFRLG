@@ -118,3 +118,4 @@ Thank you very much to previous authors.<br>
 [https://gamehacking.org/game/5634](https://gamehacking.org/game/5634)<br>
 [https://wikiwiki.jp/pokemonhack/開発ツール](https://wikiwiki.jp/pokemonhack/%E9%96%8B%E7%99%BA%E3%83%84%E3%83%BC%E3%83%AB)<br>
 [https://github.com/haven1433/HexManiacAdvance](https://github.com/haven1433/HexManiacAdvance)<br>
+[https://gbatemp.net/threads/680064/](https://gbatemp.net/threads/680064/)<br>
