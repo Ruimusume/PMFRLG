@@ -104,7 +104,7 @@ You can record and view the ID and modifications of each Area here.Only for Japa
 [https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID](https://github.com/Ruimusume/PMFRLG/releases/tag/Area_ID)
 <div align="center"><img alt="tool" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/RFGL_J_Area_ID_tool.png?raw=true"/></div>
 
-## Disable MemCrypt
+## Fixed RAM & MemCrypt
 Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
 `Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
   <table>
