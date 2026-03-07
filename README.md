@@ -105,6 +105,11 @@ You can record and view the ID and modifications of each Area here.Only for Japa
 <div align="center"><img alt="tool" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/RFGL_J_Area_ID_tool.png?raw=true"/></div>
 
 ## Fixed RAM & MemCrypt
+Fixed RAM: What is it? Its function is to fix the address of RAM so that it no longer changes.<br>
+MemCrypt: What is it? Its function is to decrypt encrypted data, such as in-game currency or items.<br>
+<br>
+These two features can provide better hacking capabilities for games, such as creating mods, cheats, etc.<br>
+<br>
 Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
 `Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
   <table>
