@@ -192,7 +192,7 @@ Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
     <tr>
       <td>BPRD</td>
       <td>0x4F8A8</td>
-      <td>0x497E</td>
+      <td>0x4F97E</td>
       <td>00 21 0A 4A</td>
       <td>00 24 20 1C</td>
       <td>01 40 0A 4A</td>
@@ -201,7 +201,7 @@ Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
     <tr>
       <td>BPGD</td>
       <td>0x4F8A8</td>
-      <td>0x497E</td>
+      <td>0x4F97E</td>
       <td>00 21 0A 4A</td>
       <td>00 24 20 1C</td>
       <td>01 40 0A 4A</td>
