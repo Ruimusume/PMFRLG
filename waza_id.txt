@@ -1,354 +1,355 @@
-1	0001	はたく	拍击	Pound
-2	0002	からてチョップ	空手劈	Karate Chop
-3	0003	おうふくビンタ	连环巴掌	Double Slap
-4	0004	れんぞくパンチ	连续拳	Comet Punch
-5	0005	メガトンパンチ	百万吨重拳	Mega Punch
-6	0006	ネコにこばん	聚宝功	Pay Day
-7	0007	ほのおのパンチ	火焰拳	Fire Punch
-8	0008	れいとうパンチ	冰冻拳	Ice Punch
-9	0009	かみなりパンチ	雷电拳	Thunder Punch
-10	000A	ひっかく	抓	Scratch
-11	000B	はさむ	夹住	Vise Grip
-12	000C	ハサミギロチン	极落钳	Guillotine
-13	000D	かまいたち	旋风刀	Razor Wind
-14	000E	つるぎのまい	剑舞	Swords Dance
-15	000F	いあいぎり	居合劈	Cut
-16	0010	かぜおこし	起风	Gust
-17	0011	つばさでうつ	翅膀攻击	Wing Attack
-18	0012	ふきとばし	吹飞	Whirlwind
-19	0013	そらをとぶ	飞翔	Fly
-20	0014	しめつける	绑紧	Bind
-21	0015	たたきつける	摔打	Slam
-22	0016	つるのムチ	藤鞭	Vine Whip
-23	0017	ふみつけ	踩踏	Stomp
-24	0018	にどげり	二连踢	Double Kick
-25	0019	メガトンキック	百万吨重踢	Mega Kick
-26	001A	とびげり	飞踢	Jump Kick
-27	001B	まわしげり	回旋踢	Rolling Kick
-28	001C	すなかけ	泼沙	Sand Attack
-29	001D	ずつき	头锤	Headbutt
-30	001E	つのでつく	角撞	Horn Attack
-31	001F	みだれづき	乱击	Fury Attack
-32	0020	つのドリル	角钻	Horn Drill
-33	0021	たいあたり	撞击	Tackle
-34	0022	のしかかり	泰山压顶	Body Slam
-35	0023	まきつく	紧束	Wrap
-36	0024	とっしん	猛撞	Take Down
-37	0025	あばれる	大闹一番	Thrash
-38	0026	すてみタックル	舍身冲撞	Double-Edge
-39	0027	しっぽをふる	摇尾巴	Tail Whip
-40	0028	どくばり	毒针	Poison Sting
-41	0029	ダブルニードル	双针	Twineedle
-42	002A	ミサイルばり	飞弹针	Pin Missile
-43	002B	にらみつける	瞪眼	Leer
-44	002C	かみつく	咬住	Bite
-45	002D	なきごえ	叫声	Growl
-46	002E	ほえる	吼叫	Roar
-47	002F	うたう	唱歌	Sing
-48	0030	ちょうおんぱ	超音波	Supersonic
-49	0031	ソニックブーム	音爆	Sonic Boom
-50	0032	かなしばり	定身法	Disable
-51	0033	ようかいえき	溶解液	Acid
-52	0034	ひのこ	火花	Ember
-53	0035	かえんほうしゃ	喷射火焰	Flamethrower
-54	0036	しろいきり	白雾	Mist
-55	0037	みずでっぽう	水枪	Water Gun
-56	0038	ハイドロポンプ	水炮	Hydro Pump
-57	0039	なみのり	冲浪	Surf
-58	003A	れいとうビーム	冰冻光束	Ice Beam
-59	003B	ふぶき	暴风雪	Blizzard
-60	003C	サイケこうせん	幻象光线	Psybeam
-61	003D	バブルこうせん	泡沫光线	Bubble Beam
-62	003E	オーロラビーム	极光束	Aurora Beam
-63	003F	はかいこうせん	破坏光线	Hyper Beam
-64	0040	つつく	啄	Peck
-65	0041	ドリルくちばし	啄钻	Drill Peck
-66	0042	じごくぐるま	深渊翻滚	Submission
-67	0043	けたぐり	踢倒	Low Kick
-68	0044	カウンター	双倍奉还	Counter
-69	0045	ちきゅうなげ	地球上投	Seismic Toss
-70	0046	かいりき	怪力	Strength
-71	0047	すいとる	吸取	Absorb
-72	0048	メガドレイン	超级吸取	Mega Drain
-73	0049	やどりぎのタネ	寄生种子	Leech Seed
-74	004A	せいちょう	生长	Growth
-75	004B	はっぱカッター	飞叶快刀	Razor Leaf
-76	004C	ソーラービーム	日光束	Solar Beam
-77	004D	どくのこな	毒粉	Poison Powder
-78	004E	しびれごな	麻痹粉	Stun Spore
-79	004F	ねむりごな	催眠粉	Sleep Powder
-80	0050	はなびらのまい	花瓣舞	Petal Dance
-81	0051	いとをはく	吐丝	String Shot
-82	0052	りゅうのいかり	龙之怒	Dragon Rage
-83	0053	ほのおのうず	火焰旋涡	Fire Spin
-84	0054	でんきショック	电击	Thunder Shock
-85	0055	１０まんボルト	十万伏特	Thunderbolt
-86	0056	でんじは	电磁波	Thunder Wave
-87	0057	かみなり	打雷	Thunder
-88	0058	いわおとし	落石	Rock Throw
-89	0059	じしん	地震	Earthquake
-90	005A	じわれ	地裂	Fissure
-91	005B	あなをほる	挖洞	Dig
-92	005C	どくどく	剧毒	Toxic
-93	005D	ねんりき	念力	Confusion
-94	005E	サイコキネシス	精神强念	Psychic
-95	005F	さいみんじゅつ	催眠术	Hypnosis
-96	0060	ヨガのポーズ	瑜伽姿势	Meditate
-97	0061	こうそくいどう	高速移动	Agility
-98	0062	でんこうせっか	电光一闪	Quick Attack
-99	0063	いかり	愤怒	Rage
-100	0064	テレポート	瞬间移动	Teleport
-101	0065	ナイトヘッド	黑夜魔影	Night Shade
-102	0066	ものまね	模仿	Mimic
-103	0067	いやなおと	刺耳声	Screech
-104	0068	かげぶんしん	影子分身	Double Team
-105	0069	じこさいせい	自我再生	Recover
-106	006A	かたくなる	变硬	Harden
-107	006B	ちいさくなる	变小	Minimize
-108	006C	えんまく	烟幕	Smokescreen
-109	006D	あやしいひかり	奇异之光	Confuse Ray
-110	006E	からにこもる	缩入壳中	Withdraw
-111	006F	まるくなる	变圆	Defense Curl
-112	0070	バリアー	屏障	Barrier
-113	0071	ひかりのかべ	光墙	Light Screen
-114	0072	くろいきり	黑雾	Haze
-115	0073	リフレクター	反射壁	Reflect
-116	0074	きあいだめ	聚气	Focus Energy
-117	0075	がまん	忍耐	Bide
-118	0076	ゆびをふる	挥指	Metronome
-119	0077	オウムがえし	鹦鹉学舌	Mirror Move
-120	0078	じばく	玉石俱碎	Self-Destruct
-121	0079	タマゴばくだん	炸蛋	Egg Bomb
-122	007A	したでなめる	舌舔	Lick
-123	007B	スモッグ	浊雾	Smog
-124	007C	ヘドロこうげき	污泥攻击	Sludge
-125	007D	ホネこんぼう	骨棒	Bone Club
-126	007E	だいもんじ	大字爆炎	Fire Blast
-127	007F	たきのぼり	攀瀑	Waterfall
-128	0080	からではさむ	贝壳夹击	Clamp
-129	0081	スピードスター	高速星星	Swift
-130	0082	ロケットずつき	火箭头锤	Skull Bash
-131	0083	とげキャノン	尖刺加农炮	Spike Cannon
-132	0084	からみつく	缠绕	Constrict
-133	0085	ドわすれ	瞬间失忆	Amnesia
-134	0086	スプーンまげ	折弯汤匙	Kinesis
-135	0087	タマゴうみ	生蛋	Soft-Boiled
-136	0088	とびひざげり	飞膝踢	High Jump Kick
-137	0089	へびにらみ	大蛇瞪眼	Glare
-138	008A	ゆめくい	食梦	Dream Eater
-139	008B	どくガス	毒瓦斯	Poison Gas
-140	008C	たまなげ	投球	Barrage
-141	008D	きゅうけつ	汲取	Leech Life
-142	008E	あくまのキッス	恶魔之吻	Lovely Kiss
-143	008F	ゴッドバード	神鸟猛击	Sky Attack
-144	0090	へんしん	变身	Transform
-145	0091	あわ	泡沫	Bubble
-146	0092	ピヨピヨパンチ	迷昏拳	Dizzy Punch
-147	0093	キノコのほうし	蘑菇孢子	Spore
-148	0094	フラッシュ	闪光	Flash
-149	0095	サイコウェーブ	精神波	Psywave
-150	0096	はねる	跃起	Splash
-151	0097	とける	溶化	Acid Armor
-152	0098	クラブハンマー	蟹钳锤	Crabhammer
-153	0099	だいばくはつ	大爆炸	Explosion
-154	009A	みだれひっかき	乱抓	Fury Swipes
-155	009B	ホネブーメラン	骨头回力镖	Bonemerang
-156	009C	ねむる	睡觉	Rest
-157	009D	いわなだれ	岩崩	Rock Slide
-158	009E	ひっさつまえば	终结门牙	Hyper Fang
-159	009F	かくばる	棱角化	Sharpen
-160	00A0	テクスチャー	纹理	Conversion
-161	00A1	トライアタック	三重攻击	Tri Attack
-162	00A2	いかりのまえば	愤怒门牙	Super Fang
-163	00A3	きりさく	劈开	Slash
-164	00A4	みがわり	替身	Substitute
-165	00A5	わるあがき	挣扎	Struggle
-166	00A6	スケッチ	写生	Sketch
-167	00A7	トリプルキック	三连踢	Triple Kick
-168	00A8	どろぼう	小偷	Thief
-169	00A9	クモのす	蛛网	Spider Web
-170	00AA	こころのめ	心之眼	Mind Reader
-171	00AB	あくむ	恶梦	Nightmare
-172	00AC	かえんぐるま	火焰轮	Flame Wheel
-173	00AD	いびき	打鼾	Snore
-174	00AE	のろい	咒术	Curse
-175	00AF	じたばた	抓狂	Flail
-176	00B0	テクスチャー２	纹理２	Conversion 2
-177	00B1	エアロブラスト	气旋攻击	Aeroblast
-178	00B2	わたほうし	棉孢子	Cotton Spore
-179	00B3	きしかいせい	绝处逢生	Reversal
-180	00B4	うらみ	怨恨	Spite
-181	00B5	こなゆき	细雪	Powder Snow
-182	00B6	まもる	守住	Protect
-183	00B7	マッハパンチ	音速拳	Mach Punch
-184	00B8	こわいかお	可怕面孔	Scary Face
-185	00B9	だましうち	出奇一击	Feint Attack
-186	00BA	てんしのキッス	天使之吻	Sweet Kiss
-187	00BB	はらだいこ	腹鼓	Belly Drum
-188	00BC	ヘドロばくだん	污泥炸弹	Sludge Bomb
-189	00BD	どろかけ	掷泥	Mud-Slap
-190	00BE	オクタンほう	章鱼桶炮	Octazooka
-191	00BF	まきびし	撒菱	Spikes
-192	00C0	でんじほう	电磁炮	Zap Cannon
-193	00C1	みやぶる	识破	Foresight
-194	00C2	みちづれ	同命	Destiny Bond
-195	00C3	ほろびのうた	终焉之歌	Perish Song
-196	00C4	こごえるかぜ	冰冻之风	Icy Wind
-197	00C5	みきり	看穿	Detect
-198	00C6	ボーンラッシュ	骨棒乱打	Bone Rush
-199	00C7	ロックオン	锁定	Lock-On
-200	00C8	げきりん	逆鳞	Outrage
-201	00C9	すなあらし	沙暴	Sandstorm
-202	00CA	ギガドレイン	终极吸取	Giga Drain
-203	00CB	こらえる	挺住	Endure
-204	00CC	あまえる	撒娇	Charm
-205	00CD	ころがる	滚动	Rollout
-206	00CE	みねうち	点到为止	False Swipe
-207	00CF	いばる	虚张声势	Swagger
-208	00D0	ミルクのみ	喝牛奶	Milk Drink
-209	00D1	スパーク	电光	Spark
-210	00D2	れんぞくぎり	连斩	Fury Cutter
-211	00D3	はがねのつばさ	钢翼	Steel Wing
-212	00D4	くろいまなざし	黑色目光	Mean Look
-213	00D5	メロメロ	迷人	Attract
-214	00D6	ねごと	梦话	Sleep Talk
-215	00D7	いやしのすず	治愈铃声	Heal Bell
-216	00D8	おんがえし	报恩	Return
-217	00D9	プレゼント	礼物	Present
-218	00DA	やつあたり	迁怒	Frustration
-219	00DB	しんぴのまもり	神秘守护	Safeguard
-220	00DC	いたみわけ	分担痛楚	Pain Split
-221	00DD	せいなるほのお	神圣之火	Sacred Fire
-222	00DE	マグニチュード	震级	Magnitude
-223	00DF	ばくれつパンチ	爆裂拳	Dynamic Punch
-224	00E0	メガホーン	超级角击	Megahorn
-225	00E1	りゅうのいぶき	龙息	Dragon Breath
-226	00E2	バトンタッチ	接棒	Baton Pass
-227	00E3	アンコール	再来一次	Encore
-228	00E4	おいうち	追打	Pursuit
-229	00E5	こうそくスピン	高速旋转	Rapid Spin
-230	00E6	あまいかおり	甜甜香气	Sweet Scent
-231	00E7	アイアンテール	铁尾	Iron Tail
-232	00E8	メタルクロー	金属爪	Metal Claw
-233	00E9	あてみなげ	借力摔	Vital Throw
-234	00EA	あさのひざし	晨光	Morning Sun
-235	00EB	こうごうせい	光合作用	Synthesis
-236	00EC	つきのひかり	月光	Moonlight
-237	00ED	めざめるパワー	觉醒力量	Hidden Power
-238	00EE	クロスチョップ	十字劈	Cross Chop
-239	00EF	たつまき	龙卷风	Twister
-240	00F0	あまごい	求雨	Rain Dance
-241	00F1	にほんばれ	大晴天	Sunny Day
-242	00F2	かみくだく	咬碎	Crunch
-243	00F3	ミラーコート	镜面反射	Mirror Coat
-244	00F4	じこあんじ	自我暗示	Psych Up
-245	00F5	しんそく	神速	Extreme Speed
-246	00F6	げんしのちから	原始之力	Ancient Power
-247	00F7	シャドーボール	暗影球	Shadow Ball
-248	00F8	みらいよち	预知未来	Future Sight
-249	00F9	いわくだき	碎岩	Rock Smash
-250	00FA	うずしお	潮旋	Whirlpool
-251	00FB	ふくろだたき	围攻	Beat Up
-252	00FC	ねこだまし	击掌奇袭	Fake Out
-253	00FD	さわぐ	吵闹	Uproar
-254	00FE	たくわえる	蓄力	Stockpile
-255	00FF	はきだす	喷出	Spit Up
-256	0100	のみこむ	吞下	Swallow
-257	0101	ねっぷう	热风	Heat Wave
-258	0102	あられ	冰雹	Hail
-259	0103	いちゃもん	无理取闹	Torment
-260	0104	おだてる	吹捧	Flatter
-261	0105	おにび	磷火	Will-O-Wisp
-262	0106	おきみやげ	临别礼物	Memento
-263	0107	からげんき	硬撑	Facade
-264	0108	きあいパンチ	真气拳	Focus Punch
-265	0109	きつけ	清醒	Smelling Salts
-266	010A	このゆびとまれ	看我嘛	Follow Me
-267	010B	しぜんのちから	自然之力	Nature Power
-268	010C	じゅうでん	充电	Charge
-269	010D	ちょうはつ	挑衅	Taunt
-270	010E	てだすけ	帮助	Helping Hand
-271	010F	トリック	戏法	Trick
-272	0110	なりきり	扮演	Role Play
-273	0111	ねがいごと	祈愿	Wish
-274	0112	ねこのて	借助	Assist
-275	0113	ねをはる	扎根	Ingrain
-276	0114	ばかぢから	蛮力	Superpower
-277	0115	マジックコート	魔法反射	Magic Coat
-278	0116	リサイクル	回收利用	Recycle
-279	0117	リベンジ	报复	Revenge
-280	0118	かわらわり	劈瓦	Brick Break
-281	0119	あくび	哈欠	Yawn
-282	011A	はたきおとす	拍落	Knock Off
-283	011B	がむしゃら	蛮干	Endeavor
-284	011C	ふんか	喷火	Eruption
-285	011D	スキルスワップ	特性互换	Skill Swap
-286	011E	ふういん	封印	Imprison
-287	011F	リフレッシュ	焕然一新	Refresh
-288	0120	おんねん	怨念	Grudge
-289	0121	よこどり	化为己用	Snatch
-290	0122	ひみつのちから	秘密之力	Secret Power
-291	0123	ダイビング	潜水	Dive
-292	0124	つっぱり	猛推	Arm Thrust
-293	0125	ほごしょく	保护色	Camouflage
-294	0126	ほたるび	萤火	Tail Glow
-295	0127	ラスターパージ	洁净光芒	Luster Purge
-296	0128	ミストボール	薄雾球	Mist Ball
-297	0129	フェザーダンス	羽毛舞	Feather Dance
-298	012A	フラフラダンス	摇晃舞	Teeter Dance
-299	012B	ブレイズキック	火焰踢	Blaze Kick
-300	012C	どろあそび	玩泥巴	Mud Sport
-301	012D	アイスボール	冰球	Ice Ball
-302	012E	ニードルアーム	尖刺臂	Needle Arm
-303	012F	なまける	偷懒	Slack Off
-304	0130	ハイパーボイス	巨声	Hyper Voice
-305	0131	どくどくのキバ	剧毒牙	Poison Fang
-306	0132	ブレイククロー	撕裂爪	Crush Claw
-307	0133	ブラストバーン	爆炸烈焰	Blast Burn
-308	0134	ハイドロカノン	加农水炮	Hydro Cannon
-309	0135	コメットパンチ	彗星拳	Meteor Mash
-310	0136	おどろかす	惊吓	Astonish
-311	0137	ウェザーボール	气象球	Weather Ball
-312	0138	アロマセラピー	芳香治疗	Aromatherapy
-313	0139	うそなき	假哭	Fake Tears
-314	013A	エアカッター	空气利刃	Air Cutter
-315	013B	オーバーヒート	过热	Overheat
-316	013C	かぎわける	气味侦测	Odor Sleuth
-317	013D	がんせきふうじ	岩石封锁	Rock Tomb
-318	013E	ぎんいろのかぜ	银色旋风	Silver Wind
-319	013F	きんぞくおん	金属音	Metal Sound
-320	0140	くさぶえ	草笛	Grass Whistle
-321	0141	くすぐる	挠痒	Tickle
-322	0142	コスモパワー	宇宙力量	Cosmic Power
-323	0143	しおふき	喷水	Water Spout
-324	0144	シグナルビーム	信号光束	Signal Beam
-325	0145	シャドーパンチ	暗影拳	Shadow Punch
-326	0146	じんつうりき	神通力	Extrasensory
-327	0147	スカイアッパー	冲天拳	Sky Uppercut
-328	0148	すなじごく	流沙深渊	Sand Tomb
-329	0149	ぜったいれいど	绝对零度	Sheer Cold
-330	014A	だくりゅう	浊流	Muddy Water
-331	014B	タネマシンガン	种子机关枪	Bullet Seed
-332	014C	つばめがえし	燕返	Aerial Ace
-333	014D	つららばり	冰锥	Icicle Spear
-334	014E	てっぺき	铁壁	Iron Defense
-335	014F	とおせんぼう	挡路	Block
-336	0150	とおぼえ	长嚎	Howl
-337	0151	ドラゴンクロー	龙爪	Dragon Claw
-338	0152	ハードプラント	疯狂植物	Frenzy Plant
-339	0153	ビルドアップ	健美	Bulk Up
-340	0154	とびはねる	弹跳	Bounce
-341	0155	マッドショット	泥巴射击	Mud Shot
-342	0156	ポイズンテール	毒尾	Poison Tail
-343	0157	ほしがる	渴望	Covet
-344	0158	ボルテッカー	伏特攻击	Volt Tackle
-345	0159	マジカルリーフ	魔法叶	Magical Leaf
-346	015A	みずあそび	玩水	Water Sport
-347	015B	めいそう	冥想	Calm Mind
-348	015C	リーフブレード	叶刃	Leaf Blade
-349	015D	りゅうのまい	龙之舞	Dragon Dance
-350	015E	ロックブラスト	岩石爆击	Rock Blast
-351	015F	でんげきは	电击波	Shock Wave
-352	0160	みずのはどう	水之波动	Water Pulse
-353	0161	はめつのねがい	破灭之愿	Doom Desire
-354	0162	サイコブースト	精神突进	Psycho Boost
+No.	HEX	JP_name	EN_name	CN_name	JP_type	EN_type	CN_type	Power	Accuracy	PP
+1	0001	はたく	拍击	Pound	ノーマル	Normal	一般	40	100	35
+2	0002	からてチョップ	空手劈	Karate Chop	かくとう	Fighting	格斗	50	100	25
+3	0003	おうふくビンタ	连环巴掌	Double Slap	ノーマル	Normal	一般	15	85	10
+4	0004	れんぞくパンチ	连续拳	Comet Punch	ノーマル	Normal	一般	18	85	15
+5	0005	メガトンパンチ	百万吨重拳	Mega Punch	ノーマル	Normal	一般	80	85	20
+6	0006	ネコにこばん	聚宝功	Pay Day	ノーマル	Normal	一般	40	100	20
+7	0007	ほのおのパンチ	火焰拳	Fire Punch	ほのお	Fire	火	75	100	15
+8	0008	れいとうパンチ	冰冻拳	Ice Punch	こおり	Ice	冰	75	100	15
+9	0009	かみなりパンチ	雷电拳	Thunder Punch	でんき	Electric	电	75	100	15
+10	000A	ひっかく	抓	Scratch	ノーマル	Normal	一般	40	100	35
+11	000B	はさむ	夹住	Vise Grip	ノーマル	Normal	一般	55	100	30
+12	000C	ハサミギロチン	极落钳	Guillotine	ノーマル	Normal	一般	变化	变化	5
+13	000D	かまいたち	旋风刀	Razor Wind	ノーマル	Normal	一般	80	75	10
+14	000E	つるぎのまい	剑舞	Swords Dance	ノーマル	Normal	一般	-	-	30
+15	000F	いあいぎり	居合劈	Cut	ノーマル	Normal	一般	50	95	30
+16	0010	かぜおこし	起风	Gust	ひこう	Flying	飞行	40	100	35
+17	0011	つばさでうつ	翅膀攻击	Wing Attack	ひこう	Flying	飞行	60	100	35
+18	0012	ふきとばし	吹飞	Whirlwind	ノーマル	Normal	一般	-	100	20
+19	0013	そらをとぶ	飞翔	Fly	ひこう	Flying	飞行	70	95	15
+20	0014	しめつける	绑紧	Bind	ノーマル	Normal	一般	15	75	20
+21	0015	たたきつける	摔打	Slam	ノーマル	Normal	一般	80	75	20
+22	0016	つるのムチ	藤鞭	Vine Whip	くさ	Grass	草	35	100	10
+23	0017	ふみつけ	踩踏	Stomp	ノーマル	Normal	一般	65	100	20
+24	0018	にどげり	二连踢	Double Kick	かくとう	Fighting	格斗	30	100	30
+25	0019	メガトンキック	百万吨重踢	Mega Kick	ノーマル	Normal	一般	120	75	5
+26	001A	とびげり	飞踢	Jump Kick	かくとう	Fighting	格斗	70	95	25
+27	001B	まわしげり	回旋踢	Rolling Kick	かくとう	Fighting	格斗	60	85	15
+28	001C	すなかけ	泼沙	Sand Attack	じめん	Ground	地面	-	100	15
+29	001D	ずつき	头锤	Headbutt	ノーマル	Normal	一般	70	100	15
+30	001E	つのでつく	角撞	Horn Attack	ノーマル	Normal	一般	65	100	25
+31	001F	みだれづき	乱击	Fury Attack	ノーマル	Normal	一般	15	85	20
+32	0020	つのドリル	角钻	Horn Drill	ノーマル	Normal	一般	变化	变化	5
+33	0021	たいあたり	撞击	Tackle	ノーマル	Normal	一般	50	100	35
+34	0022	のしかかり	泰山压顶	Body Slam	ノーマル	Normal	一般	85	100	15
+35	0023	まきつく	紧束	Wrap	ノーマル	Normal	一般	15	90	20
+36	0024	とっしん	猛撞	Take Down	ノーマル	Normal	一般	90	85	20
+37	0025	あばれる	大闹一番	Thrash	ノーマル	Normal	一般	120	100	10
+38	0026	すてみタックル	舍身冲撞	Double-Edge	ノーマル	Normal	一般	120	100	15
+39	0027	しっぽをふる	摇尾巴	Tail Whip	ノーマル	Normal	一般	-	100	30
+40	0028	どくばり	毒针	Poison Sting	どく	Poison	毒	15	100	35
+41	0029	ダブルニードル	双针	Twineedle	むし	Bug	虫	25	100	20
+42	002A	ミサイルばり	飞弹针	Pin Missile	むし	Bug	虫	14	85	20
+43	002B	にらみつける	瞪眼	Leer	ノーマル	Normal	一般	-	100	30
+44	002C	かみつく	咬住	Bite	あく	Dark	恶	60	100	25
+45	002D	なきごえ	叫声	Growl	ノーマル	Normal	一般	-	100	40
+46	002E	ほえる	吼叫	Roar	ノーマル	Normal	一般	-	100	20
+47	002F	うたう	唱歌	Sing	ノーマル	Normal	一般	-	55	15
+48	0030	ちょうおんぱ	超音波	Supersonic	ノーマル	Normal	一般	-	55	20
+49	0031	ソニックブーム	音爆	Sonic Boom	ノーマル	Normal	一般	变化	90	20
+50	0032	かなしばり	定身法	Disable	ノーマル	Normal	一般	-	100	20
+51	0033	ようかいえき	溶解液	Acid	どく	Poison	毒	40	100	30
+52	0034	ひのこ	火花	Ember	ほのお	Fire	火	40	100	25
+53	0035	かえんほうしゃ	喷射火焰	Flamethrower	ほのお	Fire	火	95	100	15
+54	0036	しろいきり	白雾	Mist	こおり	Ice	冰	-	-	30
+55	0037	みずでっぽう	水枪	Water Gun	みず	Water	水	40	100	25
+56	0038	ハイドロポンプ	水炮	Hydro Pump	みず	Water	水	120	80	5
+57	0039	なみのり	冲浪	Surf	みず	Water	水	95	100	15
+58	003A	れいとうビーム	冰冻光束	Ice Beam	こおり	Ice	冰	95	100	10
+59	003B	ふぶき	暴风雪	Blizzard	こおり	Ice	冰	120	70	5
+60	003C	サイケこうせん	幻象光线	Psybeam	エスパー	Psychic	超能力	65	100	20
+61	003D	バブルこうせん	泡沫光线	Bubble Beam	みず	Water	水	65	100	20
+62	003E	オーロラビーム	极光束	Aurora Beam	こおり	Ice	冰	65	100	20
+63	003F	はかいこうせん	破坏光线	Hyper Beam	ノーマル	Normal	一般	150	90	5
+64	0040	つつく	啄	Peck	ひこう	Flying	飞行	35	100	35
+65	0041	ドリルくちばし	啄钻	Drill Peck	ひこう	Flying	飞行	80	100	20
+66	0042	じごくぐるま	深渊翻滚	Submission	かくとう	Fighting	格斗	80	80	25
+67	0043	けたぐり	踢倒	Low Kick	かくとう	Fighting	格斗	变化	100	20
+68	0044	カウンター	双倍奉还	Counter	かくとう	Fighting	格斗	变化	100	20
+69	0045	ちきゅうなげ	地球上投	Seismic Toss	かくとう	Fighting	格斗	变化	100	20
+70	0046	かいりき	怪力	Strength	ノーマル	Normal	一般	80	100	15
+71	0047	すいとる	吸取	Absorb	くさ	Grass	草	20	100	20
+72	0048	メガドレイン	超级吸取	Mega Drain	くさ	Grass	草	40	100	10
+73	0049	やどりぎのタネ	寄生种子	Leech Seed	くさ	Grass	草	-	90	10
+74	004A	せいちょう	生长	Growth	ノーマル	Normal	一般	-	-	40
+75	004B	はっぱカッター	飞叶快刀	Razor Leaf	くさ	Grass	草	55	95	25
+76	004C	ソーラービーム	日光束	Solar Beam	くさ	Grass	草	120	100	10
+77	004D	どくのこな	毒粉	Poison Powder	どく	Poison	毒	-	75	35
+78	004E	しびれごな	麻痹粉	Stun Spore	くさ	Grass	草	-	75	30
+79	004F	ねむりごな	催眠粉	Sleep Powder	くさ	Grass	草	-	75	15
+80	0050	はなびらのまい	花瓣舞	Petal Dance	くさ	Grass	草	70	100	20
+81	0051	いとをはく	吐丝	String Shot	むし	Bug	虫	-	95	40
+82	0052	りゅうのいかり	龙之怒	Dragon Rage	ドラゴン	Dragon	龙	变化	100	10
+83	0053	ほのおのうず	火焰旋涡	Fire Spin	ほのお	Fire	火	15	70	15
+84	0054	でんきショック	电击	Thunder Shock	でんき	Electric	电	40	100	30
+85	0055	１０まんボルト	十万伏特	Thunderbolt	でんき	Electric	电	95	100	15
+86	0056	でんじは	电磁波	Thunder Wave	でんき	Electric	电	-	100	20
+87	0057	かみなり	打雷	Thunder	でんき	Electric	电	120	70	10
+88	0058	いわおとし	落石	Rock Throw	いわ	Rock	岩石	50	90	15
+89	0059	じしん	地震	Earthquake	じめん	Ground	地面	100	100	10
+90	005A	じわれ	地裂	Fissure	じめん	Ground	地面	变化	变化	5
+91	005B	あなをほる	挖洞	Dig	じめん	Ground	地面	60	100	10
+92	005C	どくどく	剧毒	Toxic	どく	Poison	毒	-	85	10
+93	005D	ねんりき	念力	Confusion	エスパー	Psychic	超能力	50	100	25
+94	005E	サイコキネシス	精神强念	Psychic	エスパー	Psychic	超能力	90	100	10
+95	005F	さいみんじゅつ	催眠术	Hypnosis	エスパー	Psychic	超能力	-	60	20
+96	0060	ヨガのポーズ	瑜伽姿势	Meditate	エスパー	Psychic	超能力	-	-	40
+97	0061	こうそくいどう	高速移动	Agility	エスパー	Psychic	超能力	-	-	30
+98	0062	でんこうせっか	电光一闪	Quick Attack	ノーマル	Normal	一般	40	100	30
+99	0063	いかり	愤怒	Rage	ノーマル	Normal	一般	20	100	20
+100	0064	テレポート	瞬间移动	Teleport	エスパー	Psychic	超能力	-	-	20
+101	0065	ナイトヘッド	黑夜魔影	Night Shade	ゴースト	Ghost	幽灵	变化	100	15
+102	0066	ものまね	模仿	Mimic	ノーマル	Normal	一般	-	-	10
+103	0067	いやなおと	刺耳声	Screech	ノーマル	Normal	一般	-	85	40
+104	0068	かげぶんしん	影子分身	Double Team	ノーマル	Normal	一般	-	-	15
+105	0069	じこさいせい	自我再生	Recover	ノーマル	Normal	一般	-	-	20
+106	006A	かたくなる	变硬	Harden	ノーマル	Normal	一般	-	-	30
+107	006B	ちいさくなる	变小	Minimize	ノーマル	Normal	一般	-	-	20
+108	006C	えんまく	烟幕	Smokescreen	ノーマル	Normal	一般	-	100	20
+109	006D	あやしいひかり	奇异之光	Confuse Ray	ゴースト	Ghost	幽灵	-	100	10
+110	006E	からにこもる	缩入壳中	Withdraw	みず	Water	水	-	-	40
+111	006F	まるくなる	变圆	Defense Curl	ノーマル	Normal	一般	-	-	40
+112	0070	バリアー	屏障	Barrier	エスパー	Psychic	超能力	-	-	30
+113	0071	ひかりのかべ	光墙	Light Screen	エスパー	Psychic	超能力	-	-	30
+114	0072	くろいきり	黑雾	Haze	こおり	Ice	冰	-	-	30
+115	0073	リフレクター	反射壁	Reflect	エスパー	Psychic	超能力	-	-	20
+116	0074	きあいだめ	聚气	Focus Energy	ノーマル	Normal	一般	-	-	30
+117	0075	がまん	忍耐	Bide	ノーマル	Normal	一般	变化	-	10
+118	0076	ゆびをふる	挥指	Metronome	ノーマル	Normal	一般	-	-	10
+119	0077	オウムがえし	鹦鹉学舌	Mirror Move	ひこう	Flying	飞行	-	-	20
+120	0078	じばく	玉石俱碎	Self-Destruct	ノーマル	Normal	一般	200	100	5
+121	0079	タマゴばくだん	炸蛋	Egg Bomb	ノーマル	Normal	一般	100	75	10
+122	007A	したでなめる	舌舔	Lick	ゴースト	Ghost	幽灵	20	100	30
+123	007B	スモッグ	浊雾	Smog	どく	Poison	毒	20	70	20
+124	007C	ヘドロこうげき	污泥攻击	Sludge	どく	Poison	毒	65	100	20
+125	007D	ホネこんぼう	骨棒	Bone Club	じめん	Ground	地面	65	85	20
+126	007E	だいもんじ	大字爆炎	Fire Blast	ほのお	Fire	火	120	85	5
+127	007F	たきのぼり	攀瀑	Waterfall	みず	Water	水	80	100	15
+128	0080	からではさむ	贝壳夹击	Clamp	みず	Water	水	35	75	10
+129	0081	スピードスター	高速星星	Swift	ノーマル	Normal	一般	60	-	20
+130	0082	ロケットずつき	火箭头锤	Skull Bash	ノーマル	Normal	一般	100	100	15
+131	0083	とげキャノン	尖刺加农炮	Spike Cannon	ノーマル	Normal	一般	20	100	15
+132	0084	からみつく	缠绕	Constrict	ノーマル	Normal	一般	10	100	35
+133	0085	ドわすれ	瞬间失忆	Amnesia	エスパー	Psychic	超能力	-	-	20
+134	0086	スプーンまげ	折弯汤匙	Kinesis	エスパー	Psychic	超能力	-	80	15
+135	0087	タマゴうみ	生蛋	Soft-Boiled	ノーマル	Normal	一般	-	-	10
+136	0088	とびひざげり	飞膝踢	High Jump Kick	かくとう	Fighting	格斗	85	90	20
+137	0089	へびにらみ	大蛇瞪眼	Glare	ノーマル	Normal	一般	-	75	30
+138	008A	ゆめくい	食梦	Dream Eater	エスパー	Psychic	超能力	100	100	15
+139	008B	どくガス	毒瓦斯	Poison Gas	どく	Poison	毒	-	55	40
+140	008C	たまなげ	投球	Barrage	ノーマル	Normal	一般	15	85	20
+141	008D	きゅうけつ	汲取	Leech Life	むし	Bug	虫	20	100	15
+142	008E	あくまのキッス	恶魔之吻	Lovely Kiss	ノーマル	Normal	一般	-	75	10
+143	008F	ゴッドバード	神鸟猛击	Sky Attack	ひこう	Flying	飞行	140	90	5
+144	0090	へんしん	变身	Transform	ノーマル	Normal	一般	-	-	10
+145	0091	あわ	泡沫	Bubble	みず	Water	水	20	100	30
+146	0092	ピヨピヨパンチ	迷昏拳	Dizzy Punch	ノーマル	Normal	一般	70	100	10
+147	0093	キノコのほうし	蘑菇孢子	Spore	くさ	Grass	草	-	100	15
+148	0094	フラッシュ	闪光	Flash	ノーマル	Normal	一般	-	70	20
+149	0095	サイコウェーブ	精神波	Psywave	エスパー	Psychic	超能力	变化	80	15
+150	0096	はねる	跃起	Splash	ノーマル	Normal	一般	-	-	40
+151	0097	とける	溶化	Acid Armor	どく	Poison	毒	-	-	40
+152	0098	クラブハンマー	蟹钳锤	Crabhammer	みず	Water	水	90	85	10
+153	0099	だいばくはつ	大爆炸	Explosion	ノーマル	Normal	一般	250	100	5
+154	009A	みだれひっかき	乱抓	Fury Swipes	ノーマル	Normal	一般	18	80	15
+155	009B	ホネブーメラン	骨头回力镖	Bonemerang	じめん	Ground	地面	50	90	10
+156	009C	ねむる	睡觉	Rest	エスパー	Psychic	超能力	-	-	10
+157	009D	いわなだれ	岩崩	Rock Slide	いわ	Rock	岩石	75	90	10
+158	009E	ひっさつまえば	终结门牙	Hyper Fang	ノーマル	Normal	一般	80	90	15
+159	009F	かくばる	棱角化	Sharpen	ノーマル	Normal	一般	-	-	30
+160	00A0	テクスチャー	纹理	Conversion	ノーマル	Normal	一般	-	-	30
+161	00A1	トライアタック	三重攻击	Tri Attack	ノーマル	Normal	一般	80	100	10
+162	00A2	いかりのまえば	愤怒门牙	Super Fang	ノーマル	Normal	一般	变化	90	10
+163	00A3	きりさく	劈开	Slash	ノーマル	Normal	一般	70	100	20
+164	00A4	みがわり	替身	Substitute	ノーマル	Normal	一般	-	-	10
+165	00A5	わるあがき	挣扎	Struggle	ノーマル	Normal	一般	50	100	-
+166	00A6	スケッチ	写生	Sketch	ノーマル	Normal	一般	-	-	1
+167	00A7	トリプルキック	三连踢	Triple Kick	かくとう	Fighting	格斗	10	90	10
+168	00A8	どろぼう	小偷	Thief	あく	Dark	恶	40	100	10
+169	00A9	クモのす	蛛网	Spider Web	むし	Bug	虫	-	-	10
+170	00AA	こころのめ	心之眼	Mind Reader	ノーマル	Normal	一般	-	-	5
+171	00AB	あくむ	恶梦	Nightmare	ゴースト	Ghost	幽灵	-	100	15
+172	00AC	かえんぐるま	火焰轮	Flame Wheel	ほのお	Fire	火	60	100	25
+173	00AD	いびき	打鼾	Snore	ノーマル	Normal	一般	40	100	15
+174	00AE	のろい	咒术	Curse	エスパー	Psychic	???	-	-	10
+175	00AF	じたばた	抓狂	Flail	ノーマル	Normal	一般	变化	100	15
+176	00B0	テクスチャー２	纹理２	Conversion 2	ノーマル	Normal	一般	-	-	30
+177	00B1	エアロブラスト	气旋攻击	Aeroblast	ひこう	Flying	飞行	100	95	5
+178	00B2	わたほうし	棉孢子	Cotton Spore	くさ	Grass	草	-	85	40
+179	00B3	きしかいせい	绝处逢生	Reversal	かくとう	Fighting	格斗	变化	100	15
+180	00B4	うらみ	怨恨	Spite	ゴースト	Ghost	幽灵	-	100	10
+181	00B5	こなゆき	细雪	Powder Snow	こおり	Ice	冰	40	100	25
+182	00B6	まもる	守住	Protect	ノーマル	Normal	一般	-	-	10
+183	00B7	マッハパンチ	音速拳	Mach Punch	かくとう	Fighting	格斗	40	100	30
+184	00B8	こわいかお	可怕面孔	Scary Face	ノーマル	Normal	一般	-	90	10
+185	00B9	だましうち	出奇一击	Feint Attack	あく	Dark	恶	60	-	20
+186	00BA	てんしのキッス	天使之吻	Sweet Kiss	ノーマル	Normal	一般	-	75	10
+187	00BB	はらだいこ	腹鼓	Belly Drum	ノーマル	Normal	一般	-	-	10
+188	00BC	ヘドロばくだん	污泥炸弹	Sludge Bomb	どく	Poison	毒	90	100	10
+189	00BD	どろかけ	掷泥	Mud-Slap	じめん	Ground	地面	20	100	10
+190	00BE	オクタンほう	章鱼桶炮	Octazooka	みず	Water	水	65	85	10
+191	00BF	まきびし	撒菱	Spikes	じめん	Ground	地面	-	-	20
+192	00C0	でんじほう	电磁炮	Zap Cannon	でんき	Electric	电	120	50	5
+193	00C1	みやぶる	识破	Foresight	ノーマル	Normal	一般	-	-	40
+194	00C2	みちづれ	同命	Destiny Bond	ゴースト	Ghost	幽灵	-	-	5
+195	00C3	ほろびのうた	终焉之歌	Perish Song	ノーマル	Normal	一般	-	-	5
+196	00C4	こごえるかぜ	冰冻之风	Icy Wind	こおり	Ice	冰	55	95	15
+197	00C5	みきり	看穿	Detect	かくとう	Fighting	格斗	-	-	5
+198	00C6	ボーンラッシュ	骨棒乱打	Bone Rush	じめん	Ground	地面	25	80	10
+199	00C7	ロックオン	锁定	Lock-On	ノーマル	Normal	一般	-	-	5
+200	00C8	げきりん	逆鳞	Outrage	ドラゴン	Dragon	龙	90	100	15
+201	00C9	すなあらし	沙暴	Sandstorm	いわ	Rock	岩石	-	-	10
+202	00CA	ギガドレイン	终极吸取	Giga Drain	くさ	Grass	草	60	100	5
+203	00CB	こらえる	挺住	Endure	ノーマル	Normal	一般	-	-	10
+204	00CC	あまえる	撒娇	Charm	ノーマル	Normal	一般	-	100	20
+205	00CD	ころがる	滚动	Rollout	いわ	Rock	岩石	30	90	20
+206	00CE	みねうち	点到为止	False Swipe	ノーマル	Normal	一般	40	100	40
+207	00CF	いばる	虚张声势	Swagger	ノーマル	Normal	一般	-	90	15
+208	00D0	ミルクのみ	喝牛奶	Milk Drink	ノーマル	Normal	一般	-	-	10
+209	00D1	スパーク	电光	Spark	でんき	Electric	电	65	100	20
+210	00D2	れんぞくぎり	连斩	Fury Cutter	むし	Bug	虫	20	95	10
+211	00D3	はがねのつばさ	钢翼	Steel Wing	はがね	Steel	钢	70	90	25
+212	00D4	くろいまなざし	黑色目光	Mean Look	ノーマル	Normal	一般	-	-	5
+213	00D5	メロメロ	迷人	Attract	ノーマル	Normal	一般	-	100	15
+214	00D6	ねごと	梦话	Sleep Talk	ノーマル	Normal	一般	-	-	10
+215	00D7	いやしのすず	治愈铃声	Heal Bell	ノーマル	Normal	一般	-	-	5
+216	00D8	おんがえし	报恩	Return	ノーマル	Normal	一般	变化	100	20
+217	00D9	プレゼント	礼物	Present	ノーマル	Normal	一般	变化	90	15
+218	00DA	やつあたり	迁怒	Frustration	ノーマル	Normal	一般	变化	100	20
+219	00DB	しんぴのまもり	神秘守护	Safeguard	ノーマル	Normal	一般	-	-	25
+220	00DC	いたみわけ	分担痛楚	Pain Split	ノーマル	Normal	一般	-	-	20
+221	00DD	せいなるほのお	神圣之火	Sacred Fire	ほのお	Fire	火	100	95	5
+222	00DE	マグニチュード	震级	Magnitude	じめん	Ground	地面	变化	100	30
+223	00DF	ばくれつパンチ	爆裂拳	Dynamic Punch	かくとう	Fighting	格斗	100	50	5
+224	00E0	メガホーン	超级角击	Megahorn	むし	Bug	虫	120	85	10
+225	00E1	りゅうのいぶき	龙息	Dragon Breath	ドラゴン	Dragon	龙	60	100	20
+226	00E2	バトンタッチ	接棒	Baton Pass	ノーマル	Normal	一般	-	-	40
+227	00E3	アンコール	再来一次	Encore	ノーマル	Normal	一般	-	100	5
+228	00E4	おいうち	追打	Pursuit	あく	Dark	恶	40	100	20
+229	00E5	こうそくスピン	高速旋转	Rapid Spin	ノーマル	Normal	一般	20	100	40
+230	00E6	あまいかおり	甜甜香气	Sweet Scent	ノーマル	Normal	一般	-	100	20
+231	00E7	アイアンテール	铁尾	Iron Tail	はがね	Steel	钢	100	75	15
+232	00E8	メタルクロー	金属爪	Metal Claw	はがね	Steel	钢	50	95	35
+233	00E9	あてみなげ	借力摔	Vital Throw	かくとう	Fighting	格斗	70	-	10
+234	00EA	あさのひざし	晨光	Morning Sun	ノーマル	Normal	一般	-	-	5
+235	00EB	こうごうせい	光合作用	Synthesis	くさ	Grass	草	-	-	5
+236	00EC	つきのひかり	月光	Moonlight	ノーマル	Normal	一般	-	-	5
+237	00ED	めざめるパワー	觉醒力量	Hidden Power	ノーマル	Normal	一般	变化	100	15
+238	00EE	クロスチョップ	十字劈	Cross Chop	かくとう	Fighting	格斗	100	80	5
+239	00EF	たつまき	龙卷风	Twister	ドラゴン	Dragon	龙	40	100	20
+240	00F0	あまごい	求雨	Rain Dance	みず	Water	水	-	-	5
+241	00F1	にほんばれ	大晴天	Sunny Day	ほのお	Fire	火	-	-	5
+242	00F2	かみくだく	咬碎	Crunch	あく	Dark	恶	80	100	15
+243	00F3	ミラーコート	镜面反射	Mirror Coat	エスパー	Psychic	超能力	变化	100	20
+244	00F4	じこあんじ	自我暗示	Psych Up	ノーマル	Normal	一般	-	-	10
+245	00F5	しんそく	神速	Extreme Speed	ノーマル	Normal	一般	80	100	5
+246	00F6	げんしのちから	原始之力	Ancient Power	いわ	Rock	岩石	60	100	5
+247	00F7	シャドーボール	暗影球	Shadow Ball	ゴースト	Ghost	幽灵	80	100	15
+248	00F8	みらいよち	预知未来	Future Sight	エスパー	Psychic	超能力	80	90	15
+249	00F9	いわくだき	碎岩	Rock Smash	かくとう	Fighting	格斗	20	100	15
+250	00FA	うずしお	潮旋	Whirlpool	みず	Water	水	15	70	15
+251	00FB	ふくろだたき	围攻	Beat Up	あく	Dark	恶	10	100	10
+252	00FC	ねこだまし	击掌奇袭	Fake Out	ノーマル	Normal	一般	40	100	10
+253	00FD	さわぐ	吵闹	Uproar	ノーマル	Normal	一般	90	100	10
+254	00FE	たくわえる	蓄力	Stockpile	ノーマル	Normal	一般	-	-	20
+255	00FF	はきだす	喷出	Spit Up	ノーマル	Normal	一般	变化	100	10
+256	0100	のみこむ	吞下	Swallow	ノーマル	Normal	一般	-	-	10
+257	0101	ねっぷう	热风	Heat Wave	ほのお	Fire	火	100	90	10
+258	0102	あられ	冰雹	Hail	こおり	Ice	冰	-	-	10
+259	0103	いちゃもん	无理取闹	Torment	あく	Dark	恶	-	100	15
+260	0104	おだてる	吹捧	Flatter	あく	Dark	恶	-	100	15
+261	0105	おにび	磷火	Will-O-Wisp	ほのお	Fire	火	-	75	15
+262	0106	おきみやげ	临别礼物	Memento	あく	Dark	恶	-	100	10
+263	0107	からげんき	硬撑	Facade	ノーマル	Normal	一般	70	100	20
+264	0108	きあいパンチ	真气拳	Focus Punch	かくとう	Fighting	格斗	150	100	20
+265	0109	きつけ	清醒	Smelling Salts	ノーマル	Normal	一般	60	100	10
+266	010A	このゆびとまれ	看我嘛	Follow Me	ノーマル	Normal	一般	-	-	20
+267	010B	しぜんのちから	自然之力	Nature Power	ノーマル	Normal	一般	-	-	20
+268	010C	じゅうでん	充电	Charge	でんき	Electric	电	-	-	20
+269	010D	ちょうはつ	挑衅	Taunt	あく	Dark	恶	-	100	20
+270	010E	てだすけ	帮助	Helping Hand	ノーマル	Normal	一般	-	-	20
+271	010F	トリック	戏法	Trick	エスパー	Psychic	超能力	-	100	10
+272	0110	なりきり	扮演	Role Play	エスパー	Psychic	超能力	-	-	10
+273	0111	ねがいごと	祈愿	Wish	ノーマル	Normal	一般	-	-	10
+274	0112	ねこのて	借助	Assist	ノーマル	Normal	一般	-	-	20
+275	0113	ねをはる	扎根	Ingrain	くさ	Grass	草	-	-	20
+276	0114	ばかぢから	蛮力	Superpower	かくとう	Fighting	格斗	120	100	5
+277	0115	マジックコート	魔法反射	Magic Coat	エスパー	Psychic	超能力	-	-	15
+278	0116	リサイクル	回收利用	Recycle	ノーマル	Normal	一般	-	-	10
+279	0117	リベンジ	报复	Revenge	かくとう	Fighting	格斗	60	100	10
+280	0118	かわらわり	劈瓦	Brick Break	かくとう	Fighting	格斗	75	100	15
+281	0119	あくび	哈欠	Yawn	ノーマル	Normal	一般	-	-	10
+282	011A	はたきおとす	拍落	Knock Off	あく	Dark	恶	20	100	20
+283	011B	がむしゃら	蛮干	Endeavor	ノーマル	Normal	一般	变化	100	5
+284	011C	ふんか	喷火	Eruption	ほのお	Fire	火	150	100	5
+285	011D	スキルスワップ	特性互换	Skill Swap	エスパー	Psychic	超能力	-	-	10
+286	011E	ふういん	封印	Imprison	エスパー	Psychic	超能力	-	-	10
+287	011F	リフレッシュ	焕然一新	Refresh	ノーマル	Normal	一般	-	-	20
+288	0120	おんねん	怨念	Grudge	ゴースト	Ghost	幽灵	-	-	5
+289	0121	よこどり	化为己用	Snatch	あく	Dark	恶	-	-	10
+290	0122	ひみつのちから	秘密之力	Secret Power	ノーマル	Normal	一般	70	100	20
+291	0123	ダイビング	潜水	Dive	みず	Water	水	60	100	10
+292	0124	つっぱり	猛推	Arm Thrust	かくとう	Fighting	格斗	15	100	20
+293	0125	ほごしょく	保护色	Camouflage	ノーマル	Normal	一般	-	-	20
+294	0126	ほたるび	萤火	Tail Glow	むし	Bug	虫	-	-	20
+295	0127	ラスターパージ	洁净光芒	Luster Purge	エスパー	Psychic	超能力	70	100	5
+296	0128	ミストボール	薄雾球	Mist Ball	エスパー	Psychic	超能力	70	100	5
+297	0129	フェザーダンス	羽毛舞	Feather Dance	ひこう	Flying	飞行	-	100	15
+298	012A	フラフラダンス	摇晃舞	Teeter Dance	ノーマル	Normal	一般	-	100	20
+299	012B	ブレイズキック	火焰踢	Blaze Kick	ほのお	Fire	火	85	90	10
+300	012C	どろあそび	玩泥巴	Mud Sport	じめん	Ground	地面	-	-	15
+301	012D	アイスボール	冰球	Ice Ball	こおり	Ice	冰	30	90	20
+302	012E	ニードルアーム	尖刺臂	Needle Arm	くさ	Grass	草	60	100	15
+303	012F	なまける	偷懒	Slack Off	ノーマル	Normal	一般	-	-	10
+304	0130	ハイパーボイス	巨声	Hyper Voice	ノーマル	Normal	一般	90	100	10
+305	0131	どくどくのキバ	剧毒牙	Poison Fang	どく	Poison	毒	50	100	15
+306	0132	ブレイククロー	撕裂爪	Crush Claw	ノーマル	Normal	一般	75	95	10
+307	0133	ブラストバーン	爆炸烈焰	Blast Burn	ほのお	Fire	火	150	90	5
+308	0134	ハイドロカノン	加农水炮	Hydro Cannon	みず	Water	水	150	90	5
+309	0135	コメットパンチ	彗星拳	Meteor Mash	はがね	Steel	钢	100	85	10
+310	0136	おどろかす	惊吓	Astonish	ゴースト	Ghost	幽灵	30	100	15
+311	0137	ウェザーボール	气象球	Weather Ball	ノーマル	Normal	一般	50	100	10
+312	0138	アロマセラピー	芳香治疗	Aromatherapy	くさ	Grass	草	-	-	5
+313	0139	うそなき	假哭	Fake Tears	あく	Dark	恶	-	100	20
+314	013A	エアカッター	空气利刃	Air Cutter	ひこう	Flying	飞行	55	95	25
+315	013B	オーバーヒート	过热	Overheat	ほのお	Fire	火	140	90	5
+316	013C	かぎわける	气味侦测	Odor Sleuth	ノーマル	Normal	一般	-	-	40
+317	013D	がんせきふうじ	岩石封锁	Rock Tomb	いわ	Rock	岩石	50	80	10
+318	013E	ぎんいろのかぜ	银色旋风	Silver Wind	むし	Bug	虫	60	100	5
+319	013F	きんぞくおん	金属音	Metal Sound	はがね	Steel	钢	-	85	40
+320	0140	くさぶえ	草笛	Grass Whistle	くさ	Grass	草	-	55	15
+321	0141	くすぐる	挠痒	Tickle	ノーマル	Normal	一般	-	100	20
+322	0142	コスモパワー	宇宙力量	Cosmic Power	エスパー	Psychic	超能力	-	-	20
+323	0143	しおふき	喷水	Water Spout	みず	Water	水	150	100	5
+324	0144	シグナルビーム	信号光束	Signal Beam	むし	Bug	虫	75	100	15
+325	0145	シャドーパンチ	暗影拳	Shadow Punch	ゴースト	Ghost	幽灵	60	-	20
+326	0146	じんつうりき	神通力	Extrasensory	エスパー	Psychic	超能力	80	100	30
+327	0147	スカイアッパー	冲天拳	Sky Uppercut	かくとう	Fighting	格斗	85	90	15
+328	0148	すなじごく	流沙深渊	Sand Tomb	じめん	Ground	地面	35	85	15
+329	0149	ぜったいれいど	绝对零度	Sheer Cold	こおり	Ice	冰	变化	变化	5
+330	014A	だくりゅう	浊流	Muddy Water	みず	Water	水	95	85	10
+331	014B	タネマシンガン	种子机关枪	Bullet Seed	くさ	Grass	草	10	100	30
+332	014C	つばめがえし	燕返	Aerial Ace	ひこう	Flying	飞行	60	-	20
+333	014D	つららばり	冰锥	Icicle Spear	こおり	Ice	冰	10	100	30
+334	014E	てっぺき	铁壁	Iron Defense	はがね	Steel	钢	-	-	15
+335	014F	とおせんぼう	挡路	Block	ノーマル	Normal	一般	-	-	5
+336	0150	とおぼえ	长嚎	Howl	ノーマル	Normal	一般	-	-	40
+337	0151	ドラゴンクロー	龙爪	Dragon Claw	ドラゴン	Dragon	龙	80	100	15
+338	0152	ハードプラント	疯狂植物	Frenzy Plant	くさ	Grass	草	150	90	5
+339	0153	ビルドアップ	健美	Bulk Up	かくとう	Fighting	格斗	-	-	20
+340	0154	とびはねる	弹跳	Bounce	ひこう	Flying	飞行	85	85	5
+341	0155	マッドショット	泥巴射击	Mud Shot	じめん	Ground	地面	55	95	15
+342	0156	ポイズンテール	毒尾	Poison Tail	どく	Poison	毒	50	100	25
+343	0157	ほしがる	渴望	Covet	ノーマル	Normal	一般	60	100	40
+344	0158	ボルテッカー	伏特攻击	Volt Tackle	でんき	Electric	电	120	100	15
+345	0159	マジカルリーフ	魔法叶	Magical Leaf	くさ	Grass	草	60	-	20
+346	015A	みずあそび	玩水	Water Sport	みず	Water	水	-	-	15
+347	015B	めいそう	冥想	Calm Mind	エスパー	Psychic	超能力	-	-	20
+348	015C	リーフブレード	叶刃	Leaf Blade	くさ	Grass	草	70	100	15
+349	015D	りゅうのまい	龙之舞	Dragon Dance	ドラゴン	Dragon	龙	-	-	20
+350	015E	ロックブラスト	岩石爆击	Rock Blast	いわ	Rock	岩石	25	90	10
+351	015F	でんげきは	电击波	Shock Wave	でんき	Electric	电	60	-	20
+352	0160	みずのはどう	水之波动	Water Pulse	みず	Water	水	60	100	20
+353	0161	はめつのねがい	破灭之愿	Doom Desire	はがね	Steel	钢	140	100	5
+354	0162	サイコブースト	精神突进	Psycho Boost	エスパー	Psychic	超能力	140	90	5
