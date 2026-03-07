@@ -110,6 +110,8 @@ MemCrypt: What is it? Its function is to decrypt encrypted data, such as in-game
 <br>
 These two features can provide better hacking capabilities for games, such as creating mods, cheats, etc.<br>
 <br>
+Of course, with this information in hand, you can then use signature strings to search for and locate each different version of a GBA ROM.<br>
+<br>
 Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
 `Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
   <table>
