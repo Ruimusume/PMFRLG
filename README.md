@@ -86,6 +86,7 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 - [Area_id](https://github.com/Ruimusume/PMFRLG/blob/main/Area_id.txt)
 - [waza_id](https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt)
 - [Char_map_JP](https://github.com/Ruimusume/PMFRLG/blob/main/Char_map_JP.txt)
+- [DMA & memcrypt](https://github.com/Ruimusume/PMFRLG/tree/main?tab=readme-ov-file#fixed-ram--memcrypt)
 
 ## Restart Game & Claer Save Data
 If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
