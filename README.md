@@ -106,9 +106,127 @@ You can record and view the ID and modifications of each Area here.Only for Japa
 
 ## Disable MemCrypt
 Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
-English version, ROM Patch - Patches 0x804F8E2 with 0x2400. Raw 0x1824.<br>
-Japanese version, ROM Patch - Patches 0x804F0F8 with 0x2400. Raw 0x1824.<br>
-`Thank you to the original author Kenobi, LoadingNOW and patjenova`
+`Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
+  <table>
+    <tr>
+      <td></td>
+      <td>Fixed RAM（Offset）</td>
+      <td>MemCrypt（Offset）</td>
+      <td>Fixed RAM（Enable）</td>
+      <td>MemCrypt（Enable）</td>
+      <td>Fixed RAM（Disable）</td>
+      <td>MemCrypt（Disable）</td>
+    </tr>
+    <tr>
+      <td>BPRJ</td>
+      <td>0x4F020</td>
+      <td>0x4F0F8</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPGJ</td>
+      <td>0x4F020</td>
+      <td>0x4F0F8</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPRE</td>
+      <td>0x4F80C</td>
+      <td>0x4F8E2</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPGE</td>
+      <td>0x4F80C</td>
+      <td>0x4F8E2</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPRS</td>
+      <td>0x4F97C</td>
+      <td>0x4FA52</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPGS</td>
+      <td>0x4F97C</td>
+      <td>0x4FA52</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPRF</td>
+      <td>0x4F968</td>
+      <td>0x4FA3E</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPGF</td>
+      <td>0x4F968</td>
+      <td>0x4FA3E</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPRD</td>
+      <td>0x4F8A8</td>
+      <td>0x497E</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPGD</td>
+      <td>0x4F8A8</td>
+      <td>0x497E</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPRI</td>
+      <td>0x4F894</td>
+      <td>0x4F96A</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+    <tr>
+      <td>BPGI</td>
+      <td>0x4F894</td>
+      <td>0x4F96A</td>
+      <td>00 21 0A 4A</td>
+      <td>00 24 20 1C</td>
+      <td>01 40 0A 4A</td>
+      <td>24 18 20 1C</td>
+    </tr>
+  </table>
+
 
 ## Source of Contribution
 Thank you very much to previous authors.<br>
