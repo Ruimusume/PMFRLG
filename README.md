@@ -114,7 +114,7 @@ Switch GBA ROM HEAD`[[[[main+041F8688]+160]+68]+AD0]`<br>
 `Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
   <table>
     <tr>
-      <td></td>
+      <td>Switch Ver.</td>
       <td>Fixed RAM（Offset）</td>
       <td>MemCrypt（Offset）</td>
       <td>Fixed RAM（Enable）</td>
