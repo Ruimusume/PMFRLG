@@ -115,8 +115,8 @@ These two features can provide better hacking capabilities for games, such as cr
 Of course, with this information in hand, you can then use signature strings to search for and locate each different version of a GBA ROM.<br>
 <br>
 Switch GBA ROM HEAD`[[main+041F8688]+4AD0]`<br>
-Switch GBA WRAM HEAD`[[main+041F8688]+49A0]<br>
-Switch GBA IRAM HEAD`[[main+041F8688]+49D8]<br>
+Switch GBA WRAM HEAD`[[main+041F8688]+49A0]`<br>
+Switch GBA IRAM HEAD`[[main+041F8688]+49D8]`<br>
 `Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
   <table>
     <tr>
