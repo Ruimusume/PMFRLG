@@ -118,125 +118,43 @@ Switch GBA ROM HEAD`[[main+041F8688]+4AD0]`<br>
 Switch GBA WRAM HEAD`[[main+041F8688]+49A0]`<br>
 Switch GBA IRAM HEAD`[[main+041F8688]+49D8]`<br>
 `Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
-  <table>
-    <tr>
-      <td>Switch Ver.</td>
-      <td>Fixed RAM（Offset）</td>
-      <td>MemCrypt（Offset）</td>
-      <td>Fixed RAM（Enable）</td>
-      <td>MemCrypt（Enable）</td>
-      <td>Fixed RAM（Disable）</td>
-      <td>MemCrypt（Disable）</td>
-    </tr>
-    <tr>
-      <td>BPRJ</td>
-      <td>0x4F020</td>
-      <td>0x4F0F8</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPGJ</td>
-      <td>0x4F020</td>
-      <td>0x4F0F8</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPRE</td>
-      <td>0x4F80C</td>
-      <td>0x4F8E2</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPGE</td>
-      <td>0x4F80C</td>
-      <td>0x4F8E2</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPRS</td>
-      <td>0x4F97C</td>
-      <td>0x4FA52</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPGS</td>
-      <td>0x4F97C</td>
-      <td>0x4FA52</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPRF</td>
-      <td>0x4F968</td>
-      <td>0x4FA3E</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPGF</td>
-      <td>0x4F968</td>
-      <td>0x4FA3E</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPRD</td>
-      <td>0x4F8A8</td>
-      <td>0x4F97E</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPGD</td>
-      <td>0x4F8A8</td>
-      <td>0x4F97E</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPRI</td>
-      <td>0x4F894</td>
-      <td>0x4F96A</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-    <tr>
-      <td>BPGI</td>
-      <td>0x4F894</td>
-      <td>0x4F96A</td>
-      <td>00 21 0A 4A</td>
-      <td>00 24 20 1C</td>
-      <td>01 40 0A 4A</td>
-      <td>24 18 20 1C</td>
-    </tr>
-  </table>
+<table>
+<tr><td>Switch Ver.</td>
+<td>BPRJ</td>
+<td>BPGJ</td>
+<td>BPRE</td>
+<td>BPGE</td>
+<td>BPRS</td>
+<td>BPGS</td>
+<td>BPRF</td>
+<td>BPGF</td>
+<td>BPRD</td>
+<td>BPGD</td>
+<td>BPRI</td>
+<td>BPGI</td></tr>
+<tr><td>Fixed RAM（Offset）</td>
+<td colspan="2">0x4F020</td>
+<td colspan="2">0x4F80C</td>
+<td colspan="2">0x4F97C</td>
+<td colspan="2">0x4F968</td>
+<td colspan="2">0x4F8A8</td>
+<td colspan="2">0x4F894</td></tr>
+<tr><td>MemCrypt（Offset）</td>
+<td colspan="2">0x4F0F8</td>
+<td colspan="2">0x4F8E2</td>
+<td colspan="2">0x4FA52</td>
+<td colspan="2">0x4FA3E</td>
+<td colspan="2">0x4F97E</td>
+<td colspan="2">0x4F96A</td></tr>
+<tr><td>Fixed RAM（Enable）</td>
+<td colspan="12">00 21 0A 4A</td></tr>
+<tr><td>MemCrypt（Enable）</td>
+<td colspan="12">00 24 20 1C</td></tr>
+<tr><td>Fixed RAM（Disable）</td>
+<td colspan="12">01 40 0A 4A</td></tr>
+<tr><td>MemCrypt（Disable）</td>
+<td colspan="12">24 18 20 1C</td></tr>
+</table>
 
 ## Source of Contribution
 Thank you very much to previous authors.<br>
