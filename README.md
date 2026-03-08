@@ -4,78 +4,7 @@
 Switch 口袋妖怪 火红・叶绿 数据库<br>
 <img height="128" alt="icon" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/icon_o.png?raw=true"/><img height="128" alt="icon" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/icon_m.png?raw=true"/><img height="128" alt="icon" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/icon_f.png?raw=true"/><img height="128" alt="icon" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/icon_g.png?raw=true"/>
 <img height="256" alt="logo" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/logo.webp?raw=true"/>
-<table><tr><td>Fire Red JP</td>
-<td>01006FA0233F8000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPRJ</td>
-<td>ROM Version:0a</td>
-<td>CRC:59</td></tr>
-<tr><td>Leaf Green JP</td>
-<td>0100F1E0233FA000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPGJ</td>
-<td>ROM Version:0a</td>
-<td>CRC:72</td></tr>
-<tr><td>Fire Red EN</td>
-<td>0100554023408000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPRE</td>
-<td>ROM Version:0a</td>
-<td>CRC:5e</td></tr>
-<tr><td>Leaf Green EN</td>
-<td>010034D02340E000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPGE</td>
-<td>ROM Version:0a</td>
-<td>CRC:77</td></tr>
-<tr><td>Fire Red ES</td>
-<td>0100EB702342C000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPRS</td>
-<td>ROM Version:0a</td>
-<td>CRC:50</td></tr>
-<tr><td>Leaf Green ES</td>
-<td>01002B5023434000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPGS</td>
-<td>ROM Version:0a</td>
-<td>CRC:69</td></tr>
-<tr><td>Fire Red FR</td>
-<td>01004B3023412000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPRF</td>
-<td>ROM Version:0a</td>
-<td>CRC:5d</td></tr>
-<tr><td>Leaf Green FR</td>
-<td>010087C02342E000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPGF</td>
-<td>ROM Version:0a</td>
-<td>CRC:76</td></tr>
-<tr><td>Fire Red DE</td>
-<td>01007F8023416000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPRD</td>
-<td>ROM Version:0a</td>
-<td>CRC:5f</td></tr>
-<tr><td>Leaf Green DE</td>
-<td>0100FD6023430000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPGD</td>
-<td>ROM Version:0a</td>
-<td>CRC:78</td></tr>
-<tr><td>Fire Red IT</td>
-<td>010092302342A000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPRI</td>
-<td>ROM Version:0a</td>
-<td>CRC:5a</td></tr>
-<tr><td>Leaf Green IT</td>
-<td>01005C7023432000</td>
-<td>2026-02-27</td>
-<td>Game Code:BPGI</td>
-<td>ROM Version:0a</td>
-<td>CRC:73</td></tr></table>
+<table><tr><td>Fire Red JP</td><td>01006FA0233F8000</td><td>2026-02-27</td><td>Game Code:BPRJ</td><td>ROM Version:0a</td><td>CRC:59</td></tr><tr><td>Leaf Green JP</td><td>0100F1E0233FA000</td><td>2026-02-27</td><td>Game Code:BPGJ</td><td>ROM Version:0a</td><td>CRC:72</td></tr><tr><td>Fire Red EN</td><td>0100554023408000</td><td>2026-02-27</td><td>Game Code:BPRE</td><td>ROM Version:0a</td><td>CRC:5e</td></tr><tr><td>Leaf Green EN</td><td>010034D02340E000</td><td>2026-02-27</td><td>Game Code:BPGE</td><td>ROM Version:0a</td><td>CRC:77</td></tr><tr><td>Fire Red ES</td><td>0100EB702342C000</td><td>2026-02-27</td><td>Game Code:BPRS</td><td>ROM Version:0a</td><td>CRC:50</td></tr><tr><td>Leaf Green ES</td><td>01002B5023434000</td><td>2026-02-27</td><td>Game Code:BPGS</td><td>ROM Version:0a</td><td>CRC:69</td></tr><tr><td>Fire Red FR</td><td>01004B3023412000</td><td>2026-02-27</td><td>Game Code:BPRF</td><td>ROM Version:0a</td><td>CRC:5d</td></tr><tr><td>Leaf Green FR</td><td>010087C02342E000</td><td>2026-02-27</td><td>Game Code:BPGF</td><td>ROM Version:0a</td><td>CRC:76</td></tr><tr><td>Fire Red DE</td><td>01007F8023416000</td><td>2026-02-27</td><td>Game Code:BPRD</td><td>ROM Version:0a</td><td>CRC:5f</td></tr><tr><td>Leaf Green DE</td><td>0100FD6023430000</td><td>2026-02-27</td><td>Game Code:BPGD</td><td>ROM Version:0a</td><td>CRC:78</td></tr><tr><td>Fire Red IT</td><td>010092302342A000</td><td>2026-02-27</td><td>Game Code:BPRI</td><td>ROM Version:0a</td><td>CRC:5a</td></tr><tr><td>Leaf Green IT</td><td>01005C7023432000</td><td>2026-02-27</td><td>Game Code:BPGI</td><td>ROM Version:0a</td><td>CRC:73</td></tr></table>
 
 [md5 hash](https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/romfs/MD5.txt)
 </div>
@@ -118,43 +47,7 @@ Switch GBA ROM HEAD`[[main+041F8688]+4AD0]`<br>
 Switch GBA WRAM HEAD`[[main+041F8688]+49A0]`<br>
 Switch GBA IRAM HEAD`[[main+041F8688]+49D8]`<br>
 `Thank you to the original author Kenobi, LoadingNOW and patjenova`<br>
-<table>
-<tr><td>Switch Ver.</td>
-<td>BPRJ</td>
-<td>BPGJ</td>
-<td>BPRE</td>
-<td>BPGE</td>
-<td>BPRS</td>
-<td>BPGS</td>
-<td>BPRF</td>
-<td>BPGF</td>
-<td>BPRD</td>
-<td>BPGD</td>
-<td>BPRI</td>
-<td>BPGI</td></tr>
-<tr><td>Fixed RAM（Offset）</td>
-<td colspan="2">0x4F020</td>
-<td colspan="2">0x4F80C</td>
-<td colspan="2">0x4F97C</td>
-<td colspan="2">0x4F968</td>
-<td colspan="2">0x4F8A8</td>
-<td colspan="2">0x4F894</td></tr>
-<tr><td>MemCrypt（Offset）</td>
-<td colspan="2">0x4F0F8</td>
-<td colspan="2">0x4F8E2</td>
-<td colspan="2">0x4FA52</td>
-<td colspan="2">0x4FA3E</td>
-<td colspan="2">0x4F97E</td>
-<td colspan="2">0x4F96A</td></tr>
-<tr><td>Fixed RAM（Enable）</td>
-<td colspan="12">00 21 0A 4A</td></tr>
-<tr><td>MemCrypt（Enable）</td>
-<td colspan="12">00 24 20 1C</td></tr>
-<tr><td>Fixed RAM（Disable）</td>
-<td colspan="12">01 40 0A 4A</td></tr>
-<tr><td>MemCrypt（Disable）</td>
-<td colspan="12">24 18 20 1C</td></tr>
-</table>
+<table><tr><td>Switch Ver.</td><td>Fixed RAM（Offset）</td><td>MemCrypt（Offset）</td><td>Fixed RAM（Enable）</td><td>MemCrypt（Enable）</td><td>Fixed RAM（Disable）</td><td>MemCrypt（Disable）</td></tr><tr><td>BPRJ</td><td>0x4F020</td><td>0x4F0F8</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGJ</td><td>0x4F020</td><td>0x4F0F8</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRE</td><td>0x4F80C</td><td>0x4F8E2</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGE</td><td>0x4F80C</td><td>0x4F8E2</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRS</td><td>0x4F97C</td><td>0x4FA52</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGS</td><td>0x4F97C</td><td>0x4FA52</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRF</td><td>0x4F968</td><td>0x4FA3E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGF</td><td>0x4F968</td><td>0x4FA3E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRD</td><td>0x4F8A8</td><td>0x4F97E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGD</td><td>0x4F8A8</td><td>0x4F97E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRI</td><td>0x4F894</td><td>0x4F96A</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGI</td><td>0x4F894</td><td>0x4F96A</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr></table>
 
 ## Source of Contribution
 Thank you very much to previous authors.<br>
