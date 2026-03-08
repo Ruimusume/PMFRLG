@@ -20,7 +20,8 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 
 ## Restart Game & Claer Save Data
 If you want to delete save.<br>
-Restart Game Pressed `⊕ + ⊖ + A + B` or `X + Y + A + B` to title page Pressed `↑ + ⊖ + B` or `↑ + Y + B` .<br>
+Restart Game Pressed `⊕ + ⊖ + A + B` or `X + Y + A + B` to title page.<br>
+Delete save Pressed `↑ + ⊖ + B` or `↑ + Y + B` .<br>
 <img alt="claer" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/claer.png?raw=true" />
 
 ## Preparation before using the tool for Switch NSCE
