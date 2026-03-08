@@ -41,7 +41,7 @@ You can record and view the ID and modifications of each Area here.Only for Japa
 Fixed RAM: What is it? Its function is to fix the address of RAM so that it no longer changes.<br>
 MemCrypt: What is it? Its function is to decrypt encrypted data, such as in-game currency or items.<br>
 <br>
-These two features can provide better hacking capabilities for games, such as creating mods, cheats, etc.<br>
+These two features can provide better hacking capabilities for games, such as mod creation, money & item cheats, etc.<br>
 <br>
 Of course, with this information in hand, you can then use signature strings to search for and locate each different version of a GBA ROM.<br>
 <br>
