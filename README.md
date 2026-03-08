@@ -29,7 +29,7 @@ Delete save Pressed `↑ + ⊖ + B` or `↑ + Y + B` .<br>
 2.Download [sys-botbasezip](https://github.com/olliz0r/sys-botbase/releases), extract the file and place it in the Atmosphere folder.<br>
 3.Install [.NET Desktop Runtime 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) to run the NSCE client.<br>
 4.You must first run and open the game!<br>
-`* Restart Game will render cheating ineffective. Please close the game and restart it.`<br>
+
 [Cheats tool download](https://github.com/Ruimusume/NSCE/releases/tag/PMFRLG)
 
 ## Area ID tool
