@@ -19,7 +19,7 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 - [DMA & MemCrypt](https://github.com/Ruimusume/PMFRLG/tree/main?tab=readme-ov-file#fixed-ram--memcrypt)
 
 ## Restart Game & Claer Save Data
-If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B`  to title page Pressed `↑ + ⊖ + B` .<br>
+If you want to delete save , Restart Game Pressed `⊕ + ⊖ + A + B` or `X + Y + A + B` to title page Pressed `↑ + ⊖ + B` .<br>
 <img alt="claer" src="https://github.com/Ruimusume/PMFRLG/blob/main/img/claer.png?raw=true" />
 
 ## Preparation before using the tool for Switch NSCE
