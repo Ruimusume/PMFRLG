@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusme 露易娘</title>
+<link rel="icon" href="https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/icon/official.png">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+    }
+    body {
+        background-color: #f5f7fa;
+        padding: 20px;
+        line-height: 1.6;
+    }
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        padding: 15px;
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .header p {
+        color: #666;
+        font-size: 1.1rem;
+    }
+    .main-title {
+        font-size: clamp(12px, 2vw, 20px);
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 6px;
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        word-break: keep-all;
+        padding: 0 3px;
+    }
+    .header-subtitle {
+        font-size: clamp(9px, 1vw, 14px);
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 3px;
+    }
+    .header-subtitle span {
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+    .footer-copyright {
+        max-width: 1400px;
+        margin: 15px auto 0;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        color: #888;
+        opacity: 0.9;
+    }
+    img {
+        width: auto;
+        height: auto;
+        max-width: none;
+        border: none;
+        background: transparent;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    img[data-src] {
+        min-width: 32px;
+        min-height: 32px;
+        background: transparent;
+        max-width: none;
+    }
+    .type-chart-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0 10px 0;
+    }
+    .type-chart-item {
+        flex: 0 0 auto;
+        text-align: center;
+    }
+    .type-chart-item img {
+        width: auto;
+        height: auto;
+        max-width: none;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+    .type-chart-caption {
+        margin-top: 6px;
+        font-size: 0.85rem;
+        color: #555;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+    }
+    .type-chart-caption span {
+        display: inline-block;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        color: #666;
+    }
+    @media (max-width: 700px) {
+        .type-chart-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .type-chart-item {
+            max-width: 100%;
+        }
+        .type-chart-item img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="main-title">Switch 口袋妖怪 火红・叶绿 属性弱点 by Ruimusume
+    </div>
+    <div class="header-subtitle"> Switch ポケットモンスター ファイアレッド・リーフグリーン タイプ相性<br>
+      Switch Pokémon Fire Red / Leaf Green Type Chart</div>
+    <img alt="logo" src="https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/icon/logo.webp" style="max-width: 100%; height: auto; max-height: 128px;"> 
+  </div>
+
+    <div class="type-chart-row">
+        <div class="type-chart-item">
+            <img src="https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/img/Type_Chart_en.png">
+            <div class="type-chart-caption"><span>Type chart (English)</span></div>
+        </div>
+        <div class="type-chart-item">
+            <img src="https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/img/Type_Chart_jp.png">
+            <div class="type-chart-caption"><span>タイプ相性 (日本語)</span></div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="footer-copyright"> by Ruimusume 露易娘 © 2026 All Rights Reserved </div>
+</div>
+
+</body>
+</html>
