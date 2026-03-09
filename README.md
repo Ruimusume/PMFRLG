@@ -29,7 +29,7 @@ Delete save Pressed `↑ + ⊖ + B` or `↑ + Y + B` .<br>
 3.Install [.NET Desktop Runtime 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) to run the NSCE client.<br>
 4.You must first run and open the game!<br>
 
-[Cheats tool download](https://github.com/Ruimusume/NSCE/releases/tag/PMFRLG)
+[Cheats tool Download](https://github.com/Ruimusume/NSCE/releases/tag/PMFRLG)
 
 ## Area ID tool
 You can record and view the ID and modifications of each Area here.Only for Japanese version.
