@@ -9,12 +9,12 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 [md5 hash](https://raw.githubusercontent.com/Ruimusume/PMFRLG/refs/heads/main/romfs/MD5.txt)</div>
 
 ## DataBase
-- [Pokémon_DEX_ID](https://htmlpreview.github.io/?//github.com/Ruimusume/PMFRLG/blob/main/DEX.html)
-- [Pokémon_Base_Stats](https://github.com/Ruimusume/PMFRLG/blob/main/Pok%C3%A9mon_Base_Stats.txt)
-- [item_ID](https://htmlpreview.github.io/?//github.com/Ruimusume/PMFRLG/blob/main/item.html)
+- [Pokémon_DEX_ID](https://ruimusume.github.io/PMFRLG/DEX.html)
+- [Pokémon_Base_Stats](ruimusume.github.io/PMFRLG/Pok%C3%A9mon_Base_Stats.txt)
+- [item_ID](ruimusume.github.io/PMFRLG/item.html)
 - [type_id.txt](https://github.com/Ruimusume/PMFRLG/blob/main/type_id.txt)
 - [Waza_ID](https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt)
-- [Type_Chart](https://htmlpreview.github.io/?//github.com/Ruimusume/PMFRLG/blob/main/Type_Chart.html)
+- [Type_Chart](ruimusume.github.io/PMFRLG/Type_Chart.html)
 - [Area_ID](https://github.com/Ruimusume/PMFRLG/blob/main/Area_id.txt)
 - [Char_map_JP](https://github.com/Ruimusume/PMFRLG/blob/main/Char_map_JP.txt)
 - [DMA & MemCrypt](https://github.com/Ruimusume/PMFRLG/tree/main?tab=readme-ov-file#fixed-ram--memcrypt)
