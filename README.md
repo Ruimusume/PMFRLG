@@ -16,7 +16,7 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 - [Waza_ID](https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt)
 - [Type_Chart](https://ruimusume.github.io/PMFRLG/Type_Chart.html)
 - [Area_ID](https://github.com/Ruimusume/PMFRLG/blob/main/Area_id.txt)
-- [Char_map_JP](https://github.com/Ruimusume/PMFRLG/blob/main/Char_map_JP.txt)
+- [Character_map](https://github.com/Ruimusume/PMFRLG/blob/main/Character_map.txt)
 - [DMA & MemCrypt](https://github.com/Ruimusume/PMFRLG/tree/main?tab=readme-ov-file#fixed-ram--memcrypt)
 
 ## Restart Game & Claer Save Data
