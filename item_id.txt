@@ -1,376 +1,377 @@
-0	0000	N/A	N/A	N/A
-1	0001	マスターボール	MASTER BALL	大师球
-2	0002	ハイパーボール	ULTRA BALL	高级球
-3	0003	スーパーボール	GREAT BALL	超级球
-4	0004	モンスターボール	POKé BALL	精灵球
-5	0005	サファリボール	SAFARI BALL	狩猎球
-6	0006	ネットボール	NET BALL	捕网球
-7	0007	ダイブボール	DIVE BALL	潜水球
-8	0008	ネストボール	NEST BALL	巢穴球
-9	0009	リピートボール	REPEAT BALL	重复球
-10	000A	タイマーボール	TIMER BALL	计时球
-11	000B	ゴージャスボール	LUXURY BALL	豪华球
-12	000C	プレミアボール	PREMIER BALL	纪念球
-13	000D	キズぐすり	POTION	伤药
-14	000E	どくけし	ANTIDOTE	解毒药
-15	000F	やけどなおし	BURN HEAL	灼伤药
-16	0010	こおりなおし	ICE HEAL	解冻药
-17	0011	ねむけざまし	AWAKENING	解眠药
-18	0012	まひなおし	PARLYZ HEAL	解麻药
-19	0013	かいふくのくすり	FULL RESTORE	全复药
-20	0014	まんたんのくすり	MAX POTION	全满药
-21	0015	すごいキズぐすり	HYPER POTION	厉害伤药
-22	0016	いいキズぐすり	SUPER POTION	好伤药
-23	0017	なんでもなおし	FULL HEAL	万灵药
-24	0018	げんきのかけら	REVIVE	活力碎片
-25	0019	げんきのかたまり	MAX REVIVE	活力块
-26	001A	おいしいみず	FRESH WATER	美味之水
-27	001B	サイコソーダ	SODA POP	劲爽汽水
-28	001C	ミックスオレ	LEMONADE	果汁牛奶
-29	001D	モーモーミルク	MOOMOO MILK	哞哞鲜奶
-30	001E	ちからのこな	ENERGYPOWDER	元气粉
-31	001F	ちからのねっこ	ENERGY ROOT	元气根
-32	0020	ばんのうごな	HEAL POWDER	万能粉
-33	0021	ふっかつそう	REVIVAL HERB	复活草
-34	0022	ピーピーエイド	ETHER	ＰＰ单项小补剂
-35	0023	ピーピーリカバー	MAX ETHER	ＰＰ单项全补剂
-36	0024	ピーピーエイダー	ELIXIR	ＰＰ多项小补剂
-37	0025	ピーピーマックス	MAX ELIXIR	ＰＰ多项全补剂
-38	0026	フエンせんべい	LAVA COOKIE	釜炎仙贝
-39	0027	あおいビードロ	BLUE FLUTE	蓝色玻璃哨
-40	0028	きいろビードロ	YELLOW FLUTE	黄色玻璃哨
-41	0029	あかいビードロ	RED FLUTE	红色玻璃哨
-42	002A	くろいビードロ	BLACK FLUTE	黑色玻璃哨
-43	002B	しろいビードロ	WHITE FLUTE	白色玻璃哨
-44	002C	きのみジュース	BERRY JUICE	树果汁
-45	002D	せいなるはい	SACRED ASH	圣灰
-46	002E	あさせのしお	SHOAL SALT	浅滩海盐
-47	002F	あさせのかいがら	SHOAL SHELL	浅滩贝壳
-48	0030	あかいかけら	RED SHARD	红色碎片
-49	0031	あおいかけら	BLUE SHARD	蓝色碎片
-50	0032	きいろいかけら	YELLOW SHARD	黄色碎片
-51	0033	みどりのかけら	GREEN SHARD	绿色碎片
-52	0034	N/A	N/A	N/A
-53	0035	N/A	N/A	N/A
-54	0036	N/A	N/A	N/A
-55	0037	N/A	N/A	N/A
-56	0038	N/A	N/A	N/A
-57	0039	N/A	N/A	N/A
-58	003A	N/A	N/A	N/A
-59	003B	N/A	N/A	N/A
-60	003C	N/A	N/A	N/A
-61	003D	N/A	N/A	N/A
-62	003E	N/A	N/A	N/A
-63	003F	マックスアップ	HP UP	ＨＰ增强剂
-64	0040	タウリン	PROTEIN	攻击增强剂
-65	0041	ブロムヘキシン	IRON	防御增强剂
-66	0042	インドメタシン	CARBOS	速度增强剂
-67	0043	リゾチウム	CALCIUM	特攻增强剂
-68	0044	ふしぎなアメ	RARE CANDY	神奇糖果
-69	0045	ポイントアップ	PP UP	ＰＰ提升剂
-70	0046	キトサン	ZINC	特防增强剂
-71	0047	ポイントマックス	PP MAX	ＰＰ极限提升剂
-72	0048	N/A	N/A	N/A
-73	0049	エフェクトガード	GUARD SPEC.	能力防守
-74	004A	クリティカッター	DIRE HIT	要害攻击
-75	004B	プラスパワー	X ATTACK	力量强化
-76	004C	ディフェンダー	X DEFEND	防御强化
-77	004D	スピーダー	X SPEED	速度强化
-78	004E	ヨクアタール	X ACCURACY	命中强化
-79	004F	スペシャルアップ	X SPECIAL	特攻强化
-80	0050	ピッピにんぎょう	POKé DOLL	皮皮玩偶
-81	0051	エネコのシッポ	FLUFFY TAIL	向尾喵的尾巴
-82	0052	N/A	N/A	N/A
-83	0053	シルバースプレー	SUPER REPEL	白银喷雾
-84	0054	ゴールドスプレー	MAX REPEL	黄金喷雾
-85	0055	あなぬけのヒモ	ESCAPE ROPE	离洞绳
-86	0056	むしよけスプレー	REPEL	除虫喷雾
-87	0057	N/A	N/A	N/A
-88	0058	N/A	N/A	N/A
-89	0059	N/A	N/A	N/A
-90	005A	N/A	N/A	N/A
-91	005B	N/A	N/A	N/A
-92	005C	N/A	N/A	N/A
-93	005D	たいようのいし	SUN STONE	日之石
-94	005E	つきのいし	MOON STONE	月之石
-95	005F	ほのおのいし	FIRE STONE	火之石
-96	0060	かみなりのいし	THUNDERSTONE	雷之石
-97	0061	みずのいし	WATER STONE	水之石
-98	0062	リーフのいし	LEAF STONE	叶之石
-99	0063	N/A	N/A	N/A
-100	0064	N/A	N/A	N/A
-101	0065	N/A	N/A	N/A
-102	0066	N/A	N/A	N/A
-103	0067	ちいさなキノコ	TINYMUSHROOM	小蘑菇
-104	0068	おおきなキノコ	BIG MUSHROOM	大蘑菇
-105	0069	N/A		N/A
-106	006A	しんじゅ	PEARL	珍珠
-107	006B	おおきなしんじゅ	BIG PEARL	大珍珠
-108	006C	ほしのすな	STARDUST	星星沙子
-109	006D	ほしのかけら	STAR PIECE	星星碎片
-110	006E	きんのたま	NUGGET	金珠
-111	006F	ハートのウロコ	HEART SCALE	心之鳞片
-112	0070	N/A	N/A	N/A
-113	0071	N/A	N/A	N/A
-114	0072	N/A	N/A	N/A
-115	0073	N/A	N/A	N/A
-116	0074	N/A	N/A	N/A
-117	0075	N/A	N/A	N/A
-118	0076	N/A	N/A	N/A
-119	0077	N/A	N/A	N/A
-120	0078	N/A	N/A	N/A
-121	0079	オレンジメール	ORANGE MAIL	橙色邮件
-122	007A	ハーバーメール	HARBOR MAIL	港口邮件
-123	007B	キラキラメール	GLITTER MAIL	闪亮邮件
-124	007C	メカニカルメール	MECH MAIL	机械邮件
-125	007D	ウッディメール	WOOD MAIL	木纹邮件
-126	007E	クロスメール	WAVE MAIL	波涛邮件
-127	007F	トレジャーメール	BEAD MAIL	珠宝邮件
-128	0080	シャドーメール	SHADOW MAIL	影子邮件
-129	0081	トロピカルメール	TROPIC MAIL	热带邮件
-130	0082	ドリームメール	DREAM MAIL	梦境邮件
-131	0083	ミラクルメール	FAB MAIL	奇迹邮件
-132	0084	レトロメール	RETRO MAIL	复古邮件
-133	0085	クラボのみ	CHERI BERRY	樱子果
-134	0086	カゴのみ	CHESTO BERRY	零余果
-135	0087	モモンのみ	PECHA BERRY	桃桃果
-136	0088	チーゴのみ	RAWST BERRY	莓莓果
-137	0089	ナナシのみ	ASPEAR BERRY	利木果
-138	008A	ヒメリのみ	LEPPA BERRY	苹野果
-139	008B	オレンのみ	ORAN BERRY	橙橙果
-140	008C	キーのみ	PERSIM BERRY	柿仔果
-141	008D	ラムのみ	LUM BERRY	木子果
-142	008E	オボンのみ	SITRUS BERRY	文柚果
-143	008F	フィラのみ	FIGY BERRY	勿花果
-144	0090	ウイのみ	WIKI BERRY	异奇果
-145	0091	マゴのみ	MAGO BERRY	芒芒果
-146	0092	バンジのみ	AGUAV BERRY	乐芭果
-147	0093	イアのみ	IAPAPA BERRY	芭亚果
-148	0094	ズリのみ	RAZZ BERRY	蔓莓果
-149	0095	ブリーのみ	BLUK BERRY	墨莓果
-150	0096	ナナのみ	NANAB BERRY	蕉香果
-151	0097	セシナのみ	WEPEAR BERRY	西梨果
-152	0098	パイルのみ	PINAP BERRY	凰梨果
-153	0099	ザロクのみ	POMEG BERRY	榴石果
-154	009A	ネコブのみ	KELPSY BERRY	藻根果
-155	009B	タポルのみ	QUALOT BERRY	比巴果
-156	009C	ロメのみ	HONDEW BERRY	哈密果
-157	009D	ウブのみ	GREPA BERRY	萄葡果
-158	009E	マトマのみ	TAMATO BERRY	茄番果
-159	009F	モコシのみ	CORNN BERRY	玉黍果
-160	00A0	ゴスのみ	MAGOST BERRY	岳竹果
-161	00A1	ラブタのみ	RABUTA BERRY	茸丹果
-162	00A2	ノメルのみ	NOMEL BERRY	檬柠果
-163	00A3	ノワキのみ	SPELON BERRY	刺角果
-164	00A4	シーヤのみ	PAMTRE BERRY	椰木果
-165	00A5	カイスのみ	WATMEL BERRY	瓜西果
-166	00A6	ドリのみ	DURIN BERRY	金枕果
-167	00A7	ベリブのみ	BELUE BERRY	靛莓果
-168	00A8	チイラのみ	LIECHI BERRY	枝荔果
-169	00A9	リュガのみ	GANLON BERRY	龙睛果
-170	00AA	カムラのみ	SALAC BERRY	沙鳞果
-171	00AB	ヤタピのみ	PETAYA BERRY	龙火果
-172	00AC	ズアのみ	APICOT BERRY	杏仔果
-173	00AD	サンのみ	LANSAT BERRY	兰萨果
-174	00AE	スターのみ	STARF BERRY	星桃果
-175	00AF	ナゾのみ	ENIGMA BERRY	谜芝果
-176	00B0	N/A	N/A	N/A
-177	00B1	N/A	N/A	N/A
-178	00B2	N/A	N/A	N/A
-179	00B3	ひかりのこな	BRIGHTPOWDER	光粉
-180	00B4	しろいハーブ	WHITE HERB	白色香草
-181	00B5	きょうせいギプス	MACHO BRACE	强制锻炼器
-182	00B6	がくしゅうそうち	EXP. SHARE	学习装置
-183	00B7	せんせいのツメ	QUICK CLAW	先制之爪
-184	00B8	やすらぎのすず	SOOTHE BELL	安抚之铃
-185	00B9	メンタルハーブ	MENTAL HERB	心灵香草
-186	00BA	こだわりハチマキ	CHOICE BAND	讲究头带
-187	00BB	おうじゃのしるし	KING'S ROCK	王者之证
-188	00BC	ぎんのこな	SILVERPOWDER	银粉
-189	00BD	おまもりこばん	AMULET COIN	护符金币
-190	00BE	きよめのおふだ	CLEANSE TAG	洁净之符
-191	00BF	こころのしずく	SOUL DEW	心之水滴
-192	00C0	しんかいのキバ	DEEPSEATOOTH	深海之牙
-193	00C1	しんかいのウロコ	DEEPSEASCALE	深海鳞片
-194	00C2	けむりだま	SMOKE BALL	烟雾球
-195	00C3	かわらずのいし	EVERSTONE	不变之石
-196	00C4	きあいのハチマキ	FOCUS BAND	气势头带
-197	00C5	しあわせタマゴ	LUCKY EGG	幸运蛋
-198	00C6	ピントレンズ	SCOPE LENS	焦点镜
-199	00C7	メタルコート	METAL COAT	金属膜
-200	00C8	たべのこし	LEFTOVERS	吃剩的东西
-201	00C9	りゅうのウロコ	DRAGON SCALE	龙之鳞片
-202	00CA	でんきだま	LIGHT BALL	电气球
-203	00CB	やわらかいすな	SOFT SAND	柔软沙子
-204	00CC	かたいいし	HARD STONE	硬石头
-205	00CD	きせきのタネ	MIRACLE SEED	奇迹种子
-206	00CE	くろいメガネ	BLACKGLASSES	黑色眼镜
-207	00CF	くろおび	BLACK BELT	黑带
-208	00D0	じしゃく	MAGNET	磁铁
-209	00D1	しんぴのしずく	MYSTIC WATER	神秘水滴
-210	00D2	するどいくちばし	SHARP BEAK	锐利鸟嘴
-211	00D3	どくバリ	POISON BARB	毒针
-212	00D4	とけないこおり	NEVERMELTICE	不融冰
-213	00D5	のろいのおふだ	SPELL TAG	咒术之符
-214	00D6	まがったスプーン	TWISTEDSPOON	弯曲的汤匙
-215	00D7	もくたん	CHARCOAL	木炭
-216	00D8	りゅうのキバ	DRAGON FANG	龙之牙
-217	00D9	シルクのスカーフ	SILK SCARF	丝绸围巾
-218	00DA	アップグレード	UP-GRADE	升级数据
-219	00DB	かいがらのすず	SHELL BELL	贝壳之铃
-220	00DC	うしおのおこう	SEA INCENSE	海潮薰香
-221	00DD	のんきのおこう	LAX INCENSE	悠闲薰香
-222	00DE	ラッキーパンチ	LUCKY PUNCH	吉利拳
-223	00DF	メタルパウダー	METAL POWDER	金属粉
-224	00E0	ふといホネ	THICK CLUB	粗骨头
-225	00E1	ながねぎ	STICK	大葱
-226	00E2	N/A	N/A	N/A
-227	00E3	N/A	N/A	N/A
-228	00E4	N/A	N/A	N/A
-229	00E5	N/A	N/A	N/A
-230	00E6	N/A	N/A	N/A
-231	00E7	N/A	N/A	N/A
-232	00E8	N/A	N/A	N/A
-233	00E9	N/A	N/A	N/A
-234	00EA	N/A	N/A	N/A
-235	00EB	N/A	N/A	N/A
-236	00EC	N/A	N/A	N/A
-237	00ED	N/A	N/A	N/A
-238	00EE	N/A	N/A	N/A
-239	00EF	N/A	N/A	N/A
-240	00F0	N/A	N/A	N/A
-241	00F1	N/A	N/A	N/A
-242	00F2	N/A	N/A	N/A
-243	00F3	N/A	N/A	N/A
-244	00F4	N/A	N/A	N/A
-245	00F5	N/A	N/A	N/A
-246	00F6	N/A	N/A	N/A
-247	00F7	N/A	N/A	N/A
-248	00F8	N/A	N/A	N/A
-249	00F9	N/A	N/A	N/A
-250	00FA	N/A	N/A	N/A
-251	00FB	N/A	N/A	N/A
-252	00FC	N/A	N/A	N/A
-253	00FD	N/A	N/A	N/A
-254	00FE	あかいバンダナ	RED SCARF	红色头巾
-255	00FF	あおいバンダナ	BLUE SCARF	蓝色头巾
-256	0100	ピンクのバンダナ	PINK SCARF	粉红头巾
-257	0101	みどりのバンダナ	GREEN SCARF	绿色头巾
-258	0102	きいろのバンダナ	YELLOW SCARF	黄色头巾
-259	0103	マッハじてんしゃ	MACH BIKE	音速自行车
-260	0104	コインケース	COIN CASE	代币盒
-261	0105	ダウジングマシン	ITEMFINDER	探宝器
-262	0106	ボロのつりざお	OLD ROD	破旧钓竿
-263	0107	いいつりざお	GOOD ROD	好钓竿
-264	0108	すごいつりざお	SUPER ROD	厉害钓竿
-265	0109	ふねのチケット	S.S. TICKET	船票
-266	010A	コンテストパス	CONTEST PASS	华丽大赛参加证
-267	010B	N/A	N/A	N/A
-268	010C	ホエルコじょうろ	WAILMER PAIL	吼吼鲸喷壶
-269	010D	デボンのにもつ	DEVON GOODS	得文的物品
-270	010E	はいぶくろ	SOOT SACK	集灰袋
-271	010F	ちかのカギ	BASEMENT KEY	地下钥匙
-272	0110	ダートじてんしゃ	ACRO BIKE	越野自行车
-273	0111	ポロックケース	PoKeBlLoCk CASE	宝可方块盒
-274	0112	ダイゴへのてがみ	LETTER	给大吾的信
-275	0113	むげんのチケット	EON TICKET	无限船票
-276	0114	べにいろのたま	RED ORB	朱红色宝珠
-277	0115	あいいろのたま	BLUE ORB	靛蓝色宝珠
-278	0116	たんちき	SCANNER	探测器
-279	0117	ゴーゴーゴーグル	GO-GOGGLES	ＧＯＧＯ护目镜
-280	0118	いんせき	METEORITE	陨石
-281	0119	１ごうしつのカギ	RM. 1 KEY	１号客房的钥匙
-282	011A	２ごうしつのカギ	RM. 2 KEY	２号客房的钥匙
-283	011B	４ごうしつのカギ	RM. 4 KEY	４号客房的钥匙
-284	011C	６ごうしつのカギ	RM. 6 KEY	６号客房的钥匙
-285	011D	そうこのカギ	STORAGE KEY	仓库钥匙
-286	011E	ねっこのカセキ	ROOT FOSSIL	根状化石
-287	011F	ツメのカセキ	CLAW FOSSIL	爪子化石
-288	0120	デボンスコープ	DEVON SCOPE	得文侦测镜
-289	0121	わざマシン01	TM01	招式学习器01
-290	0122	わざマシン02	TM02	招式学习器02
-291	0123	わざマシン03	TM03	招式学习器03
-292	0124	わざマシン04	TM04	招式学习器04
-293	0125	わざマシン05	TM05	招式学习器05
-294	0126	わざマシン06	TM06	招式学习器06
-295	0127	わざマシン07	TM07	招式学习器07
-296	0128	わざマシン08	TM08	招式学习器08
-297	0129	わざマシン09	TM09	招式学习器09
-298	012A	わざマシン10	TM10	招式学习器10
-299	012B	わざマシン11	TM11	招式学习器11
-300	012C	わざマシン12	TM12	招式学习器12
-301	012D	わざマシン13	TM13	招式学习器13
-302	012E	わざマシン14	TM14	招式学习器14
-303	012F	わざマシン15	TM15	招式学习器15
-304	0130	わざマシン16	TM16	招式学习器16
-305	0131	わざマシン17	TM17	招式学习器17
-306	0132	わざマシン18	TM18	招式学习器18
-307	0133	わざマシン19	TM19	招式学习器19
-308	0134	わざマシン20	TM20	招式学习器20
-309	0135	わざマシン21	TM21	招式学习器21
-310	0136	わざマシン22	TM22	招式学习器22
-311	0137	わざマシン23	TM23	招式学习器23
-312	0138	わざマシン24	TM24	招式学习器24
-313	0139	わざマシン25	TM25	招式学习器25
-314	013A	わざマシン26	TM26	招式学习器26
-315	013B	わざマシン27	TM27	招式学习器27
-316	013C	わざマシン28	TM28	招式学习器28
-317	013D	わざマシン29	TM29	招式学习器29
-318	013E	わざマシン30	TM30	招式学习器30
-319	013F	わざマシン31	TM31	招式学习器31
-320	0140	わざマシン32	TM32	招式学习器32
-321	0141	わざマシン33	TM33	招式学习器33
-322	0142	わざマシン34	TM34	招式学习器34
-323	0143	わざマシン35	TM35	招式学习器35
-324	0144	わざマシン36	TM36	招式学习器36
-325	0145	わざマシン37	TM37	招式学习器37
-326	0146	わざマシン38	TM38	招式学习器38
-327	0147	わざマシン39	TM39	招式学习器39
-328	0148	わざマシン40	TM40	招式学习器40
-329	0149	わざマシン41	TM41	招式学习器41
-330	014A	わざマシン42	TM42	招式学习器42
-331	014B	わざマシン43	TM43	招式学习器43
-332	014C	わざマシン44	TM44	招式学习器44
-333	014D	わざマシン45	TM45	招式学习器45
-334	014E	わざマシン46	TM46	招式学习器46
-335	014F	わざマシン47	TM47	招式学习器47
-336	0150	わざマシン48	TM48	招式学习器48
-337	0151	わざマシン49	TM49	招式学习器49
-338	0152	わざマシン50	TM50	招式学习器50
-339	0153	ひでんマシン01	HM01	秘传学习器01
-340	0154	ひでんマシン02	HM02	秘传学习器02
-341	0155	ひでんマシン03	HM03	秘传学习器03
-342	0156	ひでんマシン04	HM04	秘传学习器04
-343	0157	ひでんマシン05	HM05	秘传学习器05
-344	0158	ひでんマシン06	HM06	秘传学习器06
-345	0159	ひでんマシン07	HM07	秘传学习器07
-346	015A	ひでんマシン08	HM08	秘传学习器08
-347	015B	N/A	N/A	N/A
-348	015C	N/A	N/A	N/A
-349	015D	おとどけもの	OAK'S PARCEL	包裹
-350	015E	ポケモンのふえ	POKé FLUTE	宝可梦之笛
-351	015F	ひみつのカギ	SECRET KEY	秘密钥匙
-352	0160	ひきかえけん	BIKE VOUCHER	兑换券
-353	0161	きんのいれば	GOLD TEETH	金假牙
-354	0162	ひみつのコハク	OLD AMBER	秘密琥珀
-355	0163	カードキー	CARD KEY	钥匙卡
-356	0164	エレベータのカギ	LIFT KEY	电梯钥匙
-357	0165	かいのカセキ	HELIX FOSSIL	贝壳化石
-358	0166	こうらのカセキ	DOME FOSSIL	甲壳化石
-359	0167	シルフスコープ	SILPH SCOPE	西尔佛检视镜
-360	0168	じてんしゃ	BICYCLE	自行车
-361	0169	タウンマップ	TOWN MAP	城镇地图
-362	016A	バトルサーチャー	VS SEEKER	对战搜寻器
-363	016B	ボイスチェッカー	FAME CHECKER	声音记录器
-364	016C	わざマシンケース	TM CASE	招式学习器盒
-365	016D	きのみぶくろ	BERRY POUCH	树果袋
-366	016E	おしえテレビ	TEACHY TV	教学电视
-367	016F	トライパス	TRI-PASS	三岛通行船券
-368	0170	レインボーパス	RAINBOW PASS	七彩通行船券
-369	0171	おちゃ	TEA	茶
-370	0172	しんぴのチケット	MYSTICTICKET	神秘船票
-371	0173	オーロラチケット	AURORATICKET	极光船票
-372	0174	こないれ	POWDER JAR	粉末瓶
-373	0175	ルビー	RUBY	红宝石
-374	0176	サファイヤ	SAPPHIRE	蓝宝石
-375	0177	N/A	N/A	N/A
+No.	HEX	JP_name	EN_name	CN_name	icon	
+0	0000	(なし)	(None)	(无)	"img\items\0.png"	精灵球
+1	0001	マスターボール	Master Ball	大师球	"img\items\1.png"	精灵球
+2	0002	ハイパーボール	Ultra Ball	高级球	"img\items\2.png"	精灵球
+3	0003	スーパーボール	Great Ball	超级球	"img\items\3.png"	精灵球
+4	0004	モンスターボール	Poké Ball	精灵球	"img\items\4.png"	精灵球
+5	0005	サファリボール	Safari Ball	狩猎球	"img\items\5.png"	精灵球
+6	0006	ネットボール	Net Ball	捕网球	"img\items\6.png"	精灵球
+7	0007	ダイブボール	Dive Ball	潜水球	"img\items\7.png"	精灵球
+8	0008	ネストボール	Nest Ball	巢穴球	"img\items\8.png"	精灵球
+9	0009	リピートボール	Repeat Ball	重复球	"img\items\9.png"	精灵球
+10	000A	タイマーボール	Timer Ball	计时球	"img\items\10.png"	精灵球
+11	000B	ゴージャスボール	Luxury Ball	豪华球	"img\items\11.png"	精灵球
+12	000C	プレミアボール	Premier Ball	纪念球	"img\items\12.png"	精灵球
+13	000D	キズぐすり	Potion	伤药	"img\items\13.png"	道具
+14	000E	どくけし	Antidote	解毒药	"img\items\14.png"	道具
+15	000F	やけどなおし	Burn Heal	灼伤药	"img\items\15.png"	道具
+16	0010	こおりなおし	Ice Heal	解冻药	"img\items\16.png"	道具
+17	0011	ねむけざまし	Awakening	解眠药	"img\items\17.png"	道具
+18	0012	まひなおし	Parlyz Heal	解麻药	"img\items\18.png"	道具
+19	0013	かいふくのくすり	Full Restore	全复药	"img\items\19.png"	道具
+20	0014	まんたんのくすり	Max Potion	全满药	"img\items\20.png"	道具
+21	0015	すごいキズぐすり	Hyper Potion	厉害伤药	"img\items\21.png"	道具
+22	0016	いいキズぐすり	Super Potion	好伤药	"img\items\22.png"	道具
+23	0017	なんでもなおし	Full Heal	万灵药	"img\items\23.png"	道具
+24	0018	げんきのかけら	Revive	活力碎片	"img\items\24.png"	道具
+25	0019	げんきのかたまり	Max Revive	活力块	"img\items\25.png"	道具
+26	001A	おいしいみず	Fresh Water	美味之水	"img\items\26.png"	道具
+27	001B	サイコソーダ	Soda Pop	劲爽汽水	"img\items\27.png"	道具
+28	001C	ミックスオレ	Lemonade	果汁牛奶	"img\items\28.png"	道具
+29	001D	モーモーミルク	Moomoo Milk	哞哞鲜奶	"img\items\29.png"	道具
+30	001E	ちからのこな	EnergyPowder	元气粉	"img\items\30.png"	道具
+31	001F	ちからのねっこ	Energy Root	元气根	"img\items\31.png"	道具
+32	0020	ばんのうごな	Heal Powder	万能粉	"img\items\32.png"	道具
+33	0021	ふっかつそう	Revival Herb	复活草	"img\items\33.png"	道具
+34	0022	ピーピーエイド	Ether	ＰＰ单项小补剂	"img\items\34.png"	道具
+35	0023	ピーピーリカバー	Max Ether	ＰＰ单项全补剂	"img\items\35.png"	道具
+36	0024	ピーピーエイダー	Elixir	ＰＰ多项小补剂	"img\items\36.png"	道具
+37	0025	ピーピーマックス	Max Elixir	ＰＰ多项全补剂	"img\items\37.png"	道具
+38	0026	フエンせんべい	Lava Cookie	釜炎仙贝	"img\items\38.png"	道具
+39	0027	あおいビードロ	Blue Flute	蓝色玻璃哨	"img\items\39.png"	道具
+40	0028	きいろビードロ	Yellow Flute	黄色玻璃哨	"img\items\40.png"	道具
+41	0029	あかいビードロ	Red Flute	红色玻璃哨	"img\items\41.png"	道具
+42	002A	くろいビードロ	Black Flute	黑色玻璃哨	"img\items\42.png"	道具
+43	002B	しろいビードロ	White Flute	白色玻璃哨	"img\items\43.png"	道具
+44	002C	きのみジュース	Berry Juice	树果汁	"img\items\44.png"	道具
+45	002D	せいなるはい	Sacred Ash	圣灰	"img\items\45.png"	道具
+46	002E	あさせのしお	Shoal Salt	浅滩海盐	"img\items\46.png"	道具
+47	002F	あさせのかいがら	Shoal Shell	浅滩贝壳	"img\items\47.png"	道具
+48	0030	あかいかけら	Red Shard	红色碎片	"img\items\48.png"	道具
+49	0031	あおいかけら	Blue Shard	蓝色碎片	"img\items\49.png"	道具
+50	0032	きいろいかけら	Yellow Shard	黄色碎片	"img\items\50.png"	道具
+51	0033	みどりのかけら	Green Shard	绿色碎片	"img\items\51.png"	道具
+52	0034	？？？(0x34)	???	???	"img\items\0.png"	
+53	0035	？？？(0x35)	???	???	"img\items\0.png"	
+54	0036	？？？(0x36)	???	???	"img\items\0.png"	
+55	0037	？？？(0x37)	???	???	"img\items\0.png"	
+56	0038	？？？(0x38)	???	???	"img\items\0.png"	
+57	0039	？？？(0x39)	???	???	"img\items\0.png"	
+58	003A	？？？(0x3A)	???	???	"img\items\0.png"	
+59	003B	？？？(0x3B)	???	???	"img\items\0.png"	
+60	003C	？？？(0x3C)	???	???	"img\items\0.png"	
+61	003D	？？？(0x3D)	???	???	"img\items\0.png"	
+62	003E	？？？(0x3E)	???	???	"img\items\0.png"	
+63	003F	マックスアップ	HP Up	ＨＰ增强剂	"img\items\63.png"	道具
+64	0040	タウリン	Protein	攻击增强剂	"img\items\64.png"	道具
+65	0041	ブロムヘキシン	Iron	防御增强剂	"img\items\65.png"	道具
+66	0042	インドメタシン	Carbos	速度增强剂	"img\items\66.png"	道具
+67	0043	リゾチウム	Calcium	特攻增强剂	"img\items\67.png"	道具
+68	0044	ふしぎなアメ	Rare Candy	神奇糖果	"img\items\68.png"	道具
+69	0045	ポイントアップ	PP Up	ＰＰ提升剂	"img\items\69.png"	道具
+70	0046	キトサン	Zinc	特防增强剂	"img\items\70.png"	道具
+71	0047	ポイントマックス	PP Max	ＰＰ极限提升剂	"img\items\71.png"	道具
+72	0048	？？？(0x48)	???	???	"img\items\0.png"	
+73	0049	エフェクトガード	Guard Spec.	能力防守	"img\items\73.png"	道具
+74	004A	クリティカッター	Dire Hit	要害攻击	"img\items\74.png"	道具
+75	004B	プラスパワー	X Attack	力量强化	"img\items\75.png"	道具
+76	004C	ディフェンダー	X Defend	防御强化	"img\items\76.png"	道具
+77	004D	スピーダー	X Speed	速度强化	"img\items\77.png"	道具
+78	004E	ヨクアタール	X Accuracy	命中强化	"img\items\78.png"	道具
+79	004F	スペシャルアップ	X Special	特殊强化	"img\items\79.png"	道具
+80	0050	ピッピにんぎょう	Poké Doll	皮皮玩偶	"img\items\80.png"	道具
+81	0051	エネコのシッポ	Fluffy Tail	向尾喵的尾巴	"img\items\81.png"	道具
+82	0052	？？？(0x52)	???	???	"img\items\0.png"	道具
+83	0053	シルバースプレー	Super Repel	白银喷雾	"img\items\83.png"	道具
+84	0054	ゴールドスプレー	Max Repel	黄金喷雾	"img\items\84.png"	道具
+85	0055	あなぬけのヒモ	Escape Rope	离洞绳	"img\items\85.png"	道具
+86	0056	むしよけスプレー	Repel	除虫喷雾	"img\items\86.png"	道具
+87	0057	？？？(0x57)	???	???	"img\items\0.png"	
+88	0058	？？？(0x58)	???	???	"img\items\0.png"	
+89	0059	？？？(0x59)	???	???	"img\items\0.png"	
+90	005A	？？？(0x5A)	???	???	"img\items\0.png"	
+91	005B	？？？(0x5B)	???	???	"img\items\0.png"	
+92	005C	？？？(0x5C)	???	???	"img\items\0.png"	
+93	005D	たいようのいし	Sun Stone	日之石	"img\items\93.png"	道具
+94	005E	つきのいし	Moon Stone	月之石	"img\items\94.png"	道具
+95	005F	ほのおのいし	Fire Stone	火之石	"img\items\95.png"	道具
+96	0060	かみなりのいし	Thunder Stone	雷之石	"img\items\96.png"	道具
+97	0061	みずのいし	Water Stone	水之石	"img\items\97.png"	道具
+98	0062	リーフのいし	Leaf Stone	叶之石	"img\items\98.png"	道具
+99	0063	？？？(0x63)	???	???	"img\items\0.png"	
+100	0064	？？？(0x64)	???	???	"img\items\0.png"	
+101	0065	？？？(0x65)	???	???	"img\items\0.png"	
+102	0066	？？？(0x66)	???	???	"img\items\0.png"	
+103	0067	ちいさなキノコ	TinyMushroom	小蘑菇	"img\items\103.png"	道具
+104	0068	おおきなキノコ	Big Mushroom	大蘑菇	"img\items\104.png"	道具
+105	0069	？？？(0x69)	???	???	"img\items\0.png"	
+106	006A	しんじゅ	Pearl	珍珠	"img\items\106.png"	道具
+107	006B	おおきなしんじゅ	Big Pearl	大珍珠	"img\items\107.png"	道具
+108	006C	ほしのすな	Stardust	星星沙子	"img\items\108.png"	道具
+109	006D	ほしのかけら	Star Piece	星星碎片	"img\items\109.png"	道具
+110	006E	きんのたま	Nugget	金珠	"img\items\110.png"	道具
+111	006F	ハートのウロコ	Heart Scale	心之鳞片	"img\items\111.png"	道具
+112	0070	？？？(0x70)	???	???	"img\items\0.png"	
+113	0071	？？？(0x71)	???	???	"img\items\0.png"	
+114	0072	？？？(0x72)	???	???	"img\items\0.png"	
+115	0073	？？？(0x73)	???	???	"img\items\0.png"	
+116	0074	？？？(0x74)	???	???	"img\items\0.png"	
+117	0075	？？？(0x75)	???	???	"img\items\0.png"	
+118	0076	？？？(0x76)	???	???	"img\items\0.png"	
+119	0077	？？？(0x77)	???	???	"img\items\0.png"	
+120	0078	？？？(0x78)	???	???	"img\items\0.png"	
+121	0079	オレンジメール	Orange Mail	橙色邮件	"img\items\121.png"	邮件
+122	007A	ハーバーメール	Harbor Mail	港口邮件	"img\items\122.png"	邮件
+123	007B	キラキラメール	Glitter Mail	闪亮邮件	"img\items\123.png"	邮件
+124	007C	メカニカルメール	Mech Mail	机械邮件	"img\items\124.png"	邮件
+125	007D	ウッディメール	Wood Mail	木纹邮件	"img\items\125.png"	邮件
+126	007E	クロスメール	Wave Mail	波涛邮件	"img\items\126.png"	邮件
+127	007F	トレジャーメール	Bead Mail	珠宝邮件	"img\items\127.png"	邮件
+128	0080	シャドーメール	Shadow Mail	影子邮件	"img\items\128.png"	邮件
+129	0081	トロピカルメール	Tropic Mail	热带邮件	"img\items\129.png"	邮件
+130	0082	ドリームメール	Dream Mail	梦境邮件	"img\items\130.png"	邮件
+131	0083	ミラクルメール	Fab Mail	奇迹邮件	"img\items\131.png"	邮件
+132	0084	レトロメール	Retro Mail	复古邮件	"img\items\132.png"	邮件
+133	0085	クラボのみ	Cheri Berry	樱子果	"img\items\133.png"	树果
+134	0086	カゴのみ	Chesto Berry	零余果	"img\items\134.png"	树果
+135	0087	モモンのみ	Pecha Berry	桃桃果	"img\items\135.png"	树果
+136	0088	チーゴのみ	Rawst Berry	莓莓果	"img\items\136.png"	树果
+137	0089	ナナシのみ	Aspear Berry	利木果	"img\items\137.png"	树果
+138	008A	ヒメリのみ	Leppa Berry	苹野果	"img\items\138.png"	树果
+139	008B	オレンのみ	Oran Berry	橙橙果	"img\items\139.png"	树果
+140	008C	キーのみ	Persim Berry	柿仔果	"img\items\140.png"	树果
+141	008D	ラムのみ	Lum Berry	木子果	"img\items\141.png"	树果
+142	008E	オボンのみ	Sitrus Berry	文柚果	"img\items\142.png"	树果
+143	008F	フィラのみ	Figy Berry	勿花果	"img\items\143.png"	树果
+144	0090	ウイのみ	Wiki Berry	异奇果	"img\items\144.png"	树果
+145	0091	マゴのみ	Mago Berry	芒芒果	"img\items\145.png"	树果
+146	0092	バンジのみ	Aguav Berry	乐芭果	"img\items\146.png"	树果
+147	0093	イアのみ	Iapapa Berry	芭亚果	"img\items\147.png"	树果
+148	0094	ズリのみ	Razz Berry	蔓莓果	"img\items\148.png"	树果
+149	0095	ブリーのみ	Bluk Berry	墨莓果	"img\items\149.png"	树果
+150	0096	ナナのみ	Nanab Berry	蕉香果	"img\items\150.png"	树果
+151	0097	セシナのみ	Wepear Berry	西梨果	"img\items\151.png"	树果
+152	0098	パイルのみ	Pinap Berry	凰梨果	"img\items\152.png"	树果
+153	0099	ザロクのみ	Pomeg Berry	榴石果	"img\items\153.png"	树果
+154	009A	ネコブのみ	Kelpsy Berry	藻根果	"img\items\154.png"	树果
+155	009B	タポルのみ	Qualot Berry	比巴果	"img\items\155.png"	树果
+156	009C	ロメのみ	Hondew Berry	哈密果	"img\items\156.png"	树果
+157	009D	ウブのみ	Grepa Berry	萄葡果	"img\items\157.png"	树果
+158	009E	マトマのみ	Tamato Berry	茄番果	"img\items\158.png"	树果
+159	009F	モコシのみ	Cornn Berry	玉黍果	"img\items\159.png"	树果
+160	00A0	ゴスのみ	Magost Berry	岳竹果	"img\items\160.png"	树果
+161	00A1	ラブタのみ	Rabuta Berry	茸丹果	"img\items\161.png"	树果
+162	00A2	ノメルのみ	Nomel Berry	檬柠果	"img\items\162.png"	树果
+163	00A3	ノワキのみ	Spelon Berry	刺角果	"img\items\163.png"	树果
+164	00A4	シーヤのみ	Pamtre Berry	椰木果	"img\items\164.png"	树果
+165	00A5	カイスのみ	Watmel Berry	瓜西果	"img\items\165.png"	树果
+166	00A6	ドリのみ	Durin Berry	金枕果	"img\items\166.png"	树果
+167	00A7	ベリブのみ	Belue Berry	靛莓果	"img\items\167.png"	树果
+168	00A8	チイラのみ	Liechi Berry	枝荔果	"img\items\168.png"	树果
+169	00A9	リュガのみ	Ganlon Berry	龙睛果	"img\items\169.png"	树果
+170	00AA	カムラのみ	Salac Berry	沙鳞果	"img\items\170.png"	树果
+171	00AB	ヤタピのみ	Petaya Berry	龙火果	"img\items\171.png"	树果
+172	00AC	ズアのみ	Apicot Berry	杏仔果	"img\items\172.png"	树果
+173	00AD	サンのみ	Lansat Berry	兰萨果	"img\items\173.png"	树果
+174	00AE	スターのみ	Starf Berry	星桃果	"img\items\174.png"	树果
+175	00AF	ナゾのみ	Enigma Berry	谜芝果	"img\items\175.png"	树果
+176	00B0	？？？(0xB0)	???	???	"img\items\0.png"	
+177	00B1	？？？(0xB1)	???	???	"img\items\0.png"	
+178	00B2	？？？(0xB2)	???	???	"img\items\0.png"	
+179	00B3	ひかりのこな	BrightPowder	光粉	"img\items\179.png"	道具
+180	00B4	しろいハーブ	White Herb	白色香草	"img\items\180.png"	道具
+181	00B5	きょうせいギプス	Macho Brace	强制锻炼器	"img\items\181.png"	道具
+182	00B6	がくしゅうそうち	Exp. Share	学习装置	"img\items\182.png"	道具
+183	00B7	せんせいのツメ	Quick Claw	先制之爪	"img\items\183.png"	道具
+184	00B8	やすらぎのすず	Soothe Bell	安抚之铃	"img\items\184.png"	道具
+185	00B9	メンタルハーブ	Mental Herb	心灵香草	"img\items\185.png"	道具
+186	00BA	こだわりハチマキ	Choice Band	讲究头带	"img\items\186.png"	道具
+187	00BB	おうじゃのしるし	King's Rock	王者之证	"img\items\187.png"	道具
+188	00BC	ぎんのこな	SilverPowder	银粉	"img\items\188.png"	道具
+189	00BD	おまもりこばん	Amulet Coin	护符金币	"img\items\189.png"	道具
+190	00BE	きよめのおふだ	Cleanse Tag	洁净之符	"img\items\190.png"	道具
+191	00BF	こころのしずく	Soul Dew	心之水滴	"img\items\191.png"	道具
+192	00C0	しんかいのキバ	DeepSeaTooth	深海之牙	"img\items\192.png"	道具
+193	00C1	しんかいのウロコ	DeepSeaScale	深海鳞片	"img\items\193.png"	道具
+194	00C2	けむりだま	Smoke Ball	烟雾球	"img\items\194.png"	道具
+195	00C3	かわらずのいし	Everstone	不变之石	"img\items\195.png"	道具
+196	00C4	きあいのハチマキ	Focus Band	气势头带	"img\items\196.png"	道具
+197	00C5	しあわせタマゴ	Lucky Egg	幸运蛋	"img\items\197.png"	道具
+198	00C6	ピントレンズ	Scope Lens	焦点镜	"img\items\198.png"	道具
+199	00C7	メタルコート	Metal Coat	金属膜	"img\items\199.png"	道具
+200	00C8	たべのこし	Leftovers	吃剩的东西	"img\items\200.png"	道具
+201	00C9	りゅうのウロコ	Dragon Scale	龙之鳞片	"img\items\201.png"	道具
+202	00CA	でんきだま	Light Ball	电气球	"img\items\202.png"	道具
+203	00CB	やわらかいすな	Soft Sand	柔软沙子	"img\items\203.png"	道具
+204	00CC	かたいいし	Hard Stone	硬石头	"img\items\204.png"	道具
+205	00CD	きせきのタネ	Miracle Seed	奇迹种子	"img\items\205.png"	道具
+206	00CE	くろいメガネ	BlackGlasses	黑色眼镜	"img\items\206.png"	道具
+207	00CF	くろおび	Black Belt	黑带	"img\items\207.png"	道具
+208	00D0	じしゃく	Magnet	磁铁	"img\items\208.png"	道具
+209	00D1	しんぴのしずく	Mystic Water	神秘水滴	"img\items\209.png"	道具
+210	00D2	するどいくちばし	Sharp Beak	锐利鸟嘴	"img\items\210.png"	道具
+211	00D3	どくバリ	Poison Barb	毒针	"img\items\211.png"	道具
+212	00D4	とけないこおり	NeverMeltIce	不融冰	"img\items\212.png"	道具
+213	00D5	のろいのおふだ	Spell Tag	诅咒之符	"img\items\213.png"	道具
+214	00D6	まがったスプーン	TwistedSpoon	弯曲的汤匙	"img\items\214.png"	道具
+215	00D7	もくたん	Charcoal	木炭	"img\items\215.png"	道具
+216	00D8	りゅうのキバ	Dragon Fang	龙之牙	"img\items\216.png"	道具
+217	00D9	シルクのスカーフ	Silk Scarf	丝绸围巾	"img\items\217.png"	道具
+218	00DA	アップグレード	Up-Grade	升级数据	"img\items\218.png"	道具
+219	00DB	かいがらのすず	Shell Bell	贝壳之铃	"img\items\219.png"	道具
+220	00DC	うしおのおこう	Sea Incense	海潮薰香	"img\items\220.png"	道具
+221	00DD	のんきのおこう	Lax Incense	悠闲薰香	"img\items\221.png"	道具
+222	00DE	ラッキーパンチ	Lucky Punch	吉利拳	"img\items\222.png"	道具
+223	00DF	メタルパウダー	Metal Powder	金属粉	"img\items\223.png"	道具
+224	00E0	ふといホネ	Thick Club	粗骨头	"img\items\224.png"	道具
+225	00E1	ながねぎ	Stick	大葱	"img\items\225.png"	道具
+226	00E2	？？？(0xE2)	???	???	"img\items\0.png"	
+227	00E3	？？？(0xE3)	???	???	"img\items\0.png"	
+228	00E4	？？？(0xE4)	???	???	"img\items\0.png"	
+229	00E5	？？？(0xE5)	???	???	"img\items\0.png"	
+230	00E6	？？？(0xE6)	???	???	"img\items\0.png"	
+231	00E7	？？？(0xE7)	???	???	"img\items\0.png"	
+232	00E8	？？？(0xE8)	???	???	"img\items\0.png"	
+233	00E9	？？？(0xE9)	???	???	"img\items\0.png"	
+234	00EA	？？？(0xEA)	???	???	"img\items\0.png"	
+235	00EB	？？？(0xEB)	???	???	"img\items\0.png"	
+236	00EC	？？？(0xEC)	???	???	"img\items\0.png"	
+237	00ED	？？？(0xED)	???	???	"img\items\0.png"	
+238	00EE	？？？(0xEE)	???	???	"img\items\0.png"	
+239	00EF	？？？(0xEF)	???	???	"img\items\0.png"	
+240	00F0	？？？(0xF0)	???	???	"img\items\0.png"	
+241	00F1	？？？(0xF1)	???	???	"img\items\0.png"	
+242	00F2	？？？(0xF2)	???	???	"img\items\0.png"	
+243	00F3	？？？(0xF3)	???	???	"img\items\0.png"	
+244	00F4	？？？(0xF4)	???	???	"img\items\0.png"	
+245	00F5	？？？(0xF5)	???	???	"img\items\0.png"	
+246	00F6	？？？(0xF6)	???	???	"img\items\0.png"	
+247	00F7	？？？(0xF7)	???	???	"img\items\0.png"	
+248	00F8	？？？(0xF8)	???	???	"img\items\0.png"	
+249	00F9	？？？(0xF9)	???	???	"img\items\0.png"	
+250	00FA	？？？(0xFA)	???	???	"img\items\0.png"	
+251	00FB	？？？(0xFB)	???	???	"img\items\0.png"	
+252	00FC	？？？(0xFC)	???	???	"img\items\0.png"	
+253	00FD	？？？(0xFD)	???	???	"img\items\0.png"	
+254	00FE	あかいバンダナ	Red Scarf	红色头巾	"img\items\254.png"	道具
+255	00FF	あおいバンダナ	Blue Scarf	蓝色头巾	"img\items\255.png"	道具
+256	0100	ピンクのバンダナ	Pink Scarf	粉红头巾	"img\items\256.png"	道具
+257	0101	みどりのバンダナ	Green Scarf	绿色头巾	"img\items\257.png"	道具
+258	0102	きいろのバンダナ	Yellow Scarf	黄色头巾	"img\items\258.png"	道具
+259	0103	マッハじてんしゃ	Mach Bike	音速自行车	"img\items\259.png"	重要道具
+260	0104	コインケース	Coin Case	代币盒	"img\items\260.png"	重要道具
+261	0105	ダウンジングマシン	Itemfinder	蓝卡	"img\items\261.png"	重要道具
+262	0106	ボロのつりざお	Old Rod	破旧钓竿	"img\items\262.png"	重要道具
+263	0107	いいつりざお	Good Rod	好钓竿	"img\items\263.png"	重要道具
+264	0108	すごいつりざお	Super Rod	厉害钓竿	"img\items\264.png"	重要道具
+265	0109	ふねのチケット	S.S. Ticket	船票	"img\items\265.png"	重要道具
+266	010A	コンテストパス	Contest Pass	华丽大赛参加证	"img\items\266.png"	重要道具
+267	010B	？？？(0x10B)	???	???	"img\items\0.png"	
+268	010C	ホエルコじょうろ	Wailmer Pail	吼吼鲸喷壶	"img\items\268.png"	重要道具
+269	010D	デボンのにもつ	Devon Goods	得文的物品	"img\items\269.png"	重要道具
+270	010E	はいぶくろ	Soot Sack	集灰袋	"img\items\270.png"	重要道具
+271	010F	ちかのカギ	Basement Key	地下钥匙	"img\items\271.png"	重要道具
+272	0110	ダートじてんしゃ	Acro Bike	越野自行车	"img\items\272.png"	重要道具
+273	0111	ポロックケース	Pokéblock Case	宝可方块盒	"img\items\273.png"	重要道具
+274	0112	ダイゴへのてがみ	Letter	给大吾的信	"img\items\274.png"	重要道具
+275	0113	むげんのチケット	Eon Ticket	无限船票	"img\items\275.png"	重要道具
+276	0114	べにいろのたま	Red Orb	红色宝珠	"img\items\276.png"	重要道具
+277	0115	あいいろのたま	Blue Orb	蓝色宝珠	"img\items\277.png"	重要道具
+278	0116	たんちき	Scanner	探测器	"img\items\278.png"	重要道具
+279	0117	ゴーゴーゴーグル	Go-Goggles	ＧＯＧＯ护目镜	"img\items\279.png"	重要道具
+280	0118	いんせき	Meteorite	陨石	"img\items\280.png"	重要道具
+281	0119	１ごうしつのカギ	Rm. 1 Key	１号客房的钥匙	"img\items\281.png"	重要道具
+282	011A	２ごうしつのカギ	Rm. 2 Key	２号客房的钥匙	"img\items\282.png"	重要道具
+283	011B	４ごうしつのカギ	Rm. 4 Key	４号客房的钥匙	"img\items\283.png"	重要道具
+284	011C	６ごうしつのカギ	Rm. 6 Key	６号客房的钥匙	"img\items\284.png"	重要道具
+285	011D	そうこのカギ	Storage Key	仓库钥匙	"img\items\285.png"	重要道具
+286	011E	ねっこのカセキ	Root Fossil	根桩化石	"img\items\286.png"	重要道具
+287	011F	ツメのカセキ	Claw Fossil	爪子化石	"img\items\287.png"	重要道具
+288	0120	デボンスコープ	Devon Scope	得文侦测镜	"img\items\288.png"	重要道具
+289	0121	わざマシン０１	TM01	招式学习器０１	"img\items\289.png"	技能学习
+290	0122	わざマシン０２	TM02	招式学习器０２	"img\items\290.png"	技能学习
+291	0123	わざマシン０３	TM03	招式学习器０３	"img\items\291.png"	技能学习
+292	0124	わざマシン０４	TM04	招式学习器０４	"img\items\292.png"	技能学习
+293	0125	わざマシン０５	TM05	招式学习器０５	"img\items\293.png"	技能学习
+294	0126	わざマシン０６	TM06	招式学习器０６	"img\items\294.png"	技能学习
+295	0127	わざマシン０７	TM07	招式学习器０７	"img\items\295.png"	技能学习
+296	0128	わざマシン０８	TM08	招式学习器０８	"img\items\296.png"	技能学习
+297	0129	わざマシン０９	TM09	招式学习器０９	"img\items\297.png"	技能学习
+298	012A	わざマシン１０	TM10	招式学习器１０	"img\items\298.png"	技能学习
+299	012B	わざマシン１１	TM11	招式学习器１１	"img\items\299.png"	技能学习
+300	012C	わざマシン１２	TM12	招式学习器１２	"img\items\300.png"	技能学习
+301	012D	わざマシン１３	TM13	招式学习器１３	"img\items\301.png"	技能学习
+302	012E	わざマシン１４	TM14	招式学习器１４	"img\items\302.png"	技能学习
+303	012F	わざマシン１５	TM15	招式学习器１５	"img\items\303.png"	技能学习
+304	0130	わざマシン１６	TM16	招式学习器１６	"img\items\304.png"	技能学习
+305	0131	わざマシン１７	TM17	招式学习器１７	"img\items\305.png"	技能学习
+306	0132	わざマシン１８	TM18	招式学习器１８	"img\items\306.png"	技能学习
+307	0133	わざマシン１９	TM19	招式学习器１９	"img\items\307.png"	技能学习
+308	0134	わざマシン２０	TM20	招式学习器２０	"img\items\308.png"	技能学习
+309	0135	わざマシン２１	TM21	招式学习器２１	"img\items\309.png"	技能学习
+310	0136	わざマシン２２	TM22	招式学习器２２	"img\items\310.png"	技能学习
+311	0137	わざマシン２３	TM23	招式学习器２３	"img\items\311.png"	技能学习
+312	0138	わざマシン２４	TM24	招式学习器２４	"img\items\312.png"	技能学习
+313	0139	わざマシン２５	TM25	招式学习器２５	"img\items\313.png"	技能学习
+314	013A	わざマシン２６	TM26	招式学习器２６	"img\items\314.png"	技能学习
+315	013B	わざマシン２７	TM27	招式学习器２７	"img\items\315.png"	技能学习
+316	013C	わざマシン２８	TM28	招式学习器２８	"img\items\316.png"	技能学习
+317	013D	わざマシン２９	TM29	招式学习器２９	"img\items\317.png"	技能学习
+318	013E	わざマシン３０	TM30	招式学习器３０	"img\items\318.png"	技能学习
+319	013F	わざマシン３１	TM31	招式学习器３１	"img\items\319.png"	技能学习
+320	0140	わざマシン３２	TM32	招式学习器３２	"img\items\320.png"	技能学习
+321	0141	わざマシン３３	TM33	招式学习器３３	"img\items\321.png"	技能学习
+322	0142	わざマシン３４	TM34	招式学习器３４	"img\items\322.png"	技能学习
+323	0143	わざマシン３５	TM35	招式学习器３５	"img\items\323.png"	技能学习
+324	0144	わざマシン３６	TM36	招式学习器３６	"img\items\324.png"	技能学习
+325	0145	わざマシン３７	TM37	招式学习器３７	"img\items\325.png"	技能学习
+326	0146	わざマシン３８	TM38	招式学习器３８	"img\items\326.png"	技能学习
+327	0147	わざマシン３９	TM39	招式学习器３９	"img\items\327.png"	技能学习
+328	0148	わざマシン４０	TM40	招式学习器４０	"img\items\328.png"	技能学习
+329	0149	わざマシン４１	TM41	招式学习器４１	"img\items\329.png"	技能学习
+330	014A	わざマシン４２	TM42	招式学习器４２	"img\items\330.png"	技能学习
+331	014B	わざマシン４３	TM43	招式学习器４３	"img\items\331.png"	技能学习
+332	014C	わざマシン４４	TM44	招式学习器４４	"img\items\332.png"	技能学习
+333	014D	わざマシン４５	TM45	招式学习器４５	"img\items\333.png"	技能学习
+334	014E	わざマシン４６	TM46	招式学习器４６	"img\items\334.png"	技能学习
+335	014F	わざマシン４７	TM47	招式学习器４７	"img\items\335.png"	技能学习
+336	0150	わざマシン４８	TM48	招式学习器４８	"img\items\336.png"	技能学习
+337	0151	わざマシン４９	TM49	招式学习器４９	"img\items\337.png"	技能学习
+338	0152	わざマシン５０	TM50	招式学习器５０	"img\items\338.png"	技能学习
+339	0153	ひでんマシン０１	HM01	秘传学习器０１	"img\items\339.png"	技能学习
+340	0154	ひでんマシン０２	HM02	秘传学习器０２	"img\items\340.png"	技能学习
+341	0155	ひでんマシン０３	HM03	秘传学习器０３	"img\items\341.png"	技能学习
+342	0156	ひでんマシン０４	HM04	秘传学习器０４	"img\items\342.png"	技能学习
+343	0157	ひでんマシン０５	HM05	秘传学习器０５	"img\items\343.png"	技能学习
+344	0158	ひでんマシン０６	HM06	秘传学习器０６	"img\items\344.png"	技能学习
+345	0159	ひでんマシン０７	HM07	秘传学习器０７	"img\items\345.png"	技能学习
+346	015A	ひでんマシン０８	HM08	秘传学习器０８	"img\items\346.png"	技能学习
+347	015B	？？？(0x15B)	???	???	"img\items\0.png"	
+348	015C	？？？(0x15C)	???	???	"img\items\0.png"	
+349	015D	おとどけもの	Oak's Parcel	包裹	"img\items\349.png"	重要道具
+350	015E	ポケモンのふえ	Poké Flute	宝可梦之笛	"img\items\350.png"	重要道具
+351	015F	ひみつのカギ	Secret Key	秘密钥匙	"img\items\351.png"	重要道具
+352	0160	ひきかえけん	Bike Voucher	兑换券	"img\items\352.png"	重要道具
+353	0161	きんのいれば	Gold Teeth	金假牙	"img\items\353.png"	重要道具
+354	0162	ひみつのコハク	Old Amber	秘密琥珀	"img\items\354.png"	重要道具
+355	0163	カードキー	Card Key	钥匙卡	"img\items\355.png"	重要道具
+356	0164	エレベータのカギ	Lift Key	电梯钥匙	"img\items\356.png"	重要道具
+357	0165	かいのカセキ	Helix Fossil	贝壳化石	"img\items\357.png"	重要道具
+358	0166	こうらのカセキ	Dome Fossil	甲壳化石	"img\items\358.png"	重要道具
+359	0167	シルフスコープ	Silph Scope	西尔佛检视镜	"img\items\359.png"	重要道具
+360	0168	じてんしゃ	Bicycle	自行车	"img\items\360.png"	重要道具
+361	0169	タウンマップ	Town Map	城镇地图	"img\items\361.png"	重要道具
+362	016A	バトルサーチャー	Vs. Seeker	对战搜寻器	"img\items\362.png"	重要道具
+363	016B	ボイスチェッカー	Fame Checker	声音记录器	"img\items\363.png"	重要道具
+364	016C	わざマシンケース	TM Case	招式学习器盒	"img\items\364.png"	重要道具
+365	016D	きのみぶくろ	Berry Pouch	树果袋	"img\items\365.png"	重要道具
+366	016E	おしえテレビ	Teachy TV	教学电视	"img\items\366.png"	重要道具
+367	016F	トライパス	Tri-Pass	三岛通行船券	"img\items\367.png"	重要道具
+368	0170	レインボーパス	Rainbow Pass	七彩通行船券	"img\items\368.png"	重要道具
+369	0171	おちゃ	Tea	茶	"img\items\369.png"	重要道具
+370	0172	しんぴのチケット	MysticTicket	神秘船票	"img\items\370.png"	重要道具
+371	0173	オーロラチケット	AuroraTicket	极光船票	"img\items\371.png"	重要道具
+372	0174	こないれ	Powder Jar	粉末收集瓶	"img\items\372.png"	重要道具
+373	0175	ルビー	Ruby	红宝石	"img\items\373.png"	重要道具
+374	0176	サファイア	Sapphire	蓝宝石	"img\items\374.png"	重要道具
+375	0177	とじる	CANCEL	关闭	"img\items\375.png"	
