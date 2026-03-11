@@ -55,7 +55,7 @@ Switch GBA IRAM HEAD`[[main+041F8688]+49D8]`<br>
 
 ## Action Replay / GameShark Decrypted
 You can obtain Action Replay/GameShark cheat codes from other sources to decrypt and figure out what values have been modified. Then, use these cheat codes in VBA-M, load VBA-M with Cheat Engine to search for the corresponding codes, observe the surrounding memory for signature patterns to locate the addresses. Finally, use the above methods and ideas to create cheat codes suitable for the Switch.<br>
-[GBA AR Crypt 3.12 beta.exe](https://github.com/Ruimusume/PMFRLG/raw/refs/heads/main/GBA%20AR%20Crypt%203.12%20beta.exe)
+[GBA AR Crypt 3.12 beta.exe](https://github.com/Ruimusume/PMFRLG/releases/tag/ARGS)
 
 ## Source of Contribution
 Thank you very much to previous authors.<br>
