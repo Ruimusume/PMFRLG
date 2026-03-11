@@ -29,7 +29,7 @@ Delete save Pressed `↑ + ⊖ + B` or `↑ + Y + B` .<br>
 1.Requires a hacked Switch console running either [sys-botbase](https://github.com/olliz0r/sys-botbase/releases).<br>
 2.Download [sys-botbasezip](https://github.com/olliz0r/sys-botbase/releases), extract the file and place it in the Atmosphere folder.<br>
 3.Install [.NET Desktop Runtime 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) to run the NSCE client.<br>
-4.You must first run and open the game!<br>
+4.You must first run and open the game!
 
 [Cheats tool Download](https://github.com/Ruimusume/NSCE/releases/tag/PMFRLG)
 
@@ -54,7 +54,8 @@ Switch GBA IRAM HEAD`[[main+041F8688]+49D8]`<br>
 <table><tr><td>Switch Ver.</td><td>Fixed RAM（Offset）</td><td>MemCrypt（Offset）</td><td>Fixed RAM（Enable）</td><td>MemCrypt（Enable）</td><td>Fixed RAM（Disable）</td><td>MemCrypt（Disable）</td></tr><tr><td>BPRJ</td><td>0x4F020</td><td>0x4F0F8</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGJ</td><td>0x4F020</td><td>0x4F0F8</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRE</td><td>0x4F80C</td><td>0x4F8E2</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGE</td><td>0x4F80C</td><td>0x4F8E2</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRS</td><td>0x4F97C</td><td>0x4FA52</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGS</td><td>0x4F97C</td><td>0x4FA52</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRF</td><td>0x4F968</td><td>0x4FA3E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGF</td><td>0x4F968</td><td>0x4FA3E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRD</td><td>0x4F8A8</td><td>0x4F97E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGD</td><td>0x4F8A8</td><td>0x4F97E</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPRI</td><td>0x4F894</td><td>0x4F96A</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr><tr><td>BPGI</td><td>0x4F894</td><td>0x4F96A</td><td>00 21 0A 4A</td><td>00 24 20 1C</td><td>01 40 0A 4A</td><td>24 18 20 1C</td></tr></table>
 
 ## Action Replay / GameShark Decrypted
-You can obtain Action Replay/GameShark cheat codes from other sources to decrypt and figure out what values have been modified. Then, use these cheat codes in [VBA-M](https://github.com/visualboyadvance-m/visualboyadvance-m/releases), load VBA-M with [Cheat Engine](https://www.cheatengine.org/downloads.php) to search for the corresponding codes, observe the surrounding memory for signature patterns to locate the addresses. Finally, use the above methods and ideas to create cheat codes suitable for the Switch.<br>
+You can obtain Action Replay/GameShark cheat codes from other sources to decrypt and figure out what values have been modified. Then, use these cheat codes in [VBA-M](https://github.com/visualboyadvance-m/visualboyadvance-m/releases), load VBA-M with [Cheat Engine](https://www.cheatengine.org/downloads.php) to search for the corresponding codes, observe the surrounding memory for signature patterns to locate the addresses. Finally, use the above methods and ideas to create cheat codes suitable for the Switch.
+
 [GBA AR Crypt 3.12 beta.exe](https://github.com/Ruimusume/PMFRLG/releases/tag/ARGS)
 
 ## Source of Contribution
