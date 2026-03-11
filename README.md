@@ -11,6 +11,7 @@ Switch 口袋妖怪 火红・叶绿 数据库<br>
 ## DataBase
 - [Pokémon_DEX_ID](https://ruimusume.github.io/PMFRLG/DEX.html)
 - [Pokémon_Base_Stats](https://github.com/Ruimusume/PMFRLG/blob/main/Pok%C3%A9mon_Base_Stats.txt)
+- [Natures_ID](https://github.com/Ruimusume/PMFRLG/blob/main/Natures_id.txt)
 - [item_ID](https://ruimusume.github.io/PMFRLG/item.html)
 - [Type_ID](https://github.com/Ruimusume/PMFRLG/blob/main/type_id.txt)
 - [Waza_ID](https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt)
