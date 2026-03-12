@@ -1,421 +1,421 @@
-重新排序组合	hex	JP_name	EN_name	CN_name
-0-0	0000		Battle Link Center	
-0-1	0100		Trade Link Center	
-0-2	0200		4-Way Data Swap Center	
-0-3	0300		4-Way Battle Center	
-0-4	0400		#N/A	
-1-0	0001		Viridian Forest	
-1-1	0101		Mt. Moon (1)	
-1-10	0A01		S.S. Anne (6)	
-1-100	6401		#N/A	
-1-101	6501		#N/A	
-1-102	6601		#N/A	
-1-103	6701		#N/A	
-1-104	6801		#N/A	
-1-105	6901		#N/A	
-1-106	6A01		#N/A	
-1-107	6B01		#N/A	
-1-108	6C01		#N/A	
-1-109	6D01		#N/A	
-1-11	0B01		S.S. Anne (7)	
-1-110	6E01		#N/A	
-1-111	6F01		#N/A	
-1-112	7001		#N/A	
-1-113	7101		#N/A	
-1-114	7201		#N/A	
-1-115	7301		#N/A	
-1-116	7401		#N/A	
-1-117	7501		#N/A	
-1-118	7601		#N/A	
-1-119	7701		#N/A	
-1-12	0C01		S.S. Anne (8)	
-1-120	7801		#N/A	
-1-121	7901		#N/A	
-1-122	7A01		#N/A	
-1-13	0D01		S.S. Anne Rooms (1)	
-1-14	0E01		S.S. Anne Rooms (2)	
-1-15	0F01		S.S. Anne Rooms (3)	
-1-16	1001		#N/A	
-1-17	1101		#N/A	
-1-18	1201		#N/A	
-1-19	1301		#N/A	
-1-2	0201		Mt. Moon (2)	
-1-20	1401		#N/A	
-1-21	1501		#N/A	
-1-22	1601		#N/A	
-1-23	1701		#N/A	
-1-24	1801		#N/A	
-1-25	1901		#N/A	
-1-26	1A01		#N/A	
-1-27	1B01		#N/A	
-1-28	1C01		#N/A	
-1-29	1D01		#N/A	
-1-3	0301		Mt. Moon (3)	
-1-30	1E01		Underground Path Entrance (Route 5)	
-1-31	1F01		Underground Path (Cerulean-Vermilion)	
-1-32	2001		#N/A	
-1-33	2101		#N/A	
-1-34	2201		#N/A	
-1-35	2301		#N/A	
-1-36	2401		#N/A	
-1-37	2501		#N/A	
-1-38	2601		#N/A	
-1-39	2701		#N/A	
-1-4	0401		S.S. Anne Entrance	
-1-40	2801		#N/A	
-1-41	2901		#N/A	
-1-42	2A01		#N/A	
-1-43	2B01		#N/A	
-1-44	2C01		#N/A	
-1-45	2D01		#N/A	
-1-46	2E01		#N/A	
-1-47	2F01		#N/A	
-1-48	3001		#N/A	
-1-49	3101		#N/A	
-1-5	0501		S.S. Anne (1)	
-1-50	3201		#N/A	
-1-51	3301		#N/A	
-1-52	3401		#N/A	
-1-53	3501		#N/A	
-1-54	3601		#N/A	
-1-55	3701		#N/A	
-1-56	3801		#N/A	
-1-57	3901		#N/A	
-1-58	3A01		#N/A	
-1-59	3B01		#N/A	
-1-6	0601		S.S. Anne (2)	
-1-60	3C01		#N/A	
-1-61	3D01		#N/A	
-1-62	3E01		#N/A	
-1-63	3F01		#N/A	
-1-64	4001		#N/A	
-1-65	4101		#N/A	
-1-66	4201		#N/A	
-1-67	4301		#N/A	
-1-68	4401		#N/A	
-1-69	4501		#N/A	
-1-7	0701		S.S. Anne (3)	
-1-70	4601		#N/A	
-1-71	4701		#N/A	
-1-72	4801		#N/A	
-1-73	4901		#N/A	
-1-74	4A01		#N/A	
-1-75	4B01		#N/A	
-1-76	4C01		#N/A	
-1-77	4D01		#N/A	
-1-78	4E01		#N/A	
-1-79	4F01		#N/A	
-1-8	0801		S.S. Anne (4)	
-1-80	5001		#N/A	
-1-81	5101		#N/A	
-1-82	5201		#N/A	
-1-83	5301		#N/A	
-1-84	5401		#N/A	
-1-85	5501		#N/A	
-1-86	5601		#N/A	
-1-87	5701		#N/A	
-1-88	5801		#N/A	
-1-89	5901		#N/A	
-1-9	0901		S.S. Anne (5)	
-1-90	5A01		#N/A	
-1-91	5B01		#N/A	
-1-92	5C01		#N/A	
-1-93	5D01		#N/A	
-1-94	5E01		#N/A	
-1-95	5F01		#N/A	
-1-96	6001		#N/A	
-1-97	6101		#N/A	
-1-98	6201		#N/A	
-1-99	6301		#N/A	
-2-0	0002		Mystery Island 8	
-2-1	0102		Battle Tower	
-2-10	0A02		Battle Tower	
-2-11	0B02		Battle Tower	
-2-12	0C02		Island 8 Cave (1)	
-2-13	0D02		Island 8 Cave (2)	
-2-14	0E02		Island 8 Cave (3)	
-2-15	0F02		Island 8 Cave (4)	
-2-16	1002		#N/A	
-2-17	1102		#N/A	
-2-18	1202		#N/A	
-2-19	1302		#N/A	
-2-2	0202		Battle Tower	
-2-20	1402		#N/A	
-2-21	1502		#N/A	
-2-22	1602		#N/A	
-2-23	1702		#N/A	
-2-24	1802		#N/A	
-2-25	1902		#N/A	
-2-26	1A02		Island 8 Cave (15)	
-2-27	1B02		Island 8 Cave (16)	
-2-28	1C02		Island 8 Tomb (1)	
-2-29	1D02	ユゴのせきしつ	Weepth Chamber	
-2-3	0302		Battle Tower	
-2-30	1E02		Dilford Chamber	
-2-31	1F02		Scufib Chamber	
-2-32	2002		#N/A	
-2-33	2102		#N/A	
-2-34	2202		#N/A	
-2-35	2302		#N/A	
-2-36	2402		#N/A	
-2-37	2502		#N/A	
-2-38	2602		#N/A	
-2-39	2702		#N/A	
-2-4	0402		Battle Tower	
-2-40	2802		#N/A	
-2-41	2902		#N/A	
-2-42	2A02		Team Rocket Hideout (1)	
-2-43	2B02		Team Rocket Hideout (2)	
-2-44	2C02		Team Rocket Hideout (3)	
-2-45	2D02		Team Rocket Hideout (4)	
-2-46	2E02		Team Rocket Hideout Elevator	
-2-47	2F02		Silph Co (1)	
-2-48	3002		#N/A	
-2-49	3102		#N/A	
-2-5	0502		Battle Tower	
-2-50	3202		#N/A	
-2-51	3302		#N/A	
-2-52	3402		#N/A	
-2-53	3502		#N/A	
-2-54	3602		#N/A	
-2-55	3702		#N/A	
-2-56	3802		#N/A	
-2-57	3902		#N/A	
-2-58	3A02		Silph Co (Elevator)	
-2-6	0602		Battle Tower	
-2-7	0702		Cerulean City Pokécenter	
-2-8	0802		Battle Tower	
-2-9	0902		Battle Tower	
-3-0	0003	マサラタウン	Pallet Town	真新镇
-3-1	0103	トキワシティ	Viridian City	常青市
-3-10	0A03		Saffron City	
-3-12	0C03		Island 1	
-3-13	0D03		Island 2	
-3-14	0E03		Island 3	
-3-15	0F03		Island 4	
-3-16	1003		#N/A	
-3-17	1103		#N/A	
-3-18	1203		#N/A	
-3-19	1303		#N/A	
-3-2	0203		Pewter City	
-3-20	1403		#N/A	
-3-21	1503		#N/A	
-3-22	1603		#N/A	
-3-23	1703		#N/A	
-3-24	1803		#N/A	
-3-25	1903		#N/A	
-3-26	1A03		Route 8	
-3-27	1B03		Route 9	
-3-28	1C03		Route 10	
-3-29	1D03		Route 11	
-3-3	0303		Cerulean City	
-3-30	1E03		Route 12	
-3-31	1F03		Route 13	
-3-32	2003		#N/A	
-3-33	2103		#N/A	
-3-34	2203		#N/A	
-3-35	2303		#N/A	
-3-36	2403		#N/A	
-3-37	2503		#N/A	
-3-38	2603		#N/A	
-3-39	2703		#N/A	
-3-4	0403		Lavender Town	
-3-41	2903		#N/A	
-3-42	2A03		Route 23	
-3-43	2B03		Route 24	
-3-44	2C03		Route 25	
-3-45	2D03		Island Route (1)	
-3-46	2E03		#N/A	
-3-47	2F03		#N/A	
-3-48	3003		#N/A	
-3-49	3103		#N/A	
-3-5	0503		Vermilion City	
-3-50	3203		#N/A	
-3-51	3303		#N/A	
-3-52	3403		#N/A	
-3-53	3503		#N/A	
-3-54	3603		#N/A	
-3-55	3703		#N/A	
-3-56	3803		#N/A	
-3-57	3903		#N/A	
-3-58	3A03		#N/A	
-3-59	3B03		#N/A	
-3-6	0603		Celedon City	
-3-60	3C03		#N/A	
-3-61	3D03		Island Route (6)	
-3-63	3F03		Canyon Entrance	
-3-64	4003		#N/A	
-3-65	4103		#N/A	
-3-7	0703		Fuchsia City	
-3-8	0803		Cinnabar Island	
-3-9	0903		Indigo Plateau	
-4-0	0004		Your House (F1)	
-4-1	0104		Your House (F2)	
-4-2	0204		Rivals House	
-4-3	0304		Prof Oak’s Lab	
-5-0	0005		Viridian House	
-5-1	0105		Viridian GYM	
-5-2	0205		Schoolhouse	
-5-3	0305		Viridian Mart	
-5-4	0405		Viridian Pokécenter	
-5-5	0505		Viridian CC	
-6-0	0006		Museum (F1)	
-6-1	0106		Museum (F2)	
-6-2	0206		Pewter Gym	
-6-3	0306		Pewter Mart	
-6-4	0406		Pewter House (1)	
-6-5	0506		Pewter Pokécenter	
-6-6	0606		Pewter CC	
-6-7	0706		Pewter House (2)	
-7-0	0007		Cerulean House (1)	
-7-1	0107		Robbed House	
-7-2	0207		Cerulean House (2)	
-7-3	0307		Cerulean Pokecenter	
-7-4	0407		Cerulean CC	
-7-5	0507		Cerulean Gym	
-7-6	0607		Bike Shop	
-7-7	0707		Cerulean Mart	
-7-8	0807		Cerulean House (3)	
-7-9	0907		Cerulean House (4)	
-8-0	0008		Lavender Pokecenter	
-8-1	0108		Lavender CC	
-8-2	0208		Lavender House (1)	
-8-3	0308		Lavender House (2)	
-8-4	0408		Name Rater	
-8-5	0508		Lavender Mart	
-9-0	0009		Vermilion House (1)	
-9-1	0109		Vermilion Pokécenter	
-9-2	0209		Vermilion CC	
-9-3	0309		Pokémon Fan Club	
-9-4	0409		Vermilion House (2)	
-9-5	0509		Vermilion Mart	
-9-6	0609		Vermilion Gym	
-9-7	0709		Vermilion House (3)	
-10-0	000A		Celedon Shop (F1)	
-10-1	010A		Celedon Shop (F2)	
-10-10	0A0A		Game Freak HQ (4)	
-10-11	0B0A		Game Freak HQ (5)	
-10-12	0C0A		Celedon Pokecenter	
-10-13	0D0A		Celedon CC	
-10-14	0E0A		Celedon Game Corner	
-10-15	0F0A		Celedon Prizes	
-10-16	100A		Celedon GYM	
-10-17	110A		Celedon Diner	
-10-18	120A		Celedon House	
-10-19	130A		#N/A	
-10-2	020A		Celedon Shop (F3)	
-10-3	030A		Celedon Shop (F4)	
-10-4	040A		Celedon Shop (F5)	
-10-5	050A		Celedon Shop (F6)	
-10-6	060A		Celedon Shop (Elevator)	
-10-7	070A		Game Freak HQ (1)	
-10-8	080A		Game Freak HQ (2)	
-10-9	090A		Game Freak HQ (3)	
-11-0	000B		Safari Zone Gate	
-11-1	010B		Fuchsia Mart	
-11-2	020B		Safari Meeting Room	
-11-3	030B		Fuchsia GYM	
-11-4	040B		Fuchsia House	
-11-5	050B		Fuchsia Pokécenter	
-11-6	060B		Fuchsia CC	
-11-7	070B		Wardens Home	
-11-8	080B		Fuchsia House (2)	
-11-9	090B		Fuchsia House (3)	
-12-0	000C		Cinnibar GYM	
-12-1	010C		Cinniber Lab (1)	
-12-2	020C		Cinnibar Lab (2)	
-12-3	030C		Cinnibar Lab (3)	
-12-4	040C		Cinnibar Lab (4)	
-12-5	050C		Cinnibar PC	
-12-6	060C		Cinnibar CC	
-12-7	070C		Cinnibar Mart	
-13-0	000D		#N/A	
-13-1	010D		#N/A	
-14-0	000E		Copycats House (F1)	
-14-1	010E		Copycats House (F2)	
-14-2	020E		Fighting Dojo	
-14-3	030E		Saffron GYM	
-14-4	040E		Saffron House (1)	
-14-5	050E		Saffron Mart	
-14-6	060E		Saffron PC	
-14-7	070E		Saffron CC	
-14-8	080E		Saffron House (2)	
-14-9	090E		Saffron House (3)	
-15-0	000F		#N/A	
-15-1	010F		#N/A	
-15-2	020F		#N/A	
-15-3	030F		#N/A	
-16-0	0010		Route 4/Mt. Moon Pokécenter	
-16-1	0110		Route 4/Mt. Moon CC	
-17-0	0011		Day Care Man	
-17-1	0111		#N/A	
-18-0	0012		Route 6 Gate	
-18-1	0112		Route 6 Unused House	
-19-0	0013		Route 7 Gate	
-20-0	0014		Route 8 Gate	
-21-0	0015		Route 10/Rock Tunnel Pokécenter	
-21-1	0115		Route 10/Rock Tunnel CC	
-22-0	0016		Route 11 Gate F1	
-22-1	0116		Route 11 Gate F2	
-23-0	0017		Route 12 Gate F1	
-23-1	0117		Route 12 Gate F2	
-23-2	0217		Route 12 House	
-24-0	0018		Route 15 Gate F1	
-24-1	0118		Route 15 Gate F2	
-25-0	0019		Route 16 House	
-25-1	0119		Route 16 Gate F1	
-25-2	0219		Route 16 Gate F2	
-26-0	001A		Route 18 Gate	
-26-1	011A		Route 18 Gate F2	
-27-0	001B		Route 19 Unused Home	
-28-0	001C		Route 22/23 Gate	
-29-0	001D		Route 23 Unused House	
-30-0	001E		Bill’s Sea Cottage	
-31-0	001F		#N/A	
-31-1	011F		#N/A	
-31-2	021F		#N/A	
-31-3	031F		#N/A	
-31-4	041F		#N/A	
-31-5	051F		#N/A	
-31-6	061F		#N/A	
-32-0	0020		#N/A	
-32-1	0120		#N/A	
-32-2	0220		#N/A	
-32-3	0320		#N/A	
-32-4	0420		#N/A	
-33-0	0021		#N/A	
-33-1	0121		#N/A	
-33-2	0221		#N/A	
-33-3	0321		#N/A	
-33-4	0421		#N/A	
-34-0	0022		#N/A	
-34-1	0122		#N/A	
-34-2	0222		#N/A	
-34-3	0322		#N/A	
-34-4	0422		#N/A	
-34-5	0522		#N/A	
-34-6	0622		#N/A	
-34-7	0722		#N/A	
-35-0	0023		#N/A	
-35-1	0123		#N/A	
-35-2	0223		#N/A	
-35-3	0323		#N/A	
-35-4	0423		#N/A	
-35-5	0523		#N/A	
-35-6	0623		#N/A	
-35-7	0723		#N/A	
-36-0	0024		#N/A	
-36-1	0124		#N/A	
-36-2	0224		#N/A	
-36-3	0324		#N/A	
-36-4	0424		#N/A	
-37-0	0025		#N/A	
-37-1	0125		#N/A	
-37-2	0225		#N/A	
-37-3	0325		#N/A	
-37-4	0425		#N/A	
-39-0	0027		#N/A	
-40-0	0028		#N/A	
-41-0	0029		#N/A	
-41-1	0129		#N/A	
-42-0	002A		#N/A	
+No.	Area_id	hex	JP_name	EN_name	CN_name
+1	0-0	0000	バトルセンター	Battle Link Center	对战中心
+2	0-1	0100	取引センター	Trade Link Center	交易中心
+3	0-2	0200	四路データ交換センタ	4-Way Data Swap Center	四路数据交换中心
+4	0-3	0300	四路バトルセンター	4-Way Battle Center	四路对战中心
+5	0-4	0400	-	-	-
+6	1-0	0001	トキワのもり	Viridian Forest	常青森林
+7	1-1	0101	オツキミやま	Mt. Moon	月见山
+8	1-2	0201	オツキミやま	Mt. Moon	月见山
+9	1-3	0301	オツキミやま	Mt. Moon	月见山
+10	1-4	0401	サント・アンヌごう	S.S. Anne	圣特安努号
+11	1-5	0501	サント・アンヌごう	S.S. Anne	圣特安努号
+12	1-6	0601	サント・アンヌごう	S.S. Anne	圣特安努号
+13	1-7	0701	サント・アンヌごう	S.S. Anne	圣特安努号
+14	1-8	0801	サント・アンヌごう	S.S. Anne	圣特安努号
+15	1-9	0901	サント・アンヌごう	S.S. Anne	圣特安努号
+16	1-10	0A01	サント・アンヌごう	S.S. Anne	圣特安努号
+17	1-11	0B01	サント・アンヌごう	S.S. Anne	圣特安努号
+18	1-12	0C01	サント・アンヌごう	S.S. Anne	圣特安努号
+19	1-13	0D01	サント・アンヌごう	S.S. Anne	圣特安努号
+20	1-14	0E01	サント・アンヌごう	S.S. Anne	圣特安努号
+21	1-15	0F01	サント・アンヌごう	S.S. Anne	圣特安努号
+22	1-16	1001	サント・アンヌごう	S.S. Anne	圣特安努号
+23	1-17	1101	サント・アンヌごう	S.S. Anne	圣特安努号
+24	1-18	1201	サント・アンヌごう	S.S. Anne	圣特安努号
+25	1-19	1301	サント・アンヌごう	S.S. Anne	圣特安努号
+26	1-20	1401	サント・アンヌごう	S.S. Anne	圣特安努号
+27	1-21	1501	サント・アンヌごう	S.S. Anne	圣特安努号
+28	1-22	1601	サント・アンヌごう	S.S. Anne	圣特安努号
+29	1-23	1701	サント・アンヌごう	S.S. Anne	圣特安努号
+30	1-24	1801	サント・アンヌごう	S.S. Anne	圣特安努号
+31	1-25	1901	サント・アンヌごう	S.S. Anne	圣特安努号
+32	1-26	1A01	サント・アンヌごう	S.S. Anne	圣特安努号
+33	1-27	1B01	サント・アンヌごう	S.S. Anne	圣特安努号
+34	1-28	1C01	サント・アンヌごう	S.S. Anne	圣特安努号
+35	1-29	1D01	サント・アンヌごう	S.S. Anne	圣特安努号
+36	1-30	1E01	ちかつうろ	Underground Path	地下通道
+37	1-31	1F01	ちかつうろ	Underground Path	地下通道
+38	1-32	2001	ちかつうろ	Underground Path	地下通道
+39	1-33	2101	ちかつうろ	Underground Path	地下通道
+40	1-34	2201	ちかつうろ	Underground Path	地下通道
+41	1-35	2301	ちかつうろ	Underground Path	地下通道
+42	1-36	2401	ディグダのあな	Diglett's Cave	地鼠洞穴
+43	1-37	2501	ディグダのあな	Diglett's Cave	地鼠洞穴
+44	1-38	2601	ディグダのあな	Diglett's Cave	地鼠洞穴
+45	1-39	2701	チャンピオンロード	Victory Road	冠军之路
+46	1-40	2801	チャンピオンロード	Victory Road	冠军之路
+47	1-41	2901	チャンピオンロード	Victory Road	冠军之路
+48	1-42	2A01	ロケットだんそうこ	Rocket Warehouse	火箭队仓库
+49	1-43	2B01	ロケットだんそうこ	Rocket Warehouse	火箭队仓库
+50	1-44	2C01	ロケットだんそうこ	Rocket Warehouse	火箭队仓库
+51	1-45	2D01	ロケットだんそうこ	Rocket Warehouse	火箭队仓库
+52	1-46	2E01	ロケットだんそうこ	Rocket Warehouse	火箭队仓库
+53	1-47	2F01	シルフカンパニー　1Ｆ	Silph Co. 1F	西尔佛公司 1F
+54	1-48	3001	シルフカンパニー　2Ｆ	Silph Co. 2F	西尔佛公司 2F
+55	1-49	3101	シルフカンパニー　3Ｆ	Silph Co. 3F	西尔佛公司 3F
+56	1-50	3201	シルフカンパニー　4Ｆ	Silph Co. 4F	西尔佛公司 4F
+57	1-51	3301	シルフカンパニー　5Ｆ	Silph Co. 5F	西尔佛公司 5F
+58	1-52	3401	シルフカンパニー　6Ｆ	Silph Co. 6F	西尔佛公司 6F
+59	1-53	3501	シルフカンパニー　7Ｆ	Silph Co. 7F	西尔佛公司 7F
+60	1-54	3601	シルフカンパニー　8Ｆ	Silph Co. 8F	西尔佛公司 8F
+61	1-55	3701	シルフカンパニー　9Ｆ	Silph Co. 9F	西尔佛公司 9F
+62	1-56	3801	シルフカンパニー　10Ｆ	Silph Co. 10F	西尔佛公司 10F
+63	1-57	3901	シルフカンパニー　11Ｆ	Silph Co. 11F	西尔佛公司 11F
+64	1-58	3A01	シルフカンパニー　エレベーター	Silph Co. Elevator	西尔佛公司 电梯
+65	1-59	3B01	ポケモンやしき	Pokémon Mansion	宝可梦屋
+66	1-60	3C01	ポケモンやしき	Pokémon Mansion	宝可梦屋
+67	1-61	3D01	ポケモンやしき	Pokémon Mansion	宝可梦屋
+68	1-62	3E01	ポケモンやしき	Pokémon Mansion	宝可梦屋
+69	1-63	3F01	サファリゾーン	Safari Zone	狩猎地带
+70	1-64	4001	サファリゾーン	Safari Zone	狩猎地带
+71	1-65	4101	サファリゾーン	Safari Zone	狩猎地带
+72	1-66	4201	サファリゾーン	Safari Zone	狩猎地带
+73	1-67	4301	サファリゾーン	Safari Zone	狩猎地带
+74	1-68	4401	サファリゾーン	Safari Zone	狩猎地带
+75	1-69	4501	サファリゾーン	Safari Zone	狩猎地带
+76	1-70	4601	サファリゾーン	Safari Zone	狩猎地带
+77	1-71	4701	サファリゾーン	Safari Zone	狩猎地带
+78	1-72	4801	ハナダのどうくつ	Cerulean Cave	华蓝洞窟
+79	1-73	4901	ハナダのどうくつ	Cerulean Cave	华蓝洞窟
+80	1-74	4A01	ハナダのどうくつ	Cerulean Cave	华蓝洞窟
+81	1-75	4B01	ポケモンリーグ（こおり）	Pokémon League(ice)	宝可梦联盟（冰）
+82	1-76	4C01	ポケモンリーグ	Pokémon League	宝可梦联盟
+83	1-77	4D01	ポケモンリーグ	Pokémon League	宝可梦联盟
+84	1-78	4E01	ポケモンリーグ	Pokémon League	宝可梦联盟
+85	1-79	4F01	ポケモンリーグ	Pokémon League	宝可梦联盟
+86	1-80	5001	ポケモンリーグ	Pokémon League	宝可梦联盟
+87	1-81	5101	イワヤマトンネル	Rock Tunnel	岩山隧道
+88	1-82	5201	イワヤマトンネル	Rock Tunnel	岩山隧道
+89	1-83	5301	ふだごじま	Seafoam Islands	双子岛
+90	1-84	5401	ふだごじま	Seafoam Islands	双子岛
+91	1-85	5501	ふだごじま	Seafoam Islands	双子岛
+92	1-86	5601	ふだごじま	Seafoam Islands	双子岛
+93	1-87	5701	ふだごじま	Seafoam Islands	双子岛
+94	1-88	5801	ポケモンタワー	Pokémon Tower	宝可梦塔
+95	1-89	5901	ポケモンタワー	Pokémon Tower	宝可梦塔
+96	1-90	5A01	ポケモンタワー	Pokémon Tower	宝可梦塔
+97	1-91	5B01	ポケモンタワー	Pokémon Tower	宝可梦塔
+98	1-92	5C01	ポケモンタワー	Pokémon Tower	宝可梦塔
+99	1-93	5D01	ポケモンタワー	Pokémon Tower	宝可梦塔
+100	1-94	5E01	ポケモンタワー	Pokémon Tower	宝可梦塔
+101	1-95	5F01	むじんはつでんしょ	Power Plant	无人发电厂
+102	1-96	6001	ともしびやま	Mt. Ember	灯火山
+103	1-97	6101	ともしびやま	Mt. Ember	灯火山
+104	1-98	6201	ともしびやま	Mt. Ember	灯火山
+105	1-99	6301	ともしびやま	Mt. Ember	灯火山
+106	1-100	6401	ともしびやま	Mt. Ember	灯火山
+107	1-101	6501	ともしびやま	Mt. Ember	灯火山
+108	1-102	6601	ともしびやま	Mt. Ember	灯火山
+109	1-103	6701	ともしびやま	Mt. Ember	灯火山
+110	1-104	6801	ともしびやま	Mt. Ember	灯火山
+111	1-105	6901	ともしびやま	Mt. Ember	灯火山
+112	1-106	6A01	ともしびやま	Mt. Ember	灯火山
+113	1-107	6B01	ともしびやま	Mt. Ember	灯火山
+114	1-108	6C01	ともしびやま	Mt. Ember	灯火山
+115	1-109	6D01	きのみのもり	Berry Forest	树果森林
+116	1-110	6E01	いてだきのどうくつ	Icefall Cave	冻瀑洞窟
+117	1-111	6F01	いてだきのどうくつ	Icefall Cave	冻瀑洞窟
+118	1-112	7001	いてだきのどうくつ	Icefall Cave	冻瀑洞窟
+119	1-113	7101	いてだきのどうくつ	Icefall Cave	冻瀑洞窟
+120	1-114	7201	ロケットだんそうこ	Rocket Warehouse	火箭队仓库
+121	1-115	7301	てんのあな	Dotted Hole	点之穴
+122	1-116	7401	てんのあな	Dotted Hole	点之穴
+123	1-117	7501	てんのあな	Dotted Hole	点之穴
+124	1-118	7601	てんのあな	Dotted Hole	点之穴
+125	1-119	7701	てんのあな	Dotted Hole	点之穴
+126	1-120	7801	てんのあな	Dotted Hole	点之穴
+127	1-121	7901	しるしのはやし	Pattern Bush	标志之林
+128	1-122	7A01	へんげのどうくつ	Altering Cave	变幻洞窟
+129	2-0	0002	へそのいわ	Navel Rock	肚脐岩
+130	2-1	0102	トレーナータワー	Trainer Tower	训练家之塔
+131	2-2	0202	トレーナータワー	Trainer Tower	训练家之塔
+132	2-3	0302	トレーナータワー	Trainer Tower	训练家之塔
+133	2-4	0402	トレーナータワー	Trainer Tower	训练家之塔
+134	2-5	0502	トレーナータワー	Trainer Tower	训练家之塔
+135	2-6	0602	トレーナータワー	Trainer Tower	训练家之塔
+136	2-7	0702	トレーナータワー	Trainer Tower	训练家之塔
+137	2-8	0802	トレーナータワー	Trainer Tower	训练家之塔
+138	2-9	0902	トレーナータワー	Trainer Tower	训练家之塔
+139	2-10	0A02	トレーナータワー	Trainer Tower	训练家之塔
+140	2-11	0B02	トレーナータワー　エレベーター	Trainer Tower Elevator	训练家之塔 电梯
+141	2-12	0C02	かえらずのあな	Lost Cave	不归之穴
+142	2-13	0D02	かえらずのあな	Lost Cave	不归之穴
+143	2-14	0E02	かえらずのあな	Lost Cave	不归之穴
+144	2-15	0F02	かえらずのあな	Lost Cave	不归之穴
+145	2-16	1002	かえらずのあな	Lost Cave	不归之穴
+146	2-17	1102	かえらずのあな	Lost Cave	不归之穴
+147	2-18	1202	かえらずのあな	Lost Cave	不归之穴
+148	2-19	1302	かえらずのあな	Lost Cave	不归之穴
+149	2-20	1402	かえらずのあな	Lost Cave	不归之穴
+150	2-21	1502	かえらずのあな	Lost Cave	不归之穴
+151	2-22	1602	かえらずのあな	Lost Cave	不归之穴
+152	2-23	1702	かえらずのあな	Lost Cave	不归之穴
+153	2-24	1802	かえらずのあな	Lost Cave	不归之穴
+154	2-25	1902	かえらずのあな	Lost Cave	不归之穴
+155	2-26	1A02	かえらずのあな	Lost Cave	不归之穴
+156	2-27	1B02	イレスのせきしつ	Monean Chamber	伊莱斯石室
+157	2-28	1C02	ナザンのせきしつ	Liptoo Chamber	那藏石室
+158	2-29	1D02	ユゴのせきしつ	Weepth Chamber	由格石室
+159	2-30	1E02	アレボカのせきしつ	Dilford Chamber	阿利波卡石室
+160	2-31	1F02	コトーのせきしつ	Scufib Chamber	科斗石室
+161	2-32	2002	アヌザのせきしつ	Rixy Chamber	阿努泽石室
+162	2-33	2102	オリフのせきしつ	Viapois Chamber	澳利弗石室
+163	2-34	2202	3のしま　よこあな	Three Isle Path	第3岛隧道
+164	2-35	2302	アスカナのかぎ	Tanoby Key	阿斯卡纳的钥匙
+165	2-36	2402	へそのいわ	Navel Rock	肚脐岩
+166	2-37	2502	へそのいわ	Navel Rock	肚脐岩 山顶
+167	2-38	2602	へそのいわ	Navel Rock	肚脐岩
+168	2-39	2702	へそのいわ	Navel Rock	肚脐岩
+169	2-40	2802	へそのいわ	Navel Rock	肚脐岩
+170	2-41	2902	へそのいわ	Navel Rock	肚脐岩
+171	2-42	2A02	へそのいわ	Navel Rock	肚脐岩
+172	2-43	2B02	へそのいわ	Navel Rock	肚脐岩
+173	2-44	2C02	へそのいわ	Navel Rock	肚脐岩
+174	2-45	2D02	へそのいわ	Navel Rock	肚脐岩
+175	2-46	2E02	へそのいわ	Navel Rock	肚脐岩
+176	2-47	2F02	へそのいわ	Navel Rock	肚脐岩
+177	2-48	3002	へそのいわ	Navel Rock	肚脐岩
+178	2-49	3102	へそのいわ	Navel Rock	肚脐岩
+179	2-50	3202	へそのいわ	Navel Rock	肚脐岩
+180	2-51	3302	へそのいわ	Navel Rock	肚脐岩
+181	2-52	3402	へそのいわ	Navel Rock	肚脐岩
+182	2-53	3502	へそのいわ	Navel Rock	肚脐岩
+183	2-54	3602	へそのいわ	Navel Rock	肚脐岩
+184	2-55	3702	へそのいわ	Navel Rock	肚脐岩
+185	2-56	3802	たんじょうのしま	Birth Island	诞生之岛
+186	2-57	3902	ともしびおんせん	Ember Spa	灯火温泉
+187	2-58	3A02	たんじょうのしま せんこう	Birth Island Ship Port	诞生之岛 船港
+188	3-0	0003	マサラタウン	Pallet Town	真新镇
+189	3-1	0103	トキワシティ	Viridian City	常青市
+190	3-2	0203	ニビシティ	Pewter City	深灰市
+191	3-3	0303	ハナダシティ	Cerulean City	华蓝市
+192	3-4	0403	シオンタウン	Lavender Town	紫苑镇
+193	3-5	0503	クチバシティ	Vermilion City	枯叶市
+194	3-6	0603	タマムシシティ	Celadon City	玉虹市
+195	3-7	0703	セキチクシティ	Fuchsia City	浅红市
+196	3-8	0803	グレンじま	Cinnabar Island	红莲岛
+197	3-9	0903	セキエイこうげん	Indigo Plateau	石英高原
+198	3-10	0A03	ヤマブキシティ	Saffron City	金黄市
+199	3-12	0C03	1のしま	Island 1	第1岛
+200	3-13	0D03	2のしま	Island 2	第2岛
+201	3-14	0E03	3のしま	Island 3	第3岛
+202	3-15	0F03	4のしま	Island 4	第4岛
+203	3-16	1003	5のしま	Island 5	第5岛
+204	3-17	1103	7のしま	Island 7	第7岛
+205	3-18	1203	6のしま	Island 6	第6岛
+206	3-19	1303	1ばん　どうろ	Route 1	1号道路
+207	3-20	1403	2ばん　どうろ	Route 2	2号道路
+208	3-21	1503	3ばん　どうろ	Route 3	3号道路
+209	3-22	1603	4ばん　どうろ	Route 4	4号道路
+210	3-23	1703	5ばん　どうろ	Route 5	5号道路
+211	3-24	1803	6ばん　どうろ	Route 6	6号道路
+212	3-25	1903	7ばん　どうろ	Route 7	7号道路
+213	3-26	1A03	8ばん　どうろ	Route 8	8号道路
+214	3-27	1B03	9ばん　どうろ	Route 9	9号道路
+215	3-28	1C03	10ばん　どうろ	Route 10	10号道路
+216	3-29	1D03	11ばん　どうろ	Route 11	11号道路
+217	3-30	1E03	12ばん　どうろ	Route 12	12号道路
+218	3-31	1F03	13ばん　どうろ	Route 13	13号道路
+219	3-32	2003	14ばん　どうろ	Route 14	14号道路
+220	3-33	2103	15ばん　どうろ	Route 15	15号道路
+221	3-34	2203	16ばん　どうろ	Route 16	16号道路
+222	3-35	2303	17ばん　どうろ	Route 17	17号道路
+223	3-36	2403	18ばん　どうろ	Route 18	18号道路
+224	3-37	2503	19ばん　どうろ	Route 19	19号道路
+225	3-38	2603	20ばん　どうろ	Route 20	20号道路
+226	3-39	2703	21ばん　どうろ	Route 21	21号道路
+227	3-41	2903	22ばん　どうろ	Route 22	22号道路
+228	3-42	2A03	23ばん　どうろ	Route 23	23号道路
+229	3-43	2B03	24ばん　どうろ	Route 24	24号道路
+230	3-44	2C03	25ばん　どうろ	Route 25	25号道路
+231	3-45	2D03	ほてりのみち	Kindle Road	热气之路
+232	3-46	2E03	たからのはま	Treasure Beach	宝物海滩
+233	3-47	2F03	きわのみさき	Cape Brink	边缘海岬
+234	3-48	3003	きずなばし	Bond Bridge	索桥
+235	3-49	3103	3のしま　みなと	Three Isle Port	第3岛码头
+236	3-50	3203	6ばん　ななしま	Sevii Isle 6	6号 七之岛
+237	3-51	3303	7ばん　ななしま	Sevii Isle 7	7号 七之岛
+238	3-52	3403	8ばん　ななしま	Sevii Isle 8	8号 七之岛
+239	3-53	3503	9ばん　ななしま	Sevii Isle 9	9号 七之岛
+240	3-54	3603	ゴージャスリゾート	Resort Gorgeous	豪华度假区
+241	3-55	3703	みずのめいろ	Water Labyrinth	水之迷宫
+242	3-56	3803	5のしま　あきち	Five Isle Meadow	第5岛空地
+243	3-57	3903	おもいでのとう	Memorial Pillar	回忆之塔
+244	3-58	3A03	はずれのしま	Outcast Island	外岛
+245	3-59	3B03	みどりのさんぽみち	Green Path	绿之步道
+246	3-60	3C03	みずのさんぽみち	Water Path	水之步道
+247	3-61	3D03	いせきのたに	Ruin Valley	遗迹山谷
+248	3-63	3F03	けいこくいりぐち	Canyon Entrance	溪谷入口
+249	3-64	4003	しっぽうけいこく	Sevault Canyon	七宝溪谷
+250	3-65	4103	アスカナいせき	Tanoby Ruins	阿斯卡纳遗迹
+251	4-0	0004	自分の家	Your House (F1)	主角家
+252	4-1	0104	自分の部屋	Your House (F2)	主角房间
+253	4-2	0204	相手の家	Rivals House	对手家
+254	4-3	0304	オーキド研究所	Professor Oak's Laboratory	大木研究所
+255	5-0	0005	トキワシティの住民の家	Viridian House	常青市房子
+256	5-1	0105	トキワジム	Viridian GYM	常青道馆
+257	5-2	0205	トキワシティ学校	Viridian School	常青市学校
+258	5-3	0305	トキワシティの商店	Viridian Mart	常青市商店
+259	5-4	0405	トキワシティのポケモンセンター	Viridian Pokécenter	常青市宝可梦中心
+260	5-5	0505	トキワシティのポケモンセンター 2F	Viridian Pokécenter 2F	常青市宝可梦中心 2F
+261	6-0	0006	ニビシティ　はくぶつかん 1F	ニビシティ Museum 1F	深灰市 博物馆 1F
+262	6-1	0106	ニビシティ　はくぶつかん 2F	ニビシティ Museum 2F	深灰市 博物馆 2F
+263	6-2	0206	ニビジム	Pewter Gym	深灰道馆
+264	6-3	0306	トキワシティの商店	Pewter Mart	深灰市商店
+265	6-4	0406	ニビシティの住民の家　1	Pewter House  1	深灰市房子 1
+266	6-5	0506	ニビシティのポケモンセンター	Pewter Pokécenter	深灰市宝可梦中心
+267	6-6	0606	ニビシティのポケモンセンター 2F	Pewter Pokécenter 2F	深灰市宝可梦中心 2F
+268	6-7	0706	ニビシティの住民の家　2	Pewter House  2	深灰市房子 2
+269	7-0	0007		Cerulean House (1)	
+270	7-1	0107		Robbed House	
+271	7-2	0207		Cerulean House (2)	
+272	7-3	0307		Cerulean Pokecenter	
+273	7-4	0407		Cerulean CC	
+274	7-5	0507		Cerulean Gym	
+275	7-6	0607		Bike Shop	
+276	7-7	0707		Cerulean Mart	
+277	7-8	0807		Cerulean House (3)	
+278	7-9	0907		Cerulean House (4)	
+279	8-0	0008		Lavender Pokecenter	
+280	8-1	0108		Lavender CC	
+281	8-2	0208		Lavender House (1)	
+282	8-3	0308		Lavender House (2)	
+283	8-4	0408		Name Rater	
+284	8-5	0508		Lavender Mart	
+285	9-0	0009		Vermilion House (1)	
+286	9-1	0109		Vermilion Pokécenter	
+287	9-2	0209		Vermilion CC	
+288	9-3	0309		Pokémon Fan Club	
+289	9-4	0409		Vermilion House (2)	
+290	9-5	0509		Vermilion Mart	
+291	9-6	0609		Vermilion Gym	
+292	9-7	0709		Vermilion House (3)	
+293	10-0	000A		Celedon Shop (F1)	
+294	10-1	010A		Celedon Shop (F2)	
+295	10-2	020A		Celedon Shop (F3)	
+296	10-3	030A		Celedon Shop (F4)	
+297	10-4	040A		Celedon Shop (F5)	
+298	10-5	050A		Celedon Shop (F6)	
+299	10-6	060A		Celedon Shop (Elevator)	
+300	10-7	070A		Game Freak HQ (1)	
+301	10-8	080A		Game Freak HQ (2)	
+302	10-9	090A		Game Freak HQ (3)	
+303	10-10	0A0A		Game Freak HQ (4)	
+304	10-11	0B0A		Game Freak HQ (5)	
+305	10-12	0C0A		Celedon Pokecenter	
+306	10-13	0D0A		Celedon CC	
+307	10-14	0E0A		Celedon Game Corner	
+308	10-15	0F0A		Celedon Prizes	
+309	10-16	100A		Celedon GYM	
+310	10-17	110A		Celedon Diner	
+311	10-18	120A		Celedon House	
+312	10-19	130A		#N/A	
+313	11-0	000B		Safari Zone Gate	
+314	11-1	010B		Fuchsia Mart	
+315	11-2	020B		Safari Meeting Room	
+316	11-3	030B		Fuchsia GYM	
+317	11-4	040B		Fuchsia House	
+318	11-5	050B		Fuchsia Pokécenter	
+319	11-6	060B		Fuchsia CC	
+320	11-7	070B		Wardens Home	
+321	11-8	080B		Fuchsia House (2)	
+322	11-9	090B		Fuchsia House (3)	
+323	12-0	000C		Cinnibar GYM	
+324	12-1	010C		Cinniber Lab (1)	
+325	12-2	020C		Cinnibar Lab (2)	
+326	12-3	030C		Cinnibar Lab (3)	
+327	12-4	040C		Cinnibar Lab (4)	
+328	12-5	050C		Cinnibar PC	
+329	12-6	060C		Cinnibar CC	
+330	12-7	070C		Cinnibar Mart	
+331	13-0	000D		#N/A	
+332	13-1	010D		#N/A	
+333	14-0	000E		Copycats House (F1)	
+334	14-1	010E		Copycats House (F2)	
+335	14-2	020E		Fighting Dojo	
+336	14-3	030E		Saffron GYM	
+337	14-4	040E		Saffron House (1)	
+338	14-5	050E		Saffron Mart	
+339	14-6	060E		Saffron PC	
+340	14-7	070E		Saffron CC	
+341	14-8	080E		Saffron House (2)	
+342	14-9	090E		Saffron House (3)	
+343	15-0	000F		#N/A	
+344	15-1	010F		#N/A	
+345	15-2	020F		#N/A	
+346	15-3	030F		#N/A	
+347	16-0	0010		Route 4/Mt. Moon Pokécenter	
+348	16-1	0110		Route 4/Mt. Moon CC	
+349	17-0	0011		Day Care Man	
+350	17-1	0111		#N/A	
+351	18-0	0012		Route 6 Gate	
+352	18-1	0112		Route 6 Unused House	
+353	19-0	0013		Route 7 Gate	
+354	20-0	0014		Route 8 Gate	
+355	21-0	0015		Route 10/Rock Tunnel Pokécenter	
+356	21-1	0115		Route 10/Rock Tunnel CC	
+357	22-0	0016		Route 11 Gate F1	
+358	22-1	0116		Route 11 Gate F2	
+359	23-0	0017		Route 12 Gate F1	
+360	23-1	0117		Route 12 Gate F2	
+361	23-2	0217		Route 12 House	
+362	24-0	0018		Route 15 Gate F1	
+363	24-1	0118		Route 15 Gate F2	
+364	25-0	0019		Route 16 House	
+365	25-1	0119		Route 16 Gate F1	
+366	25-2	0219		Route 16 Gate F2	
+367	26-0	001A		Route 18 Gate	
+368	26-1	011A		Route 18 Gate F2	
+369	27-0	001B		Route 19 Unused Home	
+370	28-0	001C		Route 22/23 Gate	
+371	29-0	001D		Route 23 Unused House	
+372	30-0	001E		Bill’s Sea Cottage	
+373	31-0	001F		#N/A	
+374	31-1	011F		#N/A	
+375	31-2	021F		#N/A	
+376	31-3	031F		#N/A	
+377	31-4	041F		#N/A	
+378	31-5	051F		#N/A	
+379	31-6	061F		#N/A	
+380	32-0	0020		#N/A	
+381	32-1	0120		#N/A	
+382	32-2	0220		#N/A	
+383	32-3	0320		#N/A	
+384	32-4	0420		#N/A	
+385	33-0	0021		#N/A	
+386	33-1	0121		#N/A	
+387	33-2	0221		#N/A	
+388	33-3	0321		#N/A	
+389	33-4	0421		#N/A	
+390	34-0	0022		#N/A	
+391	34-1	0122		#N/A	
+392	34-2	0222		#N/A	
+393	34-3	0322		#N/A	
+394	34-4	0422		#N/A	
+395	34-5	0522		#N/A	
+396	34-6	0622		#N/A	
+397	34-7	0722		#N/A	
+398	35-0	0023		#N/A	
+399	35-1	0123		#N/A	
+400	35-2	0223		#N/A	
+401	35-3	0323		#N/A	
+402	35-4	0423		#N/A	
+403	35-5	0523		#N/A	
+404	35-6	0623		#N/A	
+405	35-7	0723		#N/A	
+406	36-0	0024		#N/A	
+407	36-1	0124		#N/A	
+408	36-2	0224		#N/A	
+409	36-3	0324		#N/A	
+410	36-4	0424		#N/A	
+411	37-0	0025		#N/A	
+412	37-1	0125		#N/A	
+413	37-2	0225		#N/A	
+414	37-3	0325		#N/A	
+415	37-4	0425		#N/A	
+416	39-0	0027		#N/A	
+417	40-0	0028		#N/A	
+418	41-0	0029		#N/A	
+419	41-1	0129		#N/A	
+420	42-0	002A		#N/A	
