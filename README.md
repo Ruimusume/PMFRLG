@@ -1,4 +1,4 @@
-# Switch 口袋妖怪 火红&叶绿 金手指数据库
+# Switch Pokémon Fire Red / Leaf Green Datebase Cheats
 
 <div align="center"><img height="256" alt="image" src="https://github.com/Ruimusume/PMRFLG/blob/main/icon/logo.png?raw=true" /></div>
 
