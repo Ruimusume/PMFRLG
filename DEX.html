@@ -5,44 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Switch 口袋妖怪 火红・叶绿 图鉴 by Ruimusme 露易娘</title>
 <style>
-.header-subtitle {
-    font-size: clamp(9px, 1vw, 14px);
-    padding: 0 3px;
-}
-.header-subtitle span {
-    display: block;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-}
-.header-subtitle {
-    color: #666;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    opacity: 0.8;
-    display: block;
-    width: 100%;
-    max-width: 100%;
-}
-.main-title {
-    font-size: clamp(14px, 4vw, 24px);
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 6px;
-    display: block;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    word-break: keep-all;
-}
-.main-title {
-    font-size: clamp(12px, 2vw, 20px);
-    padding: 0 3px;
-}
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +32,39 @@ body {
     color: #666;
     font-size: 1.1rem;
 }
+.main-title {
+    font-size: clamp(12px, 2vw, 20px);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    word-break: keep-all;
+    padding: 0 3px;
+}
+.header-subtitle {
+    font-size: clamp(9px, 1vw, 14px);
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 3px;
+}
+.header-subtitle span {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
 .search-bar {
     margin-bottom: 20px;
     display: flex;
@@ -89,6 +84,21 @@ body {
 .search-bar input:focus {
     border-color: #E60A24;
     box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+.table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #E60A24;
+    border-radius: 3px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
 }
 .pokemon-table {
     width: 100%;
@@ -122,24 +132,11 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.pokemon-table td:nth-child(8) img,
-.pokemon-table td:nth-child(9) img,
-.pokemon-table td:nth-child(10) img,
-.pokemon-table td:nth-child(11) img {
-    object-fit: contain;
-    border-radius: 8px;
-    background: #f8f8f8;
-    padding: 5px;
-}
-.pokemon-table td img:hover {
-    transform: none;
-}
 .pokemon-table tr {
     transition: background-color 0.3s;
 }
 .pokemon-table tr:hover {
     background-color: #f9f2f2;
-    transform: none;
 }
 .pokemon-table tr:nth-child(even) {
     background-color: #fafafa;
@@ -171,64 +168,6 @@ body {
 .version-lg {
     background-color: #02A31A;
 }
-
-@media (max-width: 992px) {
-.container {
-    padding: 20px;
-}
-.pokemon-table th {
-    font-size: 0.8rem;
-    padding: 8px 5px;
-}
-.pokemon-table td {
-    font-size: 0.75rem;
-    padding: 8px 5px;
-}
-.search-bar input {
-    font-size: 0.9rem;
-    padding: 10px 12px;
-}
-}
-
-@media (max-width: 480px) {
-.search-bar {
-    flex-direction: column;
-}
-
-.pokemon-table td:nth-child(3) img {
-    width: 14px;
-
-}
-.pokemon-table th {
-    font-size: 0.7rem;
-    padding: 6px 3px;
-}
-.pokemon-table td {
-    font-size: 0.65rem;
-    padding: 6px 3px;
-}
-.header {
-    font-size: 0.85rem;
-}
-.header p {
-    font-size: 0.9rem;
-}
-}
-.table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-}
-.table-wrapper::-webkit-scrollbar {
-height: 6px;
-}
-.table-wrapper::-webkit-scrollbar-thumb {
-background-color: #E60A24;
-border-radius: 3px;
-}
-.table-wrapper::-webkit-scrollbar-track {
-background-color: #f0f0f0;
-}
 .footer-copyright {
     max-width: 1400px;
     margin: 15px auto 0;
@@ -237,14 +176,6 @@ background-color: #f0f0f0;
     font-size: 14px;
     color: #888;
     opacity: 0.9;
-}
-
-@media (max-width: 480px) {
-.footer-copyright {
-    font-size: 12px;
-    margin: 10px auto 0;
-    padding: 8px 0;
-}
 }
 .download-progress {
     position: fixed;
@@ -299,20 +230,6 @@ background-color: #f0f0f0;
 .offline-badge.hidden {
     display: none;
 }
-img[data-src] {
-    min-width: 32px;
-    min-height: 32px;
-    background: transparent;
-}
-img:not([src]), img[src=""] {
-    opacity: 0;
-    min-width: 32px;
-    min-height: 32px;
-}
-img.cached {
-    opacity: 1;
-}
-
 .debug-panel {
     position: fixed;
     bottom: 10px;
@@ -350,8 +267,6 @@ img.cached {
 .debug-panel .error { color: #f44336; }
 .debug-panel .warning { color: #ff9800; }
 .debug-panel .info { color: #2196F3; }
-
-/* 按钮样式 */
 .header-actions {
     display: inline-flex;
     gap: 5px;
@@ -379,6 +294,65 @@ img.cached {
 .action-btn.small {
     padding: 2px 8px;
     font-size: 11px;
+}
+img[data-src] {
+    min-width: 32px;
+    min-height: 32px;
+    background: transparent;
+}
+img:not([src]), img[src=""] {
+    opacity: 0;
+    min-width: 32px;
+    min-height: 32px;
+}
+img.cached {
+    opacity: 1;
+}
+
+@media (max-width: 992px) {
+.container {
+    padding: 20px;
+}
+.pokemon-table th {
+    font-size: 0.8rem;
+    padding: 8px 5px;
+}
+.pokemon-table td {
+    font-size: 0.75rem;
+    padding: 8px 5px;
+}
+.search-bar input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+}
+}
+
+@media (max-width: 480px) {
+.search-bar {
+    flex-direction: column;
+}
+.pokemon-table td:nth-child(3) img {
+    width: 14px;
+}
+.pokemon-table th {
+    font-size: 0.7rem;
+    padding: 6px 3px;
+}
+.pokemon-table td {
+    font-size: 0.65rem;
+    padding: 6px 3px;
+}
+.header {
+    font-size: 0.85rem;
+}
+.header p {
+    font-size: 0.9rem;
+}
+.footer-copyright {
+    font-size: 12px;
+    margin: 10px auto 0;
+    padding: 8px 0;
+}
 }
 </style>
 </head>
