@@ -1,3 +1,3 @@
 # PMRFLG
 
-https://ruimusume.github.io/PMRFLG/item.html
+https://ruimusume.github.io/PMRFLG/items.html
