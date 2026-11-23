@@ -1,10 +1,10 @@
 # Switch Pokémon Fire Red / Leaf Green Datebase Cheats
 
-<div align="center"><img height="256" alt="image" src="https://github.com/Ruimusume/PMRFLG/blob/main/icon/logo.png?raw=true" /></div>
+<div align="center"><img height="256" alt="image" src="https://github.com/Ruimusume/PMFRLG/blob/main/icon/logo.png?raw=true" /></div>
 
-https://ruimusume.github.io/PMRFLG/DEX.html
+https://ruimusume.github.io/PMFRLG/DEX.html
 
-https://ruimusume.github.io/PMRFLG/items.html
+https://ruimusume.github.io/PMFRLG/items.html
 
 # MemCrypt
 <table>
