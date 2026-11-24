@@ -212,3 +212,56 @@ https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt
       <td>[[main+041F8688]+4AD0]</td>
     </tr>
   </table></div>
+  
+# Mystery Gift
+<table>
+    <tr>
+      <td>Language</td>
+      <td>左上</td>
+      <td>右上</td>
+      <td>左下</td>
+      <td>右下</td>
+    </tr>
+    <tr>
+      <td>日本語</td>
+      <td>ともだち</td>
+      <td>いっぱい</td>
+      <td>ふしぎ</td>
+      <td>つうしん</td>
+    </tr>
+    <tr>
+      <td>English</td>
+      <td>LINK</td>
+      <td>TOGETHER</td>
+      <td>WITH</td>
+      <td>ALL</td>
+    </tr>
+    <tr>
+      <td>Français</td>
+      <td>CONNEXION</td>
+      <td>AVEC</td>
+      <td>LES</td>
+      <td>DRESSEUR</td>
+    </tr>
+    <tr>
+      <td>German</td>
+      <td>LINK</td>
+      <td>MIT</td>
+      <td>ALLE</td>
+      <td>ZUSAMMEN</td>
+    </tr>
+    <tr>
+      <td>Italiano</td>
+      <td>INSIEME</td>
+      <td>IN</td>
+      <td>LINK</td>
+      <td>!</td>
+    </tr>
+    <tr>
+      <td>Español</td>
+      <td>CONEXIÓN</td>
+      <td>CON</td>
+      <td>TODOS</td>
+      <td>（空白）</td>
+    </tr>
+  </table>
