@@ -214,13 +214,13 @@ https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt
   </table></div>
   
 # Mystery Gift
-<table>
+<div align="center"><table>
     <tr>
       <td>Language</td>
-      <td>左上</td>
-      <td>右上</td>
-      <td>左下</td>
-      <td>右下</td>
+      <td>↖</td>
+      <td>↗</td>
+      <td>↙</td>
+      <td>↘</td>
     </tr>
     <tr>
       <td>日本語</td>
@@ -264,4 +264,4 @@ https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt
       <td>TODOS</td>
       <td>（空白）</td>
     </tr>
-  </table>
+  </table></div>
