@@ -115,6 +115,8 @@ https://ruimusume.github.io/PMFRLG/items.html
 
 https://github.com/Ruimusume/PMFRLG/blob/main/Area_id.txt
 
+https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt
+
 # MemCrypt
 <table>
     <tr>
