@@ -1,0 +1,7 @@
+00	なし	None	无
+01	あめ	Rain	下雨
+02	おおあめ	Downpour	大雨
+08	すなあらし	Sandstorm	沙尘暴
+20	ひざし	Sunlight	日光
+80	あられ	Hail	冰雹
+FF	すべて	ALL	全部
