@@ -262,6 +262,6 @@ https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt
       <td>CONEXIÓN</td>
       <td>CON</td>
       <td>TODOS</td>
-      <td>（空白）</td>
+      <td></td>
     </tr>
   </table></div>
