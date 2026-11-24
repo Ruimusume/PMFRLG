@@ -1,0 +1,423 @@
+No.	Area_id	分列1	分列2	hex	JP_name	EN_name	CN_name
+1	0-0	0	0	0000	バトルセンター	BATTLE LINK CENTER	对战中心
+2	0-1	0	1	0100	トレードセンター	TRADE CENTER	交换中心
+3	0-2	0	2	0200	四路トレードセンター	4-WAY TRADE CENTER	四路交换中心
+4	0-3	0	3	0300	四路バトルセンター	4-WAY BATTLE CENTER	四路对战中心
+5	0-4	0	4	0400	ユニオン　ルーム	UNION ROOM	联机房
+6	1-0	1	0	0001	トキワのもり	VIRIDIAN FOREST	常青森林
+7	1-1	1	1	0101	オツキミやま　1F	MT. MOON 1F	月见山 1F
+8	1-2	1	2	0201	オツキミやま　B1F	MT. MOON B1F	月见山 B1F
+9	1-3	1	3	0301	オツキミやま　B2F	MT. MOON B2F	月见山 B2F
+10	1-4	1	4	0401	サント・アンヌごう　みなと	S.S. ANNE PORT	圣特安努号 码头
+11	1-5	1	5	0501	サント・アンヌごう　1F	S.S. ANNE 1F	圣特安努号 1F
+12	1-6	1	6	0601	サント・アンヌごう　2F	S.S. ANNE 2F	圣特安努号 2F
+13	1-7	1	7	0701	サント・アンヌごう　デッキ通路	S.S. ANNE DECK CORRIDOR	圣特安努号 甲板过道
+14	1-8	1	8	0801	サント・アンヌごう　B1F	S.S. ANNE B1F	圣特安努号 B1F
+15	1-9	1	9	0901	サント・アンヌごう　デッキ	S.S. ANNE DECK	圣特安努号 甲板
+16	1-10	1	10	0A01	サント・アンヌごう　キッチン	S.S. ANNE KITCHEN	圣特安努号 厨房
+17	1-11	1	11	0B01	サント・アンヌごう　3F　船長室	S.S. ANNE 3F CAPTAIN'S ROOM	圣特安努号 3F 船长室
+18	1-12	1	12	0C01	サント・アンヌごう　1F　へや1	S.S. ANNE 1F ROOM 1	圣特安努号 1F 房间1
+19	1-13	1	13	0D01	サント・アンヌごう　1F　へや2	S.S. ANNE 1F ROOM 2	圣特安努号 1F 房间2
+20	1-14	1	14	0E01	サント・アンヌごう　1F　へや3	S.S. ANNE 1F ROOM 3	圣特安努号 1F 房间3
+21	1-15	1	15	0F01	サント・アンヌごう　1F　へや4	S.S. ANNE 1F ROOM 4	圣特安努号 1F 房间4
+22	1-16	1	16	1001	サント・アンヌごう　1F　へや5	S.S. ANNE 1F ROOM 5	圣特安努号 1F 房间5
+23	1-17	1	17	1101	サント・アンヌごう　1F　へや7	S.S. ANNE 1F ROOM 7	圣特安努号 1F 房间7
+24	1-18	1	18	1201	サント・アンヌごう　2F　へや1	S.S. ANNE 2F ROOM 1	圣特安努号 2F 房间1
+25	1-19	1	19	1301	サント・アンヌごう　2F　へや2	S.S. ANNE 2F ROOM 2	圣特安努号 2F 房间2
+26	1-20	1	20	1401	サント・アンヌごう　2F　へや3	S.S. ANNE 2F ROOM 3	圣特安努号 2F 房间3
+27	1-21	1	21	1501	サント・アンヌごう　2F　へや4	S.S. ANNE 2F ROOM 4	圣特安努号 2F 房间4
+28	1-22	1	22	1601	サント・アンヌごう　2F　へや5	S.S. ANNE 2F ROOM 5	圣特安努号 2F 房间5
+29	1-23	1	23	1701	サント・アンヌごう　2F　へや6	S.S. ANNE 2F ROOM 6	圣特安努号 2F 房间6
+30	1-24	1	24	1801	サント・アンヌごう　B1F　へや1	S.S. ANNE B1F ROOM 1	圣特安努号 B1F 房间1
+31	1-25	1	25	1901	サント・アンヌごう　B1F　へや2	S.S. ANNE B1F ROOM 2	圣特安努号 B1F 房间2
+32	1-26	1	26	1A01	サント・アンヌごう　B1F　へや3	S.S. ANNE B1F ROOM 3	圣特安努号 B1F 房间3
+33	1-27	1	27	1B01	サント・アンヌごう　B1F　へや4	S.S. ANNE B1F ROOM 4	圣特安努号 B1F 房间4
+34	1-28	1	28	1C01	サント・アンヌごう　B1F　へや5	S.S. ANNE B1F ROOM 5	圣特安努号 B1F 房间5
+35	1-29	1	29	1D01	サント・アンヌごう　1F　ポケモンを回復	S.S. ANNE 1F HEAL POKéMON	圣特安努号 1F 恢复精灵
+36	1-30	1	30	1E01	ちかつうろ　1F（ニドラン♂/ニドラン♀）	UNDERGROUND PATH 1F（Nidoran♂/Nidoran♀）	地下通道 1F（尼多朗♂/尼多兰♀）
+37	1-31	1	31	1F01	ちかつうろ　B1F（5-6ばん　どうろ）	UNDERGROUND PATH B1F (ROUTE 5-6)	地下通道 B1F（5-6号道路）
+38	1-32	1	32	2001	ちかつうろ　1F（6ばん　どうろ）	UNDERGROUND PATH 1F (ROUTE 6)	地下通道1F（6号道路）
+39	1-33	1	33	2101	ちかつうろ　1F（7ばん　どうろ）	UNDERGROUND PATH 1F (ROUTE 7)	地下通道1F（7号道路）
+40	1-34	1	34	2201	ちかつうろ　B1F（7-8ばん　どうろ）	UNDERGROUND PATH B1F (ROUTE 7-8)	地下通道 B1F（7-8号道路）
+41	1-35	1	35	2301	ちかつうろ　1F（8ばん　どうろ）	UNDERGROUND PATH 1F (ROUTE 8)	地下通道 -8号道路
+42	1-36	1	36	2401	ディグダのあな　1F（2ばん　どうろ）	DIGLETT'S CAVE 1F (ROUTE 2)	地鼠洞穴 1F（2号道路）
+43	1-37	1	37	2501	ディグダのあな　B1F	DIGLETT'S CAVE B1F	地鼠洞穴 B1F
+44	1-38	1	38	2601	ディグダのあな　1F（クチバシティ）	DIGLETT'S CAVE 1F (VERMILION CITY)	地鼠洞穴 1F（枯叶市）
+45	1-39	1	39	2701	チャンピオンロード　1F	VICTORY ROAD 1F	冠军之路 1F
+46	1-40	1	40	2801	チャンピオンロード　2F	VICTORY ROAD 2F	冠军之路 2F
+47	1-41	1	41	2901	チャンピオンロード　3F	VICTORY ROAD 3F	冠军之路 3F
+48	1-42	1	42	2A01	ロケットだんそうこ　B1F	ROCKET WAREHOUSE B1F	火箭队仓库 B1F
+49	1-43	1	43	2B01	ロケットだんそうこ　B2F	ROCKET WAREHOUSE B2F	火箭队仓库 B2F
+50	1-44	1	44	2C01	ロケットだんそうこ　B3F	ROCKET WAREHOUSE B3F	火箭队仓库 B3F
+51	1-45	1	45	2D01	ロケットだんそうこ　B4F	ROCKET WAREHOUSE B4F	火箭队仓库 B4F
+52	1-46	1	46	2E01	ロケットだんそうこ　エレベーター	ROCKET WAREHOUSE ELEVATOR	火箭队仓库 电梯
+53	1-47	1	47	2F01	シルフカンパニー　1Ｆ	SILPH CO. 1F	西尔佛公司 1F
+54	1-48	1	48	3001	シルフカンパニー　2Ｆ	SILPH CO. 2F	西尔佛公司 2F
+55	1-49	1	49	3101	シルフカンパニー　3Ｆ	SILPH CO. 3F	西尔佛公司 3F
+56	1-50	1	50	3201	シルフカンパニー　4Ｆ	SILPH CO. 4F	西尔佛公司 4F
+57	1-51	1	51	3301	シルフカンパニー　5Ｆ	SILPH CO. 5F	西尔佛公司 5F
+58	1-52	1	52	3401	シルフカンパニー　6Ｆ	SILPH CO. 6F	西尔佛公司 6F
+59	1-53	1	53	3501	シルフカンパニー　7Ｆ	SILPH CO. 7F	西尔佛公司 7F
+60	1-54	1	54	3601	シルフカンパニー　8Ｆ	SILPH CO. 8F	西尔佛公司 8F
+61	1-55	1	55	3701	シルフカンパニー　9Ｆ	SILPH CO. 9F	西尔佛公司 9F
+62	1-56	1	56	3801	シルフカンパニー　10Ｆ	SILPH CO. 10F	西尔佛公司 10F
+63	1-57	1	57	3901	シルフカンパニー　11Ｆ	SILPH CO. 11F	西尔佛公司 11F
+64	1-58	1	58	3A01	シルフカンパニー　エレベーター	SILPH CO. ELEVATOR	西尔佛公司 电梯
+65	1-59	1	59	3B01	ポケモンやしき　1F	POKéMON MANSION 1F	精灵屋 1F
+66	1-60	1	60	3C01	ポケモンやしき　2F	POKéMON MANSION 2F	精灵屋 2F
+67	1-61	1	61	3D01	ポケモンやしき　3F	POKéMON MANSION 3F	精灵屋 3F
+68	1-62	1	62	3E01	ポケモンやしき　B1F	POKéMON MANSION B1F	精灵屋 B1F
+69	1-63	1	63	3F01	サファリゾーン　ちゅうおう	SAFARI ZONE CENTER AREA	狩猎地带  中央
+70	1-64	1	64	4001	サファリゾーン　だい1　エリア	SAFARI ZONE AREA 1	狩猎地带 第1地区
+71	1-65	1	65	4101	サファリゾーン　だい2　エリア	SAFARI ZONE AREA 2	狩猎地带 第2地区
+72	1-66	1	66	4201	サファリゾーン　だい3　エリア	SAFARI ZONE AREA 3	狩猎地带 第3地区
+73	1-67	1	67	4301	サファリゾーン　ちゅうおう　きゅうけい　ハウス	SAFARI ZONE  CENTER AREA REST HOUSE	狩猎地带 中央休息室
+74	1-68	1	68	4401	サファリゾーン　だい1　エリア　きゅうけい　ハウス	SAFARI ZONE AREA 1 REST HOUSE	狩猎地带 第1地区休息室
+75	1-69	1	69	4501	サファリゾーン　だい2　エリア　きゅうけい　ハウス	SAFARI ZONE AREA 2 REST HOUSE	狩猎地带 第2地区休息室
+76	1-70	1	70	4601	サファリゾーン　だい3　エリア　きゅうけい　ハウス	SAFARI ZONE AREA 3 REST HOUSE	狩猎地带 第3地区休息室
+77	1-71	1	71	4701	いちばん　おくち　の　トレジャー　ハウス	SAFARI ZONE SECRET HOUSE	最深处的宝藏屋
+78	1-72	1	72	4801	ハナダのどうくつ　1F	CERULEAN CAVE 1F	华蓝洞窟 1F
+79	1-73	1	73	4901	ハナダのどうくつ　2F	CERULEAN CAVE 2F	华蓝洞窟 2F
+80	1-74	1	74	4A01	ハナダのどうくつ（ミュウツー）	CERULEAN CAVE(MEWTWO)	华蓝洞窟（超梦）
+81	1-75	1	75	4B01	ポケモンリーグ（こおり）	POKéMON LEAGUE(ICE)	精灵联盟（冰）
+82	1-76	1	76	4C01	ポケモンリーグ（かくとう）	POKéMON LEAGUE(FIGHTING)	精灵联盟（格斗）
+83	1-77	1	77	4D01	ポケモンリーグ（ゴースト）	POKéMON LEAGUE(GHOST)	精灵联盟（幽灵）
+84	1-78	1	78	4E01	ポケモンリーグ（ドラゴン）	POKéMON LEAGUE(DRAGON)	精灵联盟（龙）
+85	1-79	1	79	4F01	ポケモンリーグ（相手）	POKéMON LEAGUE(RIVALS)	精灵联盟（对手）
+86	1-80	1	80	5001	ポケモンリーグ	POKéMON LEAGUE	精灵联盟
+87	1-81	1	81	5101	イワヤマトンネル　1F	ROCK TUNNEL 1F	岩山隧道 1F
+88	1-82	1	82	5201	イワヤマトンネル　B1F	ROCK TUNNEL B1F	岩山隧道 B1F
+89	1-83	1	83	5301	ふだごじま　1F	SEAFOAM ISLANDS 1F	双子岛 1F
+90	1-84	1	84	5401	ふだごじま　B1F	SEAFOAM ISLANDS B1F	双子岛 B1F
+91	1-85	1	85	5501	ふだごじま　B2F	SEAFOAM ISLANDS B2F	双子岛 B2F
+92	1-86	1	86	5601	ふだごじま　B3F	SEAFOAM ISLANDS B3F	双子岛 B3F
+93	1-87	1	87	5701	ふだごじま　B4F（フリーザー）	SEAFOAM ISLANDS B4F (ARTICUNO)	双子岛 B4F（急冻鸟）
+94	1-88	1	88	5801	ポケモンタワー　1F	POKéMON TOWER 1F	精灵塔 1F
+95	1-89	1	89	5901	ポケモンタワー　2F	POKéMON TOWER 2F	精灵塔 2F
+96	1-90	1	90	5A01	ポケモンタワー　3F	POKéMON TOWER 3F	精灵塔 3F
+97	1-91	1	91	5B01	ポケモンタワー　4F	POKéMON TOWER 4F	精灵塔 4F
+98	1-92	1	92	5C01	ポケモンタワー　5F	POKéMON TOWER 5F	精灵塔 5F
+99	1-93	1	93	5D01	ポケモンタワー　6F	POKéMON TOWER 6F	精灵塔 6F
+100	1-94	1	94	5E01	ポケモンタワー　7F	POKéMON TOWER 7F	精灵塔 7F
+101	1-95	1	95	5F01	むじんはつでんしょ	POWER PLANT	无人发电厂
+102	1-96	1	96	6001	ともしびやま↗洞窟 B4F	MT. EMBER↗Cave B4F	灯火山↗洞窟 B4F
+103	1-97	1	97	6101	ともしびやま　そと	MT. EMBER OUTSIDE	灯火山 外面
+104	1-98	1	98	6201	ともしびやま↖洞窟	MT. EMBER ↖Cave	灯火山↖洞窟
+105	1-99	1	99	6301	ともしびやま↖洞窟の通路	MT. EMBER↖Cave Passage	灯火山↖洞窟过道
+106	1-100	1	100	6401	ともしびやま↖洞窟 2F	MT. EMBER ↖Cave 2F	灯火山↖洞窟 2F
+107	1-101	1	101	6501	ともしびやま（ファイヤー）	MT. EMBER(MOLTRES)	灯火山（火焰鸟）
+108	1-102	1	102	6601	ともしびやま（ルビー場所）	MT. EMBER (Ruby Location)	灯火山（红宝石所在地）
+109	1-103	1	103	6701	ともしびやま↗洞窟 1F	MT. EMBER↗Cave 1F	灯火山↗洞窟 1F
+110	1-104	1	104	6801	ともしびやま↗洞窟 B1F	MT. EMBER↗Cave B1F	灯火山↗洞窟 B1F
+111	1-105	1	105	6901	ともしびやま↗洞窟 B2F	MT. EMBER↗Cave B2F	灯火山↗洞窟 B2F
+112	1-106	1	106	6A01	ともしびやま↗洞窟 B3F	MT. EMBER↗Cave B3F	灯火山↗洞窟 B3F
+113	1-107	1	107	6B01	ともしびやま↗洞窟 B3F↘	MT. EMBER↗Cave B3F↘	灯火山↗洞窟 B3F↘
+114	1-108	1	108	6C01	ともしびやま↗洞窟 B3F↘ 2F	MT. EMBER↗Cave B3F↘ 2F	灯火山↗洞窟 B3F↘ 2F
+115	1-109	1	109	6D01	きのみのもり	BERRY FOREST	树果森林
+116	1-110	1	110	6E01	いてだきのどうくつ　いりぐち	ICEFALL CAVE Entrance	冻瀑洞窟 入口
+117	1-111	1	111	6F01	いてだきのどうくつ　なか	ICEFALL CAVE Inside	冻瀑洞窟 里面
+118	1-112	1	112	7001	いてだきのどうくつ　B1F	ICEFALL CAVE B1F	冻瀑洞窟 B1F
+119	1-113	1	113	7101	いてだきのどうくつ　おく	ICEFALL CAVE Depths	冻瀑洞窟 深处
+120	1-114	1	114	7201	ロケットだんそうこ（5のしま　あきち）	ROCKET WAREHOUSE (FIVE ISLE MEADOW)	火箭队仓库（第5岛空地）
+121	1-115	1	115	7301	てんのあな　1F	DOTTED HOLE 1F	点之穴 1F
+122	1-116	1	116	7401	てんのあな　B1F	DOTTED HOLE B1F	点之穴 B1F
+123	1-117	1	117	7501	てんのあな　B2F	DOTTED HOLE B2F	点之穴 B2F
+124	1-118	1	118	7601	てんのあな　B3F	DOTTED HOLE B3F	点之穴 B3F
+125	1-119	1	119	7701	てんのあな　B4F	DOTTED HOLE B4F	点之穴 B4F
+126	1-120	1	120	7801	てんのあな　B5F（サファイア）	DOTTED HOLE B5F (Sapphire)	点之穴 B5F（蓝宝石）
+127	1-121	1	121	7901	しるしのはやし	PATTERN BUSH	标志之林
+128	1-122	1	122	7A01	へんげのどうくつ	ALTERING CAVE	变幻洞窟
+129	2-0	2	0	0002	へそのいわ　そと	NAVEL ROCK OUTSIDE	肚脐岩 外面
+130	2-1	2	1	0102	トレーナータワー　1F	TRAINER TOWER 1F	训练家之塔 1F
+131	2-2	2	2	0202	トレーナータワー　2F	TRAINER TOWER 2F	训练家之塔 2F
+132	2-3	2	3	0302	トレーナータワー　3F	TRAINER TOWER 3F	训练家之塔 3F
+133	2-4	2	4	0402	トレーナータワー　4F	TRAINER TOWER 4F	训练家之塔 4F
+134	2-5	2	5	0502	トレーナータワー 　おくじょう	TRAINER TOWER	训练家之塔 屋顶
+135	2-6	2	6	0602	トレーナータワー	TRAINER TOWER	训练家之塔
+136	2-7	2	7	0702	トレーナータワー	TRAINER TOWER	训练家之塔
+137	2-8	2	8	0802	トレーナータワー	TRAINER TOWER	训练家之塔
+138	2-9	2	9	0902	トレーナータワー	TRAINER TOWER	训练家之塔
+139	2-10	2	10	0A02	トレーナータワー　B1　受付	TRAINER TOWER B1Reception	训练家之塔 B1前台
+140	2-11	2	11	0B02	トレーナータワー　エレベーター	TRAINER TOWER ELEVATOR	训练家之塔 电梯
+141	2-12	2	12	0C02	かえらずのあな	LOST CAVE	不归之穴
+142	2-13	2	13	0D02	かえらずのあな　モリアキ	LOST CAVE Lawson	不归之穴 盛明
+143	2-14	2	14	0E02	かえらずのあな	LOST CAVE	不归之穴
+144	2-15	2	15	0F02	かえらずのあな	LOST CAVE	不归之穴
+145	2-16	2	16	1002	かえらずのあな　ミサト	LOST CAVE Laura	不归之穴 美里
+146	2-17	2	17	1102	かえらずのあな	LOST CAVE	不归之穴
+147	2-18	2	18	1202	かえらずのあな	LOST CAVE	不归之穴
+148	2-19	2	19	1302	かえらずのあな	LOST CAVE	不归之穴
+149	2-20	2	20	1402	かえらずのあな	LOST CAVE	不归之穴
+150	2-21	2	21	1502	かえらずのあな	LOST CAVE	不归之穴
+151	2-22	2	22	1602	かえらずのあな（アキホ&シルクのスカーフ）	LOST CAVE (Selphy&Silk Scarf)	不归之穴（秋穗&丝绸围巾）
+152	2-23	2	23	1702	かえらずのあな（のんきのおこう）	LOST CAVE (Lax Incense)	不归之穴（悠闲薰香）
+153	2-24	2	24	1802	かえらずのあな（うしおのおこう）	LOST CAVE (Sea Incense)	不归之穴（海潮薰香）
+154	2-25	2	25	1902	かえらずのあな（げんきのかたまり）	LOST CAVE (Max Revive)	不归之穴（活力块）
+155	2-26	2	26	1A02	かえらずのあな（ふしぎなアメ）	LOST CAVE (Rare Candy)	不归之穴（神奇糖果）
+156	2-27	2	27	1B02	イレスのせきしつ	MONEAN CHAMBER	伊莱斯石室
+157	2-28	2	28	1C02	ナザンのせきしつ	LIPTOO CHAMBER	那藏石室
+158	2-29	2	29	1D02	ユゴのせきしつ	WEEPTH CHAMBER	由格石室
+159	2-30	2	30	1E02	アレボカのせきしつ	DILFORD CHAMBER	阿利波卡石室
+160	2-31	2	31	1F02	コトーのせきしつ	SCUFIB CHAMBER	科斗石室
+161	2-32	2	32	2002	アヌザのせきしつ	RIXY CHAMBER	阿努泽石室
+162	2-33	2	33	2102	オリフのせきしつ	VIAPOIS CHAMBER	澳利弗石室
+163	2-34	2	34	2202	3のしま　よこあな	THREE ISLE PATH	第3岛隧道
+164	2-35	2	35	2302	アスカナのかぎ	TANOBY KEY	阿斯卡纳的钥匙
+165	2-36	2	36	2402	へそのいわ	NAVEL ROCK	肚脐岩
+166	2-37	2	37	2502	へそのいわ（ホウオウ）	NAVEL ROCK(HO-OH)	肚脐岩（凤王）
+167	2-38	2	38	2602	へそのいわ（ルギア）	NAVEL ROCK(LUGIA)	肚脐岩（洛奇亚）
+168	2-39	2	39	2702	へそのいわ　↖B1F	NAVEL ROCK ↖B1F	肚脐岩 ↖B1F
+169	2-40	2	40	2802	へそのいわ　↖1F	NAVEL ROCK ↖1F	肚脐岩 ↖1F
+170	2-41	2	41	2902	へそのいわ　↖2F	NAVEL ROCK ↖2F	肚脐岩 ↖2F
+171	2-42	2	42	2A02	へそのいわ　↖3F	NAVEL ROCK ↖3F	肚脐岩 ↖3F
+172	2-43	2	43	2B02	へそのいわ　B3F	NAVEL ROCK B3F	肚脐岩 B3F
+173	2-44	2	44	2C02	へそのいわ　B4F	NAVEL ROCK B4F	肚脐岩 B4F
+174	2-45	2	45	2D02	へそのいわ　B5F	NAVEL ROCK B5F	肚脐岩 B5F
+175	2-46	2	46	2E02	へそのいわ　B6F	NAVEL ROCK B6F	肚脐岩 B6F
+176	2-47	2	47	2F02	へそのいわ　B7F	NAVEL ROCK B7F	肚脐岩 B7F
+177	2-48	2	48	3002	へそのいわ　B8F	NAVEL ROCK B8F	肚脐岩 B8F
+178	2-49	2	49	3102	へそのいわ　B9F	NAVEL ROCK B9F	肚脐岩 B9F
+179	2-50	2	50	3202	へそのいわ　B10F	NAVEL ROCK B10F	肚脐岩 B10F
+180	2-51	2	51	3302	へそのいわ　B11F	NAVEL ROCK B11F	肚脐岩 B11F
+181	2-52	2	52	3402	へそのいわ　B12F	NAVEL ROCK B12F	肚脐岩 B12F
+182	2-53	2	53	3502	へそのいわ　B13F	NAVEL ROCK B13F	肚脐岩 B13F
+183	2-54	2	54	3602	へそのいわ　B1F	NAVEL ROCK B1F	肚脐岩 B1F
+184	2-55	2	55	3702	へそのいわ　B2F	NAVEL ROCK B2F	肚脐岩 B2F
+185	2-56	2	56	3802	たんじょうのしま	BIRTH ISLAND	诞生之岛
+186	2-57	2	57	3902	ともしびおんせん	EMBER SPA	灯火温泉
+187	2-58	2	58	3A02	たんじょうのしま　みなと	BIRTH ISLAND PORT	诞生之岛 码头
+188	2-59	2	59	3B02	へそのいわ　せんこう	NAVEL ROCK SHIP PORT	肚脐岩船港
+189	3-0	3	0	0003	マサラタウン	PALLET TOWN	真新镇
+190	3-1	3	1	0103	トキワシティ	VIRIDIAN CITY	常青市
+191	3-2	3	2	0203	ニビシティ	PEWTER CITY	深灰市
+192	3-3	3	3	0303	ハナダシティ	CERULEAN CITY	华蓝市
+193	3-4	3	4	0403	シオンタウン	LAVENDER TOWN	紫苑镇
+194	3-5	3	5	0503	クチバシティ	VERMILION CITY	枯叶市
+195	3-6	3	6	0603	タマムシシティ	CELADON CITY	玉虹市
+196	3-7	3	7	0703	セキチクシティ	FUCHSIA CITY	浅红市
+197	3-8	3	8	0803	グレンじま	CINNABAR ISLAND	红莲岛
+198	3-9	3	9	0903	セキエイこうげん	INDIGO PLATEAU	石英高原
+199	3-10	3	10	0A03	ヤマブキシティ	SAFFRON CITY	金黄市
+200	3-12	3	12	0C03	1のしま	ONE ISLAND	第1岛
+201	3-13	3	13	0D03	2のしま	TWO ISLAND	第2岛
+202	3-14	3	14	0E03	3のしま	THREE ISLAND	第3岛
+203	3-15	3	15	0F03	4のしま	FOUR ISLAND	第4岛
+204	3-16	3	16	1003	5のしま	FIVE ISLAND	第5岛
+205	3-17	3	17	1103	7のしま	SEVEN ISLAND	第7岛
+206	3-18	3	18	1203	6のしま	SIX ISLAND	第6岛
+207	3-19	3	19	1303	1ばん　どうろ	ROUTE 1	1号道路
+208	3-20	3	20	1403	2ばん　どうろ	ROUTE 2	2号道路
+209	3-21	3	21	1503	3ばん　どうろ	ROUTE 3	3号道路
+210	3-22	3	22	1603	4ばん　どうろ	ROUTE 4	4号道路
+211	3-23	3	23	1703	5ばん　どうろ	ROUTE 5	5号道路
+212	3-24	3	24	1803	6ばん　どうろ	ROUTE 6	6号道路
+213	3-25	3	25	1903	7ばん　どうろ	ROUTE 7	7号道路
+214	3-26	3	26	1A03	8ばん　どうろ	ROUTE 8	8号道路
+215	3-27	3	27	1B03	9ばん　どうろ	ROUTE 9	9号道路
+216	3-28	3	28	1C03	10ばん　どうろ	ROUTE 10	10号道路
+217	3-29	3	29	1D03	11ばん　どうろ	ROUTE 11	11号道路
+218	3-30	3	30	1E03	12ばん　どうろ	ROUTE 12	12号道路
+219	3-31	3	31	1F03	13ばん　どうろ	ROUTE 13	13号道路
+220	3-32	3	32	2003	14ばん　どうろ	ROUTE 14	14号道路
+221	3-33	3	33	2103	15ばん　どうろ	ROUTE 15	15号道路
+222	3-34	3	34	2203	16ばん　どうろ	ROUTE 16	16号道路
+223	3-35	3	35	2303	17ばん　どうろ	ROUTE 17	17号道路
+224	3-36	3	36	2403	18ばん　どうろ	ROUTE 18	18号道路
+225	3-37	3	37	2503	19ばん　すいどう	ROUTE 19	19号水路
+226	3-38	3	38	2603	20ばん　すいどう	ROUTE 20	20号水路
+227	3-39	3	39	2703	21ばん　すいどう	ROUTE 21	21号水路
+228	3-41	3	41	2903	22ばん　どうろ	ROUTE 22	22号道路
+229	3-42	3	42	2A03	23ばん　どうろ	ROUTE 23	23号道路
+230	3-43	3	43	2B03	24ばん　どうろ	ROUTE 24	24号道路
+231	3-44	3	44	2C03	25ばん　どうろ	ROUTE 25	25号道路
+232	3-45	3	45	2D03	ほてりのみち	KINDLE ROAD	热气之路
+233	3-46	3	46	2E03	たからのはま	TREASURE BEACH	宝物海滩
+234	3-47	3	47	2F03	きわのみさき	CAPE BRINK	边缘海岬
+235	3-48	3	48	3003	きずなばし	BOND BRIDGE	索桥
+236	3-49	3	49	3103	3のしま　みなと	THREE ISLE PORT	第3岛码头
+237	3-50	3	50	3203	6ばん　ななしま	SEVII ISLE 6	6号 七之岛
+238	3-51	3	51	3303	7ばん　ななしま	SEVII ISLE 7	7号 七之岛
+239	3-52	3	52	3403	8ばん　ななしま	SEVII ISLE 8	8号 七之岛
+240	3-53	3	53	3503	9ばん　ななしま	SEVII ISLE 9	9号 七之岛
+241	3-54	3	54	3603	ゴージャスリゾート	RESORT GORGEOUS	豪华度假区
+242	3-55	3	55	3703	みずのめいろ	WATER LABYRINTH	水之迷宫
+243	3-56	3	56	3803	5のしま　あきち	FIVE ISLE MEADOW	第5岛空地
+244	3-57	3	57	3903	おもいでのとう	MEMORIAL PILLAR	回忆之塔
+245	3-58	3	58	3A03	はずれのしま	OUTCAST ISLAND	外岛
+246	3-59	3	59	3B03	みどりのさんぽみち	GREEN PATH	绿之步道
+247	3-60	3	60	3C03	みずのさんぽみち	WATER PATH	水之步道
+248	3-61	3	61	3D03	いせきのたに	RUIN VALLEY	遗迹山谷
+249	3-63	3	63	3F03	けいこくいりぐち	CANYON ENTRANCE	溪谷入口
+250	3-64	3	64	4003	しっぽうけいこく	SEVAULT CANYON	七宝溪谷
+251	3-65	3	65	4103	アスカナいせき	TANOBY RUINS	阿斯卡纳遗迹
+252	4-0	4	0	0004	自分の家	OWN HOME	主角家
+253	4-1	4	1	0104	自分の部屋	OWN ROOM	主角房间
+254	4-2	4	2	0204	相手の家	RIVALS HOUSE	对手家
+255	4-3	4	3	0304	オーキド研究所	PROFESSOR OAK'S LABORATORY	大木研究所
+256	5-0	5	0	0005	トキワシティ　住民の家	VIRIDIAN HOUSE	常青市房子
+257	5-1	5	1	0105	トキワジム	VIRIDIAN GYM	常青道馆
+258	5-2	5	2	0205	トキワシティ学校	VIRIDIAN SCHOOL	常青市学校
+259	5-3	5	3	0305	トキワシティ　フレンドリィショップ	VIRIDIAN POKé MART	常青市友好商店
+260	5-4	5	4	0405	トキワシティ　ポケモンセンター	VIRIDIAN POKéCENTER	常青市精灵中心
+261	5-5	5	5	0505	トキワシティ　ポケモンセンター 2F	VIRIDIAN POKéCENTER 2F	常青市精灵中心 2F
+262	6-0	6	0	0006	ニビ　かがく　はくぶつかん 1F	PEWTER MUSEUM 1F	深灰科学博物馆 1F
+263	6-1	6	1	0106	ニビ　かがく　はくぶつかん 2F	PEWTER MUSEUM 2F	深灰科学博物馆 2F
+264	6-2	6	2	0206	ニビジム	PEWTER GYM	深灰道馆
+265	6-3	6	3	0306	トキワシティ　フレンドリィショップ	PEWTER POKé MART	深灰市友好商店
+266	6-4	6	4	0406	ニビシティ　住民の家 1	PEWTER HOUSE  1	深灰市房子 1
+267	6-5	6	5	0506	ニビシティ　ポケモンセンター	PEWTER POKéCENTER	深灰市精灵中心
+268	6-6	6	6	0606	ニビシティ　ポケモンセンター 2F	PEWTER POKéCENTER 2F	深灰市精灵中心 2F
+269	6-7	6	7	0706	ニビシティ　住民の家 2	PEWTER HOUSE  2	深灰市房子 2
+270	7-0	7	0	0007	ハナダシティ　住民の家 1	CERULEAN HOUSE 1	华蓝市房子 1
+271	7-1	7	1	0107	ハナダシティ　侵入された家	THE INVADED HOUSE	华蓝市入侵的房子
+272	7-2	7	2	0207	ハナダシティ　住民の家（ルージュラ）	CERULEAN HOUSE (Jynx)	华蓝市房子（迷唇姐）
+273	7-3	7	3	0307	ハナダシティ　ポケモンセンター	CERULEAN POKéCENTER	华蓝市精灵中心
+274	7-4	7	4	0407	ハナダシティ　ポケモンセンター 2F	CERULEAN POKéCENTER 2F	华蓝市精灵中心 2F
+275	7-5	7	5	0507	ハナダジム	CERULEAN GYM	华蓝道馆
+276	7-6	7	6	0607	ミラクル・サイクル	MIRACLE CYCLE	奇迹自行车店
+277	7-7	7	7	0707	ハナダシティ　フレンドリィショップ	CERULEAN POKé MART	华蓝市友好商店
+278	7-8	7	8	0807	ハナダシティ　住民の家 2	CERULEAN HOUSE 2	华蓝市房子 2
+279	7-9	7	9	0907	ハナダシティ　住民の家 3	CERULEAN HOUSE 3	华蓝市房子 3
+280	8-0	8	0	0008	シオンタウン　ポケモンセンター	LAVENDER POKéCENTER	紫苑镇精灵中心
+281	8-1	8	1	0108	シオンタウン　ポケモンセンター 2F	LAVENDER POKéCENTER 2F	紫苑镇精灵中心 2F
+282	8-2	8	2	0208	あいのボランティア　ポケモンハウス	Lavender Volunteer Pokémon House	爱的义工 精灵之家
+283	8-3	8	3	0308	シオンタウン　住民の家 2	LAVENDER HOUSE 2	紫苑镇房子 2
+284	8-4	8	4	0408	シオンタウン　ニックネーム変えた家	POKéMON RENICKNAME HOUSE	紫苑镇精灵改名房子
+285	8-5	8	5	0508	シオンタウン　フレンドリィショップ	LAVENDER POKé MART	紫苑镇友好商店
+286	9-0	9	0	0009	クチバシティ　住民の家（ボロのつりざお）	VERMILION HOUSE (Old Rod)	枯叶市房子（破旧钓竿）
+287	9-1	9	1	0109	クチバシティ　ポケモンセンター	VERMILION POKéCENTER	枯叶市精灵中心
+288	9-2	9	2	0209	クチバシティ　ポケモンセンター 2F	VERMILION POKéCENTER 2F	枯叶市精灵中心 2F
+289	9-3	9	3	0309	ポケモン　だいすき　クラブ	POKéMON LOVER'S CLUB	精灵爱好者俱乐部
+290	9-4	9	4	0409	クチバシティ　住民の家（カモネギ）	VERMILION HOUSE (Farfetch'd)	枯叶市房子（大葱鸭）
+291	9-5	9	5	0509	クチバシティ　フレンドリィショップ	VERMILION POKé MART	枯叶市友好商店
+292	9-6	9	6	0609	クチバジム	VERMILION GYM	枯叶道馆
+293	9-7	9	7	0709	クチバシティ　住民の家 3	VERMILION HOUSE 3	枯叶市房子 3
+294	10-0	10	0	000A	タマムシデパート 1F	CELADON DEPARTMENT STORE 1F	玉虹百货公司 1F
+295	10-1	10	1	010A	タマムシデパート 2F	CELADON DEPARTMENT STORE 2F	玉虹百货公司 2F
+296	10-2	10	2	020A	タマムシデパート 3F	CELADON DEPARTMENT STORE 3F	玉虹百货公司 3F
+297	10-3	10	3	030A	タマムシデパート 4F	CELADON DEPARTMENT STORE 4F	玉虹百货公司 4F
+298	10-4	10	4	040A	タマムシデパート 5F	CELADON DEPARTMENT STORE 5F	玉虹百货公司 5F
+299	10-5	10	5	050A	タマムシデパート 6F	CELADON DEPARTMENT STORE 6F	玉虹百货公司 6F
+300	10-6	10	6	060A	タマムシデパート　エレベーター	CELADON DEPARTMENT STORE ELEVATOR	玉虹百货公司 电梯
+301	10-7	10	7	070A	タマムシ　マンション 1F	CELADON CONDOMINIUMS 1F	玉虹大厦 1F
+302	10-8	10	8	080A	タマムシ　マンション 2F	CELADON CONDOMINIUMS 2F	玉虹大厦 2F
+303	10-9	10	9	090A	タマムシ　マンション 3F	CELADON CONDOMINIUMS 3F	玉虹大厦 3F
+304	10-10	10	10	0A0A	タマムシ　マンション 4F	CELADON CONDOMINIUMS 4F	玉虹大厦 4F
+305	10-11	10	11	0B0A	タマムシ　マンション 5F	CELADON CONDOMINIUMS 5F	玉虹大厦 5F
+306	10-12	10	12	0C0A	タマムシシティ　ポケモンセンター	CELEDON POKéCENTER	玉虹市精灵中心
+307	10-13	10	13	0D0A	タマムシシティ　ポケモンセンター 2F	CELEDON POKéCENTER 2F	玉虹市精灵中心 2F
+308	10-14	10	14	0E0A	ロケット　ゲーム　コーナー	ROCKET GAME CORNER	火箭游戏城
+309	10-15	10	15	0F0A	ロケット　ゲーム　コーナー　こうかんしつ	ROCKET GAME CORNER REDEMPTION ROOM	火箭游戏城兑奖室
+310	10-16	10	16	100A	タマムシジム	CELADON GYM	玉虹道馆
+311	10-17	10	17	110A	タマムシシティ　レストラン	CELEDON DINER	玉虹市餐厅
+312	10-18	10	18	120A	タマムシシティ　住民の家 1	CELEDON HOUSE 1	玉虹市房子 1
+313	10-19	10	19	130A	タマムシシティ　りょかん	CELEDON HOTEL	玉虹市旅馆
+314	11-0	11	0	000B	サファリゾーン　ゲート	SAFARI ZONE GATE	狩猎地带入口处
+315	11-1	11	1	010B	セキチクシティ　フレンドリィショップ	FUCHSIA POKé MART	浅红市友好商店
+316	11-2	11	2	020B	セキチクシティ 部屋	FUCHSIA ROOM	浅红市房间
+317	11-3	11	3	030B	セキチクジム	FUCHSIA GYM	浅红道馆
+318	11-4	11	4	040B	セキチクシティ　住民の家 1	FUCHSIA HOUSE 1	浅红市房子 1
+319	11-5	11	5	050B	セキチクシティ　ポケモンセンター	FUCHSIA POKéCENTER	浅红市精灵中心
+320	11-6	11	6	060B	セキチクシティ　ポケモンセンター 2F	FUCHSIA POKéCENTER 2F	浅红市精灵中心 2F
+321	11-7	11	7	070B	セキチクシティ　えんちょうの　いえ	FUCHSIA WARDEN'S HOME	浅红市园长的家
+322	11-8	11	8	080B	セキチクシティ　住民の家 2	FUCHSIA HOUSE 2	浅红市房子 2
+323	11-9	11	9	090B	セキチクシティ　住民の家 3	FUCHSIA HOUSE 3	浅红市房子 3
+324	12-0	12	0	000C	グレンジム	CINNABAR GYM	红莲道馆
+325	12-1	12	1	010C	ポケモン　けんきゅうじょ	POKéMON LAB	精灵研究所
+326	12-2	12	2	020C	ポケモン　ラボ　おうせつしつ	POKéMON LAB Meeting Room	精灵研究所 接待室
+327	12-3	12	3	030C	ポケモン　ラボ　けんきゅうしつ	POKéMON LAB R & D Room	精灵研究所 研究室
+328	12-4	12	4	040C	ポケモン　ラボ　じっけんしつ	POKéMON LAB Testing Room	精灵研究所 实验室
+329	12-5	12	5	050C	グレンじま　ポケモンセンター	CINNABAR POKéCENTER	红莲岛精灵中心
+330	12-6	12	6	060C	グレンじま　ポケモンセンター 2F	CINNABAR POKéCENTER 2F	红莲岛精灵中心 2F
+331	12-7	12	7	070C	グレンじま　フレンドリィショップ	CINNABAR POKé MART	红莲岛友好商店
+332	13-0	13	0	000D	ポケモンリーグ	POKéMON LEAGUE	精灵联盟
+333	13-1	13	1	010D	ポケモンリーグ 2F	POKéMON LEAGUE 2F	精灵联盟 2F
+334	14-0	14	0	000E	ヤマブキシティ　住民の家 1	SAFFRON HOUSE 1	金黄市房子 1
+335	14-1	14	1	010E	ヤマブキシティ　住民の家 1 2F	SAFFRON HOUSE 1 2F	金黄市房子 1 2F
+336	14-2	14	2	020E	かくとう　どうじょう	FIGHTING DOJO	格斗道场
+337	14-3	14	3	030E	ヤマブキジム	SAFFRON GYM	金黄道馆
+338	14-4	14	4	040E	ヤマブキシティ　住民の家 2	SAFFRON HOUSE 2	金黄市房子 2
+339	14-5	14	5	050E	ヤマブキシティ　フレンドリィショップ	SAFFRON POKé MART	金黄市友好商店
+340	14-6	14	6	060E	ヤマブキシティ　ポケモンセンター	SAFFRON POKéCENTER	金黄市精灵中心
+341	14-7	14	7	070E	ヤマブキシティ　ポケモンセンター 2F	SAFFRON POKéCENTER 2F	金黄市精灵中心 2F
+342	14-8	14	8	080E	エスパー　おやじの　いえ	MR. PSYCHIC'S HOUSE	超能力大叔的家
+343	14-9	14	9	090E	ポケモン　トレーナー　ファンクラブ	POKéMON TRAINER FAN CLUB	精灵训练家粉丝俱乐部
+344	15-0	15	0	000F	2ばん　どうろ - トキワのもり　パス	ROUTE 2 - VIRIDIAN FOREST PATH	2号道路 - 常青森林 过道
+345	15-1	15	1	010F	2ばん　どうろ　住民の家（バリヤード）	ROUTE 2 HOUSE (Mr. Mime)	2号道路房子（魔墙人偶）
+346	15-2	15	2	020F	2ばん　どうろ　右側パス	ROUTE 2 RIGHT PATH	2号道路右侧过道
+347	15-3	15	3	030F	トキワのもり - ニビシティ　パス	VIRIDIAN FOREST - PEWTER CITY PATH	常青森林 - 深灰市 过道
+348	16-0	16	0	0010	4ばん　どうろ　ポケモンセンター	ROUTE 4 POKéCENTER	2号道路精灵中心
+349	16-1	16	1	0110	4ばん　どうろ　ポケモンセンター 2F	ROUTE 4 POKéCENTER 2F	2号道路精灵中心 2F
+350	17-0	17	0	0011	5ばん　どうろ　そだてや	ROUTE 5 POKéMON DAY CARE	5号道路 培育屋
+351	17-1	17	1	0111	5ばん　どうろ - ヤマブキシティ　パス	ROUTE 5 - SAFFRON CITY PATH	5号道路 - 金黄市 过道
+352	18-0	18	0	0012	6ばん　どうろ - ヤマブキシティ　パス	ROUTE 6 - SAFFRON CITY PATH	6号道路 - 金黄市 过道
+353	18-1	18	1	0112	6ばん　どうろ無人住宅	ROUTE 6 UNUSED HOUSE	6号道路无人房
+354	19-0	19	0	0013	7ばん　どうろ - ヤマブキシティ　パス	ROUTE 7 - SAFFRON CITY PATH	7号道路 - 金黄市 过道
+355	20-0	20	0	0014	8ばん　どうろ - ヤマブキシティ　パス	ROUTE 8 - SAFFRON CITY PATH	8号道路 - 金黄市 过道
+356	21-0	21	0	0015	10ばん　どうろ　ポケモンセンター	ROUTE 10 POKéCENTER	10号道路精灵中心
+357	21-1	21	1	0115	10ばん　どうろ　ポケモンセンター 2F	ROUTE 10 POKéCENTER 2F	10号道路精灵中心 2F
+358	22-0	22	0	0016	11ばん　どうろ　パス　	ROUTE 11 PATH	11号道路 过道
+359	22-1	22	1	0116	11ばん　どうろ　パス 2F（ニドリーノ/ニドリーナ）	ROUTE 11 PATH 2F (Nidorino/Nidorina)	11号道路 过道 2F（尼多力诺/尼多娜）
+360	23-0	23	0	0017	12ばん　どうろ　パス　	ROUTE 12 PATH	12号道路 过道
+361	23-1	23	1	0117	12ばん　どうろ　パス 2F	ROUTE 12 PATH 3F	12号道路 过道 2F
+362	23-2	23	2	0217	12ばん　どうろ　住民の家	ROUTE 12 HOUSE	12号道路房子
+363	24-0	24	0	0018	15ばん　どうろ　パス　	ROUTE 15 PATH	15号道路 过道
+364	24-1	24	1	0118	15ばん　どうろ　パス 2F	ROUTE 15 PATH 2F	15号道路 过道 2F
+365	25-0	25	0	0019	16ばん　どうろ　住民の家	ROUTE 16 HOUSE	16号道路房子
+366	25-1	25	1	0119	16ばん　どうろ　パス　	ROUTE 16 PATH	16号道路 过道
+367	25-2	25	2	0219	16ばん　どうろ　パス 2F	ROUTE 16 PATH 2F	16号道路 过道 2F
+368	26-0	26	0	001A	18ばん　どうろ　パス　	ROUTE 18 PATH	18号道路 过道
+369	26-1	26	1	011A	18ばん　どうろ　パス 2F（ベロリンガ）	ROUTE 18 PATH 2F (Lickitung)	18号道路 过道 2F（大舌头）
+370	27-0	27	0	001B	19ばん　どうろ無人住宅	ROUTE 19 UNUSED HOUSE	19号道路无人房
+371	28-0	28	0	001C	22 - 23ばん　どうろ　パス　	ROUTE 22 - 23 PATH	23-23号道路 过道
+372	29-0	29	0	001D	23ばん　どうろ無人住宅	ROUTE 23 UNUSED HOUSE	23号道路无人房
+373	30-0	30	0	001E	235ばん　どうろ　みさきのこや	ROUTE 25 SEA COTTAGE	25号道路 海角小屋
+374	31-0	31	0	001F	7のしま　住民の家	SEVEN ISLAND HOUSE	第7岛房子
+375	31-1	31	1	011F	7のしま（箱で塞がれた部屋）	SEVEN ISLAND (Box-blocked room)	第7岛（箱子挡住的房间）
+376	31-2	31	2	021F	7のしま　フレンドリィショップ	SEVEN ISLAND POKé MART	第7岛友好商店
+377	31-3	31	3	031F	7のしま　ポケモンセンター	SEVEN ISLAND POKéCENTER	第7岛精灵中心
+378	31-4	31	4	041F	7のしま　ポケモンセンター 2F	SEVEN ISLAND POKéCENTER 2F	第7岛精灵中心 2F
+379	31-5	31	5	051F	7のしま　どうろ無人住宅	SEVEN ISLAND UNUSED HOUSE	第7岛无人房
+380	31-6	31	6	061F	7のしま　せんこう	SEVEN ISLAND SHIP PORT	第7岛船港
+381	32-0	32	0	0020	ポケモンネットワークセンター	POKéCENTER NET CENTER	精灵网络中心
+382	32-1	32	1	0120	1のしま　ポケモンセンター 2F	POKéCENTER NET CENTER 2F	精灵网络中心 2F
+383	32-2	32	2	0220	1のしま　住民の家 1	ONE ISLAND HOUSE 1	第1岛房子 1
+384	32-3	32	3	0320	1のしま　住民の家 2	ONE ISLAND HOUSE 2	第1岛房子 2
+385	32-4	32	4	0420	1のしま　せんこう	ONE ISLAND SHIP PORT	第1岛船港
+386	33-0	33	0	0021	たのしい　ゲームコーナー	JOYFUL GAME CORNER	欢乐游戏城
+387	33-1	33	1	0121	2のしま　思い出し技　へや	TWO ISLAND Relearn Move ROOM	第2岛 回忆技能房子
+388	33-2	33	2	0221	2のしま　ポケモンセンター	TWO ISLAND POKéCENTER	第2岛精灵中心
+389	33-3	33	3	0321	2のしま　ポケモンセンター 2F	TWO ISLAND POKéCENTER 2F	第2岛精灵中心 2F
+390	33-4	33	4	0421	2のしま　せんこう	TWO ISLAND SHIP PORT	第2岛船港
+391	34-0	34	0	0022	3のしま　住民の家 1	THREE ISLAND HOUSE 1	第3岛房子 1
+392	34-1	34	1	0122	3のしま　ポケモンセンター	THREE ISLAND POKéCENTER	第3岛精灵中心
+393	34-2	34	2	0222	3のしま　ポケモンセンター 2F	THREE ISLAND POKéCENTER 2F	第3岛精灵中心 2F
+394	34-3	34	3	0322	3のしま　フレンドリィショップ	THREE ISLAND POKé MART	第3岛友好商店
+395	34-4	34	4	0422	3のしま　住民の家 2	THREE ISLAND HOUSE 2	第3岛房子 2
+396	34-5	34	5	0522	3のしま　住民の家 3	THREE ISLAND HOUSE 3	第3岛房子 3
+397	34-6	34	6	0622	3のしま　住民の家 4	THREE ISLAND HOUSE 4	第3岛房子 4
+398	34-7	34	7	0722	3のしま　住民の家 5	THREE ISLAND HOUSE 5	第3岛房子 5
+399	35-0	35	0	0023	4のしま　そだてや	FOUR ISLAND POKéMON DAY CARE	第4岛 培育屋
+400	35-1	35	1	0123	4のしま　ポケモンセンター	FOUR ISLAND POKéCENTER	第4岛精灵中心
+401	35-2	35	2	0223	4のしま　ポケモンセンター 2F	FOUR ISLAND POKéCENTER 2F	第4岛精灵中心 2F
+402	35-3	35	3	0323	4のしま　住民の家 1	FOUR ISLAND HOUSE 1	第4岛房子 1
+403	35-4	35	4	0423	4のしま　カンナの　いえ	FOUR ISLAND LORELEI'S HOME	第4岛科拿的家
+404	35-5	35	5	0523	4のしま　せんこう	FOUR ISLAND SHIP PORT	第4岛船港
+405	35-6	35	6	0623	4のしま　住民の家 2	FOUR ISLAND HOUSE 2	第4岛房子 2
+406	35-7	35	7	0723	4のしま　フレンドリィショップ	FOUR ISLAND POKé MART	第4岛友好商店
+407	36-0	36	0	0024	5のしま　ポケモンセンター	FIVE ISLAND POKéCENTER	第5岛精灵中心
+408	36-1	36	1	0124	5のしま　ポケモンセンター 2F	FIVE ISLAND POKéCENTER 2F	第5岛精灵中心 2F
+409	36-2	36	2	0224	5のしま　せんこう	FIVE ISLAND SHIP PORT	第5岛船港
+410	36-3	36	3	0324	5のしま　住民の家 1	FIVE ISLAND HOUSE 1	第5岛房子 1
+411	36-4	36	4	0424	5のしま　住民の家 2	FIVE ISLAND HOUSE 2	第5岛房子 2
+412	37-0	37	0	0025	6のしま　ポケモンセンター	SIX ISLAND POKéCENTER	第6岛精灵中心
+413	37-1	37	1	0125	6のしま　ポケモンセンター 2F	SIX ISLAND POKéCENTER 2F	第6岛精灵中心 2F
+414	37-2	37	2	0225	6のしま　せんこう	SIX ISLAND SHIP PORT	第6岛船港
+415	37-3	37	3	0325	6のしま　住民の家 1	SIX ISLAND HOUSE 1	第6岛房子 1
+416	37-4	37	4	0425	6のしま　フレンドリィショップ	SIX ISLAND POKé MART	第6岛友好商店
+417	38-0	38	0	0026	3のしま　せんこう	THREE ISLAND SHIP PORT	第3岛船港
+418	39-0	39	0	0027	アキホの　おうち	SELPHY HOME	秋穗的家
+419	40-0	40	0	0028	きわのみさき　きとうし	CAPE BRINK CHANNELER	祈祷师家
+420	41-0	41	0	0029	みずのさんぽみち（ヘラクロスの高さ）	WATER PATH (Heracross Height)	水之步道（赫拉克罗斯长度）
+421	41-1	41	1	0129	みずのさんぽみち　住民の家	WATER PATH HOUSE	水之步道房子
+422	42-0	42	0	002A	しっぽうけいこく　住民の家	SEVAULT CANYON HOUSE	七宝溪谷房子
