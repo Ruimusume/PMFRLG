@@ -190,3 +190,10 @@ https://ruimusume.github.io/PMFRLG/items.html
     </tr>
   </table>
 
+# Main Head
+<div align="center"><table>
+<tr><td>WRAM</td>
+<td>[[main+041F8688]+49A0]</td></tr>
+<tr><td>IRAM</td><td>[[main+041F8688]+49D8]</td></tr>
+<tr><td>ROM/td><td>[[main+041F8688]+4AD0]</td></tr>
+</table></div>
