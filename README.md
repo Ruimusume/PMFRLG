@@ -117,6 +117,10 @@ https://github.com/Ruimusume/PMFRLG/blob/main/Area_id.txt
 
 https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt
 
+https://github.com/Ruimusume/PMFRLG/blob/main/Unknown_form.txt
+
+https://github.com/Ruimusume/PMFRLG/blob/main/Chamber_Encounter.txt
+
 https://github.com/Ruimusume/PMFRLG/blob/main/Char_map.txt
 
 # MemCrypt
