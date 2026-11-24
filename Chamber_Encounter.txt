@@ -1,0 +1,7 @@
+イレスのせきしつ	MONEAN CHAMBER	伊莱斯石室	A	00	？	1B						
+ナザンのせきしつ	LIPTOO CHAMBER	那藏石室	C	02	H	07	U	14	O	0E		
+ユゴのせきしつ	WEEPTH CHAMBER	由格石室	N	0D	S	12	I	08	E	04		
+アレボカのせきしつ	DILFORD CHAMBER	阿利波卡石室	P	0F	L	0B	J	09	R	11	Q	10
+コトーのせきしつ	SCUFIB CHAMBER	科斗石室	Y	18	T	13	G	06	F	05	K	0A
+アヌザのせきしつ	RIXY CHAMBER	阿努泽石室	V	15	W	16	X	17	M	0C	B	01
+オリフのせきしつ	VIAPOIS CHAMBER	澳利弗石室	Z	19	！	1A						
