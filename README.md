@@ -119,6 +119,8 @@ https://github.com/Ruimusume/PMFRLG/blob/main/natures_id.txt
 
 https://github.com/Ruimusume/PMFRLG/blob/main/Ability_id.txt
 
+https://github.com/Ruimusume/PMFRLG/blob/main/weather_id.txt
+
 https://github.com/Ruimusume/PMFRLG/blob/main/waza_id.txt
 
 https://github.com/Ruimusume/PMFRLG/blob/main/Unknown_form.txt
