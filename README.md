@@ -113,6 +113,8 @@ https://ruimusume.github.io/PMFRLG/DEX.html
 
 https://ruimusume.github.io/PMFRLG/items.html
 
+https://github.com/Ruimusume/PMFRLG/blob/main/Area_id.txt
+
 # MemCrypt
 <table>
     <tr>
