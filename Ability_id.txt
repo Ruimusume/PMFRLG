@@ -1,0 +1,79 @@
+No.	JP_name	EN_name	CN_name
+0	(なし)	(None)	(无)
+1	あくしゅう	Stench	恶臭
+2	あめふらし	Drizzle	降雨
+3	かそく	Speed Boost	加速
+4	カブトアーマー	Battle Armor	战斗盔甲
+5	がんじょう	Sturdy	结实
+6	しめりけ	Damp	湿气
+7	じゅうなん	Limber	柔软
+8	すながくれ	Sand Veil	沙隐
+9	せいでんき	Static	静电
+10	ちくでん	Volt Absorb	蓄电
+11	ちょすい	Water Absorb	储水
+12	どんかん	Oblivious	迟钝
+13	ノーてんき	Cloud Nine	无关天气
+14	ふくがん	Compound Eyes	复眼
+15	ふみん	Insomnia	不眠
+16	へんしょく	Color Change	变色
+17	めんえき	Immunity	免疫
+18	もらいび	Flash Fire	引火
+19	りんぷん	Shield Dust	鳞粉
+20	マイペース	Own Tempo	我行我素
+21	きゅうばん	Suction Cups	吸盘
+22	いかく	Intimidate	威吓
+23	かげふみ	Shadow Tag	踩影
+24	さめはだ	Rough Skin	粗糙皮肤
+25	ふしぎなまもり	Wonder Guard	神奇守护
+26	ふゆう	Levitate	飘浮
+27	ほうし	Effect Spore	孢子
+28	シンクロ	Synchronize	同步
+29	クリアボディ	Clear Body	恒净之躯
+30	しぜんかいふく	Natural Cure	自然回复
+31	ひらいしん	Lightning Rod	避雷针
+32	てんのめぐみ	Serene Grace	天恩
+33	すいすい	Swift Swim	悠游自如
+34	ようりょくそ	Chlorophyll	叶绿素
+35	はっこう	Illuminate	发光
+36	トレース	Trace	复制
+37	ちからもち	Huge Power	大力士
+38	どくのトゲ	Poison Point	毒刺
+39	せいしんりょく	Inner Focus	精神力
+40	マグマのよろい	Magma Armor	熔岩铠甲
+41	みずのベール	Water Veil	水幕
+42	じりょく	Magnet Pull	磁力
+43	ぼうおん	Soundproof	隔音
+44	あめうけざら	Rain Dish	雨盘
+45	すなおこし	Sand Stream	扬沙
+46	プレッシャー	Pressure	压迫感
+47	あついしぼう	Thick Fat	厚脂肪
+48	はやおき	Early Bird	早起
+49	ほのおのからだ	Flame Body	火焰之躯
+50	にげあし	Run Away	逃跑
+51	するどいめ	Keen Eye	锐利目光
+52	かいりきバサミ	Hyper Cutter	怪力钳
+53	ものひろい	Pickup	捡拾
+54	なまけ	Truant	懒惰
+55	はりきり	Hustle	活力
+56	メロメロボディ	Cute Charm	迷人之躯
+57	プラス	Plus	正电
+58	マイナス	Minus	负电
+59	てんきや	Forecast	阴晴不定
+60	ねんちゃく	Sticky Hold	黏着
+61	だっぴ	Shed Skin	蜕皮
+62	こんじょう	Guts	毅力
+63	ふしぎなうろこ	Marvel Scale	神奇鳞片
+64	ヘドロえき	Liquid Ooze	污泥浆
+65	しんりょく	Overgrow	茂盛
+66	もうか	Blaze	猛火
+67	げきりゅう	Torrent	激流
+68	むしのしらせ	Swarm	虫之预感
+69	いしあたま	Rock Head	坚硬脑袋
+70	ひでり	Drought	日照
+71	ありじごく	Arena Trap	沙穴
+72	やるき	Vital Spirit	干劲
+73	しろいけむり	White Smoke	白色烟雾
+74	ヨガパワー	Pure Power	瑜伽之力
+75	シェルアーマー	Shell Armor	硬壳盔甲
+76	そうおん	Cacophony	杂音
+77	エアロック	Air Lock	气闸
